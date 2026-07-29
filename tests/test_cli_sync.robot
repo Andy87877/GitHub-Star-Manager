@@ -44,3 +44,13 @@ Workflow Tests Before Live Publication
     ${test_position}=    Evaluate    $workflow.index("python -m robot")
     ${sync_position}=    Evaluate    $workflow.index("python main.py --username Andy87877")
     Should Be True    ${test_position} < ${sync_position}
+
+Static Pages Workflow Verifies Before Deploying
+    ${workflow}=    Get File    ${CURDIR}${/}..${/}.github${/}workflows${/}ci-pages.yml
+    Should Contain    ${workflow}    name: CI and deploy static site
+    Should Contain    ${workflow}    python -m robot
+    Should Contain    ${workflow}    needs: verify
+    Should Contain    ${workflow}    actions/upload-pages-artifact@v4
+    Should Contain    ${workflow}    path: _site
+    Should Not Contain    ${workflow}    ruby/setup-ruby
+    Should Not Contain    ${workflow}    bundle exec jekyll

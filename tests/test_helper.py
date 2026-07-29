@@ -83,6 +83,9 @@ def test_focused_topic_policy() -> str:
         sample_repository(
             full_name="u5/repo5", topics=["automation", "one-off-d"]
         ),
+        sample_repository(
+            full_name="u6/repo6", topics=["unselected-only"]
+        ),
     ]
     categorizer = TopicCategorizer(
         sort_categories=False,
@@ -92,9 +95,12 @@ def test_focused_topic_policy() -> str:
         ),
     )
     result = categorizer.categorize(repositories)
-    assert list(result) == ["ai", "automation", "python"]
+    assert list(result) == ["ai", "automation", "python", "other"]
     assert "one-off-a" not in result
     assert "testing" not in result
+    assert [repository.full_name for repository in result["other"]] == [
+        "u6/repo6"
+    ]
     return "PASS"
 
 
@@ -124,19 +130,32 @@ def test_markdown_language_renderer() -> str:
 
 def test_markdown_topic_renderer() -> str:
     output = MarkdownTopicRenderer().render(
-        {"ai": [sample_repository(topics=["ai"])]},
+        {
+            "ai": [sample_repository(topics=["ai"])],
+            "other": [
+                sample_repository(
+                    full_name="owner/unclassified",
+                    topics=["one-off"],
+                )
+            ],
+        },
         metadata={
             "generatedAt": "2026-07-29T00:00:00+00:00",
             "totalTopicCount": 469,
             "focusedTopicCount": 1,
+            "otherRepositoryCount": 1,
             "topicMinimumRepositoryCount": 2,
             "topicMaximumCategories": 30,
+            "topicOtherCategory": "other",
         },
     )
     assert "原始資料共有 **469** 個 Topics" in output
     assert "聚焦 Topic 目錄" in output
     assert '<a id="topic-ai"></a>' in output
     assert "## ai" in output
+    assert "最底下的 `other`" in output
+    assert "## other" in output
+    assert output.index("## ai") < output.index("## other")
     return "PASS"
 
 

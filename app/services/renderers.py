@@ -74,11 +74,16 @@ class MarkdownLanguageRenderer(IRenderer):
             "",
             "- 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；"
             "若 API 暫時不可用，會清楚標示目前仍是快照。",
-            "- 本 README、`topics.md` 與 `data/stars.json` 由 GitHub Actions "
-            "每 6 小時及手動觸發同步。",
+            "- `Refresh GitHub Stars snapshot` workflow 每 6 小時及手動觸發同步"
+            "本 README、`topics.md` 與 `data/stars.json`。",
+            "- 每次 push／pull request 都先執行 18 項 Robot 驗收；`main` 驗證成功"
+            "後才打包純靜態網站並部署 GitHub Pages。",
+            "- GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版"
+            "workflow 不再依賴 Ruby、Gemfile 或 Jekyll。",
             "- 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫"
             "上一份有效資料。",
-            "- Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；原始標籤仍完整"
+            "- Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；未命中這些"
+            "聚焦標籤的 repositories 統一收進最底下的 `other`，原始標籤仍完整"
             "保留在 JSON 與網站全文搜尋。",
             "",
             "## 使用方式",
@@ -140,7 +145,19 @@ class MarkdownTopicRenderer(IRenderer):
     ) -> str:
         metadata = metadata or {}
         total_topics = int(metadata.get("totalTopicCount") or len(categorized))
-        focused_topics = int(metadata.get("focusedTopicCount") or len(categorized))
+        other_category = str(metadata.get("topicOtherCategory") or "other")
+        focused_topics = int(
+            metadata.get(
+                "focusedTopicCount",
+                sum(category != other_category for category in categorized),
+            )
+        )
+        other_count = int(
+            metadata.get(
+                "otherRepositoryCount",
+                len(categorized.get(other_category, [])),
+            )
+        )
         minimum_count = int(metadata.get("topicMinimumRepositoryCount") or 2)
         maximum_categories = int(
             metadata.get("topicMaximumCategories") or focused_topics
@@ -150,14 +167,17 @@ class MarkdownTopicRenderer(IRenderer):
             "",
             f"> 自動產生於 `{metadata.get('generatedAt', '尚未同步')}`。"
             f"原始資料共有 **{total_topics}** 個 Topics；本頁只顯示 "
-            f"**{focused_topics}** 個聚焦 Topics。",
+            f"**{focused_topics}** 個聚焦 Topics，再加上最底下的 "
+            f"`{other_category}`（**{other_count}** 個 repositories）。",
             "",
             "為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 "
             f"**{minimum_count}** 個收藏中的 Topics，並依涵蓋專案數排序，"
             f"最多顯示 **{maximum_categories}** 個。所有原始 Topics 仍完整保留於 "
             "`data/stars.json`，網站全文搜尋也能找到。",
             "",
-            "同一專案可同時出現在多個 Topic，這是多對多分類的正常結果。",
+            f"`{other_category}` 只收納沒有命中任何聚焦 Topic 的 repositories，"
+            "每個 repository 在該區只出現一次。同一專案仍可同時出現在多個"
+            "聚焦 Topic，這是多對多分類的正常結果。",
             "",
             "## 聚焦 Topic 目錄",
             "",

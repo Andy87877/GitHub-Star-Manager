@@ -47,6 +47,13 @@ export class StarView {
   }
 
   renderFilters(languages, topics, filters) {
+    const focusedTopics = topics.filter(({ isOther }) => !isOther);
+    const otherTopic = topics.find(({ isOther }) => isOther);
+    const quickTopics = [
+      ...focusedTopics.slice(0, 17),
+      ...(otherTopic ? [otherTopic] : [])
+    ];
+
     this.languageChips.innerHTML = [
       this.chip('lang', 'all', '全部語言', filters.language === 'all'),
       ...languages.map(language =>
@@ -56,8 +63,13 @@ export class StarView {
 
     this.topicChips.innerHTML = [
       this.chip('topic', 'all', '全部 Topic', filters.topic === 'all'),
-      ...topics.slice(0, 18).map(({ topic, count }) =>
-        this.chip('topic', topic, `#${topic} ${count}`, filters.topic === topic)
+      ...quickTopics.map(({ topic, count, isOther }) =>
+        this.chip(
+          'topic',
+          topic,
+          isOther ? `其他 / other ${count}` : `#${topic} ${count}`,
+          filters.topic === topic
+        )
       )
     ].join('');
 
@@ -71,8 +83,9 @@ export class StarView {
 
     this.topicSelect.innerHTML = [
       '<option value="all">全部 Topic</option>',
-      ...topics.map(({ topic, count }) =>
-        `<option value="${this.escapeHtml(topic)}">#${this.escapeHtml(topic)}（${count}）</option>`
+      ...topics.map(({ topic, count, isOther }) =>
+        `<option value="${this.escapeHtml(topic)}">` +
+        `${isOther ? '其他 / other' : `#${this.escapeHtml(topic)}`}（${count}）</option>`
       )
     ].join('');
     this.topicSelect.value = filters.topic;

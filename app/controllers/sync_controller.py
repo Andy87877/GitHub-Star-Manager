@@ -90,14 +90,21 @@ class SyncController:
                 }
             ),
             "focusedTopicCount": 0,
+            "otherRepositoryCount": 0,
             "topicMinimumRepositoryCount":
                 self.topic_policy.minimum_repository_count,
             "topicMaximumCategories": self.topic_policy.maximum_categories,
+            "topicOtherCategory": self.topic_policy.other_category,
         }
 
         by_language = self.language_categorizer.categorize(repositories)
         by_topic = self.topic_categorizer.categorize(repositories)
-        metadata["focusedTopicCount"] = len(by_topic)
+        metadata["focusedTopicCount"] = sum(
+            topic != self.topic_policy.other_category for topic in by_topic
+        )
+        metadata["otherRepositoryCount"] = len(
+            by_topic.get(self.topic_policy.other_category, [])
+        )
         generated_files = {
             readme_file: self.language_renderer.render(
                 by_language, title=f"{username} 的 GitHub Stars", metadata=metadata

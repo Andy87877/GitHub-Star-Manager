@@ -59,7 +59,7 @@ class TopicCategorizer(ICategorizer):
 
         categorized = dict(grouped)
         if self.selection_policy:
-            return self.selection_policy.select(categorized)
+            return self.selection_policy.select(categorized, repositories)
         if self.sort_categories:
             return OrderedDict(
                 sorted(categorized.items(), key=lambda item: item[0].lower())
@@ -72,7 +72,9 @@ class ITopicSelectionPolicy(ABC):
 
     @abstractmethod
     def select(
-        self, categorized: Dict[str, List[Repository]]
+        self,
+        categorized: Dict[str, List[Repository]],
+        repositories: Optional[List[Repository]] = None,
     ) -> Dict[str, List[Repository]]:
         """Return a presentation-focused subset without mutating raw data."""
 
@@ -85,17 +87,25 @@ class FocusedTopicPolicy(ITopicSelectionPolicy):
         minimum_repository_count: int = 2,
         maximum_categories: int = 30,
         excluded_categories: Optional[List[str]] = None,
+        other_category: str = "other",
     ):
         if minimum_repository_count < 1:
             raise ValueError("minimum_repository_count must be at least 1")
         if maximum_categories < 1:
             raise ValueError("maximum_categories must be at least 1")
+        if not other_category.strip():
+            raise ValueError("other_category cannot be blank")
         self.minimum_repository_count = minimum_repository_count
         self.maximum_categories = maximum_categories
-        self.excluded_categories = set(excluded_categories or ["others"])
+        self.other_category = other_category.strip()
+        self.excluded_categories = set(
+            excluded_categories or ["others", self.other_category]
+        )
 
     def select(
-        self, categorized: Dict[str, List[Repository]]
+        self,
+        categorized: Dict[str, List[Repository]],
+        repositories: Optional[List[Repository]] = None,
     ) -> Dict[str, List[Repository]]:
         eligible = [
             (topic, repositories)
@@ -106,4 +116,31 @@ class FocusedTopicPolicy(ITopicSelectionPolicy):
         eligible.sort(
             key=lambda item: (-len(item[1]), item[0].lower())
         )
-        return OrderedDict(eligible[: self.maximum_categories])
+        selected = OrderedDict(eligible[: self.maximum_categories])
+        focused_topics = set(selected)
+
+        source_repositories = repositories or self._unique_repositories(categorized)
+        other_repositories = []
+        seen_full_names = set()
+        for repository in source_repositories:
+            if repository.full_name in seen_full_names:
+                continue
+            if any(topic in focused_topics for topic in repository.topics):
+                continue
+            seen_full_names.add(repository.full_name)
+            other_repositories.append(repository)
+
+        selected[self.other_category] = other_repositories
+        return selected
+
+    @staticmethod
+    def _unique_repositories(
+        categorized: Dict[str, List[Repository]]
+    ) -> List[Repository]:
+        """Recover a stable unique source list when callers omit it."""
+
+        unique = OrderedDict()
+        for grouped_repositories in categorized.values():
+            for repository in grouped_repositories:
+                unique.setdefault(repository.full_name, repository)
+        return list(unique.values())

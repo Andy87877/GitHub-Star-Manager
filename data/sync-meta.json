@@ -1,12 +1,14 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-07-29T05:20:32+00:00",
-  "repositoryCount": 151,
+  "generatedAt": "2026-07-29T07:09:19+00:00",
+  "repositoryCount": 152,
   "source": "GitHub REST API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 469,
+  "totalTopicCount": 473,
   "focusedTopicCount": 30,
+  "otherRepositoryCount": 91,
   "topicMinimumRepositoryCount": 2,
-  "topicMaximumCategories": 30
+  "topicMaximumCategories": 30,
+  "topicOtherCategory": "other"
 }

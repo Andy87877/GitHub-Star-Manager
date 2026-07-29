@@ -1,15 +1,17 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **151** 個公開 Star；資料快照：`2026-07-29T05:20:32+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **152** 個公開 Star；資料快照：`2026-07-29T07:09:19+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Cards／Table 雙模式、排序、本機研究筆記與 CSV 匯出。
 
 ## 資料即時性
 
 - 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；若 API 暫時不可用，會清楚標示目前仍是快照。
-- 本 README、`topics.md` 與 `data/stars.json` 由 GitHub Actions 每 6 小時及手動觸發同步。
+- `Refresh GitHub Stars snapshot` workflow 每 6 小時及手動觸發同步本 README、`topics.md` 與 `data/stars.json`。
+- 每次 push／pull request 都先執行 18 項 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
+- GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版workflow 不再依賴 Ruby、Gemfile 或 Jekyll。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；原始標籤仍完整保留在 JSON 與網站全文搜尋。
+- Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；未命中這些聚焦標籤的 repositories 統一收進最底下的 `other`，原始標籤仍完整保留在 JSON 與網站全文搜尋。
 
 ## 使用方式
 
@@ -37,7 +39,7 @@ python -m robot --outputdir artifacts/robot tests
 - [Batchfile（1）](#language-batchfile)
 - [C（2）](#language-c)
 - [C#（2）](#language-c-sharp)
-- [C++（9）](#language-c-plus-plus)
+- [C++（8）](#language-c-plus-plus)
 - [CMake（1）](#language-cmake)
 - [Cuda（1）](#language-cuda)
 - [Dart（3）](#language-dart)
@@ -48,7 +50,7 @@ python -m robot --outputdir artifacts/robot tests
 - [Jupyter Notebook（2）](#language-jupyter-notebook)
 - [Kotlin（2）](#language-kotlin)
 - [Lua（1）](#language-lua)
-- [Markdown（1）](#language-markdown)
+- [Markdown（2）](#language-markdown)
 - [MDX（3）](#language-mdx)
 - [Others（22）](#language-others)
 - [PHP（3）](#language-php)
@@ -57,7 +59,7 @@ python -m robot --outputdir artifacts/robot tests
 - [Python（37）](#language-python)
 - [Rust（2）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（24）](#language-typescript)
+- [TypeScript（25）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -99,7 +101,6 @@ python -m robot --outputdir artifacts/robot tests
 - [google/googletest](https://github.com/google/googletest) — GoogleTest - Google Testing and Mocking Framework
 - [Larryeng/Fall_detection](https://github.com/Larryeng/Fall_detection) — An early warning device for the elderly when they fall
 - [robsoncouto/arduino-songs](https://github.com/robsoncouto/arduino-songs)
-- [Koyingtw/Testdata-Maker](https://github.com/Koyingtw/Testdata-Maker) — 測資生成器
 - [Koyingtw/SITCON-2022-agenda-reference](https://github.com/Koyingtw/SITCON-2022-agenda-reference) — 2022 SITCON 學生計算機年會 一般議程：想辦活動或比賽嗎？那先來看看我們吧 相關資源
 - [wayne-1211/ARDU-swerve](https://github.com/wayne-1211/ARDU-swerve) — swerve drive powered by arduino uno
 
@@ -193,6 +194,7 @@ python -m robot --outputdir artifacts/robot tests
 
 ## Markdown
 
+- [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) — Master programming by recreating your favorite technologies from scratch.
 - [Schweinepriester/github-profile-achievements](https://github.com/Schweinepriester/github-profile-achievements) — A collection listing all Achievements available on the GitHub profile 🏆
 
 <a id="language-mdx"></a>
@@ -309,6 +311,7 @@ python -m robot --outputdir artifacts/robot tests
 
 ## TypeScript
 
+- [openai/codex-security](https://github.com/openai/codex-security) — SDKs and CLI for Codex Security
 - [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems
 - [NTUT-NPC/ntut-sso-plus](https://github.com/NTUT-NPC/ntut-sso-plus) — 北科校園入口 Chrome / Firefox 擴充功能
 - [pixel-agents-hq/pixel-agents](https://github.com/pixel-agents-hq/pixel-agents) — Pixel office.

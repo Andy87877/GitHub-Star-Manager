@@ -19,8 +19,8 @@ Verify Topic Categorization Strategy
     Should Contain    ${result.stdout}    PASS
     Should Be Equal As Integers    ${result.rc}    0
 
-Verify Focused Topic Policy Removes One-Off Noise
-    [Documentation]    Keep repeated high-signal Topics and cap navigation size.
+Verify Focused Topic Policy Adds Other At The Bottom
+    [Documentation]    Keep repeated high-signal Topics and collect uncovered repositories once in other.
     ${result}=    Run Process    ${PYTHON_BIN}    tests/test_helper.py    focused_topic
     Should Contain    ${result.stdout}    PASS
     Should Be Equal As Integers    ${result.rc}    0

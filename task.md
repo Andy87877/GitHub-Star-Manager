@@ -27,11 +27,11 @@
 - [x] 建立渲染器測試 (`tests/test_renderers.robot`)
 - [x] 建立 CLI 同步與工作流測試 (`tests/test_cli_sync.robot`)
 
-## Phase 5 & 6: Andy87877 即時 Stars 同步與每日 GitHub Actions 自動化
+## Phase 5 & 6: Andy87877 即時 Stars 同步與 GitHub Actions 自動化
 - [x] 在 `app/services/github_client.py` 實作 `GitHubRESTClient` 與 `GitHubClientFactory`
 - [x] 預設同步目標為 `Andy87877`
-- [x] 建立 `.github/workflows/schedules.yml` 實現每日自動更新 (Cron 00:30 UTC / 08:30 TST)
-- [x] 成功同步 `Andy87877` 的 151 個真實 Star 專案至 `README.md`、`topics.md` 與 `data/stars.json`
+- [x] 建立 `.github/workflows/schedules.yml` 實現每 6 小時及手動更新
+- [x] 成功同步 `Andy87877` 的真實 Star 專案至 `README.md`、`topics.md` 與 `data/stars.json`
 
 ## Phase 7: Git 版控與 .gitignore 規則設定
 - [x] 設定 `.gitignore` 排除 `log.html`、`output.xml`、`report.html`、`__pycache__` 等暫存檔
@@ -98,3 +98,24 @@
 - [x] 重產真實 README／topics／JSON／metadata（151 筆）
 - [x] 最終 Robot Framework 回歸（16／16）
 - [x] 根目錄與 Git 狀態確認（不 commit、不 push）
+
+## Phase 14：Topic `other` 與 CI/CD 修復
+
+- [x] 檢視 GitHub 遠端 workflows、run、job 與失敗 log
+- [x] 確認舊 Pages workflow 失敗根因為 repository 當時尚未啟用 Pages
+- [x] 再次稽核並確認 GitHub 預設 Pages workflow 已連續成功 2 次
+- [x] 確認 Pages 網址與 HTTPS 狀態
+- [x] 移除 Ruby／Bundler／Jekyll 依賴，改為純靜態 Pages artifact
+- [x] 將誤導性的 Jekyll workflow 檔名整理為 `ci-pages.yml`
+- [x] CI 在 push／pull request／手動觸發時先跑 Robot 與快照契約
+- [x] CD 僅在 `verify` 成功且非 pull request 時執行
+- [x] 保留每 6 小時 Stars 同步 workflow 的測試先行與失敗關閉
+- [x] `FocusedTopicPolicy` 將未命中聚焦 Topic 的 repositories 收入最底下 `other`
+- [x] `other` 依 repository `full_name` 去重
+- [x] 網站 Topic chips／下拉／篩選支援固定在最後的「其他 / other」
+- [x] 重產真實 README／topics／JSON／metadata（152 筆；`other` 91 筆）
+- [x] Workflow YAML 解析成功
+- [x] Robot Framework 全數通過（18／18）
+- [x] 真實瀏覽器驗證 `other`、Cards／Table、390px 響應式與 console
+- [x] 根目錄測試產物集中於 `artifacts/`（不 commit、不 push）
+- [ ] 使用者 commit／push 後確認新 CI/CD run 與 Pages URL

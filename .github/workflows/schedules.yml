@@ -1,4 +1,4 @@
-name: Verify and refresh GitHub Stars
+name: Refresh GitHub Stars snapshot
 
 on:
   workflow_dispatch:

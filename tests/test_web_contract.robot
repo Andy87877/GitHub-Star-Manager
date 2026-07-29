@@ -36,3 +36,12 @@ Frontend Supports Card And Table Views
     Should Contain    ${view}    renderRepoTable
     Should Contain    ${view}    class="repo-table"
     Should Contain    ${controller}    data-view-mode
+
+Frontend Topic Navigation Includes A Bottom Other Bucket
+    ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}js${/}views${/}StarView.js
+    Should Contain    ${model}    otherTopic: 'other'
+    Should Contain    ${model}    focusedTopicNames
+    Should Contain    ${model}    isOtherFilter
+    Should Contain    ${view}    const otherTopic
+    Should Contain    ${view}    其他 / other

@@ -161,3 +161,39 @@
   - 390px 下只有 Table 容器內部可水平捲動；整個頁面沒有水平溢位。
   - 瀏覽器 console 無 error／warning。
 - **狀態**：完成。
+
+## Iteration 14：Topic `other` 與 CI/CD 修復
+
+- **日期**：2026-07-29
+- **使用者回饋**：
+  - 聚焦 Topic 後仍需要最底下的 `other`，收納未被聚焦分類涵蓋的 repositories。
+  - GitHub CI/CD 沒有成功，需要先檢視遠端執行證據再修正。
+- **GitHub 遠端稽核**：
+  - Repository 為 private、預設分支為 `main`，帳號方案支援 private Pages。
+  - 初次稽核時遠端存在 2 個 active workflows，舊 Pages run 皆失敗。
+  - 最新 run `30425106507` 在 `Setup Pages` 失敗；log 明確指出 Pages 尚未啟用／未設為 GitHub Actions。
+  - 舊 workflow 使用 Ruby 3.1 與 `bundle exec jekyll`，但專案沒有 Gemfile；即使先解決 Pages 設定仍會在下一階段失敗。
+  - Stars 排程 workflow 尚無 run；它在 05:27 UTC 加入，而 cron 為 `17 */6 * * *`，稽核時尚未到第一個排程點。
+  - 工作期間遠端新增 GitHub 預設的 `jekyll-gh-pages.yml` 並刪除舊 `jekyll.yml`；新 workflow run `30430004336` 與 `30430057828` 均成功。
+  - GitHub Pages 已啟用，網址為 `https://andy87877.github.io/GitHub-Star-Manager/`，HTTPS enforced。
+- **Topic 設計決策**：
+  - `FocusedTopicPolicy` 保留前 30 個聚焦 Topics，並固定把 `other` 放在最後。
+  - `other` 只收納沒有命中任何聚焦 Topic 的 repositories，以 `full_name` 去重。
+  - 網站 Model 使用相同判斷；Topic chips 與下拉將 `other` 固定放在最後並採「其他 / other」易懂標籤。
+- **CI/CD 設計決策**：
+  - 將遠端已成功的 `jekyll-gh-pages.yml` 整理為語意明確的 `ci-pages.yml`，並整合純靜態 CI/CD，避免平行存在兩套 Pages workflows。
+  - `verify` job 使用 Python 3.12，先跑 Robot 與快照契約。
+  - `deploy` job 只在非 pull request 且 `verify` 成功後執行，只打包網站必要檔案並加入 `.nojekyll`。
+  - `schedules.yml` 保持單一責任：每 6 小時／手動先測試，再同步、驗證、提交真實快照。
+  - 遵照使用者「不 push」，本次不 rerun、不 push；只將本地分支 fast-forward 到遠端刪除舊 workflow 的 commit，再保留未提交修改。
+- **真實資料結果**：
+  - 本次重新同步 152 個公開 Stars。
+  - 原始 Topics 469 個，聚焦 Topics 30 個，最終快照的 `other` 為 91 個 repositories。
+- **驗證結果**：
+  - Workflow YAML 可解析。
+  - Robot Framework 18／18 通過。
+  - 真實瀏覽器確認 `other` 固定為最後一個下拉選項與快速 chip。
+  - 瀏覽器即時 API 當下取得 151 筆、`other` 92 筆；預設排除 Archived 後 Cards 顯示 88 筆，切換 Table 仍維持 88 筆。
+  - 瀏覽器即時資料（151／`other` 92）與 07:09 UTC 版本庫快照（152／`other` 91）短時間內有差異；介面分別標示來源，不宣稱兩者必然同筆數。
+  - 390px 驗證沒有整頁水平溢位，Table 僅在自己的容器內水平捲動；console 0 error／warning。
+- **狀態**：目前遠端 Pages 已可用；本地加入 Robot／純靜態 artifact 的新版 workflow 必須在使用者日後 commit／push 後驗證。

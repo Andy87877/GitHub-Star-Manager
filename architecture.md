@@ -15,7 +15,7 @@ GitHub-Star-Manager 是 **靜態 GitHub Pages 網站 + Python 產生器**，不�
 
 - 網頁可以在使用者開啟時取得當下公開資料，但受 GitHub 未登入 API 額度、網路與 CORS 狀態影響。
 - README 是「最近一次成功 workflow／本機同步的快照」，不是動態頁面。
-- 本次只驗證本機程式與資料；GitHub Pages 和 workflow 必須在使用者之後 push 才會真正上線。
+- GitHub Pages 已於遠端成功部署；本次尚未 push 的程式與 workflow 修改，仍須由使用者日後 push 才會取代線上版本。
 
 ## 2. 系統資料流
 
@@ -58,6 +58,9 @@ GitHub-Star-Manager/
 │   ├── controllers/StarController.js
 │   └── app.js
 ├── tests/*.robot
+├── .github/workflows/
+│   ├── ci-pages.yml                  # Robot CI + 純靜態 Pages CD
+│   └── schedules.yml                 # 每 6 小時同步真實快照
 ├── artifacts/                        # 本機測試輸出；不進版控
 ├── index.html
 ├── main.py
@@ -152,6 +155,8 @@ GitHub 原始 Topics 屬於高基數、低一致性的標籤資料。本次快�
 - `FocusedTopicPolicy` 只選擇至少涵蓋 2 個 repositories 的 Topics。
 - 依涵蓋數由高到低排序，同分時依名稱排序。
 - `topics.md` 與網站 Topic 控制項最多顯示前 30 個。
+- 未命中任何聚焦 Topic 的 repository 收進最底下的 `other`，且只出現一次。
+- `other` 是導覽用 catch-all，不會覆寫或刪除 repository 的原始 Topics。
 - 門檻與上限封裝於可替換的 `ITopicSelectionPolicy`，不寫死在 Renderer。
 
 `data/sync-meta.json` 範例：
@@ -160,10 +165,13 @@ GitHub 原始 Topics 屬於高基數、低一致性的標籤資料。本次快�
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-07-29T04:27:28+00:00",
-  "repositoryCount": 151,
+  "generatedAt": "2026-07-29T07:09:19+00:00",
+  "repositoryCount": 152,
   "source": "GitHub REST API",
-  "isLiveSnapshot": true
+  "isLiveSnapshot": true,
+  "totalTopicCount": 469,
+  "focusedTopicCount": 30,
+  "otherRepositoryCount": 91
 }
 ```
 
@@ -171,7 +179,7 @@ GitHub 原始 Topics 屬於高基數、低一致性的標籤資料。本次快�
 
 - 預設僅顯示未封存專案；可切換全部或 Archived。
 - 搜尋涵蓋名稱、描述、語言、Topics 與本機筆記。
-- Topic 下拉可存取全部 Topic；捷徑列只呈現高頻項目。
+- Topic 下拉呈現 30 個聚焦 Topic 與最底下的 `other`；全部原始 Topics 仍可全文搜尋。
 - 提供清除篩選、結果數、即時資料來源、重新同步與空狀態。
 - Cards 適合探索與閱讀描述；Table 適合掃描、比較與大量管理。
 - Cards／Table 使用同一份 Model 篩選結果，切換不會清除條件，偏好儲存在瀏覽器。
@@ -182,6 +190,26 @@ GitHub 原始 Topics 屬於高基數、低一致性的標籤資料。本次快�
 
 ## 9. 自動化與驗證
 
+### 9.1 Workflow 分工
+
+| Workflow | 觸發 | 責任 |
+|---|---|---|
+| `ci-pages.yml` | push、pull request、手動 | Python 3.12 安裝依賴、Robot 驗收、快照契約；`main` 成功後打包純靜態檔並部署 Pages |
+| `schedules.yml` | 每 6 小時、手動 | 先跑 Robot，再同步真實 Stars、驗證 metadata，最後只提交有變更的產物 |
+
+Pages 現已啟用，網址為
+`https://andy87877.github.io/GitHub-Star-Manager/`。本地新版 workflow 不使用
+Ruby、Bundler 或 Jekyll，會先完成 CI，再發布限定的 `index.html`、`css/`、
+`js/` 與 `data/` 靜態 artifact。
+
+GitHub 遠端稽核（2026-07-29）顯示舊 `Deploy Jekyll site to Pages` 有 3 次失敗，
+其中最新一次仍停在 `actions/configure-pages`。之後 GitHub 產生的
+`Deploy Jekyll with GitHub Pages dependencies preinstalled` 已連續成功 2 次，
+並建立可用 Pages 網站；本地新版在這個已成功的唯一 workflow 路徑上加入 Robot
+與靜態 artifact，避免再建立一套重複部署。
+
+### 9.2 Robot Framework
+
 Robot Framework 覆蓋：
 
 - Language／Topic 分類與 fallback。
@@ -191,9 +219,10 @@ Robot Framework 覆蓋：
 - Mock CLI 輸出隔離。
 - Workflow 先測試、後同步。
 - Web 無障礙與即時資料靜態契約。
-- Topic 聚焦政策與 Cards／Table 顯示契約。
+- Topic 聚焦／`other` catch-all 政策與 Cards／Table 顯示契約。
+- 純靜態 Pages workflow 必須先驗證再部署，且不得依賴 Jekyll。
 
-此外需以真實瀏覽器驗證載入、搜尋、篩選、清除、Modal、主題與手機版。測試報告統一寫入 `artifacts/robot/`。
+目前完整回歸為 18／18。測試報告統一寫入 `artifacts/robot/`；此外仍需以真實瀏覽器驗證載入、搜尋、篩選、清除、Modal、主題與手機版。
 
 ## 10. 安全與隱私
 

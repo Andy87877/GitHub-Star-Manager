@@ -9,9 +9,11 @@ export class StarModel {
     this.filteredRepositories = [];
     this.languages = [];
     this.topics = [];
+    this.focusedTopicNames = new Set();
     this.topicPolicy = {
       minimumRepositoryCount: 2,
-      maximumTopics: 30
+      maximumTopics: 30,
+      otherTopic: 'other'
     };
     this.notes = this.readJsonStorage('gsm_repo_notes', {});
     this.viewMode = this.readViewMode();
@@ -174,11 +176,23 @@ export class StarModel {
       });
     });
     this.languages = Array.from(languages).sort((a, b) => a.localeCompare(b));
-    this.topics = Array.from(topicCounts.entries())
+    const focusedTopics = Array.from(topicCounts.entries())
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .filter(([, count]) => count >= this.topicPolicy.minimumRepositoryCount)
       .slice(0, this.topicPolicy.maximumTopics)
       .map(([topic, count]) => ({ topic, count }));
+    this.focusedTopicNames = new Set(focusedTopics.map(({ topic }) => topic));
+    const otherCount = this.repositories.filter(
+      repo => !repo.topics.some(topic => this.focusedTopicNames.has(topic))
+    ).length;
+    this.topics = [
+      ...focusedTopics,
+      {
+        topic: this.topicPolicy.otherTopic,
+        count: otherCount,
+        isOther: true
+      }
+    ];
   }
 
   applyFilters() {
@@ -187,8 +201,12 @@ export class StarModel {
       if (this.filters.language !== 'all' && repo.language !== this.filters.language) {
         return false;
       }
-      if (this.filters.topic !== 'all' && !repo.topics.includes(this.filters.topic)) {
-        return false;
+      if (this.filters.topic !== 'all') {
+        const isOtherFilter = this.filters.topic === this.topicPolicy.otherTopic;
+        const matchesTopic = isOtherFilter
+          ? !repo.topics.some(topic => this.focusedTopicNames.has(topic))
+          : repo.topics.includes(this.filters.topic);
+        if (!matchesTopic) return false;
       }
       if (this.filters.archive === 'active' && repo.isArchived) return false;
       if (this.filters.archive === 'archived' && !repo.isArchived) return false;
