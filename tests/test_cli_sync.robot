@@ -1,0 +1,46 @@
+*** Settings ***
+Documentation     Sync and workflow acceptance tests. Mock output is isolated.
+Library           Process
+Library           OperatingSystem
+Suite Setup       Prepare Isolated Output Directory
+
+*** Variables ***
+${PYTHON_BIN}          python
+${TEST_OUTPUT_DIR}     ${CURDIR}${/}..${/}artifacts${/}test-generated
+
+*** Keywords ***
+Prepare Isolated Output Directory
+    Create Directory    ${TEST_OUTPUT_DIR}
+
+*** Test Cases ***
+Mock Sync Writes Only To Isolated Directory
+    ${live_readme_before}=    Get File    ${CURDIR}${/}..${/}README.md
+    ${result}=    Run Process
+    ...    ${PYTHON_BIN}
+    ...    main.py
+    ...    --client
+    ...    mock
+    ...    --output-dir
+    ...    ${TEST_OUTPUT_DIR}
+    ...    cwd=${CURDIR}${/}..
+    Should Be Equal As Integers    ${result.rc}    0
+    Should Contain    ${result.stdout}    3 repositories
+    ${live_readme_after}=    Get File    ${CURDIR}${/}..${/}README.md
+    Should Be Equal    ${live_readme_after}    ${live_readme_before}
+
+Mock Sync Produces Complete Artifact Set
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}README.md
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}topics.md
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}data${/}stars.json
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}data${/}sync-meta.json
+    ${metadata}=    Get File    ${TEST_OUTPUT_DIR}${/}data${/}sync-meta.json
+    Should Contain    ${metadata}    "repositoryCount": 3
+    Should Contain    ${metadata}    "isLiveSnapshot": false
+
+Workflow Tests Before Live Publication
+    ${workflow}=    Get File    ${CURDIR}${/}..${/}.github${/}workflows${/}schedules.yml
+    Should Contain    ${workflow}    python -m robot
+    Should Contain    ${workflow}    python main.py --username Andy87877
+    ${test_position}=    Evaluate    $workflow.index("python -m robot")
+    ${sync_position}=    Evaluate    $workflow.index("python main.py --username Andy87877")
+    Should Be True    ${test_position} < ${sync_position}

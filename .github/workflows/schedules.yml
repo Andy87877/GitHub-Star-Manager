@@ -1,0 +1,63 @@
+name: Verify and refresh GitHub Stars
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-stars-sync
+  cancel-in-progress: false
+
+jobs:
+  verify-and-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install project dependencies
+        run: python -m pip install -r requirements.txt
+
+      # Tests intentionally run before the live publication step. Mock CLI
+      # output is isolated under artifacts/test-generated and cannot replace
+      # README.md, topics.md, or data/stars.json.
+      - name: Run Robot Framework acceptance tests
+        run: python -m robot --outputdir artifacts/robot tests
+
+      - name: Sync Andy87877 public Stars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python main.py --username Andy87877
+
+      - name: Verify live snapshot metadata
+        run: >-
+          python -c "import json, pathlib;
+          data=json.loads(pathlib.Path('data/sync-meta.json').read_text(encoding='utf-8'));
+          assert data['username']=='Andy87877';
+          assert data['repositoryCount'] > 0;
+          assert data['isLiveSnapshot'] is True"
+
+      - name: Commit changed generated artifacts
+        shell: bash
+        run: |
+          if git diff --quiet -- README.md topics.md data/stars.json data/sync-meta.json; then
+            echo "Stars snapshot is already current."
+            exit 0
+          fi
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md topics.md data/stars.json data/sync-meta.json
+          git commit -m "data: refresh Andy87877 GitHub Stars"
+          git push

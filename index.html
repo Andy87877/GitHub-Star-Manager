@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-TW" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Andy87877 GitHub Star Manager</title>
+  <meta name="description" content="即時搜尋與整理 Andy87877 的公開 GitHub Stars，支援語言、Topic、封存狀態、排序、研究筆記與 CSV 匯出。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#repositories">跳至專案清單</a>
+  <div class="bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow-2" aria-hidden="true"></div>
+
+  <div class="container">
+    <header class="navbar">
+      <a class="brand" href="https://github.com/Andy87877?tab=stars"
+         target="_blank" rel="noopener noreferrer" aria-label="前往 Andy87877 的 GitHub Stars">
+        <span class="brand-icon" aria-hidden="true">★</span>
+        <span class="brand-title">
+          <strong>GitHub Star Manager</strong>
+          <small>Andy87877 的開源知識庫</small>
+        </span>
+      </a>
+      <nav class="nav-actions" aria-label="收藏庫工具">
+        <button id="randomBtn" type="button" class="btn btn-primary">🎲 隨機探索</button>
+        <button id="exportCsvBtn" type="button" class="btn">⇩ 匯出 CSV</button>
+        <button id="themeToggleBtn" type="button" class="btn btn-icon-only"
+                aria-label="切換為深色主題">🌙</button>
+      </nav>
+    </header>
+
+    <section id="dataStatus" class="data-status" data-state="loading"
+             aria-live="polite" aria-atomic="true">
+      <span class="status-dot" aria-hidden="true"></span>
+      <div>
+        <strong id="dataStatusTitle">資料載入中</strong>
+        <p id="dataStatusDetail">正在讀取版本庫快照…</p>
+      </div>
+      <button id="refreshDataBtn" type="button" class="btn btn-compact">同步中…</button>
+    </section>
+
+    <section class="stats-banner" aria-label="收藏庫統計">
+      <div class="stat-card">
+        <span class="stat-icon" aria-hidden="true">📦</span>
+        <div class="stat-info">
+          <strong id="totalReposCount" class="stat-value">0</strong>
+          <span class="stat-label">目前結果</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon" aria-hidden="true">⭐</span>
+        <div class="stat-info">
+          <strong id="totalStarsCount" class="stat-value">0</strong>
+          <span class="stat-label">專案累計 Stars</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon" aria-hidden="true">📝</span>
+        <div class="stat-info">
+          <strong id="totalNotesCount" class="stat-value">0</strong>
+          <span class="stat-label">本機研究筆記</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-labelledby="filterHeading">
+      <div class="toolbar-heading">
+        <div>
+          <h1 id="filterHeading">探索收藏專案</h1>
+          <p id="resultsSummary" aria-live="polite">正在整理專案…</p>
+        </div>
+        <div class="toolbar-actions">
+          <div id="viewModeToggle" class="view-toggle" role="group"
+               aria-label="專案顯示方式">
+            <button id="cardsViewBtn" type="button" class="view-toggle-btn active"
+                    data-view-mode="cards" aria-pressed="true">▦ Cards</button>
+            <button id="tableViewBtn" type="button" class="view-toggle-btn"
+                    data-view-mode="table" aria-pressed="false">☷ Table</button>
+          </div>
+          <button id="clearFiltersBtn" type="button" class="btn btn-compact">清除篩選</button>
+        </div>
+      </div>
+
+      <label class="search-box" for="searchInput">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <span class="sr-only">搜尋收藏專案</span>
+        <input id="searchInput" class="search-input" type="search"
+               placeholder="搜尋名稱、描述、語言、Topic 或個人筆記（按 / 聚焦）"
+               autocomplete="off" spellcheck="false">
+      </label>
+
+      <div class="filter-controls">
+        <label class="filter-group">
+          <span class="filter-label">主要語言</span>
+          <select id="languageSelect" class="select-custom">
+            <option value="all">全部語言</option>
+          </select>
+        </label>
+        <label class="filter-group">
+          <span class="filter-label">Topic</span>
+          <select id="topicSelect" class="select-custom">
+            <option value="all">全部 Topic</option>
+          </select>
+        </label>
+        <label class="filter-group">
+          <span class="filter-label">封存狀態</span>
+          <select id="archiveSelect" class="select-custom">
+            <option value="active">使用中</option>
+            <option value="all">全部</option>
+            <option value="archived">僅 Archived</option>
+          </select>
+        </label>
+        <label class="filter-group">
+          <span class="filter-label">排序</span>
+          <select id="sortSelect" class="select-custom">
+            <option value="starred-desc">最近收藏</option>
+            <option value="updated-desc">最近更新</option>
+            <option value="stars-desc">Stars 由高到低</option>
+            <option value="stars-asc">Stars 由低到高</option>
+            <option value="name-asc">名稱 A–Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="chip-group">
+        <span class="chip-label">語言捷徑</span>
+        <div id="languageChips" class="chips-container" aria-label="語言快速篩選"></div>
+      </div>
+      <div class="chip-group">
+        <span class="chip-label">熱門 Topic</span>
+        <div>
+          <div id="topicChips" class="chips-container" aria-label="Topic 快速篩選"></div>
+          <p class="topic-policy-note">只顯示重複出現的前 30 個 Topics；低頻標籤仍可用上方搜尋框找到。</p>
+        </div>
+      </div>
+    </section>
+
+    <main id="repositories">
+      <div id="repoGrid" class="repo-grid" aria-live="polite"></div>
+      <section id="emptyState" class="empty-state" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h2>找不到符合條件的專案</h2>
+        <p>縮短關鍵字、改選其他分類，或按「清除篩選」重新開始。</p>
+      </section>
+    </main>
+  </div>
+
+  <div id="noteModal" class="modal-overlay" aria-hidden="true">
+    <section class="modal-content" role="dialog" aria-modal="true"
+             aria-labelledby="noteModalTitle" aria-describedby="noteModalDescription">
+      <header class="modal-header">
+        <div>
+          <h2 id="noteModalTitle">編輯研究筆記</h2>
+          <p id="noteModalDescription">筆記只儲存在目前的瀏覽器，不會上傳 GitHub。</p>
+        </div>
+        <button id="closeNoteModalBtn" type="button" class="close-btn"
+                aria-label="關閉筆記視窗">×</button>
+      </header>
+      <p class="note-repository">專案：<strong id="noteRepoName"></strong></p>
+      <label for="noteTextarea">筆記內容</label>
+      <textarea id="noteTextarea" class="textarea-custom"
+                placeholder="記下用途、研究心得或下一步…"></textarea>
+      <footer class="modal-actions">
+        <span>Ctrl／⌘ + Enter 儲存</span>
+        <button id="saveNoteBtn" type="button" class="btn btn-primary">儲存筆記</button>
+      </footer>
+    </section>
+  </div>
+
+  <div id="toastContainer" class="toast-container"
+       aria-live="polite" aria-atomic="false"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
