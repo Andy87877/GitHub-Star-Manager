@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **152** 個公開 Star；資料快照：`2026-07-30T03:32:01+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **152** 個公開 Star；資料快照：`2026-07-30T09:04:20+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Cards／Table 雙模式、排序、本機研究筆記與 CSV 匯出。
 
