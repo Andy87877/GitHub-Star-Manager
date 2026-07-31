@@ -30,10 +30,10 @@ Mock Sync Writes Only To Isolated Directory
 
 Mock Sync Produces Complete Artifact Set
     File Should Exist    ${TEST_OUTPUT_DIR}${/}README.md
-    File Should Exist    ${TEST_OUTPUT_DIR}${/}topics.md
-    File Should Exist    ${TEST_OUTPUT_DIR}${/}data${/}stars.json
-    File Should Exist    ${TEST_OUTPUT_DIR}${/}data${/}sync-meta.json
-    ${metadata}=    Get File    ${TEST_OUTPUT_DIR}${/}data${/}sync-meta.json
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}topic.md
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}web${/}data${/}stars.json
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}web${/}data${/}sync-meta.json
+    ${metadata}=    Get File    ${TEST_OUTPUT_DIR}${/}web${/}data${/}sync-meta.json
     Should Contain    ${metadata}    "repositoryCount": 3
     Should Contain    ${metadata}    "isLiveSnapshot": false
 
@@ -54,3 +54,19 @@ Static Pages Workflow Verifies Before Deploying
     Should Contain    ${workflow}    path: _site
     Should Not Contain    ${workflow}    ruby/setup-ruby
     Should Not Contain    ${workflow}    bundle exec jekyll
+
+Root Layout Keeps Only Three Visible Files
+    ${root}=    Normalize Path    ${CURDIR}${/}..
+    ${root_files}=    Evaluate
+    ...    sorted(path.name for path in pathlib.Path($root).iterdir() if path.is_file() and not path.name.startswith('.'))
+    ...    modules=pathlib
+    Should Be Equal As Strings    ${root_files}    ['README.md', 'main.py', 'topic.md']
+    Directory Should Exist    ${root}${/}docs
+    Directory Should Exist    ${root}${/}web
+    Directory Should Exist    ${root}${/}config
+    File Should Exist    ${root}${/}docs${/}AGENT.md
+    File Should Not Exist    ${root}${/}architecture.md
+    File Should Not Exist    ${root}${/}iterate.md
+    File Should Not Exist    ${root}${/}task.md
+    File Should Not Exist    ${root}${/}requirements.txt
+    File Should Not Exist    ${root}${/}index.html

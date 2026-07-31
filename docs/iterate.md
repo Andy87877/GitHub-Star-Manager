@@ -219,3 +219,31 @@
   - 切回 Table 並以 390px 驗證：整頁寬度沒有溢位，Table 僅在自己的容器內水平捲動。
   - 瀏覽器 console 0 error／warning。
 - **狀態**：完成。
+
+## Iteration 16：母資料夾整理與文件集中
+
+- **日期**：2026-08-01
+- **使用者回饋**：
+  - 母資料夾只保留 `README.md`、`topic.md`、`main.py` 三個可見檔案。
+  - 其餘 Markdown 統一放入 `docs/`，並新增 `AGENT.md`。
+  - README 要特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供專案寫法靈感。
+- **架構決策**：
+  - 文件集中於 `docs/`；`README.md` 與產生式 `topic.md` 是根目錄的明確例外。
+  - 網站 source 與 publish boundary 集中於 `web/`，包含 HTML、CSS、JavaScript 與可發布資料。
+  - Python 應用維持 `app/` 的 OOP／SOLID／MVC 結構；依賴清單移至 `config/`。
+  - `main.py --serve` 只服務 `web/`；`SyncController` 只發布至根目錄 README／Topic 與 `web/data/`。
+  - Pages workflow 直接封裝 `web/`，避免把 Python、文件與測試公開進網站 artifact。
+  - 新增 Robot 根目錄不變量，防止後續功能再次把散落檔案放回母資料夾。
+- **活文件決策**：
+  - `docs/AGENT.md` 記錄目錄、MVC 責任、產物、文件同步、驗證與不 push 規則。
+  - README renderer 永久保留對 `goodjack/stars` 的致謝，避免下一次資料同步覆寫掉手動文案。
+- **資料結果**：
+  - 重新同步 153 個 Stars、486 個原始 Topics、30 個聚焦 Topics，`other` 92 筆。
+  - `README.md`、`topic.md`、`web/data/stars.json` 與 `web/data/sync-meta.json` 由同一次成功同步原子發布。
+- **驗證結果**：
+  - Robot Framework 20／20 通過，包含根目錄三個可見檔案與重構後網站路徑契約。
+  - 真實瀏覽器首次顯示 Table，共 143／153 個未封存專案；Cards 顯示相同 143 筆且重新整理保留 Cards 偏好。
+  - 切回 Table 後，390px 下整頁無水平溢位，Table 容器本身可水平捲動。
+  - 瀏覽器 console 無 error／warning。
+  - 已移除舊 `css/`、`data/`、`js/` 空目錄；本次未 commit、未 push。
+- **狀態**：完成。

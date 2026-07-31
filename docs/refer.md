@@ -1,3 +1,9 @@
+# 參考與ChatGPT的建議
+
+> @GitHub
+goodjack/stars 詳細介紹這個專案 這個是啥 怎麼運作 我能寫一個類似的嗎
+
+
 # 先講結論
 
 `goodjack/stars` 不是一套完整網站，也不是自己從零開發的 GitHub 爬蟲。
@@ -1243,13 +1249,3 @@ Search / Filter / Sort / Notes UI
 * API Rate Limit 處理
 
 對作品集而言，也比單純產生一份 README 更有內容。
-
-~~~
-
-
-~~~
-
-
-@GitHub
- 
-goodjack/stars 詳細介紹這個專案 這個是啥 怎麼運作 我能寫一個類似的嗎

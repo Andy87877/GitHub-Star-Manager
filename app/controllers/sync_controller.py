@@ -58,9 +58,9 @@ class SyncController:
         username: str = "Andy87877",
         output_dir: str = ".",
         readme_file: str = "README.md",
-        topics_file: str = "topics.md",
-        data_file: str = "data/stars.json",
-        metadata_file: str = "data/sync-meta.json",
+        topics_file: str = "topic.md",
+        data_file: str = "web/data/stars.json",
+        metadata_file: str = "web/data/sync-meta.json",
         allow_empty: bool = False,
     ) -> Dict[str, Any]:
         """Run the complete sync and publish only a validated dataset."""

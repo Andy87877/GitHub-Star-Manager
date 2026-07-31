@@ -1,22 +1,26 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **152** 個公開 Star；資料快照：`2026-07-31T15:20:50+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **153** 個公開 Star；資料快照：`2026-07-31T17:14:40+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、排序、本機研究筆記與 CSV 匯出。
 
 ## 資料即時性
 
 - 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；若 API 暫時不可用，會清楚標示目前仍是快照。
-- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`topics.md` 與 `data/stars.json`。
-- 每次 push／pull request 都先執行 19 項 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
+- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`topic.md` 與 `web/data/stars.json`。
+- 每次 push／pull request 都先執行 20 項 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版workflow 不再依賴 Ruby、Gemfile 或 Jekyll。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
 - Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；未命中這些聚焦標籤的 repositories 統一收進最底下的 `other`，原始標籤仍完整保留在 JSON 與網站全文搜尋。
 
+## 特別感謝
+
+特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有這個專案的寫法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先網站、即時資料狀態與 Robot Framework 驗收。
+
 ## 使用方式
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r config/requirements.txt
 python main.py --username Andy87877
 python main.py --serve
 ```
@@ -31,7 +35,7 @@ python -m robot --outputdir artifacts/robot tests
 
 - Python：`Repository` Model、可替換 GitHub Client／分類／渲染策略、`SyncController`、原子檔案發布器。
 - JavaScript：`StarModel`、`StarView`、`StarController` 前端 MVC。
-- 詳細設計、演進與待辦分別見 `architecture.md`、`iterate.md`、`task.md`。
+- 詳細設計、演進、待辦與協作規範分別見 `docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`。
 
 ## 依主要語言瀏覽
 
@@ -47,7 +51,7 @@ python -m robot --outputdir artifacts/robot tests
 - [HTML（4）](#language-html)
 - [Java（5）](#language-java)
 - [JavaScript（14）](#language-javascript)
-- [Jupyter Notebook（2）](#language-jupyter-notebook)
+- [Jupyter Notebook（3）](#language-jupyter-notebook)
 - [Kotlin（2）](#language-kotlin)
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
@@ -174,6 +178,7 @@ python -m robot --outputdir artifacts/robot tests
 
 ## Jupyter Notebook
 
+- [Infrasys-AI/AISystem](https://github.com/Infrasys-AI/AISystem) — AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术
 - [erhwenkuo/deep-learning-with-keras-notebooks](https://github.com/erhwenkuo/deep-learning-with-keras-notebooks) — Jupyter notebooks for using & learning Keras
 - [pyinvest/ml_toturial](https://github.com/pyinvest/ml_toturial)
 

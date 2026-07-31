@@ -2,9 +2,9 @@
 
 ## Phase 1: 活文件建立與系統規劃
 - [x] 初步架構規劃與需求分析
-- [x] 建立 `task.md` (任務追蹤表)
-- [x] 建立 `architecture.md` (系統架構、OOP/SOLID 與 MVC 規格書)
-- [x] 建立 `iterate.md` (迭代與決策紀錄)
+- [x] 建立 `docs/task.md` (任務追蹤表)
+- [x] 建立 `docs/architecture.md` (系統架構、OOP/SOLID 與 MVC 規格書)
+- [x] 建立 `docs/iterate.md` (迭代與決策紀錄)
 
 ## Phase 2: Python 後端 ETL 同步引擎 (OOP / SOLID / MVC)
 - [x] 實作領域模型 (`app/models/repository.py`)
@@ -15,12 +15,12 @@
 - [x] 實作 CLI 命令列入口 (`main.py`)
 
 ## Phase 3: Web 應用前端 UI/UX (MVC & 人性化操作介面)
-- [x] 建立語意化 HTML5 結構 (`index.html`)
-- [x] 建立現代 CSS 設計系統 (`css/style.css`)，支援 Glassmorphism 擬態與亮/深色主題
-- [x] 實作前端模型層 (`js/models/StarModel.js`)，支援 `localStorage` 筆記持久化
-- [x] 實作前端視圖層 (`js/views/StarView.js`)，負責 DOM 動態渲染與互動動畫
-- [x] 實作前端控制器層 (`js/controllers/StarController.js`) 與入口點 (`js/app.js`)
-- [x] 產生資料集 (`data/stars.json`)
+- [x] 建立語意化 HTML5 結構 (`web/index.html`)
+- [x] 建立現代 CSS 設計系統 (`web/css/style.css`)，支援 Glassmorphism 擬態與亮/深色主題
+- [x] 實作前端模型層 (`web/js/models/StarModel.js`)，支援 `localStorage` 筆記持久化
+- [x] 實作前端視圖層 (`web/js/views/StarView.js`)，負責 DOM 動態渲染與互動動畫
+- [x] 實作前端控制器層 (`web/js/controllers/StarController.js`) 與入口點 (`web/js/app.js`)
+- [x] 產生資料集 (`web/data/stars.json`)
 
 ## Phase 4: Robot Framework 自動化測試套件
 - [x] 建立分類邏輯測試 (`tests/test_categorization.robot`)
@@ -31,18 +31,18 @@
 - [x] 在 `app/services/github_client.py` 實作 `GitHubRESTClient` 與 `GitHubClientFactory`
 - [x] 預設同步目標為 `Andy87877`
 - [x] 建立 `.github/workflows/schedules.yml` 實現每日 03:00（Asia/Taipei）及手動更新
-- [x] 成功同步 `Andy87877` 的真實 Star 專案至 `README.md`、`topics.md` 與 `data/stars.json`
+- [x] 成功同步 `Andy87877` 的真實 Star 專案至 `README.md`、`topic.md` 與 `web/data/stars.json`
 
 ## Phase 7: Git 版控與 .gitignore 規則設定
 - [x] 設定 `.gitignore` 排除 `log.html`、`output.xml`、`report.html`、`__pycache__` 等暫存檔
 
 ## Phase 8: 預設繁體中文 UI 與預設亮色模式 (Light Mode) 調整
-- [x] 調整 `index.html` 預設為 `<html lang="zh-TW" data-theme="light">`
+- [x] 調整 `web/index.html` 預設為 `<html lang="zh-TW" data-theme="light">`
 - [x] 介面文字（搜尋框、統計面板、按鈕、彈窗、Toast 通知）全面繁體中文化
 - [x] 調整 `style.css` 以亮色主題為預設基底
 - [x] 調整 `renderers.py` 產出繁體中文標題之 `README.md` 與 `topics.md`
 - [x] 通過全部 9 項 Robot Framework 自動化測試
-- [x] 更新完整活文件 (`task.md`, `architecture.md`, `iterate.md`, `README.md`)
+- [x] 更新完整活文件 (`docs/task.md`, `docs/architecture.md`, `docs/iterate.md`, `README.md`)
 
 ## Phase 9：資料可信度與發布安全
 
@@ -52,7 +52,7 @@
 - [x] API／分頁失敗時禁止發布部分資料
 - [x] 零筆資料預設禁止覆寫既有快照
 - [x] 使用原子檔案發布器與輸出路徑邊界
-- [x] 產生 `data/sync-meta.json` 來源與時間證據
+- [x] 產生 `web/data/sync-meta.json` 來源與時間證據
 - [x] 增加 Robot 資料契約與發布安全測試
 
 ## Phase 10：前端即時資料與可用性
@@ -69,7 +69,7 @@
 
 - [x] 更新 workflow 為先測試、後同步、只提交真實快照
 - [x] 同步當下 `Andy87877` 全部公開 Stars（151 筆）
-- [x] 完整更新 `README.md`、`architecture.md`、`iterate.md`、`task.md`
+- [x] 完整更新 `README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`
 - [x] Robot Framework 全數通過（14／14）
 - [x] 根目錄移除舊 Robot 報告並統一放入 `artifacts/`
 - [x] 檢查 Git 狀態（不 commit、不 push）
@@ -79,7 +79,7 @@
 - [x] 分析 Topic 分布（469 個、401 個只出現一次）
 - [x] 新增 `ITopicSelectionPolicy` 抽象
 - [x] 新增 `FocusedTopicPolicy`（最少 2 個 repositories、最多 30 類）
-- [x] `topics.md` 依涵蓋數排序並說明聚焦規則
+- [x] `topic.md` 依涵蓋數排序並說明聚焦規則
 - [x] JSON 與全文搜尋保留全部原始 Topics
 - [x] 網站 Topic 下拉與捷徑套用相同聚焦原則
 - [x] 新增 Robot Framework Topic 政策測試
@@ -128,8 +128,24 @@
 - [x] 將預設選擇封裝於 `StarModel`，維持 MVC 責任邊界
 - [x] 初始 HTML 的 active／`aria-pressed` 狀態與 Table 預設一致
 - [x] 新增 Robot Framework Table 預設與偏好保存契約
-- [x] 更新 `README.md`、`architecture.md`、`iterate.md`、`task.md`
+- [x] 更新 `README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`
 - [x] 重新同步 GitHub Stars 快照（152 筆；482 Topics；`other` 92 筆）
 - [x] Robot Framework 全數通過（19／19）
 - [x] 真實瀏覽器驗證初次 Table、Cards 偏好還原與手機版
 - [x] 根目錄與 Git 狀態確認（不 commit、不 push）
+
+## Phase 16：母資料夾與文件集中整理
+
+- [x] 根目錄可見檔案只保留 `README.md`、`topic.md`、`main.py`
+- [x] 將 `architecture.md`、`iterate.md`、`task.md`、`refer.md` 移至 `docs/`
+- [x] 新增 `docs/AGENT.md` 協作規範
+- [x] 將網站入口、CSS、JavaScript、資料快照集中至 `web/`
+- [x] 將依賴清單移至 `config/requirements.txt`
+- [x] 更新 `SyncController` 產物路徑與 `main.py --serve` 網站根目錄
+- [x] 更新 CI/CD、排程、Robot 與 README 的全部路徑
+- [x] README 新增對 [goodjack/stars](https://github.com/goodjack/stars) 的特別感謝
+- [x] 新增 Robot Framework 根目錄結構契約
+- [x] 重新同步真實 GitHub Stars 產物（153 筆；486 Topics；`other` 92 筆）
+- [x] Robot Framework 全數通過（20／20）
+- [x] 真實瀏覽器驗證重構後網站（Table 預設、Cards 偏好、390px、console）
+- [x] 移除空舊目錄並確認未 push

@@ -243,7 +243,7 @@ def test_empty_sync_preserves_outputs() -> str:
         else:
             raise AssertionError("Expected EmptyDatasetError")
         assert readme.read_text(encoding="utf-8") == "known-good\n"
-        assert not (root / "data" / "stars.json").exists()
+        assert not (root / "web" / "data" / "stars.json").exists()
     return "PASS"
 
 

@@ -12,6 +12,7 @@ from app.controllers.sync_controller import SyncController
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
+WEB_ROOT = PROJECT_ROOT / "web"
 
 
 class ReusableThreadingTCPServer(socketserver.ThreadingTCPServer):
@@ -43,7 +44,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def serve(host: str, port: int) -> None:
     handler = partial(
-        http.server.SimpleHTTPRequestHandler, directory=str(PROJECT_ROOT)
+        http.server.SimpleHTTPRequestHandler, directory=str(WEB_ROOT)
     )
     with ReusableThreadingTCPServer((host, port), handler) as server:
         print(f"[OK] Preview: http://{host}:{port} (Ctrl+C to stop)")

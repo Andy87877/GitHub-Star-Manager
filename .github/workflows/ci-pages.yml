@@ -30,9 +30,10 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: config/requirements.txt
 
       - name: Install project dependencies
-        run: python -m pip install -r requirements.txt
+        run: python -m pip install -r config/requirements.txt
 
       - name: Run Robot Framework acceptance tests
         run: python -m robot --outputdir artifacts/robot tests
@@ -40,12 +41,12 @@ jobs:
       - name: Validate publishable snapshot
         run: >-
           python -c "import json, pathlib;
-          stars=json.loads(pathlib.Path('data/stars.json').read_text(encoding='utf-8'));
-          meta=json.loads(pathlib.Path('data/sync-meta.json').read_text(encoding='utf-8'));
+          stars=json.loads(pathlib.Path('web/data/stars.json').read_text(encoding='utf-8'));
+          meta=json.loads(pathlib.Path('web/data/sync-meta.json').read_text(encoding='utf-8'));
           assert stars and len(stars)==meta['repositoryCount'];
           assert meta['username']=='Andy87877';
           assert meta['isLiveSnapshot'] is True;
-          assert pathlib.Path('index.html').is_file()"
+          assert pathlib.Path('web/index.html').is_file()"
 
       - name: Upload Robot report
         if: always()
@@ -72,8 +73,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p _site
-          cp index.html _site/
-          cp -R css js data _site/
+          cp -R web/. _site/
           touch _site/.nojekyll
 
       - name: Configure GitHub Pages

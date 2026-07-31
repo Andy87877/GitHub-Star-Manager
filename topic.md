@@ -1,15 +1,15 @@
 # Andy87877 的 GitHub Stars（依 Topic）
 
-> 自動產生於 `2026-07-31T15:20:50+00:00`。原始資料共有 **482** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**92** 個 repositories）。
+> 自動產生於 `2026-07-31T17:14:40+00:00`。原始資料共有 **486** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**92** 個 repositories）。
 
-為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 **2** 個收藏中的 Topics，並依涵蓋專案數排序，最多顯示 **30** 個。所有原始 Topics 仍完整保留於 `data/stars.json`，網站全文搜尋也能找到。
+為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 **2** 個收藏中的 Topics，並依涵蓋專案數排序，最多顯示 **30** 個。所有原始 Topics 仍完整保留於 `web/data/stars.json`，網站全文搜尋也能找到。
 
 `other` 只收納沒有命中任何聚焦 Topic 的 repositories，每個 repository 在該區只出現一次。同一專案仍可同時出現在多個聚焦 Topic，這是多對多分類的正常結果。
 
 ## 聚焦 Topic 目錄
 
 - [hacktoberfest（11）](#topic-hacktoberfest)
-- [ai（9）](#topic-ai)
+- [ai（10）](#topic-ai)
 - [python（9）](#topic-python)
 - [github（8）](#topic-github)
 - [openai（6）](#topic-openai)
@@ -62,6 +62,7 @@
 
 ## ai
 
+- [Infrasys-AI/AISystem](https://github.com/Infrasys-AI/AISystem) — AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术
 - [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems
 - [supabase/supabase](https://github.com/supabase/supabase) — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
 - [openclaw/openclaw](https://github.com/openclaw/openclaw) — Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞

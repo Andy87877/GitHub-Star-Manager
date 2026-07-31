@@ -26,13 +26,14 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: config/requirements.txt
 
       - name: Install project dependencies
-        run: python -m pip install -r requirements.txt
+        run: python -m pip install -r config/requirements.txt
 
       # Tests intentionally run before the live publication step. Mock CLI
       # output is isolated under artifacts/test-generated and cannot replace
-      # README.md, topics.md, or data/stars.json.
+      # README.md, topic.md, or web/data/stars.json.
       - name: Run Robot Framework acceptance tests
         run: python -m robot --outputdir artifacts/robot tests
 
@@ -44,7 +45,7 @@ jobs:
       - name: Verify live snapshot metadata
         run: >-
           python -c "import json, pathlib;
-          data=json.loads(pathlib.Path('data/sync-meta.json').read_text(encoding='utf-8'));
+          data=json.loads(pathlib.Path('web/data/sync-meta.json').read_text(encoding='utf-8'));
           assert data['username']=='Andy87877';
           assert data['repositoryCount'] > 0;
           assert data['isLiveSnapshot'] is True"
@@ -52,12 +53,12 @@ jobs:
       - name: Commit changed generated artifacts
         shell: bash
         run: |
-          if git diff --quiet -- README.md topics.md data/stars.json data/sync-meta.json; then
+          if git diff --quiet -- README.md topic.md web/data/stars.json web/data/sync-meta.json; then
             echo "Stars snapshot is already current."
             exit 0
           fi
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add README.md topics.md data/stars.json data/sync-meta.json
+          git add README.md topic.md web/data/stars.json web/data/sync-meta.json
           git commit -m "data: refresh Andy87877 GitHub Stars"
           git push

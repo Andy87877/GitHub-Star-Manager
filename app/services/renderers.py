@@ -75,8 +75,8 @@ class MarkdownLanguageRenderer(IRenderer):
             "- 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；"
             "若 API 暫時不可用，會清楚標示目前仍是快照。",
             "- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及"
-            "手動觸發同步本 README、`topics.md` 與 `data/stars.json`。",
-            "- 每次 push／pull request 都先執行 19 項 Robot 驗收；`main` 驗證成功"
+            "手動觸發同步本 README、`topic.md` 與 `web/data/stars.json`。",
+            "- 每次 push／pull request 都先執行 20 項 Robot 驗收；`main` 驗證成功"
             "後才打包純靜態網站並部署 GitHub Pages。",
             "- GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版"
             "workflow 不再依賴 Ruby、Gemfile 或 Jekyll。",
@@ -86,10 +86,17 @@ class MarkdownLanguageRenderer(IRenderer):
             "聚焦標籤的 repositories 統一收進最底下的 `other`，原始標籤仍完整"
             "保留在 JSON 與網站全文搜尋。",
             "",
+            "## 特別感謝",
+            "",
+            "特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 "
+            "GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有"
+            "這個專案的寫法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先"
+            "網站、即時資料狀態與 Robot Framework 驗收。",
+            "",
             "## 使用方式",
             "",
             "```powershell",
-            "python -m pip install -r requirements.txt",
+            "python -m pip install -r config/requirements.txt",
             "python main.py --username Andy87877",
             "python main.py --serve",
             "```",
@@ -105,8 +112,8 @@ class MarkdownLanguageRenderer(IRenderer):
             "- Python：`Repository` Model、可替換 GitHub Client／分類／渲染策略、"
             "`SyncController`、原子檔案發布器。",
             "- JavaScript：`StarModel`、`StarView`、`StarController` 前端 MVC。",
-            "- 詳細設計、演進與待辦分別見 `architecture.md`、`iterate.md`、"
-            "`task.md`。",
+            "- 詳細設計、演進、待辦與協作規範分別見 `docs/architecture.md`、"
+            "`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`。",
             "",
             "## 依主要語言瀏覽",
             "",
@@ -173,7 +180,7 @@ class MarkdownTopicRenderer(IRenderer):
             "為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 "
             f"**{minimum_count}** 個收藏中的 Topics，並依涵蓋專案數排序，"
             f"最多顯示 **{maximum_categories}** 個。所有原始 Topics 仍完整保留於 "
-            "`data/stars.json`，網站全文搜尋也能找到。",
+            "`web/data/stars.json`，網站全文搜尋也能找到。",
             "",
             f"`{other_category}` 只收納沒有命中任何聚焦 Topic 的 repositories，"
             "每個 repository 在該區只出現一次。同一專案仍可同時出現在多個"

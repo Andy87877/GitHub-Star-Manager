@@ -4,7 +4,7 @@ Library           OperatingSystem
 
 *** Test Cases ***
 Page Exposes Loading Status And Accessible Main Controls
-    ${html}=    Get File    ${CURDIR}${/}..${/}index.html
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
     Should Contain    ${html}    id="dataStatus"
     Should Contain    ${html}    aria-live="polite"
     Should Contain    ${html}    id="clearFiltersBtn"
@@ -15,7 +15,7 @@ Page Exposes Loading Status And Accessible Main Controls
     Should Contain    ${html}    data-view-mode="table"
 
 Frontend Model Uses Live GitHub API With Cached Fallback
-    ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
     Should Contain    ${model}    application/vnd.github.star+json
     Should Contain    ${model}    https://api.github.com/users/
     Should Contain    ${model}    encodeURIComponent(this.username)
@@ -23,14 +23,14 @@ Frontend Model Uses Live GitHub API With Cached Fallback
     Should Contain    ${model}    refreshFromGitHub
 
 Frontend Supports Clear Filters And Keyboard Modal Exit
-    ${controller}=    Get File    ${CURDIR}${/}..${/}js${/}controllers${/}StarController.js
+    ${controller}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}controllers${/}StarController.js
     Should Contain    ${controller}    clearFilters
     Should Contain    ${controller}    Escape
 
 Frontend Supports Card And Table Views
-    ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
-    ${view}=    Get File    ${CURDIR}${/}..${/}js${/}views${/}StarView.js
-    ${controller}=    Get File    ${CURDIR}${/}..${/}js${/}controllers${/}StarController.js
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    ${controller}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}controllers${/}StarController.js
     Should Contain    ${model}    setViewMode
     Should Contain    ${model}    gsm_view_mode
     Should Contain    ${view}    renderRepoTable
@@ -38,8 +38,8 @@ Frontend Supports Card And Table Views
     Should Contain    ${controller}    data-view-mode
 
 Frontend Defaults To Table And Preserves Explicit Preference
-    ${html}=    Get File    ${CURDIR}${/}..${/}index.html
-    ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
     Should Contain    ${html}    id="tableViewBtn" type="button" class="view-toggle-btn active"
     Should Contain    ${html}    data-view-mode="table" aria-pressed="true"
     ${table_position}=    Evaluate    $html.index('id="tableViewBtn"')
@@ -50,8 +50,8 @@ Frontend Defaults To Table And Preserves Explicit Preference
     Should Contain    ${model}    : 'table';
 
 Frontend Topic Navigation Includes A Bottom Other Bucket
-    ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
-    ${view}=    Get File    ${CURDIR}${/}..${/}js${/}views${/}StarView.js
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
     Should Contain    ${model}    otherTopic: 'other'
     Should Contain    ${model}    focusedTopicNames
     Should Contain    ${model}    isOtherFilter

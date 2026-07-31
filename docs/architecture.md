@@ -1,6 +1,6 @@
 # GitHub-Star-Manager 架構設計
 
-更新日期：2026-07-29
+更新日期：2026-08-01
 
 ## 1. 系統定位與真實邊界
 
@@ -9,7 +9,7 @@ GitHub-Star-Manager 是 **靜態 GitHub Pages 網站 + Python 產生器**，不�
 系統提供兩條資料路徑：
 
 1. **瀏覽器即時路徑**：開啟頁面後先顯示版本庫快照，再直接向 GitHub 公開 REST API 取得 `Andy87877` 當下的公開 Stars。成功時畫面標示「GitHub 即時資料」；失敗時保留快照並明確標示降級。
-2. **版本庫快照路徑**：Python 同步器由本機、手動 workflow 或每日 03:00（Asia/Taipei）排程執行，產生 `README.md`、`topics.md`、`data/stars.json`、`data/sync-meta.json`。
+2. **版本庫快照路徑**：Python 同步器由本機、手動 workflow 或每日 03:00（Asia/Taipei）排程執行，產生 `README.md`、`topic.md`、`web/data/stars.json`、`web/data/sync-meta.json`。
 
 因此：
 
@@ -25,9 +25,9 @@ flowchart LR
     PY --> VALIDATE["完整分頁與非空驗證"]
     VALIDATE --> PUBLISH["AtomicFilePublisher"]
     PUBLISH --> README["README.md"]
-    PUBLISH --> TOPICS["topics.md"]
-    PUBLISH --> JSON["data/stars.json"]
-    PUBLISH --> META["data/sync-meta.json"]
+    PUBLISH --> TOPICS["topic.md"]
+    PUBLISH --> JSON["web/data/stars.json"]
+    PUBLISH --> META["web/data/sync-meta.json"]
     JSON --> WEB["靜態 Web MVC"]
     META --> WEB
     GH -->|"頁面開啟後即時刷新"| WEB
@@ -40,6 +40,9 @@ flowchart LR
 
 ```text
 GitHub-Star-Manager/
+├── README.md                         # 專案入口與語言分類快照
+├── topic.md                          # 聚焦 Topic 與 other
+├── main.py                           # CLI 與 web/ 預覽入口
 ├── app/
 │   ├── models/repository.py          # 領域 Model
 │   ├── services/
@@ -48,23 +51,29 @@ GitHub-Star-Manager/
 │   │   ├── renderers.py              # Markdown / JSON View renderer
 │   │   └── publisher.py              # 安全原子發布
 │   └── controllers/sync_controller.py
-├── css/style.css
-├── data/
-│   ├── stars.json                    # 可發布快照
-│   └── sync-meta.json                # 時間、來源、筆數證據
-├── js/
-│   ├── models/StarModel.js
-│   ├── views/StarView.js
-│   ├── controllers/StarController.js
-│   └── app.js
+├── web/
+│   ├── index.html                    # GitHub Pages 入口
+│   ├── css/style.css
+│   ├── data/
+│   │   ├── stars.json                # 可發布快照
+│   │   └── sync-meta.json            # 時間、來源、筆數證據
+│   └── js/
+│       ├── models/StarModel.js
+│       ├── views/StarView.js
+│       ├── controllers/StarController.js
+│       └── app.js
+├── docs/
+│   ├── architecture.md
+│   ├── iterate.md
+│   ├── task.md
+│   ├── refer.md
+│   └── AGENT.md
+├── config/requirements.txt
 ├── tests/*.robot
 ├── .github/workflows/
 │   ├── ci-pages.yml                  # Robot CI + 純靜態 Pages CD
 │   └── schedules.yml                 # 每日同步真實快照
-├── artifacts/                        # 本機測試輸出；不進版控
-├── index.html
-├── main.py
-└── requirements.txt
+└── artifacts/                        # 本機測試輸出；不進版控
 ```
 
 ## 4. MVC
@@ -151,25 +160,25 @@ GitHub 原始 Topics 屬於高基數、低一致性的標籤資料。本次快�
 
 系統將「保存」和「導航」分離：
 
-- `data/stars.json` 與全文搜尋保存全部原始 Topics。
+- `web/data/stars.json` 與全文搜尋保存全部原始 Topics。
 - `FocusedTopicPolicy` 只選擇至少涵蓋 2 個 repositories 的 Topics。
 - 依涵蓋數由高到低排序，同分時依名稱排序。
-- `topics.md` 與網站 Topic 控制項最多顯示前 30 個。
+- `topic.md` 與網站 Topic 控制項最多顯示前 30 個。
 - 未命中任何聚焦 Topic 的 repository 收進最底下的 `other`，且只出現一次。
 - `other` 是導覽用 catch-all，不會覆寫或刪除 repository 的原始 Topics。
 - 門檻與上限封裝於可替換的 `ITopicSelectionPolicy`，不寫死在 Renderer。
 
-`data/sync-meta.json` 範例：
+`web/data/sync-meta.json` 範例：
 
 ```json
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-07-31T15:20:50+00:00",
-  "repositoryCount": 152,
+  "generatedAt": "2026-07-31T17:14:40+00:00",
+  "repositoryCount": 153,
   "source": "GitHub REST API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 482,
+  "totalTopicCount": 486,
   "focusedTopicCount": 30,
   "otherRepositoryCount": 92
 }
@@ -196,13 +205,12 @@ GitHub 原始 Topics 屬於高基數、低一致性的標籤資料。本次快�
 
 | Workflow | 觸發 | 責任 |
 |---|---|---|
-| `ci-pages.yml` | push、pull request、手動 | Python 3.12 安裝依賴、Robot 驗收、快照契約；`main` 成功後打包純靜態檔並部署 Pages |
+| `ci-pages.yml` | push、pull request、手動 | Python 3.12 安裝 `config/requirements.txt`、Robot 驗收、快照契約；`main` 成功後打包 `web/` 並部署 Pages |
 | `schedules.yml` | 每日 03:00（Asia/Taipei）、手動 | 先跑 Robot，再同步真實 Stars、驗證 metadata，最後只提交有變更的產物 |
 
 Pages 現已啟用，網址為
 `https://andy87877.github.io/GitHub-Star-Manager/`。本地新版 workflow 不使用
-Ruby、Bundler 或 Jekyll，會先完成 CI，再發布限定的 `index.html`、`css/`、
-`js/` 與 `data/` 靜態 artifact。
+Ruby、Bundler 或 Jekyll，會先完成 CI，再將 `web/` 發布為靜態 artifact。
 
 GitHub 遠端稽核（2026-07-29）顯示舊 `Deploy Jekyll site to Pages` 有 3 次失敗，
 其中最新一次仍停在 `actions/configure-pages`。之後 GitHub 產生的
@@ -225,7 +233,7 @@ Robot Framework 覆蓋：
 - Table 為新使用者預設、排列在 Cards 前面，且明確偏好可以持久化。
 - 純靜態 Pages workflow 必須先驗證再部署，且不得依賴 Jekyll。
 
-目前完整回歸為 19／19。測試報告統一寫入 `artifacts/robot/`。本次另以真實瀏覽器驗證首次 Table、Cards 偏好還原、390px Table 捲動邊界與 console；其餘載入、搜尋、篩選、清除、Modal 與主題行為沿用既有回歸證據。
+目錄重構後完整回歸為 20 項 Robot 契約。測試報告統一寫入 `artifacts/robot/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：首次為 Table、Cards 偏好可還原、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 
