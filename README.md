@@ -7,7 +7,7 @@
 ## 資料即時性
 
 - 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；若 API 暫時不可用，會清楚標示目前仍是快照。
-- `Refresh GitHub Stars snapshot` workflow 每 6 小時及手動觸發同步本 README、`topics.md` 與 `data/stars.json`。
+- `Refresh GitHub Stars snapshot` workflow 手動觸發同步本 README、`topics.md` 與 `data/stars.json`。
 - 每次 push／pull request 都先執行 18 項 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版workflow 不再依賴 Ruby、Gemfile 或 Jekyll。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
