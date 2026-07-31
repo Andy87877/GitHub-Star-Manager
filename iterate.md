@@ -197,3 +197,25 @@
   - 瀏覽器即時資料（151／`other` 92）與 07:09 UTC 版本庫快照（152／`other` 91）短時間內有差異；介面分別標示來源，不宣稱兩者必然同筆數。
   - 390px 驗證沒有整頁水平溢位，Table 僅在自己的容器內水平捲動；console 0 error／warning。
 - **狀態**：目前遠端 Pages 已可用；本地加入 Robot／純靜態 artifact 的新版 workflow 必須在使用者日後 commit／push 後驗證。
+
+## Iteration 15：Table 作為主要預設模式
+
+- **日期**：2026-07-31
+- **使用者回饋**：網站第一次開啟應先顯示 Table，Cards 為次要模式。
+- **設計決策**：
+  - 工具列順序改為 Table 在前、Cards 在後，視覺優先順序和預設行為一致。
+  - `StarModel.readViewMode()` 在沒有合法既有偏好時回傳 `table`。
+  - 已明確選過 `cards` 或 `table` 的使用者仍保留原選擇，避免每次載入強迫重設。
+  - 初始 HTML 直接將 Table 標為 active／`aria-pressed=true`，避免 JavaScript 啟動前短暫顯示錯誤狀態。
+  - 預設與偏好屬於 Model；View 僅渲染，Controller 僅協調，維持 MVC 與 SRP。
+- **文件與資料同步**：
+  - README 由 renderer 同步標示 Table（預設）／Cards。
+  - 排程說明校正為每日 03:00（Asia/Taipei）與手動觸發。
+  - 重新同步 152 個 Stars、482 個原始 Topics、30 個聚焦 Topics，`other` 92 筆。
+- **驗證結果**：
+  - Robot Framework 19／19 通過。
+  - 全新 localhost origin 第一次載入即顯示 Table，Table 按鈕排列第一且 `aria-pressed=true`，顯示 142／152 個未封存專案。
+  - 切換 Cards 後顯示相同 142 筆；重新整理仍保留 Cards，證明明確偏好優先於預設值。
+  - 切回 Table 並以 390px 驗證：整頁寬度沒有溢位，Table 僅在自己的容器內水平捲動。
+  - 瀏覽器 console 0 error／warning。
+- **狀態**：完成。

@@ -68,15 +68,15 @@ class MarkdownLanguageRenderer(IRenderer):
             "",
             "這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責"
             "抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、"
-            "Cards／Table 雙模式、排序、本機研究筆記與 CSV 匯出。",
+            "Table（預設）／Cards 雙模式、排序、本機研究筆記與 CSV 匯出。",
             "",
             "## 資料即時性",
             "",
             "- 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；"
             "若 API 暫時不可用，會清楚標示目前仍是快照。",
-            "- `Refresh GitHub Stars snapshot` workflow 每 6 小時及手動觸發同步"
-            "本 README、`topics.md` 與 `data/stars.json`。",
-            "- 每次 push／pull request 都先執行 18 項 Robot 驗收；`main` 驗證成功"
+            "- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及"
+            "手動觸發同步本 README、`topics.md` 與 `data/stars.json`。",
+            "- 每次 push／pull request 都先執行 19 項 Robot 驗收；`main` 驗證成功"
             "後才打包純靜態網站並部署 GitHub Pages。",
             "- GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版"
             "workflow 不再依賴 Ruby、Gemfile 或 Jekyll。",

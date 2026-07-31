@@ -1,14 +1,14 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **152** 個公開 Star；資料快照：`2026-07-30T19:54:26+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **152** 個公開 Star；資料快照：`2026-07-31T15:20:50+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
-這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Cards／Table 雙模式、排序、本機研究筆記與 CSV 匯出。
+這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、排序、本機研究筆記與 CSV 匯出。
 
 ## 資料即時性
 
 - 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；若 API 暫時不可用，會清楚標示目前仍是快照。
-- `Refresh GitHub Stars snapshot` workflow 手動觸發同步本 README、`topics.md` 與 `data/stars.json`。
-- 每次 push／pull request 都先執行 18 項 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
+- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`topics.md` 與 `data/stars.json`。
+- 每次 push／pull request 都先執行 19 項 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版workflow 不再依賴 Ruby、Gemfile 或 Jekyll。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
 - Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；未命中這些聚焦標籤的 repositories 統一收進最底下的 `other`，原始標籤仍完整保留在 JSON 與網站全文搜尋。

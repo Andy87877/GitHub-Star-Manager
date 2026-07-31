@@ -37,6 +37,18 @@ Frontend Supports Card And Table Views
     Should Contain    ${view}    class="repo-table"
     Should Contain    ${controller}    data-view-mode
 
+Frontend Defaults To Table And Preserves Explicit Preference
+    ${html}=    Get File    ${CURDIR}${/}..${/}index.html
+    ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
+    Should Contain    ${html}    id="tableViewBtn" type="button" class="view-toggle-btn active"
+    Should Contain    ${html}    data-view-mode="table" aria-pressed="true"
+    ${table_position}=    Evaluate    $html.index('id="tableViewBtn"')
+    ${cards_position}=    Evaluate    $html.index('id="cardsViewBtn"')
+    Should Be True    ${table_position} < ${cards_position}
+    Should Contain    ${model}    const storedViewMode
+    Should Contain    ${model}    ['table', 'cards'].includes(storedViewMode)
+    Should Contain    ${model}    : 'table';
+
 Frontend Topic Navigation Includes A Bottom Other Bucket
     ${model}=    Get File    ${CURDIR}${/}..${/}js${/}models${/}StarModel.js
     ${view}=    Get File    ${CURDIR}${/}..${/}js${/}views${/}StarView.js

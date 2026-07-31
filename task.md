@@ -30,7 +30,7 @@
 ## Phase 5 & 6: Andy87877 即時 Stars 同步與 GitHub Actions 自動化
 - [x] 在 `app/services/github_client.py` 實作 `GitHubRESTClient` 與 `GitHubClientFactory`
 - [x] 預設同步目標為 `Andy87877`
-- [x] 建立 `.github/workflows/schedules.yml` 實現每 6 小時及手動更新
+- [x] 建立 `.github/workflows/schedules.yml` 實現每日 03:00（Asia/Taipei）及手動更新
 - [x] 成功同步 `Andy87877` 的真實 Star 專案至 `README.md`、`topics.md` 與 `data/stars.json`
 
 ## Phase 7: Git 版控與 .gitignore 規則設定
@@ -109,7 +109,7 @@
 - [x] 將誤導性的 Jekyll workflow 檔名整理為 `ci-pages.yml`
 - [x] CI 在 push／pull request／手動觸發時先跑 Robot 與快照契約
 - [x] CD 僅在 `verify` 成功且非 pull request 時執行
-- [x] 保留每 6 小時 Stars 同步 workflow 的測試先行與失敗關閉
+- [x] 保留 Stars 同步 workflow 的測試先行與失敗關閉
 - [x] `FocusedTopicPolicy` 將未命中聚焦 Topic 的 repositories 收入最底下 `other`
 - [x] `other` 依 repository `full_name` 去重
 - [x] 網站 Topic chips／下拉／篩選支援固定在最後的「其他 / other」
@@ -119,3 +119,17 @@
 - [x] 真實瀏覽器驗證 `other`、Cards／Table、390px 響應式與 console
 - [x] 根目錄測試產物集中於 `artifacts/`（不 commit、不 push）
 - [ ] 使用者 commit／push 後確認新 CI/CD run 與 Pages URL
+
+## Phase 15：Table 優先顯示
+
+- [x] 將 Table 按鈕排列在 Cards 前面
+- [x] 初次開啟、沒有既有偏好時預設使用 Table
+- [x] 尊重已儲存的 Cards／Table 明確偏好
+- [x] 將預設選擇封裝於 `StarModel`，維持 MVC 責任邊界
+- [x] 初始 HTML 的 active／`aria-pressed` 狀態與 Table 預設一致
+- [x] 新增 Robot Framework Table 預設與偏好保存契約
+- [x] 更新 `README.md`、`architecture.md`、`iterate.md`、`task.md`
+- [x] 重新同步 GitHub Stars 快照（152 筆；482 Topics；`other` 92 筆）
+- [x] Robot Framework 全數通過（19／19）
+- [x] 真實瀏覽器驗證初次 Table、Cards 偏好還原與手機版
+- [x] 根目錄與 Git 狀態確認（不 commit、不 push）

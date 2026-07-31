@@ -275,7 +275,10 @@ export class StarModel {
   }
 
   readViewMode() {
-    return localStorage.getItem('gsm_view_mode') === 'table' ? 'table' : 'cards';
+    const storedViewMode = localStorage.getItem('gsm_view_mode');
+    return ['table', 'cards'].includes(storedViewMode)
+      ? storedViewMode
+      : 'table';
   }
 
   setViewMode(mode) {
