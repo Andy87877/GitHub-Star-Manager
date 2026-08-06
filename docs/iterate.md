@@ -247,3 +247,24 @@
   - 瀏覽器 console 無 error／warning。
   - 已移除舊 `css/`、`data/`、`js/` 空目錄；本次未 commit、未 push。
 - **狀態**：完成。
+
+## Iteration 17：系統進階統計分析、最愛標註、分頁導覽與 CLI 擴充
+
+- **日期**：2026-08-06
+- **目標**：
+  - 符合高標準 MVC / OOP / SOLID 架構，大幅提升 UI/UX 視覺體驗與數據可視化。
+  - 新增後端 `AnalyticsCalculator` 數據計算服務與 CLI `--analytics` / `--export csv|json` 選項。
+  - 前端新增互動式「📊 數據分析 Dashboard Modal」、最愛 ⭐ 標註與持久化、動態分頁與每頁筆數控制。
+  - 擴充 Robot Framework 測試套件至 25 項測試並全數通過。
+- **關鍵架構與設計決策**：
+  - **SRP / DIP**: 建立 `AnalyticsCalculator` (`app/services/analytics.py`)，將數據分析計算邏輯從 `SyncController` 解耦，獨立進行單元測試與 CLI 輸出。
+  - **CLI 擴充**: `main.py` 新增 `--analytics` (控制台數據摘要) 與 `--export {csv,json}` (資料集匯出)，支援命令列自動化管道。
+  - **UI/UX 數據分析 Dashboard**: 網站導覽列新增「📊 數據分析」按鈕，觸發高質感 Glassmorphic Modal，以進度條與視圖標籤展現語言分佈 (Top 10)、熱門 Topics (Top 15) 與 Star 年度趨勢。
+  - **最愛標註 (Favorites)**: 在 Cards / Table View 專案頭部新增一鍵標註最愛 ⭐ (`toggle-fav-btn`)，並儲存於 `localStorage` (`gsm_repo_favorites`)。篩選下拉選單支援「⭐ 僅限最愛」與「📝 僅有筆記」。
+  - **動態分頁 (Pagination)**: 在專案清單底部新增分頁列，支援切換每頁 20 / 50 / 100 / 全部筆數，並自動計算目前頁碼與總頁數。
+- **測試與驗證結果**：
+  - Robot Framework 擴充 5 項全新測試（包含 CLI analytics, CSV 匯出, Web Analytics Modal, Favorites, Pagination），總計 25 / 25 項測試 100% 通過。
+  - 重新同步 `Andy87877` 的 152 筆公開 Stars 專案至靜態快照。
+  - 根目錄維持嚴格三檔案規範 (`README.md`, `topic.md`, `main.py`)，測試產物隔離於 `artifacts/robot-reports/`。
+- **狀態**：完成。
+

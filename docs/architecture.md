@@ -42,12 +42,13 @@ flowchart LR
 GitHub-Star-Manager/
 ├── README.md                         # 專案入口與語言分類快照
 ├── topic.md                          # 聚焦 Topic 與 other
-├── main.py                           # CLI 與 web/ 預覽入口
+├── main.py                           # CLI 與 web/ 預覽入口 (支援 --analytics, --export)
 ├── app/
 │   ├── models/repository.py          # 領域 Model
 │   ├── services/
 │   │   ├── github_client.py          # REST / GraphQL / Mock Client
 │   │   ├── categorizers.py           # Language / Topic Strategy
+│   │   ├── analytics.py             # AnalyticsCalculator (SRP 數據計算服務)
 │   │   ├── renderers.py              # Markdown / JSON View renderer
 │   │   └── publisher.py              # 安全原子發布
 │   └── controllers/sync_controller.py
@@ -56,11 +57,11 @@ GitHub-Star-Manager/
 │   ├── css/style.css
 │   ├── data/
 │   │   ├── stars.json                # 可發布快照
-│   │   └── sync-meta.json            # 時間、來源、筆數證據
+│   │   └── sync-meta.json            # 時間、來源、筆數證據與 analytics 快照
 │   └── js/
-│       ├── models/StarModel.js
-│       ├── views/StarView.js
-│       ├── controllers/StarController.js
+│       ├── models/StarModel.js       # 資料控制、篩選、最愛、分頁與前端 analytics 計算
+│       ├── views/StarView.js        # DOM 渲染、Analytics Modal、Table/Cards 與分頁列
+│       ├── controllers/StarController.js # 事件綁定與 MVC 協調
 │       └── app.js
 ├── docs/
 │   ├── architecture.md
@@ -69,11 +70,11 @@ GitHub-Star-Manager/
 │   ├── refer.md
 │   └── AGENT.md
 ├── config/requirements.txt
-├── tests/*.robot
+├── tests/*.robot                     # 25 項 Robot Framework 自動化測試
 ├── .github/workflows/
 │   ├── ci-pages.yml                  # Robot CI + 純靜態 Pages CD
 │   └── schedules.yml                 # 每日同步真實快照
-└── artifacts/                        # 本機測試輸出；不進版控
+└── artifacts/                        # 本機測試與 Robot 報告輸出；不進版控
 ```
 
 ## 4. MVC
@@ -83,8 +84,9 @@ GitHub-Star-Manager/
 | 層 | 類別 | 責任 |
 |---|---|---|
 | Model | `Repository` | 封裝 repository 欄位與 JSON 命名轉換 |
-| View | Markdown／JSON renderers | 將領域物件轉成 README、Topic 索引、網站資料 |
-| Controller | `SyncController` | 調度 Extract → Validate → Transform → Render → Publish |
+| View | Markdown／JSON renderers | 將領域物件轉成 README、Topic 索引、網站資料與 CLI 輸出 |
+| Controller | `SyncController` | 調度 Extract → Validate → Transform → Analytics → Render → Publish |
+| Service | `AnalyticsCalculator` | 獨立計算語言分佈、Topic 覆蓋、Star/Fork 統計與年度趨勢 |
 
 網路傳輸與檔案發布屬於 Controller 依賴的 Infrastructure Service，不塞進領域模型。
 
@@ -92,9 +94,9 @@ GitHub-Star-Manager/
 
 | 層 | 類別 | 責任 |
 |---|---|---|
-| Model | `StarModel` | 快照／即時資料、正規化、篩選、排序、筆記與主題設定 |
-| View | `StarView` | 安全 DOM 輸出、狀態、卡片、Modal、Toast、焦點 |
-| Controller | `StarController` | 綁定事件、更新 Model、要求 View 重繪 |
+| Model | `StarModel` | 快照／即時資料、正規化、篩選、排序、筆記、最愛⭐標註、分頁狀態與數據分析 |
+| View | `StarView` | DOM 輸出、狀態、卡片、Table、筆記 Modal、數據分析 Dashboard Modal、Toast |
+| Controller | `StarController` | 綁定事件（鍵盤捷徑 `/`與`Esc`）、更新 Model、調頁與視圖重繪 |
 
 `app.js` 只負責組裝三個物件。
 
@@ -102,8 +104,8 @@ GitHub-Star-Manager/
 
 | 原則 | 落實方式 |
 |---|---|
-| SRP | GitHub Client 只抓資料；Categorizer 只分類；Renderer 只格式化；Publisher 只發布 |
-| OCP | 新增 Client、分類策略或輸出格式，不必修改其他具體類別 |
+| SRP | GitHub Client 只抓資料；Categorizer 只分類；AnalyticsCalculator 只算指標；Renderer 只格式化；Publisher 只發布 |
+| OCP | 新增 Client、分類策略、分析演算法或輸出格式，不必修改其他具體類別 |
 | LSP | REST、GraphQL、Mock 都符合 `IGitHubClient`；測試可替換實作 |
 | ISP | `IGitHubClient`、`IRenderer`、`IOutputPublisher` 都是小型專用介面 |
 | DIP | `SyncController` 接收抽象 Client 與 Publisher；測試注入 Empty／Mock Client |
@@ -232,8 +234,12 @@ Robot Framework 覆蓋：
 - Topic 聚焦／`other` catch-all 政策與 Cards／Table 顯示契約。
 - Table 為新使用者預設、排列在 Cards 前面，且明確偏好可以持久化。
 - 純靜態 Pages workflow 必須先驗證再部署，且不得依賴 Jekyll。
+- CLI `--analytics` 摘要與 `--export csv` 資料集匯出契約。
+- 前端 📊 數據分析 Dashboard Modal 計算與 DOM 契約。
+- 前端 ⭐ 最愛標註與篩選契約。
+- 前端動態分頁 (Pagination) 控制項與導覽契約。
 
-目錄重構後完整回歸為 20 項 Robot 契約。測試報告統一寫入 `artifacts/robot/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：首次為 Table、Cards 偏好可還原、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
+目前完整涵蓋 25 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、動態分頁順暢、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 

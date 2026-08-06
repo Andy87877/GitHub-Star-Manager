@@ -68,18 +68,19 @@ class MarkdownLanguageRenderer(IRenderer):
             "",
             "這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責"
             "抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、"
-            "Table（預設）／Cards 雙模式、排序、本機研究筆記與 CSV 匯出。",
+            "Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、"
+            "排序、本機研究筆記與 CSV 匯出。",
             "",
-            "## 資料即時性",
+            "## 資料即時性與數據分析",
             "",
             "- 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；"
             "若 API 暫時不可用，會清楚標示目前仍是快照。",
+            "- 點擊導覽列「📊 數據分析」可開啟數據 Dashboard，以視覺化圖表與進度條檢視"
+            "程式語言分佈 (Top 10)、熱門 Topics (Top 15) 與 Star 年度收藏趨勢。",
             "- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及"
             "手動觸發同步本 README、`topic.md` 與 `web/data/stars.json`。",
-            "- 每次 push／pull request 都先執行 20 項 Robot 驗收；`main` 驗證成功"
+            "- 每次 push／pull request 都先執行 25 項 Robot 驗收；`main` 驗證成功"
             "後才打包純靜態網站並部署 GitHub Pages。",
-            "- GitHub Pages 已啟用並由 `main` 驗證成功後部署；本專案的下一版"
-            "workflow 不再依賴 Ruby、Gemfile 或 Jekyll。",
             "- 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫"
             "上一份有效資料。",
             "- Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；未命中這些"
@@ -91,7 +92,7 @@ class MarkdownLanguageRenderer(IRenderer):
             "特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 "
             "GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有"
             "這個專案的寫法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先"
-            "網站、即時資料狀態與 Robot Framework 驗收。",
+            "網站、數據分析 Dashboard、即時資料狀態與 Robot Framework 驗收。",
             "",
             "## 使用方式",
             "",
@@ -99,19 +100,22 @@ class MarkdownLanguageRenderer(IRenderer):
             "python -m pip install -r config/requirements.txt",
             "python main.py --username Andy87877",
             "python main.py --serve",
+            "python main.py --analytics",
+            "python main.py --export csv",
             "```",
             "",
-            "瀏覽 `http://127.0.0.1:8000`。執行測試：",
+            "瀏覽 `http://127.0.0.1:8000`。執行 Robot Framework 驗收測試：",
             "",
             "```powershell",
-            "python -m robot --outputdir artifacts/robot tests",
+            "python -m robot --outputdir artifacts/robot-reports tests",
             "```",
             "",
             "## 架構摘要",
             "",
-            "- Python：`Repository` Model、可替換 GitHub Client／分類／渲染策略、"
-            "`SyncController`、原子檔案發布器。",
-            "- JavaScript：`StarModel`、`StarView`、`StarController` 前端 MVC。",
+            "- Python：`Repository` Model、`AnalyticsCalculator` (SRP 數據計算服務)、"
+            "可替換 GitHub Client／分類／渲染策略、`SyncController`、原子檔案發布器。",
+            "- JavaScript：`StarModel`、`StarView`、`StarController` 前端 MVC，支援最愛⭐標註、"
+            "動態分頁與 📊 數據分析 Dashboard。",
             "- 詳細設計、演進、待辦與協作規範分別見 `docs/architecture.md`、"
             "`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`。",
             "",

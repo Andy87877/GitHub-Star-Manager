@@ -55,6 +55,32 @@ Static Pages Workflow Verifies Before Deploying
     Should Not Contain    ${workflow}    ruby/setup-ruby
     Should Not Contain    ${workflow}    bundle exec jekyll
 
+Mock CLI Supports Analytics Summary
+    ${result}=    Run Process
+    ...    ${PYTHON_BIN}
+    ...    main.py
+    ...    --client
+    ...    mock
+    ...    --analytics
+    ...    cwd=${CURDIR}${/}..
+    Should Be Equal As Integers    ${result.rc}    0
+    Should Contain    ${result.stdout}    GitHub Stars Analytics
+    Should Contain    ${result.stdout}    Total Repositories: 3
+    Should Contain    ${result.stdout}    Top Languages:
+
+Mock CLI Supports CSV Export
+    ${result}=    Run Process
+    ...    ${PYTHON_BIN}
+    ...    main.py
+    ...    --client
+    ...    mock
+    ...    --export
+    ...    csv
+    ...    cwd=${CURDIR}${/}..
+    Should Be Equal As Integers    ${result.rc}    0
+    Should Contain    ${result.stdout}    fullName,url,language,stars,forks,isArchived,starredAt
+    Should Contain    ${result.stdout}    fastapi/fastapi
+
 Root Layout Keeps Only Three Visible Files
     ${root}=    Normalize Path    ${CURDIR}${/}..
     ${root_files}=    Evaluate
@@ -70,3 +96,4 @@ Root Layout Keeps Only Three Visible Files
     File Should Not Exist    ${root}${/}task.md
     File Should Not Exist    ${root}${/}requirements.txt
     File Should Not Exist    ${root}${/}index.html
+

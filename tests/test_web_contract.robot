@@ -57,3 +57,32 @@ Frontend Topic Navigation Includes A Bottom Other Bucket
     Should Contain    ${model}    isOtherFilter
     Should Contain    ${view}    const otherTopic
     Should Contain    ${view}    其他 / other
+
+Frontend Exposes Interactive Analytics Modal
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    Should Contain    ${html}    id="analyticsBtn"
+    Should Contain    ${html}    id="analyticsModal"
+    Should Contain    ${model}    calculateAnalytics
+    Should Contain    ${view}    renderAnalyticsContent
+
+Frontend Supports Repository Favorites Marking
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    Should Contain    ${html}    <option value="favorites">⭐ 僅限最愛</option>
+    Should Contain    ${model}    toggleFavorite
+    Should Contain    ${model}    gsm_repo_favorites
+    Should Contain    ${view}    toggle-fav-btn
+
+Frontend Supports Pagination Navigation Controls
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    Should Contain    ${html}    id="paginationBar"
+    Should Contain    ${html}    id="pageSizeSelect"
+    Should Contain    ${model}    getPaginatedRepositories
+    Should Contain    ${model}    setPageSize
+    Should Contain    ${view}    renderPagination
+

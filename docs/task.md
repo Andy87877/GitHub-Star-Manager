@@ -149,3 +149,18 @@
 - [x] Robot Framework 全數通過（20／20）
 - [x] 真實瀏覽器驗證重構後網站（Table 預設、Cards 偏好、390px、console）
 - [x] 移除空舊目錄並確認未 push
+
+## Phase 17：系統進階統計分析、最愛標註、分頁導覽與 CLI 擴充
+
+- [x] 實作 `AnalyticsCalculator` (`app/services/analytics.py`) 計算語言分佈、Topics 覆蓋與 Star 趨勢
+- [x] 擴充 `SyncController` 將數據分析結果寫入 `web/data/sync-meta.json`
+- [x] `main.py` CLI 新增 `--analytics` (控制台數據摘要) 與 `--export {csv,json}` 選項
+- [x] 實作 Web 前端互動式「📊 數據分析 Dashboard Modal」與 Glassmorphism 視圖進度條
+- [x] 實作 Web 前端最愛 ⭐ 標註功能，支援 `localStorage` 持久化與「⭐ 僅限最愛」/「📝 僅有筆記」篩選
+- [x] 實作 Web 前端動態分頁 (Pagination)，支援 20 / 50 / 100 / 全部筆數控制與上下頁切換
+- [x] 撰寫 5 項全新 Robot Framework 測試（涵蓋 CLI analytics, CSV 匯出, Web Analytics Modal, Favorites, Pagination）
+- [x] 重新同步 `Andy87877` 的 152 筆真實 GitHub Stars 快照
+- [x] Robot Framework 25 項測試全數通過（25／25）
+- [x] 更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+- [x] 根目錄僅保留 `README.md`、`topic.md`、`main.py` 3 個可見檔案（測試報告置於 `artifacts/robot-reports/`）
+

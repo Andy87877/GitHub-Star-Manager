@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 import os
 
+from app.services.analytics import AnalyticsCalculator
 from app.services.categorizers import (
     FocusedTopicPolicy,
     LanguageCategorizer,
@@ -75,6 +76,7 @@ class SyncController:
         generated_at = (
             datetime.now(timezone.utc).replace(microsecond=0).isoformat()
         )
+        analytics_data = AnalyticsCalculator.calculate(repositories)
         metadata: Dict[str, Any] = {
             "username": username,
             "profileUrl": f"https://github.com/{username}?tab=stars",
@@ -95,6 +97,7 @@ class SyncController:
                 self.topic_policy.minimum_repository_count,
             "topicMaximumCategories": self.topic_policy.maximum_categories,
             "topicOtherCategory": self.topic_policy.other_category,
+            "analytics": analytics_data,
         }
 
         by_language = self.language_categorizer.categorize(repositories)

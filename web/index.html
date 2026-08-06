@@ -24,6 +24,7 @@
         </span>
       </a>
       <nav class="nav-actions" aria-label="收藏庫工具">
+        <button id="analyticsBtn" type="button" class="btn">📊 數據分析</button>
         <button id="randomBtn" type="button" class="btn btn-primary">🎲 隨機探索</button>
         <button id="exportCsvBtn" type="button" class="btn">⇩ 匯出 CSV</button>
         <button id="themeToggleBtn" type="button" class="btn btn-icon-only"
@@ -105,11 +106,13 @@
           </select>
         </label>
         <label class="filter-group">
-          <span class="filter-label">封存狀態</span>
+          <span class="filter-label">狀態 / 標註</span>
           <select id="archiveSelect" class="select-custom">
-            <option value="active">使用中</option>
-            <option value="all">全部</option>
-            <option value="archived">僅 Archived</option>
+            <option value="active">使用中 (非 Archived)</option>
+            <option value="all">全部專案</option>
+            <option value="favorites">⭐ 僅限最愛</option>
+            <option value="notes">📝 僅有筆記</option>
+            <option value="archived">僅限 Archived</option>
           </select>
         </label>
         <label class="filter-group">
@@ -144,6 +147,23 @@
         <h2>找不到符合條件的專案</h2>
         <p>縮短關鍵字、改選其他分類，或按「清除篩選」重新開始。</p>
       </section>
+
+      <div id="paginationBar" class="pagination-bar" hidden>
+        <div class="pagination-size">
+          <label for="pageSizeSelect">每頁顯示：</label>
+          <select id="pageSizeSelect" class="select-custom select-sm">
+            <option value="20">20 筆</option>
+            <option value="50">50 筆</option>
+            <option value="100">100 筆</option>
+            <option value="all">全部 (All)</option>
+          </select>
+        </div>
+        <div class="pagination-controls">
+          <button id="prevPageBtn" type="button" class="btn btn-compact" disabled>‹ 上一頁</button>
+          <span id="pageIndicator" class="page-indicator">第 1 / 1 頁</span>
+          <button id="nextPageBtn" type="button" class="btn btn-compact" disabled>下一頁 ›</button>
+        </div>
+      </div>
     </main>
   </div>
 
@@ -166,6 +186,21 @@
         <span>Ctrl／⌘ + Enter 儲存</span>
         <button id="saveNoteBtn" type="button" class="btn btn-primary">儲存筆記</button>
       </footer>
+    </section>
+  </div>
+
+  <div id="analyticsModal" class="modal-overlay" aria-hidden="true">
+    <section class="modal-content modal-large" role="dialog" aria-modal="true"
+             aria-labelledby="analyticsModalTitle">
+      <header class="modal-header">
+        <div>
+          <h2 id="analyticsModalTitle">📊 Star 知識庫數據分析</h2>
+          <p>實時計算語言分佈、Topic 覆蓋與收藏統計</p>
+        </div>
+        <button id="closeAnalyticsModalBtn" type="button" class="close-btn"
+                aria-label="關閉數據分析視窗">×</button>
+      </header>
+      <div id="analyticsModalBody" class="analytics-body"></div>
     </section>
   </div>
 

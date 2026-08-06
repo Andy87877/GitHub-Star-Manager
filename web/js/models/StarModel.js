@@ -16,7 +16,10 @@ export class StarModel {
       otherTopic: 'other'
     };
     this.notes = this.readJsonStorage('gsm_repo_notes', {});
+    this.favorites = this.readJsonStorage('gsm_repo_favorites', {});
     this.viewMode = this.readViewMode();
+    this.pageSize = this.readPageSize();
+    this.currentPage = 1;
     this.dataStatus = {
       state: 'loading',
       source: '資料載入中',
@@ -210,6 +213,9 @@ export class StarModel {
       }
       if (this.filters.archive === 'active' && repo.isArchived) return false;
       if (this.filters.archive === 'archived' && !repo.isArchived) return false;
+      if (this.filters.archive === 'favorites' && !this.isFavorite(repo.fullName)) return false;
+      if (this.filters.archive === 'notes' && !this.getNote(repo.fullName)) return false;
+
       if (!keyword) return true;
 
       const searchable = [
@@ -223,6 +229,51 @@ export class StarModel {
       return searchable.includes(keyword);
     });
     this.sortRepositories();
+    this.currentPage = 1;
+  }
+
+  getPaginatedRepositories() {
+    if (this.pageSize === 'all') return this.filteredRepositories;
+    const size = Number(this.pageSize) || 20;
+    const start = (this.currentPage - 1) * size;
+    return this.filteredRepositories.slice(start, start + size);
+  }
+
+  getTotalPages() {
+    if (this.pageSize === 'all' || !this.filteredRepositories.length) return 1;
+    const size = Number(this.pageSize) || 20;
+    return Math.ceil(this.filteredRepositories.length / size);
+  }
+
+  setPage(page) {
+    const maxPage = this.getTotalPages();
+    this.currentPage = Math.max(1, Math.min(page, maxPage));
+  }
+
+  setPageSize(size) {
+    this.pageSize = size;
+    localStorage.setItem('gsm_page_size', String(size));
+    this.currentPage = 1;
+  }
+
+  readPageSize() {
+    const stored = localStorage.getItem('gsm_page_size');
+    return ['20', '50', '100', 'all'].includes(stored) ? stored : '20';
+  }
+
+  isFavorite(fullName) {
+    return Boolean(this.favorites[fullName]);
+  }
+
+  toggleFavorite(fullName) {
+    if (this.favorites[fullName]) {
+      delete this.favorites[fullName];
+    } else {
+      this.favorites[fullName] = true;
+    }
+    this.writeJsonStorage('gsm_repo_favorites', this.favorites);
+    this.applyFilters();
+    return this.isFavorite(fullName);
   }
 
   sortRepositories() {
@@ -317,7 +368,67 @@ export class StarModel {
       totalRepos: this.repositories.length,
       filteredCount: this.filteredRepositories.length,
       totalStars: this.repositories.reduce((sum, repo) => sum + repo.stars, 0),
-      totalNotes: Object.keys(this.notes).length
+      totalNotes: Object.keys(this.notes).length,
+      totalFavorites: Object.keys(this.favorites).length
+    };
+  }
+
+  calculateAnalytics() {
+    const total = this.repositories.length;
+    if (!total) return null;
+
+    const totalStars = this.repositories.reduce((sum, r) => sum + r.stars, 0);
+    const totalForks = this.repositories.reduce((sum, r) => sum + r.forks, 0);
+    const archivedCount = this.repositories.filter(r => r.isArchived).length;
+    const activeCount = total - archivedCount;
+
+    // Languages breakdown
+    const langMap = new Map();
+    this.repositories.forEach(r => {
+      const lang = r.language || 'Others';
+      langMap.set(lang, (langMap.get(lang) || 0) + 1);
+    });
+    const languages = Array.from(langMap.entries())
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .map(([lang, count]) => ({
+        language: lang,
+        count,
+        percentage: Number(((count / total) * 100).toFixed(1))
+      }));
+
+    // Top Topics
+    const topicMap = new Map();
+    this.repositories.forEach(r => {
+      r.topics.forEach(t => topicMap.set(t, (topicMap.get(t) || 0) + 1));
+    });
+    const topTopics = Array.from(topicMap.entries())
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .slice(0, 15)
+      .map(([topic, count]) => ({ topic, count }));
+
+    // Starred Year Distribution
+    const yearMap = new Map();
+    this.repositories.forEach(r => {
+      const year = r.starredAt ? new Date(r.starredAt).getFullYear() : 'Unknown';
+      const key = Number.isNaN(year) ? 'Unknown' : String(year);
+      yearMap.set(key, (yearMap.get(key) || 0) + 1);
+    });
+    const yearlyTrend = Array.from(yearMap.entries())
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([year, count]) => ({ year, count }));
+
+    return {
+      totalRepos: total,
+      totalStars,
+      totalForks,
+      avgStars: Math.round(totalStars / total),
+      archivedCount,
+      activeCount,
+      notesCount: Object.keys(this.notes).length,
+      favoritesCount: Object.keys(this.favorites).length,
+      languages,
+      topTopics,
+      yearlyTrend
     };
   }
 

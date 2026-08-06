@@ -25,6 +25,15 @@ export class StarView {
     this.themeToggleBtn = document.getElementById('themeToggleBtn');
     this.cardsViewBtn = document.getElementById('cardsViewBtn');
     this.tableViewBtn = document.getElementById('tableViewBtn');
+    this.analyticsBtn = document.getElementById('analyticsBtn');
+    this.analyticsModal = document.getElementById('analyticsModal');
+    this.closeAnalyticsModalBtn = document.getElementById('closeAnalyticsModalBtn');
+    this.analyticsModalBody = document.getElementById('analyticsModalBody');
+    this.paginationBar = document.getElementById('paginationBar');
+    this.pageSizeSelect = document.getElementById('pageSizeSelect');
+    this.prevPageBtn = document.getElementById('prevPageBtn');
+    this.nextPageBtn = document.getElementById('nextPageBtn');
+    this.pageIndicator = document.getElementById('pageIndicator');
     this.previousFocus = null;
   }
 
@@ -106,25 +115,41 @@ export class StarView {
       `${this.escapeHtml(label)}</button>`;
   }
 
-  renderRepositories(repositories, notes, viewMode) {
+  renderRepositories(repositories, notes, favorites, viewMode, paginationInfo) {
     if (!repositories.length) {
       this.repoGrid.replaceChildren();
       this.emptyState.hidden = false;
+      this.paginationBar.hidden = true;
       return;
     }
     this.emptyState.hidden = true;
     if (viewMode === 'table') {
-      this.renderRepoTable(repositories, notes);
-      return;
+      this.renderRepoTable(repositories, notes, favorites);
+    } else {
+      this.renderRepoCards(repositories, notes, favorites);
     }
-    this.renderRepoCards(repositories, notes);
+    this.renderPagination(paginationInfo);
   }
 
-  renderRepoCards(repositories, notes) {
+  renderPagination(info) {
+    if (!info || info.totalCount <= 0 || info.pageSize === 'all') {
+      this.paginationBar.hidden = true;
+      return;
+    }
+    this.paginationBar.hidden = false;
+    this.pageSizeSelect.value = String(info.pageSize);
+    this.pageIndicator.textContent = `第 ${info.currentPage} / ${info.totalPages} 頁 (共 ${info.totalCount} 筆)`;
+    this.prevPageBtn.disabled = info.currentPage <= 1;
+    this.nextPageBtn.disabled = info.currentPage >= info.totalPages;
+  }
+
+  renderRepoCards(repositories, notes, favorites = {}) {
     this.repoGrid.className = 'repo-grid';
     this.repoGrid.innerHTML = repositories.map(repo => {
       const fullName = this.escapeHtml(repo.fullName);
       const note = notes[repo.fullName] || '';
+      const isFav = Boolean(favorites[repo.fullName]);
+      const favStar = isFav ? '⭐' : '✩';
       const topics = repo.topics.slice(0, 5).map(topic =>
         `<span class="topic-tag">#${this.escapeHtml(topic)}</span>`
       ).join('');
@@ -132,7 +157,7 @@ export class StarView {
         ? '<span class="archive-badge">Archived</span>'
         : '';
       return `
-        <article class="repo-card${repo.isArchived ? ' is-archived' : ''}">
+        <article class="repo-card${repo.isArchived ? ' is-archived' : ''}${isFav ? ' is-favorite' : ''}">
           <div>
             <div class="repo-header">
               <h2 class="repo-title">
@@ -140,9 +165,15 @@ export class StarView {
                   ${fullName}
                 </a>
               </h2>
-              <button type="button" class="btn btn-icon-only edit-note-btn"
-                aria-label="編輯 ${fullName} 的研究筆記"
-                data-full-name="${fullName}">✏️</button>
+              <div class="repo-actions">
+                <button type="button" class="btn btn-icon-only toggle-fav-btn${isFav ? ' active' : ''}"
+                  aria-label="${isFav ? '取消最愛' : '標註為最愛'} ${fullName}"
+                  title="${isFav ? '取消最愛' : '標註為最愛'}"
+                  data-full-name="${fullName}">${favStar}</button>
+                <button type="button" class="btn btn-icon-only edit-note-btn"
+                  aria-label="編輯 ${fullName} 的研究筆記"
+                  data-full-name="${fullName}">✏️</button>
+              </div>
             </div>
             ${archived}
             <p class="repo-description">${this.escapeHtml(repo.description || '未提供專案描述。')}</p>
@@ -163,14 +194,16 @@ export class StarView {
     }).join('');
   }
 
-  renderRepoTable(repositories, notes) {
+  renderRepoTable(repositories, notes, favorites = {}) {
     this.repoGrid.className = 'table-shell';
     const rows = repositories.map(repo => {
       const fullName = this.escapeHtml(repo.fullName);
       const note = notes[repo.fullName] || '';
+      const isFav = Boolean(favorites[repo.fullName]);
+      const favStar = isFav ? '⭐' : '✩';
       const status = repo.isArchived ? 'Archived' : '使用中';
       return `
-        <tr class="${repo.isArchived ? 'is-archived' : ''}">
+        <tr class="${repo.isArchived ? 'is-archived' : ''}${isFav ? ' is-favorite' : ''}">
           <th scope="row" class="repo-cell">
             <a href="${this.safeUrl(repo.url)}" target="_blank"
                rel="noopener noreferrer">${fullName}</a>
@@ -189,6 +222,10 @@ export class StarView {
           <td><time datetime="${this.escapeHtml(repo.starredAt)}">${this.formatShortDate(repo.starredAt)}</time></td>
           <td><span class="status-badge ${repo.isArchived ? 'archived' : ''}">${status}</span></td>
           <td class="action-cell">
+            <button type="button" class="btn btn-icon-only toggle-fav-btn${isFav ? ' active' : ''}"
+              aria-label="${isFav ? '取消最愛' : '標註為最愛'} ${fullName}"
+              title="${isFav ? '取消最愛' : '標註為最愛'}"
+              data-full-name="${fullName}">${favStar}</button>
             <button type="button" class="btn btn-icon-only edit-note-btn"
               aria-label="編輯 ${fullName} 的研究筆記"
               data-full-name="${fullName}">✏️</button>
@@ -228,6 +265,101 @@ export class StarView {
     this.noteModal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('modal-open');
     this.previousFocus?.focus();
+  }
+
+  openAnalyticsModal(analytics, trigger) {
+    this.previousFocus = trigger || document.activeElement;
+    this.renderAnalyticsContent(analytics);
+    this.analyticsModal.classList.add('active');
+    this.analyticsModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    requestAnimationFrame(() => this.closeAnalyticsModalBtn.focus());
+  }
+
+  closeAnalyticsModal() {
+    this.analyticsModal.classList.remove('active');
+    this.analyticsModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    this.previousFocus?.focus();
+  }
+
+  renderAnalyticsContent(analytics) {
+    if (!analytics) {
+      this.analyticsModalBody.innerHTML = '<p>尚無可分析的資料。</p>';
+      return;
+    }
+
+    const langRows = analytics.languages.slice(0, 10).map(item => `
+      <div class="analytics-row">
+        <div class="analytics-row-label">
+          <span class="lang-indicator" style="--language-color:${this.languageColor(item.language)}"></span>
+          <strong>${this.escapeHtml(item.language)}</strong>
+          <span>${item.count} 筆 (${item.percentage}%)</span>
+        </div>
+        <div class="analytics-bar-track">
+          <div class="analytics-bar-fill" style="width: ${item.percentage}%; background-color: ${this.languageColor(item.language)}"></div>
+        </div>
+      </div>
+    `).join('');
+
+    const topicItems = analytics.topTopics.map(item => `
+      <span class="chip">#${this.escapeHtml(item.topic)} <strong>${item.count}</strong></span>
+    `).join('');
+
+    const yearlyItems = analytics.yearlyTrend.map(item => `
+      <div class="analytics-stat-pill">
+        <span class="pill-year">${this.escapeHtml(item.year)}</span>
+        <strong class="pill-count">${item.count} 筆</strong>
+      </div>
+    `).join('');
+
+    this.analyticsModalBody.innerHTML = `
+      <div class="analytics-summary-grid">
+        <div class="analytics-card">
+          <span class="stat-icon">📦</span>
+          <div class="stat-info">
+            <strong>${analytics.totalRepos.toLocaleString()}</strong>
+            <span>總 Stars 專案數</span>
+          </div>
+        </div>
+        <div class="analytics-card">
+          <span class="stat-icon">⭐</span>
+          <div class="stat-info">
+            <strong>${analytics.totalStars.toLocaleString()}</strong>
+            <span>專案累計 Stars (均 ${analytics.avgStars.toLocaleString()})</span>
+          </div>
+        </div>
+        <div class="analytics-card">
+          <span class="stat-icon">📝</span>
+          <div class="stat-info">
+            <strong>${analytics.notesCount.toLocaleString()}</strong>
+            <span>研讀筆記紀錄</span>
+          </div>
+        </div>
+        <div class="analytics-card">
+          <span class="stat-icon">🌟</span>
+          <div class="stat-info">
+            <strong>${analytics.favoritesCount.toLocaleString()}</strong>
+            <span>最愛標註數量</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="analytics-section">
+        <h3>主要程式語言分佈 Top 10</h3>
+        <div class="analytics-bars-container">${langRows}</div>
+      </div>
+
+      <div class="analytics-section">
+        <h3>熱門 Topic 覆蓋 Top 15</h3>
+        <div class="chips-container">${topicItems}</div>
+      </div>
+
+      <div class="analytics-section">
+        <h3>年度 Star 收藏趨勢</h3>
+        <div class="analytics-years-grid">${yearlyItems}</div>
+      </div>
+    `;
   }
 
   applyTheme(theme) {

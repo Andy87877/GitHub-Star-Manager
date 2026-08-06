@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依 Topic）
 
-> 自動產生於 `2026-07-31T17:14:40+00:00`。原始資料共有 **486** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**92** 個 repositories）。
+> 自動產生於 `2026-08-06T10:38:00+00:00`。原始資料共有 **486** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**91** 個 repositories）。
 
 為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 **2** 個收藏中的 Topics，並依涵蓋專案數排序，最多顯示 **30** 個。所有原始 Topics 仍完整保留於 `web/data/stars.json`，網站全文搜尋也能找到。
 
@@ -38,7 +38,7 @@
 - [tts（3）](#topic-tts)
 - [typescript（3）](#topic-typescript)
 - [vue（3）](#topic-vue)
-- [other（92）](#topic-other)
+- [other（91）](#topic-other)
 
 ---
 
@@ -329,7 +329,6 @@
 
 ## other
 
-- [FRC8725/FRC8725-MistParts](https://github.com/FRC8725/FRC8725-MistParts)
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具集：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.

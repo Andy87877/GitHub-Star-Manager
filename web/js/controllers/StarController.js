@@ -17,6 +17,13 @@ export class StarController {
   }
 
   render() {
+    const paginatedRepos = this.model.getPaginatedRepositories();
+    const paginationInfo = {
+      currentPage: this.model.currentPage,
+      totalPages: this.model.getTotalPages(),
+      pageSize: this.model.pageSize,
+      totalCount: this.model.filteredRepositories.length
+    };
     this.view.renderStats(this.model.getStatistics());
     this.view.renderStatus(this.model.dataStatus);
     this.view.renderFilters(
@@ -25,9 +32,11 @@ export class StarController {
       this.model.filters
     );
     this.view.renderRepositories(
-      this.model.filteredRepositories,
+      paginatedRepos,
       this.model.notes,
-      this.model.viewMode
+      this.model.favorites,
+      this.model.viewMode,
+      paginationInfo
     );
     this.view.renderViewToggle(this.model.viewMode);
     this.syncControls();
@@ -110,14 +119,23 @@ export class StarController {
     );
 
     document.getElementById('repoGrid').addEventListener('click', event => {
-      const button = event.target.closest('.edit-note-btn');
-      if (!button) return;
-      this.activeNoteRepoName = button.dataset.fullName;
-      this.view.openNoteModal(
-        this.activeNoteRepoName,
-        this.model.getNote(this.activeNoteRepoName),
-        button
-      );
+      const favBtn = event.target.closest('.toggle-fav-btn');
+      if (favBtn) {
+        const fullName = favBtn.dataset.fullName;
+        const isFav = this.model.toggleFavorite(fullName);
+        this.render();
+        this.view.showToast(isFav ? `已標註 ${fullName} 為最愛` : `已取消 ${fullName} 最愛標註`, 'info');
+        return;
+      }
+      const noteBtn = event.target.closest('.edit-note-btn');
+      if (noteBtn) {
+        this.activeNoteRepoName = noteBtn.dataset.fullName;
+        this.view.openNoteModal(
+          this.activeNoteRepoName,
+          this.model.getNote(this.activeNoteRepoName),
+          noteBtn
+        );
+      }
     });
 
     this.view.saveNoteBtn.addEventListener('click', () => this.saveNote());
@@ -129,9 +147,35 @@ export class StarController {
       if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') this.saveNote();
     });
 
+    // Analytics Modal Events
+    this.view.analyticsBtn.addEventListener('click', event => {
+      this.view.openAnalyticsModal(this.model.calculateAnalytics(), event.currentTarget);
+    });
+    this.view.closeAnalyticsModalBtn.addEventListener('click', () => {
+      this.view.closeAnalyticsModal();
+    });
+    this.view.analyticsModal.addEventListener('click', event => {
+      if (event.target === this.view.analyticsModal) this.view.closeAnalyticsModal();
+    });
+
+    // Pagination Events
+    this.view.pageSizeSelect.addEventListener('change', event => {
+      this.model.setPageSize(event.target.value);
+      this.render();
+    });
+    this.view.prevPageBtn.addEventListener('click', () => {
+      this.model.setPage(this.model.currentPage - 1);
+      this.render();
+    });
+    this.view.nextPageBtn.addEventListener('click', () => {
+      this.model.setPage(this.model.currentPage + 1);
+      this.render();
+    });
+
     document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && this.view.noteModal.classList.contains('active')) {
-        this.view.closeNoteModal();
+      if (event.key === 'Escape') {
+        if (this.view.noteModal.classList.contains('active')) this.view.closeNoteModal();
+        if (this.view.analyticsModal.classList.contains('active')) this.view.closeAnalyticsModal();
       }
       const tagName = document.activeElement?.tagName;
       if (event.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(tagName)) {
