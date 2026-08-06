@@ -268,3 +268,18 @@
   - 根目錄維持嚴格三檔案規範 (`README.md`, `topic.md`, `main.py`)，測試產物隔離於 `artifacts/robot-reports/`。
 - **狀態**：完成。
 
+## Iteration 18：資料庫快照修復、複製 URL 快捷鍵、回到頂部與資料完整性測試
+
+- **日期**：2026-08-06
+- **問題診斷與修復**：
+  - 檢視並診斷 `web/data/sync-meta.json` 含有 Git conflict markers (`<<<<<<< HEAD`) 導致 `JSONDecodeError` 錯誤。
+  - 重新執行 `main.py --username Andy87877` 進行純淨資料擷取，成功修復 `web/data/sync-meta.json`、`web/data/stars.json` 與 `topic.md`。
+- **UI/UX 升級**：
+  - 在 Table 與 Cards 的專案卡片標頭新增 `📋` 複製 URL 操作按鈕，支援系統剪貼簿寫入與 Toast 提示。
+  - 頁面右下角新增浮動 `⬆ 回到頁面頂部` 按鈕，於滾動 >300px 時自動顯現，點擊提供平滑滾動 (smooth scroll)。
+- **自動化測試擴充**：
+  - 新增 Robot Framework `Dataset Snapshot Integrity Contract` 測試，驗證全專案資料快照 JSON 解析合法性、無衝突標記、筆數匹配與屬性正確性。
+  - Robot Framework 測試總數提升至 26 項，全數 26 / 26 通過。
+- **狀態**：完成。
+
+

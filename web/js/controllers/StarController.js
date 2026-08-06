@@ -118,7 +118,18 @@ export class StarController {
       () => this.refreshLiveData()
     );
 
-    document.getElementById('repoGrid').addEventListener('click', event => {
+    document.getElementById('repoGrid').addEventListener('click', async event => {
+      const copyBtn = event.target.closest('.copy-url-btn');
+      if (copyBtn) {
+        const url = copyBtn.dataset.url;
+        try {
+          await navigator.clipboard.writeText(url);
+          this.view.showToast('已複製專案 URL 到剪貼簿！', 'success');
+        } catch {
+          this.view.showToast(`專案 URL: ${url}`, 'info');
+        }
+        return;
+      }
       const favBtn = event.target.closest('.toggle-fav-btn');
       if (favBtn) {
         const fullName = favBtn.dataset.fullName;
@@ -137,6 +148,15 @@ export class StarController {
         );
       }
     });
+
+    if (this.view.backToTopBtn) {
+      window.addEventListener('scroll', () => {
+        this.view.backToTopBtn.hidden = window.scrollY < 300;
+      });
+      this.view.backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
 
     this.view.saveNoteBtn.addEventListener('click', () => this.saveNote());
     this.view.closeNoteModalBtn.addEventListener('click', () => this.view.closeNoteModal());

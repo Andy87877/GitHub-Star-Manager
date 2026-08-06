@@ -1213,3 +1213,42 @@ tr.is-favorite {
   font-weight: 700;
 }
 
+/* Floating Back To Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1500;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: #ffffff;
+  border: 0;
+  box-shadow: var(--shadow-lg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-4px) scale(1.08);
+  background: var(--accent-hover);
+}
+
+.copy-url-btn {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.copy-url-btn:hover {
+  transform: scale(1.15);
+  color: var(--accent-primary);
+}
+
+

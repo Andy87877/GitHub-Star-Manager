@@ -86,3 +86,15 @@ Frontend Supports Pagination Navigation Controls
     Should Contain    ${model}    setPageSize
     Should Contain    ${view}    renderPagination
 
+Dataset Snapshot Integrity Contract
+    ${stars_content}=    Get File    ${CURDIR}${/}..${/}web${/}data${/}stars.json
+    ${meta_content}=     Get File    ${CURDIR}${/}..${/}web${/}data${/}sync-meta.json
+    Should Not Contain   ${stars_content}    <<<<<<<
+    Should Not Contain   ${meta_content}     <<<<<<<
+    ${stars}=            Evaluate            json.loads($stars_content)    modules=json
+    ${meta}=             Evaluate            json.loads($meta_content)     modules=json
+    Should Be True       len($stars) == $meta['repositoryCount']
+    Should Be Equal      ${meta['username']}   Andy87877
+    Should Be True       ${meta['isLiveSnapshot']}
+
+

@@ -164,3 +164,14 @@
 - [x] 更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 - [x] 根目錄僅保留 `README.md`、`topic.md`、`main.py` 3 個可見檔案（測試報告置於 `artifacts/robot-reports/`）
 
+## Phase 18：資料快照 Git 衝突修復、複製 URL、回到頂部與資料契約測試
+
+- [x] 診斷並清除 `web/data/sync-meta.json` 與 `web/data/stars.json` 中的 Git 衝突標記
+- [x] 執行 Python 驗證指令驗證 JSON 解析與 `repositoryCount` / `isLiveSnapshot` 相符
+- [x] 在 Table / Cards 增加 📋 複製專案 URL 按鈕與 Toast 提示
+- [x] 在 Web UI 增加浮動 ⬆ 回到頂部按鈕，滾動超過 300px 時平滑回頂
+- [x] 撰寫 Robot Framework `Dataset Snapshot Integrity Contract` 測試
+- [x] Robot Framework 26 項測試全數通過（26／26）
+- [x] 更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+

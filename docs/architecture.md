@@ -70,7 +70,7 @@ GitHub-Star-Manager/
 │   ├── refer.md
 │   └── AGENT.md
 ├── config/requirements.txt
-├── tests/*.robot                     # 25 項 Robot Framework 自動化測試
+├── tests/*.robot                     # 26 項 Robot Framework 自動化測試
 ├── .github/workflows/
 │   ├── ci-pages.yml                  # Robot CI + 純靜態 Pages CD
 │   └── schedules.yml                 # 每日同步真實快照
@@ -238,8 +238,9 @@ Robot Framework 覆蓋：
 - 前端 📊 數據分析 Dashboard Modal 計算與 DOM 契約。
 - 前端 ⭐ 最愛標註與篩選契約。
 - 前端動態分頁 (Pagination) 控制項與導覽契約。
+- 資料快照 JSON 完整性契約 (`web/data/stars.json` & `web/data/sync-meta.json` 解析與無 Git 衝突標記驗證)。
 
-目前完整涵蓋 25 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、動態分頁順暢、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
+目前完整涵蓋 26 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、複製 URL 與回到頂部順暢、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 

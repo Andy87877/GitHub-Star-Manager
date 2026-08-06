@@ -79,7 +79,7 @@ class MarkdownLanguageRenderer(IRenderer):
             "程式語言分佈 (Top 10)、熱門 Topics (Top 15) 與 Star 年度收藏趨勢。",
             "- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及"
             "手動觸發同步本 README、`topic.md` 與 `web/data/stars.json`。",
-            "- 每次 push／pull request 都先執行 25 項 Robot 驗收；`main` 驗證成功"
+            "- 每次 push／pull request 都先執行 26 項 Robot 驗收；`main` 驗證成功"
             "後才打包純靜態網站並部署 GitHub Pages。",
             "- 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫"
             "上一份有效資料。",

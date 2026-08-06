@@ -56,7 +56,7 @@ python main.py --serve
 
 交付前至少確認：
 
-- Robot Framework 全數 25 項測試通過。
+- Robot Framework 全數 26 項測試通過。
 - `web/index.html` 可載入快照與即時 GitHub 資料，且數據分析 Dashboard Modal 與最愛標註功能正常。
 - Table 為新使用者預設，Cards 明確偏好可還原。
 - 390px 下整頁不水平溢位，Table 僅在自身容器內捲動。

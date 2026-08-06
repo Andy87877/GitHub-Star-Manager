@@ -34,6 +34,7 @@ export class StarView {
     this.prevPageBtn = document.getElementById('prevPageBtn');
     this.nextPageBtn = document.getElementById('nextPageBtn');
     this.pageIndicator = document.getElementById('pageIndicator');
+    this.backToTopBtn = document.getElementById('backToTopBtn');
     this.previousFocus = null;
   }
 
@@ -166,6 +167,10 @@ export class StarView {
                 </a>
               </h2>
               <div class="repo-actions">
+                <button type="button" class="btn btn-icon-only copy-url-btn"
+                  aria-label="複製 ${fullName} 的 URL"
+                  title="複製 URL"
+                  data-url="${this.safeUrl(repo.url)}">📋</button>
                 <button type="button" class="btn btn-icon-only toggle-fav-btn${isFav ? ' active' : ''}"
                   aria-label="${isFav ? '取消最愛' : '標註為最愛'} ${fullName}"
                   title="${isFav ? '取消最愛' : '標註為最愛'}"
@@ -222,6 +227,10 @@ export class StarView {
           <td><time datetime="${this.escapeHtml(repo.starredAt)}">${this.formatShortDate(repo.starredAt)}</time></td>
           <td><span class="status-badge ${repo.isArchived ? 'archived' : ''}">${status}</span></td>
           <td class="action-cell">
+            <button type="button" class="btn btn-icon-only copy-url-btn"
+              aria-label="複製 ${fullName} 的 URL"
+              title="複製 URL"
+              data-url="${this.safeUrl(repo.url)}">📋</button>
             <button type="button" class="btn btn-icon-only toggle-fav-btn${isFav ? ' active' : ''}"
               aria-label="${isFav ? '取消最愛' : '標註為最愛'} ${fullName}"
               title="${isFav ? '取消最愛' : '標註為最愛'}"
