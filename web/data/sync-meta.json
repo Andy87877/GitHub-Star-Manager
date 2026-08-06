@@ -1,9 +1,15 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
+<<<<<<< HEAD
   "generatedAt": "2026-08-06T10:38:00+00:00",
   "repositoryCount": 152,
   "source": "GitHub REST API",
+=======
+  "generatedAt": "2026-08-05T20:20:01+00:00",
+  "repositoryCount": 152,
+  "source": "GitHub GraphQL API",
+>>>>>>> 35a1f8cf16be2684dfce6c21dc8e50ffe7e79bc5
   "isLiveSnapshot": true,
   "totalTopicCount": 486,
   "focusedTopicCount": 30,
