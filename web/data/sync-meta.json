@@ -1,9 +1,9 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-06T10:59:54+00:00",
+  "generatedAt": "2026-08-07T00:35:31+00:00",
   "repositoryCount": 152,
-  "source": "GitHub REST API",
+  "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
   "totalTopicCount": 486,
   "focusedTopicCount": 30,
@@ -13,8 +13,8 @@
   "topicOtherCategory": "other",
   "analytics": {
     "totalCount": 152,
-    "totalStars": 4777284,
-    "totalForks": 724962,
+    "totalStars": 4778625,
+    "totalForks": 725131,
     "archivedCount": 10,
     "activeCount": 142,
     "languageBreakdown": {
