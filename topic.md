@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依 Topic）
 
-> 自動產生於 `2026-08-08T19:20:15+00:00`。原始資料共有 **486** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**91** 個 repositories）。
+> 自動產生於 `2026-08-09T19:23:47+00:00`。原始資料共有 **486** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**91** 個 repositories）。
 
 為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 **2** 個收藏中的 Topics，並依涵蓋專案數排序，最多顯示 **30** 個。所有原始 Topics 仍完整保留於 `web/data/stars.json`，網站全文搜尋也能找到。
 
@@ -355,7 +355,7 @@
 - [cyesuta/Code-Guardian-Aegis](https://github.com/cyesuta/Code-Guardian-Aegis) — VibeCoding security shield for novice developers - preventing disaster-level security vulnerabilities
 - [google/googletest](https://github.com/google/googletest) — GoogleTest - Google Testing and Mocking Framework
 - [SR0725/short-link-tracker](https://github.com/SR0725/short-link-tracker)
-- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Every day is worth remembering...
+- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
 - [cyprieng/github-breakout](https://github.com/cyprieng/github-breakout) — Generate a Breakout game SVG from a GitHub user's contributions graph
 - [xyTom/snippai](https://github.com/xyTom/snippai) — Snip Anything Solve Everything​
 - [abyesilyurt/vibesort](https://github.com/abyesilyurt/vibesort) — GPT powered sorting using structured output

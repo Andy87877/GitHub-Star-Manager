@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **152** 個公開 Star；資料快照：`2026-08-08T19:20:15+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **152** 個公開 Star；資料快照：`2026-08-09T19:23:47+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -126,7 +126,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## Dart
 
-- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Every day is worth remembering...
+- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
 - [ExpTechTW/DPIP](https://github.com/ExpTechTW/DPIP) — Disaster Prevention Information Platform (防災資訊整合平台)
 - [NEO-TAT/tat_flutter](https://github.com/NEO-TAT/tat_flutter) — An App for Taipei Tech students. NTUT Life TAT, convenient, concise, fast, powerful, enrich your NTUT life!
 
