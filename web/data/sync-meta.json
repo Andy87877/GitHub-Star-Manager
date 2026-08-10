@@ -1,42 +1,42 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-09T19:23:47+00:00",
-  "repositoryCount": 152,
+  "generatedAt": "2026-08-10T19:46:05+00:00",
+  "repositoryCount": 153,
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 486,
+  "totalTopicCount": 489,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 91,
+  "otherRepositoryCount": 92,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 152,
-    "totalStars": 4784978,
-    "totalForks": 725849,
+    "totalCount": 153,
+    "totalStars": 4789964,
+    "totalForks": 726395,
     "archivedCount": 10,
-    "activeCount": 142,
+    "activeCount": 143,
     "languageBreakdown": {
       "Python": {
         "count": 38,
-        "percentage": 25.0
+        "percentage": 24.8
       },
       "TypeScript": {
-        "count": 24,
-        "percentage": 15.8
+        "count": 25,
+        "percentage": 16.3
       },
       "Others": {
         "count": 22,
-        "percentage": 14.5
+        "percentage": 14.4
       },
       "JavaScript": {
         "count": 13,
-        "percentage": 8.6
+        "percentage": 8.5
       },
       "C++": {
         "count": 8,
-        "percentage": 5.3
+        "percentage": 5.2
       },
       "Java": {
         "count": 5,
@@ -194,7 +194,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 52,
-      "2026": 35
+      "2026": 36
     }
   }
 }
