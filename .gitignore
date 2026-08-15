@@ -75,6 +75,11 @@ Thumbs.db
 *.log
 scratch/
 tmp/
+
+
+
+
+
 artifacts/
 .pytest_cache/
 .coverage
