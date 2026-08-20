@@ -1,8 +1,12 @@
 # Andy87877 的 GitHub Stars
 
+<<<<<<< HEAD
 > 收錄 **155** 個公開 Star（較前次 **+3**）；資料快照：`2026-08-20 20:05:04 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 [![Total Stars](https://img.shields.io/badge/Total_Stars-155_%E2%AD%90-blue)](https://github.com/Andy87877?tab=stars) ![Delta](https://img.shields.io/badge/Change-%2B3-orange) ![Last Updated](https://img.shields.io/badge/Updated-2026-08-20-brightgreen)
+=======
+> 收錄 **154** 個公開 Star；資料快照：`2026-08-19T19:17:04+00:00`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+>>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 

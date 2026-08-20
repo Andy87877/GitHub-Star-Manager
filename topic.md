@@ -1,6 +1,10 @@
 # Andy87877 的 GitHub Stars（依 Topic）
 
+<<<<<<< HEAD
 > 自動產生於 `2026-08-20T12:05:04+00:00`。原始資料共有 **489** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**94** 個 repositories）。
+=======
+> 自動產生於 `2026-08-19T19:17:04+00:00`。原始資料共有 **489** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**93** 個 repositories）。
+>>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
 
 為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 **2** 個收藏中的 Topics，並依涵蓋專案數排序，最多顯示 **30** 個。所有原始 Topics 仍完整保留於 `web/data/stars.json`，網站全文搜尋也能找到。
 
@@ -38,7 +42,11 @@
 - [tts（3）](#topic-tts)
 - [typescript（3）](#topic-typescript)
 - [vue（3）](#topic-vue)
+<<<<<<< HEAD
 - [other（94）](#topic-other)
+=======
+- [other（93）](#topic-other)
+>>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
 
 ---
 
@@ -329,7 +337,10 @@
 
 ## other
 
+<<<<<<< HEAD
 - [mahlernim/google-timeline-visualizer](https://github.com/mahlernim/google-timeline-visualizer) — Visualize your year in travel using your Google Location History (Timeline) data
+=======
+>>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
 - [FRC8725/FRC8725-Website-Design-Docs](https://github.com/FRC8725/FRC8725-Website-Design-Docs)
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
