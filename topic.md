@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依 Topic）
 
-> 自動產生於 `2026-08-06T10:59:54+00:00`。原始資料共有 **486** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**91** 個 repositories）。
+> 自動產生於 `2026-08-20T12:05:04+00:00`。原始資料共有 **489** 個 Topics；本頁只顯示 **30** 個聚焦 Topics，再加上最底下的 `other`（**94** 個 repositories）。
 
 為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 **2** 個收藏中的 Topics，並依涵蓋專案數排序，最多顯示 **30** 個。所有原始 Topics 仍完整保留於 `web/data/stars.json`，網站全文搜尋也能找到。
 
@@ -38,7 +38,7 @@
 - [tts（3）](#topic-tts)
 - [typescript（3）](#topic-typescript)
 - [vue（3）](#topic-vue)
-- [other（91）](#topic-other)
+- [other（94）](#topic-other)
 
 ---
 
@@ -82,7 +82,7 @@
 - [originalankur/maptoposter](https://github.com/originalankur/maptoposter) — Transform your favorite cities into beautiful, minimalist designs. MapToPoster lets you create and export visually striking map posters with code.
 - [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) — :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.
 - [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
-- [vinta/awesome-python](https://github.com/vinta/awesome-python) — An opinionated list of Python frameworks, libraries, tools, and resources
+- [vinta/awesome-python](https://github.com/vinta/awesome-python) — The definitive list that answers "I want to do X in Python, which tool should I use?"
 - [cgoldberg/python-unittest-tutorial](https://github.com/cgoldberg/python-unittest-tutorial) — Python tutorial - unittest module
 - [gradio-app/gradio](https://github.com/gradio-app/gradio) — Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!
 - [joelibaceta/video-to-ascii](https://github.com/joelibaceta/video-to-ascii) — It is a simple python package to play videos in the terminal using characters as pixels
@@ -146,7 +146,7 @@
 ## awesome
 
 - [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) — :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.
-- [vinta/awesome-python](https://github.com/vinta/awesome-python) — An opinionated list of Python frameworks, libraries, tools, and resources
+- [vinta/awesome-python](https://github.com/vinta/awesome-python) — The definitive list that answers "I want to do X in Python, which tool should I use?"
 - [github/awesome-copilot](https://github.com/github/awesome-copilot) — Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
 - [deepseek-ai/awesome-deepseek-integration](https://github.com/deepseek-ai/awesome-deepseek-integration) — Integrate the DeepSeek API into popular software
 
@@ -329,6 +329,9 @@
 
 ## other
 
+- [mahlernim/google-timeline-visualizer](https://github.com/mahlernim/google-timeline-visualizer) — Visualize your year in travel using your Google Location History (Timeline) data
+- [FRC8725/FRC8725-Website-Design-Docs](https://github.com/FRC8725/FRC8725-Website-Design-Docs)
+- [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具集：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
@@ -355,7 +358,7 @@
 - [cyesuta/Code-Guardian-Aegis](https://github.com/cyesuta/Code-Guardian-Aegis) — VibeCoding security shield for novice developers - preventing disaster-level security vulnerabilities
 - [google/googletest](https://github.com/google/googletest) — GoogleTest - Google Testing and Mocking Framework
 - [SR0725/short-link-tracker](https://github.com/SR0725/short-link-tracker)
-- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Every day is worth remembering...
+- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
 - [cyprieng/github-breakout](https://github.com/cyprieng/github-breakout) — Generate a Breakout game SVG from a GitHub user's contributions graph
 - [xyTom/snippai](https://github.com/xyTom/snippai) — Snip Anything Solve Everything​
 - [abyesilyurt/vibesort](https://github.com/abyesilyurt/vibesort) — GPT powered sorting using structured output

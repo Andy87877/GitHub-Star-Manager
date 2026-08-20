@@ -29,6 +29,68 @@ def _anchor(prefix: str, category: str) -> str:
     return f"{prefix}-{slug}"
 
 
+def _build_visualizations(metadata: Mapping[str, Any]) -> List[str]:
+    """Generate Markdown Mermaid charts, stat badges, and progress bar tables."""
+    analytics = metadata.get("analytics")
+    if not analytics or not isinstance(analytics, dict):
+        return []
+
+    lines = [
+        "## 📊 數據圖表與統計視覺化",
+        "",
+    ]
+
+    # 1. Mermaid Pie Chart for Top 10 Languages
+    breakdown = analytics.get("languageBreakdown", {})
+    if breakdown:
+        top_langs = list(breakdown.items())[:10]
+        lines.extend([
+            "### 程式語言分佈 (Top 10)",
+            "",
+            "```mermaid",
+            "pie title 程式語言分佈 Top 10",
+        ])
+        for lang, data in top_langs:
+            cnt = data.get("count", 0)
+            clean_lang = lang.replace('"', "'")
+            lines.append(f'    "{clean_lang}" : {cnt}')
+        lines.extend(["```", ""])
+
+    # 2. Mermaid Pie Chart for Top 10 Topics
+    top_topics = analytics.get("topTopics", [])
+    if top_topics:
+        lines.extend([
+            "### 熱門 Topic 覆蓋 Top 10",
+            "",
+            "```mermaid",
+            "pie title 熱門 Topic 覆蓋 Top 10",
+        ])
+        for item in top_topics[:10]:
+            tpc = item.get("topic", "")
+            cnt = item.get("count", 0)
+            clean_tpc = tpc.replace('"', "'")
+            lines.append(f'    "{clean_tpc}" : {cnt}')
+        lines.extend(["```", ""])
+
+    # 3. Progress Bar Table for Top 10 Languages
+    if breakdown:
+        lines.extend([
+            "### 主要語言佔比長條圖",
+            "",
+            "| 程式語言 | 專案數量 | 佔比比例 | 視覺化進度條 |",
+            "| :--- | :---: | :---: | :--- |",
+        ])
+        for lang, data in list(breakdown.items())[:10]:
+            cnt = data.get("count", 0)
+            pct = data.get("percentage", 0.0)
+            bar_len = int(round(pct / 5.0))
+            bar_str = "█" * max(1, bar_len) if cnt > 0 else "░"
+            lines.append(f"| **{lang}** | {cnt} | {pct:.1f}% | `{bar_str}` |")
+        lines.append("")
+
+    return lines
+
+
 class IRenderer(ABC):
     """Renderer abstraction used by the synchronization controller."""
 
@@ -53,17 +115,27 @@ class MarkdownLanguageRenderer(IRenderer):
     ) -> str:
         metadata = metadata or {}
         count = int(metadata.get("repositoryCount") or sum(map(len, categorized.values())))
+        delta_str = str(metadata.get("formattedDelta") or "0")
         generated_at = metadata.get("generatedAt", "尚未同步")
+        formatted_updated_at = metadata.get("formattedUpdatedAt", generated_at)
         profile_url = metadata.get(
             "profileUrl", "https://github.com/Andy87877?tab=stars"
         )
+        date_badge_str = (generated_at[:10] if len(generated_at) >= 10 else "2026-08-20")
 
         lines = [
             f"# {title}",
             "",
             (
-                f"> 收錄 **{count}** 個公開 Star；資料快照：`{generated_at}`。"
+                f"> 收錄 **{count}** 個公開 Star（較前次 **{delta_str}**）；"
+                f"資料快照：`{formatted_updated_at}`。"
                 f"來源：[Andy87877 的 GitHub Stars]({profile_url})。"
+            ),
+            "",
+            (
+                f"[![Total Stars](https://img.shields.io/badge/Total_Stars-{count}_%E2%AD%90-blue)]({profile_url}) "
+                f"![Delta](https://img.shields.io/badge/Change-{delta_str.replace('+', '%2B')}-orange) "
+                f"![Last Updated](https://img.shields.io/badge/Updated-{date_badge_str}-brightgreen)"
             ),
             "",
             "這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責"
@@ -71,6 +143,12 @@ class MarkdownLanguageRenderer(IRenderer):
             "Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、"
             "排序、本機研究筆記與 CSV 匯出。",
             "",
+        ]
+
+        # Add visual diagrams and progress bar tables
+        lines.extend(_build_visualizations(metadata))
+
+        lines.extend([
             "## 資料即時性與數據分析",
             "",
             "- 網站開啟時先顯示版本庫快照，再讀取 GitHub 公開 REST API 更新畫面；"
@@ -79,7 +157,7 @@ class MarkdownLanguageRenderer(IRenderer):
             "程式語言分佈 (Top 10)、熱門 Topics (Top 15) 與 Star 年度收藏趨勢。",
             "- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及"
             "手動觸發同步本 README、`topic.md` 與 `web/data/stars.json`。",
-            "- 每次 push／pull request 都先執行 26 項 Robot 驗收；`main` 驗證成功"
+            "- 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功"
             "後才打包純靜態網站並部署 GitHub Pages。",
             "- 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫"
             "上一份有效資料。",
@@ -121,7 +199,7 @@ class MarkdownLanguageRenderer(IRenderer):
             "",
             "## 依主要語言瀏覽",
             "",
-        ]
+        ])
 
         for category, repositories in categorized.items():
             anchor = _anchor("language", category)

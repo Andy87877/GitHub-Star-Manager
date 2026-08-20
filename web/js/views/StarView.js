@@ -51,9 +51,10 @@ export class StarView {
   renderStatus(status) {
     this.dataStatus.dataset.state = status.state;
     this.dataStatusTitle.textContent = status.source;
-    const time = this.formatDate(status.generatedAt);
+    const time = status.formattedUpdatedAt || this.formatDate(status.generatedAt);
+    const deltaStr = status.formattedDelta ? ` (${status.formattedDelta === '0' ? '零變動' : `較前次 ${status.formattedDelta}`})` : '';
     this.dataStatusDetail.textContent =
-      `${status.message}${time ? ` 更新時間：${time}` : ''}`;
+      `${status.message}${deltaStr}${time ? ` ｜ 更新時間：${time}` : ''}`;
   }
 
   renderFilters(languages, topics, filters) {

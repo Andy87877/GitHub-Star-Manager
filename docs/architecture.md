@@ -239,8 +239,10 @@ Robot Framework 覆蓋：
 - 前端 ⭐ 最愛標註與篩選契約。
 - 前端動態分頁 (Pagination) 控制項與導覽契約。
 - 資料快照 JSON 完整性契約 (`web/data/stars.json` & `web/data/sync-meta.json` 解析與無 Git 衝突標記驗證)。
+- 數據異動增減計算契約 (`formattedDelta`, `previousRepositoryCount`, `formattedUpdatedAt`)。
+- GitHub Actions 排程 Workflow 豐富 Commit 訊息 (Title & Body) 契約。
 
-目前完整涵蓋 26 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、複製 URL 與回到頂部順暢、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
+目前完整涵蓋 27 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、複製 URL 與回到頂部順暢、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 

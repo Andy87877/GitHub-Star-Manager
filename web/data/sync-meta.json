@@ -1,46 +1,50 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-06T10:59:54+00:00",
-  "repositoryCount": 152,
+  "generatedAt": "2026-08-20T12:05:04+00:00",
+  "formattedUpdatedAt": "2026-08-20 20:05:04 (UTC+8)",
+  "repositoryCount": 155,
+  "previousRepositoryCount": 152,
+  "deltaCount": 3,
+  "formattedDelta": "+3",
   "source": "GitHub REST API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 486,
+  "totalTopicCount": 489,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 91,
+  "otherRepositoryCount": 94,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 152,
-    "totalStars": 4777284,
-    "totalForks": 724962,
+    "totalCount": 155,
+    "totalStars": 4814558,
+    "totalForks": 729042,
     "archivedCount": 10,
-    "activeCount": 142,
+    "activeCount": 145,
     "languageBreakdown": {
       "Python": {
         "count": 38,
-        "percentage": 25.0
+        "percentage": 24.5
       },
       "TypeScript": {
-        "count": 24,
-        "percentage": 15.8
+        "count": 25,
+        "percentage": 16.1
       },
       "Others": {
         "count": 22,
-        "percentage": 14.5
+        "percentage": 14.2
       },
       "JavaScript": {
-        "count": 13,
-        "percentage": 8.6
+        "count": 14,
+        "percentage": 9.0
       },
       "C++": {
         "count": 8,
-        "percentage": 5.3
+        "percentage": 5.2
       },
       "Java": {
         "count": 5,
-        "percentage": 3.3
+        "percentage": 3.2
       },
       "HTML": {
         "count": 4,
@@ -52,33 +56,33 @@
       },
       "Dart": {
         "count": 3,
-        "percentage": 2.0
+        "percentage": 1.9
       },
       "Go": {
         "count": 3,
-        "percentage": 2.0
+        "percentage": 1.9
       },
       "Jupyter Notebook": {
         "count": 3,
-        "percentage": 2.0
+        "percentage": 1.9
+      },
+      "Kotlin": {
+        "count": 3,
+        "percentage": 1.9
       },
       "MDX": {
         "count": 3,
-        "percentage": 2.0
+        "percentage": 1.9
       },
       "PHP": {
         "count": 3,
-        "percentage": 2.0
+        "percentage": 1.9
       },
       "C": {
         "count": 2,
         "percentage": 1.3
       },
       "C#": {
-        "count": 2,
-        "percentage": 1.3
-      },
-      "Kotlin": {
         "count": 2,
         "percentage": 1.3
       },
@@ -92,39 +96,39 @@
       },
       "Astro": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "Batchfile": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "CMake": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "Cuda": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "Lua": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "PowerShell": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "Processing": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "Svelte": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       },
       "Verilog": {
         "count": 1,
-        "percentage": 0.7
+        "percentage": 0.6
       }
     },
     "topTopics": [
@@ -194,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 52,
-      "2026": 35
+      "2026": 38
     }
   }
 }

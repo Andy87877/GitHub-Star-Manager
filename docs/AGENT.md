@@ -1,6 +1,6 @@
 # GitHub-Star-Manager 協作規範
 
-更新日期：2026-08-06
+更新日期：2026-08-20
 
 ## 1. 根目錄不變量
 
@@ -15,7 +15,7 @@
 ## 2. 架構責任
 
 - Python Model：`app/models/`，只封裝領域資料。
-- Python Controller：`app/controllers/`，協調抓取、分類、數據分析、渲染與原子發布。
+- Python Controller：`app/controllers/`，協調抓取、分類、數據分析、異動追蹤、視覺化渲染與原子發布。
 - Python Services：`app/services/`，透過小型介面與策略實作 GitHub Client、分類、`AnalyticsCalculator`、Renderer、Publisher。
 - Web Model／View／Controller：分別位於 `web/js/models/`、`web/js/views/`、`web/js/controllers/`。
 - `main.py` 只負責 CLI 組裝 (支援 `--analytics`, `--export`) 與服務 `web/`，不得承擔分類或 DOM 邏輯。
@@ -56,8 +56,8 @@ python main.py --serve
 
 交付前至少確認：
 
-- Robot Framework 全數 26 項測試通過。
-- `web/index.html` 可載入快照與即時 GitHub 資料，且數據分析 Dashboard Modal 與最愛標註功能正常。
+- Robot Framework 全數 27 項測試通過。
+- `web/index.html` 可載入快照與即時 GitHub 資料，呈現 Star 異動增減，且數據分析 Dashboard Modal 與最愛標註功能正常。
 - Table 為新使用者預設，Cards 明確偏好可還原。
 - 390px 下整頁不水平溢位，Table 僅在自身容器內捲動。
 - 根目錄沒有散落測試報告或額外可見檔案（僅有 README.md, topic.md, main.py）。

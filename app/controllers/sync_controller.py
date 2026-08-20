@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Any, Dict, Optional
+import json
 import os
 
 from app.services.analytics import AnalyticsCalculator
@@ -73,15 +74,48 @@ class SyncController:
                 "GitHub returned zero repositories; existing outputs were preserved."
             )
 
-        generated_at = (
-            datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-        )
+        now_utc = datetime.now(timezone.utc)
+        generated_at = now_utc.replace(microsecond=0).isoformat()
+        taipei_tz = timezone(timedelta(hours=8))
+        now_taipei = now_utc.astimezone(taipei_tz)
+        formatted_updated_at = now_taipei.strftime("%Y-%m-%d %H:%M:%S (UTC+8)")
+
+        # Read existing metadata for delta calculation
+        previous_count = None
+        target_meta_path = os.path.join(output_dir, metadata_file)
+        if os.path.exists(target_meta_path):
+            try:
+                with open(target_meta_path, "r", encoding="utf-8") as f:
+                    old_meta = json.load(f)
+                    if isinstance(old_meta, dict) and "repositoryCount" in old_meta:
+                        previous_count = int(old_meta["repositoryCount"])
+            except Exception:
+                previous_count = None
+
+        current_count = len(repositories)
+        if previous_count is not None:
+            delta_count = current_count - previous_count
+            if delta_count > 0:
+                formatted_delta = f"+{delta_count}"
+            elif delta_count < 0:
+                formatted_delta = str(delta_count)
+            else:
+                formatted_delta = "0"
+        else:
+            previous_count = current_count
+            delta_count = 0
+            formatted_delta = "0"
+
         analytics_data = AnalyticsCalculator.calculate(repositories)
         metadata: Dict[str, Any] = {
             "username": username,
             "profileUrl": f"https://github.com/{username}?tab=stars",
             "generatedAt": generated_at,
-            "repositoryCount": len(repositories),
+            "formattedUpdatedAt": formatted_updated_at,
+            "repositoryCount": current_count,
+            "previousRepositoryCount": previous_count,
+            "deltaCount": delta_count,
+            "formattedDelta": formatted_delta,
             "source": self.client.source_name,
             "isLiveSnapshot": self.client.source_name != "Mock fixture",
             "totalTopicCount": len(

@@ -57,8 +57,25 @@ jobs:
             echo "Stars snapshot is already current."
             exit 0
           fi
+          COMMIT_TITLE=$(python -c "
+          import json, pathlib
+          data = json.loads(pathlib.Path('web/data/sync-meta.json').read_text(encoding='utf-8'))
+          count = data.get('repositoryCount', 0)
+          delta = data.get('formattedDelta', '0')
+          ts = data.get('formattedUpdatedAt', data.get('generatedAt', ''))[:19]
+          print(f'data: refresh Andy87877 GitHub Stars ({count} stars, delta: {delta} | {ts})')
+          ")
+          COMMIT_BODY=$(python -c "
+          import json, pathlib
+          data = json.loads(pathlib.Path('web/data/sync-meta.json').read_text(encoding='utf-8'))
+          analytics = data.get('analytics', {})
+          total_stars = analytics.get('totalStars', 0)
+          top_lang = list(analytics.get('languageBreakdown', {}).keys())[:3]
+          top_lang_str = ', '.join(top_lang) if top_lang else 'N/A'
+          print(f'Total Repositories: {data.get(\"repositoryCount\")}\nDelta Change: {data.get(\"formattedDelta\")}\nTotal Stars Counted: {total_stars}\nTop Languages: {top_lang_str}\nTimestamp: {data.get(\"formattedUpdatedAt\", data.get(\"generatedAt\"))}')
+          ")
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add README.md topic.md web/data/stars.json web/data/sync-meta.json
-          git commit -m "data: refresh Andy87877 GitHub Stars"
+          git commit -m "$COMMIT_TITLE" -m "$COMMIT_BODY"
           git push

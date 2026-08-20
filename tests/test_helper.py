@@ -117,14 +117,48 @@ def test_markdown_language_renderer() -> str:
         categorized,
         metadata={
             "repositoryCount": 1,
+            "formattedDelta": "+1",
             "generatedAt": "2026-07-29T00:00:00+00:00",
+            "formattedUpdatedAt": "2026-07-29 08:00:00 (UTC+8)",
             "profileUrl": "https://github.com/Andy87877?tab=stars",
+            "analytics": {
+                "languageBreakdown": {"Python": {"count": 1, "percentage": 100.0}},
+                "topTopics": [{"topic": "python", "count": 1}],
+            },
         },
     )
     assert "Andy87877 的 GitHub Stars" in output
-    assert "收錄 **1** 個公開 Star" in output
+    assert "收錄 **1** 個公開 Star（較前次 **+1**）" in output
+    assert "```mermaid" in output
+    assert "pie title 程式語言分佈 Top 10" in output
+    assert '![Total Stars](https://img.shields.io/badge/Total_Stars-1_%E2%AD%90-blue)' in output
     assert '<a id="language-python"></a>' in output
     assert "[owner/repo]" in output
+    return "PASS"
+
+
+def test_sync_metadata_delta() -> str:
+    with tempfile.TemporaryDirectory() as temporary:
+        root = Path(temporary)
+        meta_dir = root / "web" / "data"
+        meta_dir.mkdir(parents=True, exist_ok=True)
+        old_meta = meta_dir / "sync-meta.json"
+        old_meta.write_text(
+            json.dumps({"username": "Andy87877", "repositoryCount": 100}),
+            encoding="utf-8",
+        )
+        class TwoReposClient(IGitHubClient):
+            source_name = "TwoRepos fixture"
+            def fetch_starred_repositories(self, username, limit=None):
+                return [sample_repository(full_name="a/b"), sample_repository(full_name="c/d")]
+
+        SyncController(client=TwoReposClient()).sync(output_dir=str(root))
+        new_meta = json.loads((meta_dir / "sync-meta.json").read_text(encoding="utf-8"))
+        assert new_meta["repositoryCount"] == 2
+        assert new_meta["previousRepositoryCount"] == 100
+        assert new_meta["deltaCount"] == -98
+        assert new_meta["formattedDelta"] == "-98"
+        assert "formattedUpdatedAt" in new_meta
     return "PASS"
 
 
@@ -258,6 +292,7 @@ def main() -> None:
         "json": test_json_dataset_renderer,
         "rest_contract": test_rest_star_media_contract,
         "empty_preserves": test_empty_sync_preserves_outputs,
+        "meta_delta": test_sync_metadata_delta,
     }
     name = sys.argv[1]
     print(tests[name]())

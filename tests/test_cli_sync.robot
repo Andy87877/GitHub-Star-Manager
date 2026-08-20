@@ -41,9 +41,18 @@ Workflow Tests Before Live Publication
     ${workflow}=    Get File    ${CURDIR}${/}..${/}.github${/}workflows${/}schedules.yml
     Should Contain    ${workflow}    python -m robot
     Should Contain    ${workflow}    python main.py --username Andy87877
+    Should Contain    ${workflow}    COMMIT_TITLE
+    Should Contain    ${workflow}    COMMIT_BODY
+    Should Contain    ${workflow}    formattedDelta
     ${test_position}=    Evaluate    $workflow.index("python -m robot")
     ${sync_position}=    Evaluate    $workflow.index("python main.py --username Andy87877")
     Should Be True    ${test_position} < ${sync_position}
+
+Metadata Computes Delta And Formatted Time
+    [Documentation]    Test that SyncController calculates previous count, delta count, and formatted Taipei time.
+    ${result}=    Run Process    ${PYTHON_BIN}    tests/test_helper.py    meta_delta
+    Should Contain    ${result.stdout}    PASS
+    Should Be Equal As Integers    ${result.rc}    0
 
 Static Pages Workflow Verifies Before Deploying
     ${workflow}=    Get File    ${CURDIR}${/}..${/}.github${/}workflows${/}ci-pages.yml

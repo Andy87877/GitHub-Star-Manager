@@ -282,4 +282,22 @@
   - Robot Framework 測試總數提升至 26 項，全數 26 / 26 通過。
 - **狀態**：完成。
 
+## Iteration 19：數據異動增減追蹤 (Delta Tracking)、README 視覺化圖表與 GitHub Actions 豐富 Commit 資訊
+
+- **日期**：2026-08-20
+- **使用者回饋**：
+  - GitHub Actions Bot 的 commit 訊息 `data: refresh Andy87877 GitHub Stars` 太單調，缺乏更新時間、總量與增減數量細節。
+  - `README.md` 可以更加視覺化 (新增圖表與長條圖)。
+- **架構與設計決策**：
+  - **增減追蹤 (Delta Tracking)**：`SyncController` 在寫入新快照前，自動讀取現有 `web/data/sync-meta.json`，計算與記錄 `previousRepositoryCount`、`deltaCount` (例如 `3`)、`formattedDelta` (例如 `+3`) 與在地化 Taipei 時間 `formattedUpdatedAt` (例如 `2026-08-20 20:05:04 (UTC+8)`)。
+  - **README 視覺化引擎**：升級 `MarkdownLanguageRenderer` (`app/services/renderers.py`)，內嵌 Mermaid Pie Charts (程式語言 Top 10 與熱門 Topic Top 10)、Shields.io 統計 Badges (Total Stars, Delta, Updated Date) 與 Unicode 長條圖進度條表格。
+  - **GitHub Actions 豐富 Commit Logs**：更新 `.github/workflows/schedules.yml` 的 Commit 步驟，透過 Python 腳本動態讀取 `sync-meta.json` 產出富含意義的 Commit 標題 (如 `data: refresh Andy87877 GitHub Stars (155 stars, delta: +3 | 2026-08-20 20:05:04)`) 與包含詳細數據的 Commit Body。
+  - **Web UI Data Status 升級**：`StarModel` 與 `StarView` 動態解析與渲染異動提示（例如 `(較前次 +3) ｜ 更新時間：2026-08-20 20:05:04 (UTC+8)`）。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 155 筆真實 Star 快照，成功計算並寫入 `formattedDelta` (`+3`) 與 `formattedUpdatedAt`。
+  - `README.md` 成功生成豐富的 Mermaid Pie Charts、Shields.io Badges 與長條圖。
+  - Robot Framework 測試套件擴充至 27 項，27 / 27 項測試 100% 全部 PASS 通過。
+- **狀態**：完成。
+
+
 

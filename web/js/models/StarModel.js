@@ -58,6 +58,8 @@ export class StarModel {
         source: '版本庫快照',
         message: '目前顯示最近一次成功同步的資料，正在連線 GitHub…',
         generatedAt: metadata.generatedAt || '',
+        formattedUpdatedAt: metadata.formattedUpdatedAt || '',
+        formattedDelta: metadata.formattedDelta || '0',
         repositoryCount: this.repositories.length
       };
       return true;
