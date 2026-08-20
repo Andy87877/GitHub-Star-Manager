@@ -84,3 +84,5 @@ artifacts/
 .pytest_cache/
 .coverage
 htmlcov/
+
+docs/refer.md
