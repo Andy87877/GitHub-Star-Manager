@@ -1,8 +1,8 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **155** 個公開 Star（較前次 **0**）；資料快照：`2026-08-20 20:17:12 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **156** 個公開 Star（較前次 **+1**）；資料快照：`2026-08-21 03:22:22 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
-[![Total Stars](https://img.shields.io/badge/Total_Stars-155_%E2%AD%90-blue)](https://github.com/Andy87877?tab=stars) ![Delta](https://img.shields.io/badge/Change-0-orange) ![Last Updated](https://img.shields.io/badge/Updated-2026-08-20-brightgreen)
+[![Total Stars](https://img.shields.io/badge/Total_Stars-156_%E2%AD%90-blue)](https://github.com/Andy87877?tab=stars) ![Delta](https://img.shields.io/badge/Change-%2B1-orange) ![Last Updated](https://img.shields.io/badge/Updated-2026-08-20-brightgreen)
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -12,48 +12,48 @@
 
 ```mermaid
 pie title 程式語言分佈 Top 10
-    "Python" : 38
+    "Python" : 39
     "TypeScript" : 25
-    "Others" : 22
+    "Others" : 21
     "JavaScript" : 14
     "C++" : 8
     "Java" : 5
     "HTML" : 4
+    "Jupyter Notebook" : 4
     "Vue" : 4
     "Dart" : 3
-    "Go" : 3
 ```
 
 ### 熱門 Topic 覆蓋 Top 10
 
 ```mermaid
 pie title 熱門 Topic 覆蓋 Top 10
+    "ai" : 11
     "hacktoberfest" : 11
-    "ai" : 10
     "python" : 9
     "github" : 8
     "openai" : 6
     "javascript" : 5
+    "llm" : 5
     "markdown" : 5
     "trem" : 5
     "awesome" : 4
-    "earthquake" : 4
 ```
 
 ### 主要語言佔比長條圖
 
 | 程式語言 | 專案數量 | 佔比比例 | 視覺化進度條 |
 | :--- | :---: | :---: | :--- |
-| **Python** | 38 | 24.5% | `█████` |
-| **TypeScript** | 25 | 16.1% | `███` |
-| **Others** | 22 | 14.2% | `███` |
+| **Python** | 39 | 25.0% | `█████` |
+| **TypeScript** | 25 | 16.0% | `███` |
+| **Others** | 21 | 13.5% | `███` |
 | **JavaScript** | 14 | 9.0% | `██` |
-| **C++** | 8 | 5.2% | `█` |
+| **C++** | 8 | 5.1% | `█` |
 | **Java** | 5 | 3.2% | `█` |
 | **HTML** | 4 | 2.6% | `█` |
+| **Jupyter Notebook** | 4 | 2.6% | `█` |
 | **Vue** | 4 | 2.6% | `█` |
 | **Dart** | 3 | 1.9% | `█` |
-| **Go** | 3 | 1.9% | `█` |
 
 ## 資料即時性與數據分析
 
@@ -104,16 +104,16 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [HTML（4）](#language-html)
 - [Java（5）](#language-java)
 - [JavaScript（14）](#language-javascript)
-- [Jupyter Notebook（3）](#language-jupyter-notebook)
+- [Jupyter Notebook（4）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
 - [MDX（3）](#language-mdx)
-- [Others（22）](#language-others)
+- [Others（21）](#language-others)
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
 - [Processing（1）](#language-processing)
-- [Python（38）](#language-python)
+- [Python（39）](#language-python)
 - [Rust（2）](#language-rust)
 - [Svelte（1）](#language-svelte)
 - [TypeScript（25）](#language-typescript)
@@ -231,6 +231,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## Jupyter Notebook
 
+- [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners) — 12 Weeks, 24 Lessons, AI for All!
 - [Infrasys-AI/AISystem](https://github.com/Infrasys-AI/AISystem) — AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术
 - [erhwenkuo/deep-learning-with-keras-notebooks](https://github.com/erhwenkuo/deep-learning-with-keras-notebooks) — Jupyter notebooks for using & learning Keras
 - [pyinvest/ml_toturial](https://github.com/pyinvest/ml_toturial)
@@ -272,7 +273,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
 - [cyizhuo/CIFAR-100-dataset](https://github.com/cyizhuo/CIFAR-100-dataset) — CIFAR-100 dataset by classes folder
 - [Jcw87/c2-smb1](https://github.com/Jcw87/c2-smb1) — Super Mario Bros Clone
-- [ryanx0621/Atlas-World](https://github.com/ryanx0621/Atlas-World) — Atlas World：一個實驗級 AGI 文明框架，包含憲法、安全卷與多代理協議的完整設計。Atlas World – Experimental AGI civilization framework: constitution, safety volume, multi-agent governance and simulation ethics.
 - [cyesuta/Code-Guardian-Aegis](https://github.com/cyesuta/Code-Guardian-Aegis) — VibeCoding security shield for novice developers - preventing disaster-level security vulnerabilities
 - [microsoft/vscode-copilot-release](https://github.com/microsoft/vscode-copilot-release) `Archived` — Feedback on GitHub Copilot Chat UX in Visual Studio Code.
 - [goodjack/stars](https://github.com/goodjack/stars)
@@ -315,6 +315,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## Python
 
+- [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [robotframework/robotframework](https://github.com/robotframework/robotframework) — Generic automation framework for acceptance testing and RPA
 - [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具集：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
 - [openai/whisper](https://github.com/openai/whisper) — Robust Speech Recognition via Large-Scale Weak Supervision

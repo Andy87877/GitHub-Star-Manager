@@ -1,38 +1,38 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-20T12:17:12+00:00",
-  "formattedUpdatedAt": "2026-08-20 20:17:12 (UTC+8)",
-  "repositoryCount": 155,
+  "generatedAt": "2026-08-20T19:22:22+00:00",
+  "formattedUpdatedAt": "2026-08-21 03:22:22 (UTC+8)",
+  "repositoryCount": 156,
   "previousRepositoryCount": 155,
-  "deltaCount": 0,
-  "formattedDelta": "0",
-  "source": "GitHub REST API",
+  "deltaCount": 1,
+  "formattedDelta": "+1",
+  "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 489,
+  "totalTopicCount": 502,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 94,
+  "otherRepositoryCount": 93,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 155,
-    "totalStars": 4814589,
-    "totalForks": 729038,
+    "totalCount": 156,
+    "totalStars": 4921424,
+    "totalForks": 746273,
     "archivedCount": 10,
-    "activeCount": 145,
+    "activeCount": 146,
     "languageBreakdown": {
       "Python": {
-        "count": 38,
-        "percentage": 24.5
+        "count": 39,
+        "percentage": 25.0
       },
       "TypeScript": {
         "count": 25,
-        "percentage": 16.1
+        "percentage": 16.0
       },
       "Others": {
-        "count": 22,
-        "percentage": 14.2
+        "count": 21,
+        "percentage": 13.5
       },
       "JavaScript": {
         "count": 14,
@@ -40,13 +40,17 @@
       },
       "C++": {
         "count": 8,
-        "percentage": 5.2
+        "percentage": 5.1
       },
       "Java": {
         "count": 5,
         "percentage": 3.2
       },
       "HTML": {
+        "count": 4,
+        "percentage": 2.6
+      },
+      "Jupyter Notebook": {
         "count": 4,
         "percentage": 2.6
       },
@@ -59,10 +63,6 @@
         "percentage": 1.9
       },
       "Go": {
-        "count": 3,
-        "percentage": 1.9
-      },
-      "Jupyter Notebook": {
         "count": 3,
         "percentage": 1.9
       },
@@ -133,12 +133,12 @@
     },
     "topTopics": [
       {
-        "topic": "hacktoberfest",
+        "topic": "ai",
         "count": 11
       },
       {
-        "topic": "ai",
-        "count": 10
+        "topic": "hacktoberfest",
+        "count": 11
       },
       {
         "topic": "python",
@@ -157,6 +157,10 @@
         "count": 5
       },
       {
+        "topic": "llm",
+        "count": 5
+      },
+      {
         "topic": "markdown",
         "count": 5
       },
@@ -169,15 +173,15 @@
         "count": 4
       },
       {
+        "topic": "deep-learning",
+        "count": 4
+      },
+      {
         "topic": "earthquake",
         "count": 4
       },
       {
         "topic": "earthquake-early-warning",
-        "count": 4
-      },
-      {
-        "topic": "llm",
         "count": 4
       },
       {
@@ -187,10 +191,6 @@
       {
         "topic": "profile-readme",
         "count": 4
-      },
-      {
-        "topic": "readme",
-        "count": 4
       }
     ],
     "starredByYear": {
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 52,
-      "2026": 38
+      "2026": 39
     }
   }
 }
