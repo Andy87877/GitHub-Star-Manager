@@ -1,35 +1,24 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-<<<<<<< HEAD
-  "generatedAt": "2026-08-20T12:05:04+00:00",
-  "formattedUpdatedAt": "2026-08-20 20:05:04 (UTC+8)",
+  "generatedAt": "2026-08-20T12:17:12+00:00",
+  "formattedUpdatedAt": "2026-08-20 20:17:12 (UTC+8)",
   "repositoryCount": 155,
-  "previousRepositoryCount": 152,
-  "deltaCount": 3,
-  "formattedDelta": "+3",
+  "previousRepositoryCount": 155,
+  "deltaCount": 0,
+  "formattedDelta": "0",
   "source": "GitHub REST API",
   "isLiveSnapshot": true,
   "totalTopicCount": 489,
   "focusedTopicCount": 30,
   "otherRepositoryCount": 94,
-=======
-  "generatedAt": "2026-08-19T19:17:04+00:00",
-  "repositoryCount": 154,
-  "source": "GitHub GraphQL API",
-  "isLiveSnapshot": true,
-  "totalTopicCount": 489,
-  "focusedTopicCount": 30,
-  "otherRepositoryCount": 93,
->>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-<<<<<<< HEAD
     "totalCount": 155,
-    "totalStars": 4814558,
-    "totalForks": 729042,
+    "totalStars": 4814589,
+    "totalForks": 729038,
     "archivedCount": 10,
     "activeCount": 145,
     "languageBreakdown": {
@@ -48,29 +37,6 @@
       "JavaScript": {
         "count": 14,
         "percentage": 9.0
-=======
-    "totalCount": 154,
-    "totalStars": 4811910,
-    "totalForks": 728774,
-    "archivedCount": 10,
-    "activeCount": 144,
-    "languageBreakdown": {
-      "Python": {
-        "count": 38,
-        "percentage": 24.7
-      },
-      "TypeScript": {
-        "count": 25,
-        "percentage": 16.2
-      },
-      "Others": {
-        "count": 22,
-        "percentage": 14.3
-      },
-      "JavaScript": {
-        "count": 14,
-        "percentage": 9.1
->>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
       },
       "C++": {
         "count": 8,
@@ -99,13 +65,10 @@
       "Jupyter Notebook": {
         "count": 3,
         "percentage": 1.9
-<<<<<<< HEAD
       },
       "Kotlin": {
         "count": 3,
         "percentage": 1.9
-=======
->>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
       },
       "MDX": {
         "count": 3,
@@ -235,11 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 52,
-<<<<<<< HEAD
       "2026": 38
-=======
-      "2026": 37
->>>>>>> a96bec2c21f17e7e4dcd547bb9dc562c56db7b50
     }
   }
 }
