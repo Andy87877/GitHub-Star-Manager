@@ -192,15 +192,49 @@ export class StarController {
       this.render();
     });
 
+    // Shortcuts Modal Events
+    if (this.view.shortcutsBtn) {
+      this.view.shortcutsBtn.addEventListener('click', event => {
+        this.view.openShortcutsModal(event.currentTarget);
+      });
+    }
+    if (this.view.closeShortcutsModalBtn) {
+      this.view.closeShortcutsModalBtn.addEventListener('click', () => {
+        this.view.closeShortcutsModal();
+      });
+    }
+    if (this.view.shortcutsModal) {
+      this.view.shortcutsModal.addEventListener('click', event => {
+        if (event.target === this.view.shortcutsModal) this.view.closeShortcutsModal();
+      });
+    }
+
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') {
         if (this.view.noteModal.classList.contains('active')) this.view.closeNoteModal();
         if (this.view.analyticsModal.classList.contains('active')) this.view.closeAnalyticsModal();
+        if (this.view.shortcutsModal?.classList.contains('active')) this.view.closeShortcutsModal();
       }
       const tagName = document.activeElement?.tagName;
-      if (event.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(tagName)) {
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(tagName)) return;
+
+      if (event.key === '/') {
         event.preventDefault();
         document.getElementById('searchInput').focus();
+      } else if (event.key === '?') {
+        event.preventDefault();
+        this.view.toggleShortcutsModal();
+      } else if (event.key === 't' || event.key === 'T') {
+        event.preventDefault();
+        const nextMode = this.model.viewMode === 'table' ? 'cards' : 'table';
+        this.model.setViewMode(nextMode);
+        this.render();
+      } else if (event.key === 'd' || event.key === 'D') {
+        event.preventDefault();
+        const current = document.documentElement.dataset.theme;
+        const next = current === 'dark' ? 'light' : 'dark';
+        this.model.setTheme(next);
+        this.view.applyTheme(next);
       }
     });
 

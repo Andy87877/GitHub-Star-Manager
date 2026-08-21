@@ -213,6 +213,25 @@
 - [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 23：CI 測試斷言除錯 (Troubleshooting) 與 HTML 屬性斷言健壯化
+
+- [x] 診斷並修正 Robot Framework `Frontend Defaults To Table And Preserves Explicit Preference` 因 HTML 換行導致的字串比對失敗
+- [x] 健壯化 `tests/test_web_contract.robot` 屬性斷言，防止未來格式化換行干擾測試
+- [x] 重新驗證 Robot Framework 全套 29 項測試（29/29 PASS 100% 通過）
+- [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+## Phase 24：⌨️ 鍵盤快捷鍵指南 Modal、GitHub Pages 部署說明與全套契約驗證
+
+- [x] 新增 Web 鍵盤快捷鍵指南 Modal (`⌨️` 按鈕 / `?` 快捷鍵，對應 `/`, `Esc`, `t`, `d`, `?`)
+- [x] 升級 `web/index.html` 與 `web/css/style.css` 鍵盤 `<kbd>` 標籤視覺樣式與彈窗設計
+- [x] 擴充 Robot Framework `Frontend Supports Keyboard Shortcuts Modal` 測試（測試套件提升至 30/30 全數通過）
+- [x] 說明 GitHub Pages 部署機制 (Commit & Push 至 `main` 分支觸發 GitHub Actions `ci-pages.yml` 自動佈署至 Pages)
+- [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+
+
 
 
 

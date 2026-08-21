@@ -926,6 +926,36 @@ button:disabled {
   overflow: hidden;
 }
 
+.shortcuts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+kbd {
+  display: inline-block;
+  min-width: 32px;
+  padding: 4px 8px;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 2px 0 var(--border-color);
+}
+
 /* Toast Alerts */
 .toast-container {
   position: fixed;

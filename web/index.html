@@ -29,6 +29,7 @@
         <button id="analyticsBtn" type="button" class="btn">📊 數據分析</button>
         <button id="randomBtn" type="button" class="btn btn-primary">🎲 隨機探索</button>
         <button id="exportCsvBtn" type="button" class="btn">⇩ 匯出 CSV</button>
+        <button id="shortcutsBtn" type="button" class="btn btn-icon-only" aria-label="鍵盤快捷鍵指南" title="鍵盤快捷鍵指南 (?)">⌨️</button>
         <button id="themeToggleBtn" type="button" class="btn btn-icon-only" aria-label="切換為深色主題">🌙</button>
       </nav>
     </header>
@@ -74,10 +75,8 @@
         </div>
         <div class="toolbar-actions">
           <div id="viewModeToggle" class="view-toggle" role="group" aria-label="專案顯示方式">
-            <button id="tableViewBtn" type="button" class="view-toggle-btn active" data-view-mode="table"
-              aria-pressed="true">☷ Table</button>
-            <button id="cardsViewBtn" type="button" class="view-toggle-btn" data-view-mode="cards"
-              aria-pressed="false">▦ Cards</button>
+            <button id="tableViewBtn" type="button" class="view-toggle-btn active" data-view-mode="table" aria-pressed="true">☷ Table</button>
+            <button id="cardsViewBtn" type="button" class="view-toggle-btn" data-view-mode="cards" aria-pressed="false">▦ Cards</button>
           </div>
           <button id="clearFiltersBtn" type="button" class="btn btn-compact">清除篩選</button>
         </div>
@@ -213,6 +212,25 @@
         <button id="closeAnalyticsModalBtn" type="button" class="close-btn" aria-label="關閉數據分析視窗">×</button>
       </header>
       <div id="analyticsModalBody" class="analytics-body"></div>
+    </section>
+  </div>
+
+  <div id="shortcutsModal" class="modal-overlay" aria-hidden="true">
+    <section class="modal-content" role="dialog" aria-modal="true" aria-labelledby="shortcutsModalTitle">
+      <header class="modal-header">
+        <div>
+          <h2 id="shortcutsModalTitle">⌨️ 鍵盤快捷鍵說明 (Shortcuts)</h2>
+          <p>按下 <strong>?</strong> 鍵可隨時切換本說明</p>
+        </div>
+        <button id="closeShortcutsModalBtn" type="button" class="close-btn" aria-label="關閉快捷鍵說明視窗">×</button>
+      </header>
+      <div class="shortcuts-list">
+        <div class="shortcut-item"><kbd>/</kbd> <span>快速聚焦搜尋列</span></div>
+        <div class="shortcut-item"><kbd>Esc</kbd> <span>關閉視窗 / 清除聚焦</span></div>
+        <div class="shortcut-item"><kbd>t</kbd> <span>切換 Table / Cards 模式</span></div>
+        <div class="shortcut-item"><kbd>d</kbd> <span>切換深色 / 淺色主題</span></div>
+        <div class="shortcut-item"><kbd>?</kbd> <span>開啟鍵盤快捷鍵指南</span></div>
+      </div>
     </section>
   </div>
 

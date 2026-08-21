@@ -33,8 +33,9 @@ export class StarView {
     this.pageSizeSelect = document.getElementById('pageSizeSelect');
     this.prevPageBtn = document.getElementById('prevPageBtn');
     this.nextPageBtn = document.getElementById('nextPageBtn');
-    this.pageIndicator = document.getElementById('pageIndicator');
-    this.backToTopBtn = document.getElementById('backToTopBtn');
+    this.shortcutsBtn = document.getElementById('shortcutsBtn');
+    this.shortcutsModal = document.getElementById('shortcutsModal');
+    this.closeShortcutsModalBtn = document.getElementById('closeShortcutsModalBtn');
     this.previousFocus = null;
   }
 
@@ -290,6 +291,29 @@ export class StarView {
     this.analyticsModal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('modal-open');
     this.previousFocus?.focus();
+  }
+
+  openShortcutsModal(trigger) {
+    this.previousFocus = trigger || document.activeElement;
+    this.shortcutsModal.classList.add('active');
+    this.shortcutsModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    requestAnimationFrame(() => this.closeShortcutsModalBtn?.focus());
+  }
+
+  closeShortcutsModal() {
+    this.shortcutsModal.classList.remove('active');
+    this.shortcutsModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    this.previousFocus?.focus();
+  }
+
+  toggleShortcutsModal(trigger) {
+    if (this.shortcutsModal.classList.contains('active')) {
+      this.closeShortcutsModal();
+    } else {
+      this.openShortcutsModal(trigger);
+    }
   }
 
   renderAnalyticsContent(analytics) {

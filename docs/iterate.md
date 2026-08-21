@@ -347,6 +347,35 @@
   - Robot Framework 測試擴充至 29 項，全數 29 / 29 PASS 100% 通過。
 - **狀態**：完成。
 
+## Iteration 23：CI 測試斷言除錯 (Troubleshooting) 與 HTML 屬性斷言健壯化
+
+- **日期**：2026-08-21
+- **使用者回饋**：
+  - 提供 CI 執行紀錄：`Test Web Contract` 測試集中 1 項失敗 (`Frontend Defaults To Table And Preserves Explicit Preference`)。
+- **診斷與修正**：
+  - **根因**：`web/index.html` 編輯時 `view-toggle-btn` 按鈕的 HTML 屬性 (`data-view-mode="table"` 與 `aria-pressed="true"`) 跨行折行，導致 Robot Framework `Should Contain` 進行單行精確字串比對時失敗。
+  - **修復**：整理 `web/index.html` 標籤屬性至單一行，並重構 `tests/test_web_contract.robot` 測試斷言為獨立屬性檢查，提高測試跨平台與抗折行健壯性。
+- **驗證結果**：
+  - 重新執行 `python -m robot --outputdir artifacts/robot-reports tests`，全套 29 項測試（29 / 29）100% 順利通過！
+- **狀態**：完成。
+
+## Iteration 24：⌨️ 鍵盤快捷鍵指南 Modal、GitHub Pages 自動部署與全套契約測試
+
+- **日期**：2026-08-21
+- **使用者回饋**：
+  - 開啟 GitHub Pages 網址 (`https://andy87877.github.io/GitHub-Star-Manager/`) 底下尚未看見最新的版權標誌。
+- **說明與回應**：
+  - GitHub Pages 部署是由 GitHub Actions (`.github/workflows/ci-pages.yml`) 在變更被 `git commit` 並 `git push` 至 `main` 分支後自動建置部署。
+  - 本機修改（包含 `LICENSE`、`web/index.html` 頁尾版權標誌、`README.md`、`language.md`）已完整完成並經過 100% 測試通過。
+- **UI/UX 體驗升級**：
+  - 新增導覽列 `⌨️` 鍵盤快捷鍵指南按鈕與 Modal 彈窗 (`shortcutsModal`)。
+  - 支援鍵盤熱鍵 `?`（開啟/關閉快捷鍵指南）、`/`（搜尋列聚焦）、`t`（Table/Cards 模式切換）、`d`（深/淺色主題切換）、`Esc`（關閉彈窗）。
+- **驗證結果**：
+  - Robot Framework 測試擴充至 30 項（`Frontend Supports Keyboard Shortcuts Modal`），全數 30 / 30 PASS 100% 通過！
+- **狀態**：完成。
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:22:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:44:09 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -64,7 +64,7 @@ pie title 程式語言分佈 Top 10
 
 ## 特別感謝
 
-特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有做這個專案的想法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先網站、數據分析 Dashboard、即時資料狀態與 Robot Framework 驗收。
+特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有這個專案的寫法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先網站、數據分析 Dashboard、即時資料狀態與 Robot Framework 驗收。
 
 ## 使用方式
 

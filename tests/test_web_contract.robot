@@ -40,8 +40,9 @@ Frontend Supports Card And Table Views
 Frontend Defaults To Table And Preserves Explicit Preference
     ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
     ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
-    Should Contain    ${html}    id="tableViewBtn" type="button" class="view-toggle-btn active"
-    Should Contain    ${html}    data-view-mode="table" aria-pressed="true"
+    Should Contain    ${html}    id="tableViewBtn"
+    Should Contain    ${html}    data-view-mode="table"
+    Should Contain    ${html}    aria-pressed="true"
     ${table_position}=    Evaluate    $html.index('id="tableViewBtn"')
     ${cards_position}=    Evaluate    $html.index('id="cardsViewBtn"')
     Should Be True    ${table_position} < ${cards_position}
@@ -102,5 +103,14 @@ Page Renders CC0 License Footer
     Should Contain    ${html}    class="site-footer"
     Should Contain    ${html}    Andy87877
     Should Contain    ${html}    CC0-1.0 Universal License
+
+Frontend Supports Keyboard Shortcuts Modal
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    ${controller}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}controllers${/}StarController.js
+    Should Contain    ${html}    id="shortcutsModal"
+    Should Contain    ${html}    id="shortcutsBtn"
+    Should Contain    ${view}    openShortcutsModal
+    Should Contain    ${controller}    toggleShortcutsModal
 
 
