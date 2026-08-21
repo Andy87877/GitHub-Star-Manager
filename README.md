@@ -1,8 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **156** 個公開 Star（較前次 **0**）；資料快照：`2026-08-21 12:27:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
-
-[![Total Stars](https://img.shields.io/badge/Total_Stars-156_%E2%AD%90-blue)](https://github.com/Andy87877?tab=stars) ![Delta](https://img.shields.io/badge/Change-0-orange) ![Last Updated](https://img.shields.io/badge/Updated-2026-08-21-brightgreen) ![Topics](https://img.shields.io/badge/Topics-30_Focused-purple)
+> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:22:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -66,7 +64,7 @@ pie title 程式語言分佈 Top 10
 
 ## 特別感謝
 
-特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有這個專案的寫法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先網站、數據分析 Dashboard、即時資料狀態與 Robot Framework 驗收。
+特別感謝 [goodjack/stars](https://github.com/goodjack/stars) 提供 GitHub Stars 自動擷取、分類並產生 Markdown 清單的實作靈感，讓我有做這個專案的想法；本專案再延伸為 OOP／SOLID／MVC 架構、Table 優先網站、數據分析 Dashboard、即時資料狀態與 Robot Framework 驗收。
 
 ## 使用方式
 
@@ -89,6 +87,10 @@ python -m robot --outputdir artifacts/robot-reports tests
 - Python：`Repository` Model、`AnalyticsCalculator` (SRP 數據計算服務)、可替換 GitHub Client／分類／渲染策略、`SyncController`、原子檔案發布器。
 - JavaScript：`StarModel`、`StarView`、`StarController` 前端 MVC，支援最愛⭐標註、動態分頁與 📊 數據分析 Dashboard。
 - 詳細設計、演進、待辦與協作規範分別見 `docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`。
+
+## 📄 授權條款 (License)
+
+本專案採用 [CC0-1.0 Universal License (CC0 1.0 公眾領域貢獻宣告)](LICENSE) 授權。您可以自由複製、修改、發布與發行本專案內容，包含商業用途，無需事先獲得許可。
 
 ## 依 Focus Topic 瀏覽
 

@@ -97,4 +97,10 @@ Dataset Snapshot Integrity Contract
     Should Be Equal      ${meta['username']}   Andy87877
     Should Be True       ${meta['isLiveSnapshot']}
 
+Page Renders CC0 License Footer
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    Should Contain    ${html}    class="site-footer"
+    Should Contain    ${html}    Andy87877
+    Should Contain    ${html}    CC0-1.0 Universal License
+
 

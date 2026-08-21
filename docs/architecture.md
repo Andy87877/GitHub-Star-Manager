@@ -40,6 +40,7 @@ flowchart LR
 
 ```text
 GitHub-Star-Manager/
+├── LICENSE                           # 全新獨立 CC0-1.0 Universal 授權宣告檔
 ├── README.md                         # 專案入口與 Topic 聚焦分類總覽 (含 Mermaid 視覺化圖表)
 ├── language.md                       # 依主要程式語言分類之專案清單
 ├── main.py                           # CLI 與 web/ 預覽入口 (支援 --analytics, --export)
@@ -239,10 +240,12 @@ Robot Framework 覆蓋：
 - 前端 ⭐ 最愛標註與篩選契約。
 - 前端動態分頁 (Pagination) 控制項與導覽契約。
 - 資料快照 JSON 完整性契約 (`web/data/stars.json` & `web/data/sync-meta.json` 解析與無 Git 衝突標記驗證)。
-- 數據異動增減計算契約 (`formattedDelta`, `previousRepositoryCount`, `formattedUpdatedAt`)。
+- 數據異動增減計算與在地化台北時間 (`formattedUpdatedAt`) 契約。
 - GitHub Actions 排程 Workflow 豐富 Commit 訊息 (Title & Body) 契約。
+- 網頁頁尾 CC0-1.0 授權聲明與 Andy87877 版權標誌 DOM 契約。
+- 專案根目錄全新獨立 `LICENSE` 檔案與 CC0 1.0 內容契約。
 
-目前完整涵蓋 27 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、複製 URL 與回到頂部順暢、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
+目前完整涵蓋 29 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、複製 URL 與回到頂部順暢、頁尾 Andy87877 CC0-1.0 版權聲明顯示正常、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 
@@ -251,3 +254,8 @@ Robot Framework 覆蓋：
 - API 文字輸出至 HTML 前會 escape；repository URL 僅允許 HTTPS。
 - 外部連結使用 `noopener noreferrer`。
 - 個人筆記不上傳；CSV 由瀏覽器本機產生。
+
+## 11. 授權與版權宣告
+
+- 本專案採用 **[CC0-1.0 Universal (CC0 1.0 公眾領域貢獻宣告)](LICENSE)** 授權。
+- 根目錄包含完整 [LICENSE](LICENSE) 法律文本；`README.md`、`language.md` 與 Web 應用頁尾 (`web/index.html`) 均有對接聲明。

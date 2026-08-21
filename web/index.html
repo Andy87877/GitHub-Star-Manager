@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-TW" data-theme="light">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,7 @@
   <meta name="description" content="即時搜尋與整理 Andy87877 的公開 GitHub Stars，支援語言、Topic、封存狀態、排序、研究筆記與 CSV 匯出。">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <a class="skip-link" href="#repositories">跳至專案清單</a>
   <div class="bg-glow-1" aria-hidden="true"></div>
@@ -15,8 +17,8 @@
 
   <div class="container">
     <header class="navbar">
-      <a class="brand" href="https://github.com/Andy87877?tab=stars"
-         target="_blank" rel="noopener noreferrer" aria-label="前往 Andy87877 的 GitHub Stars">
+      <a class="brand" href="https://github.com/Andy87877?tab=stars" target="_blank" rel="noopener noreferrer"
+        aria-label="前往 Andy87877 的 GitHub Stars">
         <span class="brand-icon" aria-hidden="true">★</span>
         <span class="brand-title">
           <strong>GitHub Star Manager</strong>
@@ -27,13 +29,11 @@
         <button id="analyticsBtn" type="button" class="btn">📊 數據分析</button>
         <button id="randomBtn" type="button" class="btn btn-primary">🎲 隨機探索</button>
         <button id="exportCsvBtn" type="button" class="btn">⇩ 匯出 CSV</button>
-        <button id="themeToggleBtn" type="button" class="btn btn-icon-only"
-                aria-label="切換為深色主題">🌙</button>
+        <button id="themeToggleBtn" type="button" class="btn btn-icon-only" aria-label="切換為深色主題">🌙</button>
       </nav>
     </header>
 
-    <section id="dataStatus" class="data-status" data-state="loading"
-             aria-live="polite" aria-atomic="true">
+    <section id="dataStatus" class="data-status" data-state="loading" aria-live="polite" aria-atomic="true">
       <span class="status-dot" aria-hidden="true"></span>
       <div>
         <strong id="dataStatusTitle">資料載入中</strong>
@@ -73,12 +73,11 @@
           <p id="resultsSummary" aria-live="polite">正在整理專案…</p>
         </div>
         <div class="toolbar-actions">
-          <div id="viewModeToggle" class="view-toggle" role="group"
-               aria-label="專案顯示方式">
-            <button id="tableViewBtn" type="button" class="view-toggle-btn active"
-                    data-view-mode="table" aria-pressed="true">☷ Table</button>
-            <button id="cardsViewBtn" type="button" class="view-toggle-btn"
-                    data-view-mode="cards" aria-pressed="false">▦ Cards</button>
+          <div id="viewModeToggle" class="view-toggle" role="group" aria-label="專案顯示方式">
+            <button id="tableViewBtn" type="button" class="view-toggle-btn active" data-view-mode="table"
+              aria-pressed="true">☷ Table</button>
+            <button id="cardsViewBtn" type="button" class="view-toggle-btn" data-view-mode="cards"
+              aria-pressed="false">▦ Cards</button>
           </div>
           <button id="clearFiltersBtn" type="button" class="btn btn-compact">清除篩選</button>
         </div>
@@ -87,9 +86,8 @@
       <label class="search-box" for="searchInput">
         <span class="search-icon" aria-hidden="true">⌕</span>
         <span class="sr-only">搜尋收藏專案</span>
-        <input id="searchInput" class="search-input" type="search"
-               placeholder="搜尋名稱、描述、語言、Topic 或個人筆記（按 / 聚焦）"
-               autocomplete="off" spellcheck="false">
+        <input id="searchInput" class="search-input" type="search" placeholder="搜尋名稱、描述、語言、Topic 或個人筆記（按 / 聚焦）"
+          autocomplete="off" spellcheck="false">
       </label>
 
       <div class="filter-controls">
@@ -165,23 +163,39 @@
         </div>
       </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">⭐ GitHub Star Manager</span>
+          <span class="license-badge" title="CC0 1.0 Universal Public Domain Dedication">
+            <span class="license-icon">CC0</span> 1.0 Universal
+          </span>
+        </div>
+        <p class="copyright-notice">
+          © 2026 <strong><a href="https://github.com/Andy87877" target="_blank" rel="noopener noreferrer">Andy87877(Andy
+              Hsieh)</a></strong>.
+          Released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.zh-Hant" target="_blank"
+            rel="noopener noreferrer">CC0-1.0 Universal License</a> (Public Domain Dedication).
+        </p>
+        <p class="footer-subtext">無資料庫的高效 GitHub Star 個人知識庫管理系統。</p>
+      </div>
+    </footer>
   </div>
 
   <div id="noteModal" class="modal-overlay" aria-hidden="true">
-    <section class="modal-content" role="dialog" aria-modal="true"
-             aria-labelledby="noteModalTitle" aria-describedby="noteModalDescription">
+    <section class="modal-content" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle"
+      aria-describedby="noteModalDescription">
       <header class="modal-header">
         <div>
           <h2 id="noteModalTitle">編輯研究筆記</h2>
           <p id="noteModalDescription">筆記只儲存在目前的瀏覽器，不會上傳 GitHub。</p>
         </div>
-        <button id="closeNoteModalBtn" type="button" class="close-btn"
-                aria-label="關閉筆記視窗">×</button>
+        <button id="closeNoteModalBtn" type="button" class="close-btn" aria-label="關閉筆記視窗">×</button>
       </header>
       <p class="note-repository">專案：<strong id="noteRepoName"></strong></p>
       <label for="noteTextarea">筆記內容</label>
-      <textarea id="noteTextarea" class="textarea-custom"
-                placeholder="記下用途、研究心得或下一步…"></textarea>
+      <textarea id="noteTextarea" class="textarea-custom" placeholder="記下用途、研究心得或下一步…"></textarea>
       <footer class="modal-actions">
         <span>Ctrl／⌘ + Enter 儲存</span>
         <button id="saveNoteBtn" type="button" class="btn btn-primary">儲存筆記</button>
@@ -190,26 +204,23 @@
   </div>
 
   <div id="analyticsModal" class="modal-overlay" aria-hidden="true">
-    <section class="modal-content modal-large" role="dialog" aria-modal="true"
-             aria-labelledby="analyticsModalTitle">
+    <section class="modal-content modal-large" role="dialog" aria-modal="true" aria-labelledby="analyticsModalTitle">
       <header class="modal-header">
         <div>
           <h2 id="analyticsModalTitle">📊 Star 知識庫數據分析</h2>
           <p>實時計算語言分佈、Topic 覆蓋與收藏統計</p>
         </div>
-        <button id="closeAnalyticsModalBtn" type="button" class="close-btn"
-                aria-label="關閉數據分析視窗">×</button>
+        <button id="closeAnalyticsModalBtn" type="button" class="close-btn" aria-label="關閉數據分析視窗">×</button>
       </header>
       <div id="analyticsModalBody" class="analytics-body"></div>
     </section>
   </div>
 
-  <div id="toastContainer" class="toast-container"
-       aria-live="polite" aria-atomic="false"></div>
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="false"></div>
 
-  <button id="backToTopBtn" type="button" class="back-to-top-btn"
-          aria-label="回到頁面頂部" title="回到頂部" hidden>⬆</button>
+  <button id="backToTopBtn" type="button" class="back-to-top-btn" aria-label="回到頁面頂部" title="回到頂部" hidden>⬆</button>
 
   <script type="module" src="js/app.js"></script>
 </body>
+
 </html>

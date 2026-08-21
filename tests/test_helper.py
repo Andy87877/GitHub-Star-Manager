@@ -183,9 +183,10 @@ def test_markdown_topic_renderer() -> str:
         },
     )
     assert "Andy87877 的 GitHub Stars" in output
-    assert "收錄 **2** 個公開 Star（較前次 **+2**）" in output
+    assert "收錄 **2** 個公開 Star；" in output
     assert "```mermaid" in output
     assert "pie title 熱門 Topic 覆蓋 Top 10" in output
+    assert "CC0-1.0 Universal" in output
     assert '<a id="topic-ai"></a>' in output
     assert "## ai" in output
     assert "## other" in output

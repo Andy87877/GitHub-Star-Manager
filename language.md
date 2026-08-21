@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 12:27:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:22:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -326,3 +326,9 @@
 - [gnehs/ntut-course-web](https://github.com/gnehs/ntut-course-web) — 這裡是北科課程好朋友，提供使用者以輕鬆的方式查詢與檢視課程資訊！
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) `Archived` — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
+
+---
+
+## 📄 授權條款 (License)
+
+本專案採用 [CC0-1.0 Universal License (CC0 1.0 公眾領域貢獻宣告)](LICENSE) 授權。

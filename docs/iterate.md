@@ -314,6 +314,41 @@
   - Robot Framework 全套 27 項測試全數 PASS 100% 通過。
 - **狀態**：完成。
 
+## Iteration 21：標頭精簡（移除 Delta 與 Shields Badges）、新增 CC0-1.0 授權說明與網站 Andy87877 頁尾版權宣告
+
+- **日期**：2026-08-21
+- **使用者回饋**：
+  - 不需要顯示星星數量變化數值 (如 `較前次 0`)。
+  - 不需要 `Total Stars`、`Delta`、`Last Updated`、`Topics` 等 Shields.io 標籤。
+  - 必須新增 `CC0-1.0 Universal License` 版權說明。
+  - 網站最底部必須包含 Andy87877 的版權標誌。
+- **架構與設計決策**：
+  - **Renderer 標頭精簡與授權宣告**：更新 `MarkdownTopicRenderer` 與 `MarkdownLanguageRenderer`，移除 Delta 異動文字與 Shields.io 標籤圖片；新增 `## 📄 授權條款 (License)` 宣導 CC0 1.0 Universal 授權。
+  - **Web 頁尾 UI/UX 升級**：在 `web/index.html` 底部新增 Glassmorphism 頁尾區塊 (`.site-footer`)，明確標示 `© 2026 Andy87877. Released under CC0-1.0 Universal License`。
+  - **Client 本機快照備援**：擴充 `GitHubRESTClient` 在無 Token 遇 REST 403 限額時，自動使用本機 `stars.json` 快照產出完整 Markdown 檔。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 156 筆真實 Star 快照，`README.md` 與 `language.md` 標頭保持潔淨，無 Delta 與 Badges，並含有 CC0-1.0 授權條款。
+  - Web 網頁底端完美渲染 Andy87877 專屬頁尾版權標誌。
+  - Robot Framework 全套 28 項測試全數 PASS 100% 通過。
+- **狀態**：完成。
+
+## Iteration 22：專案根目錄全新獨立 LICENSE 檔案與全站視覺化 CC0-1.0 授權徽章
+
+- **日期**：2026-08-21
+- **使用者回饋**：
+  - CC0-1.0 授權說明必須是全新的獨立 `.md`／檔（點開 GitHub 主頁即可由系統辨識與瀏覽）。
+  - 網站最底部要有專屬的 Andy87877 版權標誌與視覺化徽章。
+- **架構與設計決策**：
+  - **全新根目錄 LICENSE 檔案**：建立 `LICENSE` 檔案，包含 CC0 1.0 Universal 的完整 Legal Code 法律條文。
+  - **Web 頁尾視覺化徽章**：升級 `.site-footer` 結構，增加專屬 `CC0 1.0 Universal` 徽章與 Andy87877 連結。
+  - **根目錄規範與契約更新**：根目錄允許可見檔案調整為 `LICENSE`、`README.md`、`language.md`、`main.py`。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 156 筆真實 Star 快照，`LICENSE` 位於根目錄，`README.md` 與 `language.md` 均對接至 `[LICENSE](LICENSE)`。
+  - Robot Framework 測試擴充至 29 項，全數 29 / 29 PASS 100% 通過。
+- **狀態**：完成。
+
+
+
 
 
 

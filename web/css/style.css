@@ -1240,15 +1240,70 @@ tr.is-favorite {
   background: var(--accent-hover);
 }
 
-.copy-url-btn {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  transition: transform var(--transition-fast), color var(--transition-fast);
-}
-
 .copy-url-btn:hover {
   transform: scale(1.15);
   color: var(--accent-primary);
+}
+
+/* Site Footer */
+.site-footer {
+  margin-top: 48px;
+  padding: 24px 0 36px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.copyright-notice {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.copyright-notice a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.copyright-notice a:hover {
+  text-decoration: underline;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.license-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-color);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.license-icon {
+  background: var(--accent-primary);
+  color: #ffffff;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
 }
 
 

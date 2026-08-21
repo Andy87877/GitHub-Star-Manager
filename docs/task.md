@@ -194,6 +194,27 @@
 - [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 21：標頭精簡（移除 Delta 與 Shields Badges）、CC0-1.0 授權說明與網站 Andy87877 頁尾版權標誌
+
+- [x] 移除 `README.md` 與 `language.md` 標頭的 Delta 增減文字與 Shields.io 標籤
+- [x] 新增 `CC0-1.0 Universal License` 授權宣告章節至 `README.md` 與 `language.md`
+- [x] 在 Web 網頁 (`web/index.html`) 底部新增 Glassmorphism 頁尾與 Andy87877 專屬版權標誌
+- [x] 擴充 `github_client.py` 於無 Token 遇 REST 403 限額時自動取用本機快照
+- [x] 擴充 Robot Framework `Page Renders CC0 License Footer` 測試（全數 28/28 項 PASS 通過）
+- [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+## Phase 22：專案根目錄全新 LICENSE 檔案、頁尾徽章升級與完整授權對接
+
+- [x] 建立專案根目錄全新獨立 `LICENSE` 檔案，收錄完整 CC0 1.0 Universal Legal Code
+- [x] 升級 `README.md` 與 `language.md` 授權連結指向根目錄 `[LICENSE](LICENSE)`
+- [x] 升級 `web/index.html` 頁尾，加入專屬 CC0 1.0 視覺化徽章與 Andy87877 著作權標誌
+- [x] 擴充 Robot Framework `Verify LICENSE File Exists And Contains CC0 1.0` 測試（測試套件達到 29/29 全數通過）
+- [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+
+
 
 
 

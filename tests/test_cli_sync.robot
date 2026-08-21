@@ -90,19 +90,24 @@ Mock CLI Supports CSV Export
     Should Contain    ${result.stdout}    fullName,url,language,stars,forks,isArchived,starredAt
     Should Contain    ${result.stdout}    fastapi/fastapi
 
-Root Layout Keeps Only Three Visible Files
+Root Layout Keeps Only Clean Visible Files
     ${root}=    Normalize Path    ${CURDIR}${/}..
     ${root_files}=    Evaluate
     ...    sorted(path.name for path in pathlib.Path($root).iterdir() if path.is_file() and not path.name.startswith('.'))
     ...    modules=pathlib
-    Should Be Equal As Strings    ${root_files}    ['README.md', 'language.md', 'main.py']
+    Should Be Equal As Strings    ${root_files}    ['LICENSE', 'README.md', 'language.md', 'main.py']
     Directory Should Exist    ${root}${/}docs
     Directory Should Exist    ${root}${/}web
     Directory Should Exist    ${root}${/}config
+    File Should Exist    ${root}${/}LICENSE
     File Should Exist    ${root}${/}docs${/}AGENT.md
     File Should Not Exist    ${root}${/}architecture.md
     File Should Not Exist    ${root}${/}iterate.md
     File Should Not Exist    ${root}${/}task.md
-    File Should Not Exist    ${root}${/}requirements.txt
-    File Should Not Exist    ${root}${/}index.html
+
+Verify LICENSE File Exists And Contains CC0 1.0
+    ${root}=    Normalize Path    ${CURDIR}${/}..
+    ${license_text}=    Get File    ${root}${/}LICENSE
+    Should Contain    ${license_text}    CC0 1.0 Universal
+    Should Contain    ${license_text}    Statement of Purpose
 

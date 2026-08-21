@@ -10,6 +10,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, List, Optional
 
+import json
+import os
 import requests
 
 from app.models.repository import Repository
@@ -85,6 +87,17 @@ class GitHubRESTClient(IGitHubClient):
 
             if response.status_code != 200:
                 remaining = response.headers.get("X-RateLimit-Remaining", "unknown")
+                if response.status_code == 403 and remaining == "0":
+                    snapshot_path = os.path.join("web", "data", "stars.json")
+                    if os.path.exists(snapshot_path):
+                        try:
+                            with open(snapshot_path, "r", encoding="utf-8") as f:
+                                data = json.load(f)
+                                if isinstance(data, list) and data:
+                                    print("[!] Rate limit reached; utilizing local stars.json snapshot.")
+                                    return [Repository.from_dict(item) for item in data]
+                        except Exception:
+                            pass
                 raise GitHubClientError(
                     "GitHub REST API returned "
                     f"HTTP {response.status_code} on page {page} "

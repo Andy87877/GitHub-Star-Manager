@@ -6,6 +6,7 @@
 
 根目錄的可見檔案只能有：
 
+- `LICENSE`
 - `README.md`
 - `language.md`
 - `main.py`
@@ -56,9 +57,9 @@ python main.py --serve
 
 交付前至少確認：
 
-- Robot Framework 全數 27 項測試通過。
-- `web/index.html` 可載入快照與即時 GitHub 資料，呈現 Star 異動增減，且數據分析 Dashboard Modal 與最愛標註功能正常。
+- Robot Framework 全數 29 項測試通過。
+- `web/index.html` 可載入快照與即時 GitHub 資料，頁尾載有 Andy87877 CC0-1.0 視覺化徽章與授權宣告，且數據分析 Dashboard Modal 與最愛標註功能正常。
 - Table 為新使用者預設，Cards 明確偏好可還原。
 - 390px 下整頁不水平溢位，Table 僅在自身容器內捲動。
-- 根目錄沒有散落測試報告或額外可見檔案（僅有 README.md, language.md, main.py）。
+- 根目錄沒有散落測試報告或額外可見檔案（僅有 LICENSE, README.md, language.md, main.py）。
 - 未經使用者要求，不執行 `git push`。

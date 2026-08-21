@@ -29,7 +29,7 @@ def _anchor(prefix: str, category: str) -> str:
 
 
 def _build_visualizations(metadata: Mapping[str, Any]) -> List[str]:
-    """Generate Markdown Mermaid charts, stat badges, and progress bar tables."""
+    """Generate Markdown Mermaid charts and progress bar tables."""
     analytics = metadata.get("analytics")
     if not analytics or not isinstance(analytics, dict):
         return []
@@ -116,13 +116,11 @@ class MarkdownTopicRenderer(IRenderer):
     ) -> str:
         metadata = metadata or {}
         count = int(metadata.get("repositoryCount") or sum(map(len, categorized.values())))
-        delta_str = str(metadata.get("formattedDelta") or "0")
         generated_at = metadata.get("generatedAt", "尚未同步")
         formatted_updated_at = metadata.get("formattedUpdatedAt", generated_at)
         profile_url = metadata.get(
             "profileUrl", "https://github.com/Andy87877?tab=stars"
         )
-        date_badge_str = (generated_at[:10] if len(generated_at) >= 10 else "2026-08-20")
         total_topics = int(metadata.get("totalTopicCount") or len(categorized))
         other_category = str(metadata.get("topicOtherCategory") or "other")
         focused_topics = int(
@@ -142,16 +140,9 @@ class MarkdownTopicRenderer(IRenderer):
             f"# {title}",
             "",
             (
-                f"> 收錄 **{count}** 個公開 Star（較前次 **{delta_str}**）；"
+                f"> 收錄 **{count}** 個公開 Star；"
                 f"資料快照：`{formatted_updated_at}`。"
                 f"來源：[Andy87877 的 GitHub Stars]({profile_url})。"
-            ),
-            "",
-            (
-                f"[![Total Stars](https://img.shields.io/badge/Total_Stars-{count}_%E2%AD%90-blue)]({profile_url}) "
-                f"![Delta](https://img.shields.io/badge/Change-{delta_str.replace('+', '%2B')}-orange) "
-                f"![Last Updated](https://img.shields.io/badge/Updated-{date_badge_str}-brightgreen) "
-                f"![Topics](https://img.shields.io/badge/Topics-{focused_topics}_Focused-purple)"
             ),
             "",
             "這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責"
@@ -212,6 +203,10 @@ class MarkdownTopicRenderer(IRenderer):
             "動態分頁與 📊 數據分析 Dashboard。",
             "- 詳細設計、演進、待辦與協作規範分別見 `docs/architecture.md`、"
             "`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`。",
+            "",
+            "## 📄 授權條款 (License)",
+            "",
+            "本專案採用 [CC0-1.0 Universal License (CC0 1.0 公眾領域貢獻宣告)](LICENSE) 授權。您可以自由複製、修改、發布與發行本專案內容，包含商業用途，無需事先獲得許可。",
             "",
             "## 依 Focus Topic 瀏覽",
             "",
@@ -284,6 +279,15 @@ class MarkdownLanguageRenderer(IRenderer):
                     f"- [{repo.full_name}]({repo.url}){archived}{suffix}"
                 )
             lines.append("")
+
+        lines.extend([
+            "---",
+            "",
+            "## 📄 授權條款 (License)",
+            "",
+            "本專案採用 [CC0-1.0 Universal License (CC0 1.0 公眾領域貢獻宣告)](LICENSE) 授權。",
+            "",
+        ])
 
         return "\n".join(lines)
 
