@@ -299,5 +299,21 @@
   - Robot Framework 測試套件擴充至 27 項，27 / 27 項測試 100% 全部 PASS 通過。
 - **狀態**：完成。
 
+## Iteration 20：README.md 重構為 Focus Topic 聚焦總覽與獨立 `language.md` 程式語言分類檔
+
+- **日期**：2026-08-21
+- **使用者回饋**：
+  - `README.md` 應該顯示 Focus Topic 的資料，並包含完整的數據視覺化圖表。
+  - 原先依程式語言分類的資料應獨立寫到一個專屬的 Markdown 檔案 (`language.md`)。
+- **架構與設計決策**：
+  - **Renderer 重構**: 調整 `MarkdownTopicRenderer` 為 `README.md` 主要渲染引擎，包含完整的 Topic 聚焦分類、`other` 兜底區塊、Mermaid 圓餅圖與長條圖進度條；調整 `MarkdownLanguageRenderer` 渲染獨立的 `language.md` 語言分類檔案。
+  - **SyncController 擴充**: 同步發布 `README.md` 與 `language.md`，並在發布時自動清理歷史殘留之舊 `topic.md` 檔案，確保根目錄可見檔案不符合項。
+  - **根目錄不變量更新**: 根目錄可見檔案維持三檔案規範 (`README.md`, `language.md`, `main.py`)。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 156 筆真實 Star 快照，`README.md` 正確呈現 Focus Topic 與數據視覺化圖表，`language.md` 正確呈現程式語言分類。
+  - Robot Framework 全套 27 項測試全數 PASS 100% 通過。
+- **狀態**：完成。
+
+
 
 

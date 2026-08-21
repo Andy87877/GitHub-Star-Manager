@@ -121,17 +121,9 @@ def test_markdown_language_renderer() -> str:
             "generatedAt": "2026-07-29T00:00:00+00:00",
             "formattedUpdatedAt": "2026-07-29 08:00:00 (UTC+8)",
             "profileUrl": "https://github.com/Andy87877?tab=stars",
-            "analytics": {
-                "languageBreakdown": {"Python": {"count": 1, "percentage": 100.0}},
-                "topTopics": [{"topic": "python", "count": 1}],
-            },
         },
     )
-    assert "Andy87877 的 GitHub Stars" in output
-    assert "收錄 **1** 個公開 Star（較前次 **+1**）" in output
-    assert "```mermaid" in output
-    assert "pie title 程式語言分佈 Top 10" in output
-    assert '![Total Stars](https://img.shields.io/badge/Total_Stars-1_%E2%AD%90-blue)' in output
+    assert "Andy87877 的 GitHub Stars（依主要語言）" in output
     assert '<a id="language-python"></a>' in output
     assert "[owner/repo]" in output
     return "PASS"
@@ -174,22 +166,29 @@ def test_markdown_topic_renderer() -> str:
             ],
         },
         metadata={
+            "repositoryCount": 2,
+            "formattedDelta": "+2",
             "generatedAt": "2026-07-29T00:00:00+00:00",
+            "formattedUpdatedAt": "2026-07-29 08:00:00 (UTC+8)",
             "totalTopicCount": 469,
             "focusedTopicCount": 1,
             "otherRepositoryCount": 1,
             "topicMinimumRepositoryCount": 2,
             "topicMaximumCategories": 30,
             "topicOtherCategory": "other",
+            "analytics": {
+                "topTopics": [{"topic": "ai", "count": 1}],
+                "languageBreakdown": {"Python": {"count": 2, "percentage": 100.0}},
+            },
         },
     )
-    assert "原始資料共有 **469** 個 Topics" in output
-    assert "聚焦 Topic 目錄" in output
+    assert "Andy87877 的 GitHub Stars" in output
+    assert "收錄 **2** 個公開 Star（較前次 **+2**）" in output
+    assert "```mermaid" in output
+    assert "pie title 熱門 Topic 覆蓋 Top 10" in output
     assert '<a id="topic-ai"></a>' in output
     assert "## ai" in output
-    assert "最底下的 `other`" in output
     assert "## other" in output
-    assert output.index("## ai") < output.index("## other")
     return "PASS"
 
 

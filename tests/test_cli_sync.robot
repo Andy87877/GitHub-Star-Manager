@@ -30,7 +30,7 @@ Mock Sync Writes Only To Isolated Directory
 
 Mock Sync Produces Complete Artifact Set
     File Should Exist    ${TEST_OUTPUT_DIR}${/}README.md
-    File Should Exist    ${TEST_OUTPUT_DIR}${/}topic.md
+    File Should Exist    ${TEST_OUTPUT_DIR}${/}language.md
     File Should Exist    ${TEST_OUTPUT_DIR}${/}web${/}data${/}stars.json
     File Should Exist    ${TEST_OUTPUT_DIR}${/}web${/}data${/}sync-meta.json
     ${metadata}=    Get File    ${TEST_OUTPUT_DIR}${/}web${/}data${/}sync-meta.json
@@ -95,7 +95,7 @@ Root Layout Keeps Only Three Visible Files
     ${root_files}=    Evaluate
     ...    sorted(path.name for path in pathlib.Path($root).iterdir() if path.is_file() and not path.name.startswith('.'))
     ...    modules=pathlib
-    Should Be Equal As Strings    ${root_files}    ['README.md', 'main.py', 'topic.md']
+    Should Be Equal As Strings    ${root_files}    ['README.md', 'language.md', 'main.py']
     Directory Should Exist    ${root}${/}docs
     Directory Should Exist    ${root}${/}web
     Directory Should Exist    ${root}${/}config

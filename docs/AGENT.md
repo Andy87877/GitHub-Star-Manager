@@ -1,13 +1,13 @@
 # GitHub-Star-Manager 協作規範
 
-更新日期：2026-08-20
+更新日期：2026-08-21
 
 ## 1. 根目錄不變量
 
 根目錄的可見檔案只能有：
 
 - `README.md`
-- `topic.md`
+- `language.md`
 - `main.py`
 
 隱藏的 `.gitignore`、`.github/` 與必要的程式目錄不受此三檔限制。新增文件必須放入 `docs/`；網站檔案放入 `web/`；依賴與工具設定放入 `config/`。
@@ -27,7 +27,7 @@
 執行 `python main.py --username Andy87877` 會產生：
 
 - `README.md`
-- `topic.md`
+- `language.md`
 - `web/data/stars.json`
 - `web/data/sync-meta.json`
 
@@ -60,5 +60,5 @@ python main.py --serve
 - `web/index.html` 可載入快照與即時 GitHub 資料，呈現 Star 異動增減，且數據分析 Dashboard Modal 與最愛標註功能正常。
 - Table 為新使用者預設，Cards 明確偏好可還原。
 - 390px 下整頁不水平溢位，Table 僅在自身容器內捲動。
-- 根目錄沒有散落測試報告或額外可見檔案（僅有 README.md, topic.md, main.py）。
+- 根目錄沒有散落測試報告或額外可見檔案（僅有 README.md, language.md, main.py）。
 - 未經使用者要求，不執行 `git push`。

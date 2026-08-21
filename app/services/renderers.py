@@ -13,7 +13,6 @@ from app.models.repository import Repository
 
 def _clean_inline_text(value: str, limit: int = 240) -> str:
     """Normalize API text so one repository always occupies one Markdown row."""
-
     normalized = " ".join((value or "").split()).replace("|", r"\|")
     return normalized if len(normalized) <= limit else f"{normalized[: limit - 1]}…"
 
@@ -40,7 +39,23 @@ def _build_visualizations(metadata: Mapping[str, Any]) -> List[str]:
         "",
     ]
 
-    # 1. Mermaid Pie Chart for Top 10 Languages
+    # 1. Mermaid Pie Chart for Top 10 Topics
+    top_topics = analytics.get("topTopics", [])
+    if top_topics:
+        lines.extend([
+            "### 熱門 Topic 覆蓋 (Top 10)",
+            "",
+            "```mermaid",
+            "pie title 熱門 Topic 覆蓋 Top 10",
+        ])
+        for item in top_topics[:10]:
+            tpc = item.get("topic", "")
+            cnt = item.get("count", 0)
+            clean_tpc = tpc.replace('"', "'")
+            lines.append(f'    "{clean_tpc}" : {cnt}')
+        lines.extend(["```", ""])
+
+    # 2. Mermaid Pie Chart for Top 10 Languages
     breakdown = analytics.get("languageBreakdown", {})
     if breakdown:
         top_langs = list(breakdown.items())[:10]
@@ -56,36 +71,22 @@ def _build_visualizations(metadata: Mapping[str, Any]) -> List[str]:
             lines.append(f'    "{clean_lang}" : {cnt}')
         lines.extend(["```", ""])
 
-    # 2. Mermaid Pie Chart for Top 10 Topics
-    top_topics = analytics.get("topTopics", [])
+    # 3. Progress Bar Table for Top Topics
     if top_topics:
+        total_repos = analytics.get("totalCount") or 1
         lines.extend([
-            "### 熱門 Topic 覆蓋 Top 10",
+            "### 熱門 Topic 涵蓋專案進度條",
             "",
-            "```mermaid",
-            "pie title 熱門 Topic 覆蓋 Top 10",
+            "| Topic 標籤 | 涵蓋專案數 | 視覺化進度條 |",
+            "| :--- | :---: | :--- |",
         ])
         for item in top_topics[:10]:
             tpc = item.get("topic", "")
             cnt = item.get("count", 0)
-            clean_tpc = tpc.replace('"', "'")
-            lines.append(f'    "{clean_tpc}" : {cnt}')
-        lines.extend(["```", ""])
-
-    # 3. Progress Bar Table for Top 10 Languages
-    if breakdown:
-        lines.extend([
-            "### 主要語言佔比長條圖",
-            "",
-            "| 程式語言 | 專案數量 | 佔比比例 | 視覺化進度條 |",
-            "| :--- | :---: | :---: | :--- |",
-        ])
-        for lang, data in list(breakdown.items())[:10]:
-            cnt = data.get("count", 0)
-            pct = data.get("percentage", 0.0)
-            bar_len = int(round(pct / 5.0))
+            pct = (cnt / total_repos) * 100.0
+            bar_len = int(round(pct / 2.5))
             bar_str = "█" * max(1, bar_len) if cnt > 0 else "░"
-            lines.append(f"| **{lang}** | {cnt} | {pct:.1f}% | `{bar_str}` |")
+            lines.append(f"| **#{tpc}** | {cnt} 筆 ({pct:.1f}%) | `{bar_str}` |")
         lines.append("")
 
     return lines
@@ -104,8 +105,8 @@ class IRenderer(ABC):
         """Render a categorized repository mapping."""
 
 
-class MarkdownLanguageRenderer(IRenderer):
-    """Render the project README and complete language-grouped Star snapshot."""
+class MarkdownTopicRenderer(IRenderer):
+    """Render project README grouped by Topic (Topic-focused main overview)."""
 
     def render(
         self,
@@ -122,6 +123,20 @@ class MarkdownLanguageRenderer(IRenderer):
             "profileUrl", "https://github.com/Andy87877?tab=stars"
         )
         date_badge_str = (generated_at[:10] if len(generated_at) >= 10 else "2026-08-20")
+        total_topics = int(metadata.get("totalTopicCount") or len(categorized))
+        other_category = str(metadata.get("topicOtherCategory") or "other")
+        focused_topics = int(
+            metadata.get(
+                "focusedTopicCount",
+                sum(category != other_category for category in categorized),
+            )
+        )
+        other_count = int(
+            metadata.get(
+                "otherRepositoryCount",
+                len(categorized.get(other_category, [])),
+            )
+        )
 
         lines = [
             f"# {title}",
@@ -135,7 +150,8 @@ class MarkdownLanguageRenderer(IRenderer):
             (
                 f"[![Total Stars](https://img.shields.io/badge/Total_Stars-{count}_%E2%AD%90-blue)]({profile_url}) "
                 f"![Delta](https://img.shields.io/badge/Change-{delta_str.replace('+', '%2B')}-orange) "
-                f"![Last Updated](https://img.shields.io/badge/Updated-{date_badge_str}-brightgreen)"
+                f"![Last Updated](https://img.shields.io/badge/Updated-{date_badge_str}-brightgreen) "
+                f"![Topics](https://img.shields.io/badge/Topics-{focused_topics}_Focused-purple)"
             ),
             "",
             "這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責"
@@ -156,14 +172,14 @@ class MarkdownLanguageRenderer(IRenderer):
             "- 點擊導覽列「📊 數據分析」可開啟數據 Dashboard，以視覺化圖表與進度條檢視"
             "程式語言分佈 (Top 10)、熱門 Topics (Top 15) 與 Star 年度收藏趨勢。",
             "- `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及"
-            "手動觸發同步本 README、`topic.md` 與 `web/data/stars.json`。",
+            "手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。",
             "- 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功"
             "後才打包純靜態網站並部署 GitHub Pages。",
             "- 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫"
             "上一份有效資料。",
-            "- Topic 導航只顯示至少重複 2 次的前 30 個高頻標籤；未命中這些"
-            "聚焦標籤的 repositories 統一收進最底下的 `other`，原始標籤仍完整"
-            "保留在 JSON 與網站全文搜尋。",
+            f"- 原始資料共有 **{total_topics}** 個 Topics；本 README 依 Focus Topic 原則精選 "
+            f"**{focused_topics}** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `{other_category}` "
+            f"（**{other_count}** 個 repositories）。",
             "",
             "## 特別感謝",
             "",
@@ -197,9 +213,58 @@ class MarkdownLanguageRenderer(IRenderer):
             "- 詳細設計、演進、待辦與協作規範分別見 `docs/architecture.md`、"
             "`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`。",
             "",
-            "## 依主要語言瀏覽",
+            "## 依 Focus Topic 瀏覽",
+            "",
+            "👉 **另有以主要程式語言分類的專屬文件**：[按主要程式語言瀏覽 (language.md)](language.md)",
             "",
         ])
+
+        for category, repositories in categorized.items():
+            anchor = _anchor("topic", category)
+            lines.append(f"- [{category}（{len(repositories)}）](#{anchor})")
+
+        lines.extend(["", "---", ""])
+        for category, repositories in categorized.items():
+            anchor = _anchor("topic", category)
+            lines.extend([f'<a id="{anchor}"></a>', "", f"## {category}", ""])
+            for repo in repositories:
+                description = _clean_inline_text(repo.description)
+                suffix = f" — {description}" if description else ""
+                lines.append(f"- [{repo.full_name}]({repo.url}){suffix}")
+            lines.append("")
+        return "\n".join(lines)
+
+
+class MarkdownLanguageRenderer(IRenderer):
+    """Render language.md grouped by Primary Programming Language."""
+
+    def render(
+        self,
+        categorized: Dict[str, List[Repository]],
+        title: str = "Andy87877 的 GitHub Stars（依主要語言）",
+        metadata: Optional[Mapping[str, Any]] = None,
+    ) -> str:
+        metadata = metadata or {}
+        count = int(metadata.get("repositoryCount") or sum(map(len, categorized.values())))
+        generated_at = metadata.get("generatedAt", "尚未同步")
+        formatted_updated_at = metadata.get("formattedUpdatedAt", generated_at)
+        profile_url = metadata.get(
+            "profileUrl", "https://github.com/Andy87877?tab=stars"
+        )
+
+        lines = [
+            f"# {title}",
+            "",
+            (
+                f"> 收錄 **{count}** 個公開 Star；資料快照：`{formatted_updated_at}`。"
+                f"來源：[Andy87877 的 GitHub Stars]({profile_url})。"
+            ),
+            "",
+            "⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)",
+            "",
+            "## 依主要語言瀏覽",
+            "",
+        ]
 
         for category, repositories in categorized.items():
             anchor = _anchor("language", category)
@@ -220,70 +285,6 @@ class MarkdownLanguageRenderer(IRenderer):
                 )
             lines.append("")
 
-        return "\n".join(lines)
-
-
-class MarkdownTopicRenderer(IRenderer):
-    """Render a complete many-to-many Topic index."""
-
-    def render(
-        self,
-        categorized: Dict[str, List[Repository]],
-        title: str = "Andy87877 的 GitHub Stars（依 Topic）",
-        metadata: Optional[Mapping[str, Any]] = None,
-    ) -> str:
-        metadata = metadata or {}
-        total_topics = int(metadata.get("totalTopicCount") or len(categorized))
-        other_category = str(metadata.get("topicOtherCategory") or "other")
-        focused_topics = int(
-            metadata.get(
-                "focusedTopicCount",
-                sum(category != other_category for category in categorized),
-            )
-        )
-        other_count = int(
-            metadata.get(
-                "otherRepositoryCount",
-                len(categorized.get(other_category, [])),
-            )
-        )
-        minimum_count = int(metadata.get("topicMinimumRepositoryCount") or 2)
-        maximum_categories = int(
-            metadata.get("topicMaximumCategories") or focused_topics
-        )
-        lines = [
-            f"# {title}",
-            "",
-            f"> 自動產生於 `{metadata.get('generatedAt', '尚未同步')}`。"
-            f"原始資料共有 **{total_topics}** 個 Topics；本頁只顯示 "
-            f"**{focused_topics}** 個聚焦 Topics，再加上最底下的 "
-            f"`{other_category}`（**{other_count}** 個 repositories）。",
-            "",
-            "為避免一次性標籤淹沒重點，聚焦目錄只保留至少出現在 "
-            f"**{minimum_count}** 個收藏中的 Topics，並依涵蓋專案數排序，"
-            f"最多顯示 **{maximum_categories}** 個。所有原始 Topics 仍完整保留於 "
-            "`web/data/stars.json`，網站全文搜尋也能找到。",
-            "",
-            f"`{other_category}` 只收納沒有命中任何聚焦 Topic 的 repositories，"
-            "每個 repository 在該區只出現一次。同一專案仍可同時出現在多個"
-            "聚焦 Topic，這是多對多分類的正常結果。",
-            "",
-            "## 聚焦 Topic 目錄",
-            "",
-        ]
-        for category, repositories in categorized.items():
-            anchor = _anchor("topic", category)
-            lines.append(f"- [{category}（{len(repositories)}）](#{anchor})")
-
-        lines.extend(["", "---", ""])
-        for category, repositories in categorized.items():
-            anchor = _anchor("topic", category)
-            lines.extend([f'<a id="{anchor}"></a>', "", f"## {category}", ""])
-            for repo in repositories:
-                description = _clean_inline_text(repo.description)
-                suffix = f" — {description}" if description else ""
-                lines.append(f"- [{repo.full_name}]({repo.url}){suffix}")
-            lines.append("")
         return "\n".join(lines)
 
 

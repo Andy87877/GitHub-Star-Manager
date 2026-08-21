@@ -1,6 +1,6 @@
 # GitHub-Star-Manager 架構設計
 
-更新日期：2026-08-01
+更新日期：2026-08-21
 
 ## 1. 系統定位與真實邊界
 
@@ -9,12 +9,12 @@ GitHub-Star-Manager 是 **靜態 GitHub Pages 網站 + Python 產生器**，不�
 系統提供兩條資料路徑：
 
 1. **瀏覽器即時路徑**：開啟頁面後先顯示版本庫快照，再直接向 GitHub 公開 REST API 取得 `Andy87877` 當下的公開 Stars。成功時畫面標示「GitHub 即時資料」；失敗時保留快照並明確標示降級。
-2. **版本庫快照路徑**：Python 同步器由本機、手動 workflow 或每日 03:00（Asia/Taipei）排程執行，產生 `README.md`、`topic.md`、`web/data/stars.json`、`web/data/sync-meta.json`。
+2. **版本庫快照路徑**：Python 同步器由本機、手動 workflow 或每日 03:00（Asia/Taipei）排程執行，產生 `README.md`（Topic 聚焦總覽）、`language.md`（主要程式語言分類）、`web/data/stars.json`、`web/data/sync-meta.json`。
 
 因此：
 
 - 網頁可以在使用者開啟時取得當下公開資料，但受 GitHub 未登入 API 額度、網路與 CORS 狀態影響。
-- README 是「最近一次成功 workflow／本機同步的快照」，不是動態頁面。
+- README 是「最近一次成功 workflow／本機同步的快照」，以 Focus Topic 為導覽核心，內嵌 Mermaid 圖表與數據統計。
 - GitHub Pages 已於遠端成功部署；本次尚未 push 的程式與 workflow 修改，仍須由使用者日後 push 才會取代線上版本。
 
 ## 2. 系統資料流
@@ -24,8 +24,8 @@ flowchart LR
     GH["GitHub Stars API"] --> PY["Python SyncController"]
     PY --> VALIDATE["完整分頁與非空驗證"]
     VALIDATE --> PUBLISH["AtomicFilePublisher"]
-    PUBLISH --> README["README.md"]
-    PUBLISH --> TOPICS["topic.md"]
+    PUBLISH --> README["README.md (Focus Topics)"]
+    PUBLISH --> LANG["language.md (Languages)"]
     PUBLISH --> JSON["web/data/stars.json"]
     PUBLISH --> META["web/data/sync-meta.json"]
     JSON --> WEB["靜態 Web MVC"]
@@ -40,8 +40,8 @@ flowchart LR
 
 ```text
 GitHub-Star-Manager/
-├── README.md                         # 專案入口與語言分類快照
-├── topic.md                          # 聚焦 Topic 與 other
+├── README.md                         # 專案入口與 Topic 聚焦分類總覽 (含 Mermaid 視覺化圖表)
+├── language.md                       # 依主要程式語言分類之專案清單
 ├── main.py                           # CLI 與 web/ 預覽入口 (支援 --analytics, --export)
 ├── app/
 │   ├── models/repository.py          # 領域 Model

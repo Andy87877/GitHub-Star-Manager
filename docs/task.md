@@ -184,5 +184,16 @@
 - [x] 重新同步 `Andy87877` 的 155 筆真實 GitHub Stars 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 20：README.md 重構為 Topic 聚焦總覽與獨立 `language.md` 程式語言分類
+
+- [x] 重構 `README.md` 改為呈現 Topic 聚焦分類、涵蓋圖表與熱門標籤導覽
+- [x] 建立獨立 `language.md` 專屬收納依主要程式語言分類之專案清單
+- [x] 升級 `SyncController` 與 `AtomicFilePublisher` 自動產出 `README.md` 與 `language.md` 並清除舊 `topic.md`
+- [x] 更新根目錄規範 (`README.md`, `language.md`, `main.py`) 與 GitHub Actions 排程追蹤路徑
+- [x] 更新 Robot Framework 測試契約與測試資料建置
+- [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+
 
 

@@ -33,7 +33,7 @@ jobs:
 
       # Tests intentionally run before the live publication step. Mock CLI
       # output is isolated under artifacts/test-generated and cannot replace
-      # README.md, topic.md, or web/data/stars.json.
+      # README.md, language.md, or web/data/stars.json.
       - name: Run Robot Framework acceptance tests
         run: python -m robot --outputdir artifacts/robot tests
 
@@ -53,7 +53,7 @@ jobs:
       - name: Commit changed generated artifacts
         shell: bash
         run: |
-          if git diff --quiet -- README.md topic.md web/data/stars.json web/data/sync-meta.json; then
+          if git diff --quiet -- README.md language.md web/data/stars.json web/data/sync-meta.json; then
             echo "Stars snapshot is already current."
             exit 0
           fi
@@ -76,6 +76,6 @@ jobs:
           ")
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add README.md topic.md web/data/stars.json web/data/sync-meta.json
+          git add README.md language.md web/data/stars.json web/data/sync-meta.json
           git commit -m "$COMMIT_TITLE" -m "$COMMIT_BODY"
           git push

@@ -60,7 +60,7 @@ class SyncController:
         username: str = "Andy87877",
         output_dir: str = ".",
         readme_file: str = "README.md",
-        topics_file: str = "topic.md",
+        language_file: str = "language.md",
         data_file: str = "web/data/stars.json",
         metadata_file: str = "web/data/sync-meta.json",
         allow_empty: bool = False,
@@ -142,19 +142,30 @@ class SyncController:
         metadata["otherRepositoryCount"] = len(
             by_topic.get(self.topic_policy.other_category, [])
         )
+        # README.md displays Topic data; language.md displays Language data
         generated_files = {
-            readme_file: self.language_renderer.render(
-                by_language, title=f"{username} 的 GitHub Stars", metadata=metadata
-            ),
-            topics_file: self.topic_renderer.render(
+            readme_file: self.topic_renderer.render(
                 by_topic,
-                title=f"{username} 的 GitHub Stars（依 Topic）",
+                title=f"{username} 的 GitHub Stars",
+                metadata=metadata,
+            ),
+            language_file: self.language_renderer.render(
+                by_language,
+                title=f"{username} 的 GitHub Stars（依主要語言）",
                 metadata=metadata,
             ),
             data_file: self.dataset_renderer.render(by_language),
             metadata_file: self.metadata_renderer.render(metadata),
         }
         published_paths = self.publisher.publish(output_dir, generated_files)
+
+        # Remove legacy topic.md if present in output_dir
+        old_topic_file = os.path.join(output_dir, "topic.md")
+        if os.path.exists(old_topic_file):
+            try:
+                os.remove(old_topic_file)
+            except OSError:
+                pass
 
         print(
             f"[OK] Published {len(repositories)} repositories from "
