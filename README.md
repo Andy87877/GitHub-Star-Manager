@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **158** 個公開 Star；資料快照：`2026-08-22 03:18:21 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **159** 個公開 Star；資料快照：`2026-08-23 03:14:18 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -27,7 +27,7 @@ pie title 熱門 Topic 覆蓋 Top 10
 ```mermaid
 pie title 程式語言分佈 Top 10
     "Python" : 40
-    "TypeScript" : 25
+    "TypeScript" : 26
     "Others" : 22
     "JavaScript" : 14
     "C++" : 8
@@ -42,15 +42,15 @@ pie title 程式語言分佈 Top 10
 
 | Topic 標籤 | 涵蓋專案數 | 視覺化進度條 |
 | :--- | :---: | :--- |
-| **#ai** | 11 筆 (7.0%) | `███` |
-| **#hacktoberfest** | 11 筆 (7.0%) | `███` |
+| **#ai** | 11 筆 (6.9%) | `███` |
+| **#hacktoberfest** | 11 筆 (6.9%) | `███` |
 | **#python** | 9 筆 (5.7%) | `██` |
-| **#github** | 8 筆 (5.1%) | `██` |
+| **#github** | 8 筆 (5.0%) | `██` |
 | **#openai** | 6 筆 (3.8%) | `██` |
-| **#javascript** | 5 筆 (3.2%) | `█` |
-| **#llm** | 5 筆 (3.2%) | `█` |
-| **#markdown** | 5 筆 (3.2%) | `█` |
-| **#trem** | 5 筆 (3.2%) | `█` |
+| **#javascript** | 5 筆 (3.1%) | `█` |
+| **#llm** | 5 筆 (3.1%) | `█` |
+| **#markdown** | 5 筆 (3.1%) | `█` |
+| **#trem** | 5 筆 (3.1%) | `█` |
 | **#awesome** | 4 筆 (2.5%) | `█` |
 
 ## 資料即時性與數據分析
@@ -60,7 +60,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **502** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**95** 個 repositories）。
+- 原始資料共有 **508** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**96** 個 repositories）。
 
 ## 特別感謝
 
@@ -106,6 +106,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [markdown（5）](#topic-markdown)
 - [trem（5）](#topic-trem)
 - [awesome（4）](#topic-awesome)
+- [awesome-list（4）](#topic-awesome-list)
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
 - [earthquake-early-warning（4）](#topic-earthquake-early-warning)
@@ -113,7 +114,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [profile-readme（4）](#topic-profile-readme)
 - [readme（4）](#topic-readme)
 - [taiwan（4）](#topic-taiwan)
-- [awesome-list（3）](#topic-awesome-list)
 - [chatgpt（3）](#topic-chatgpt)
 - [cross-platform（3）](#topic-cross-platform)
 - [css（3）](#topic-css)
@@ -126,7 +126,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [readme-stats（3）](#topic-readme-stats)
 - [security（3）](#topic-security)
 - [tts（3）](#topic-tts)
-- [other（95）](#topic-other)
+- [other（96）](#topic-other)
 
 ---
 
@@ -249,6 +249,15 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [github/awesome-copilot](https://github.com/github/awesome-copilot) — Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
 - [deepseek-ai/awesome-deepseek-integration](https://github.com/deepseek-ai/awesome-deepseek-integration) — Integrate the DeepSeek API into popular software
 
+<a id="topic-awesome-list"></a>
+
+## awesome-list
+
+- [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) — Master programming by recreating your favorite technologies from scratch.
+- [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
+- [vinta/awesome-python](https://github.com/vinta/awesome-python) — The definitive list that answers "I want to do X in Python, which tool should I use?"
+- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
+
 <a id="topic-deep-learning"></a>
 
 ## deep-learning
@@ -311,14 +320,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [Ice1187/TW-Security-and-CTF-Resource](https://github.com/Ice1187/TW-Security-and-CTF-Resource) — 台灣資安 / CTF 學習資源整理
 - [goodjack/developer-roadmap-chinese](https://github.com/goodjack/developer-roadmap-chinese) — 2021 年成為 Web 開發人員的路線圖 台灣正體中文版
-
-<a id="topic-awesome-list"></a>
-
-## awesome-list
-
-- [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) — Master programming by recreating your favorite technologies from scratch.
-- [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
 <a id="topic-chatgpt"></a>
 
@@ -420,8 +421,9 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## other
 
+- [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [little-brother/dcim-list](https://github.com/little-brother/dcim-list) — List of DCIM (data center infrastructure management) software
-- [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy87877 的 GitHub Stars
+- [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [mahlernim/google-timeline-visualizer](https://github.com/mahlernim/google-timeline-visualizer) — Visualize your year in travel using your Google Location History (Timeline) data
 - [FRC8725/FRC8725-Website-Design-Docs](https://github.com/FRC8725/FRC8725-Website-Design-Docs)
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.

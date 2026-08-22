@@ -1,50 +1,50 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-21T19:18:21+00:00",
-  "formattedUpdatedAt": "2026-08-22 03:18:21 (UTC+8)",
-  "repositoryCount": 158,
-  "previousRepositoryCount": 156,
-  "deltaCount": 2,
-  "formattedDelta": "+2",
+  "generatedAt": "2026-08-22T19:14:18+00:00",
+  "formattedUpdatedAt": "2026-08-23 03:14:18 (UTC+8)",
+  "repositoryCount": 159,
+  "previousRepositoryCount": 158,
+  "deltaCount": 1,
+  "formattedDelta": "+1",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 502,
+  "totalTopicCount": 508,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 95,
+  "otherRepositoryCount": 96,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 158,
-    "totalStars": 4926335,
-    "totalForks": 746805,
+    "totalCount": 159,
+    "totalStars": 4936710,
+    "totalForks": 747859,
     "archivedCount": 10,
-    "activeCount": 148,
+    "activeCount": 149,
     "languageBreakdown": {
       "Python": {
         "count": 40,
-        "percentage": 25.3
+        "percentage": 25.2
       },
       "TypeScript": {
-        "count": 25,
-        "percentage": 15.8
+        "count": 26,
+        "percentage": 16.4
       },
       "Others": {
         "count": 22,
-        "percentage": 13.9
+        "percentage": 13.8
       },
       "JavaScript": {
         "count": 14,
-        "percentage": 8.9
+        "percentage": 8.8
       },
       "C++": {
         "count": 8,
-        "percentage": 5.1
+        "percentage": 5.0
       },
       "Java": {
         "count": 5,
-        "percentage": 3.2
+        "percentage": 3.1
       },
       "HTML": {
         "count": 4,
@@ -173,6 +173,10 @@
         "count": 4
       },
       {
+        "topic": "awesome-list",
+        "count": 4
+      },
+      {
         "topic": "deep-learning",
         "count": 4
       },
@@ -187,10 +191,6 @@
       {
         "topic": "ntut",
         "count": 4
-      },
-      {
-        "topic": "profile-readme",
-        "count": 4
       }
     ],
     "starredByYear": {
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 52,
-      "2026": 41
+      "2026": 42
     }
   }
 }
