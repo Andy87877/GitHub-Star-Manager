@@ -1,62 +1,62 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-21T10:44:09+00:00",
-  "formattedUpdatedAt": "2026-08-21 18:44:09 (UTC+8)",
-  "repositoryCount": 156,
-  "previousRepositoryCount": 156,
+  "generatedAt": "2026-08-23T11:00:14+00:00",
+  "formattedUpdatedAt": "2026-08-23 19:00:14 (UTC+8)",
+  "repositoryCount": 159,
+  "previousRepositoryCount": 159,
   "deltaCount": 0,
   "formattedDelta": "0",
   "source": "GitHub REST API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 502,
+  "totalTopicCount": 508,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 93,
+  "otherRepositoryCount": 96,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 156,
-    "totalStars": 4923176,
-    "totalForks": 746445,
+    "totalCount": 159,
+    "totalStars": 4939056,
+    "totalForks": 748041,
     "archivedCount": 10,
-    "activeCount": 146,
+    "activeCount": 149,
     "languageBreakdown": {
       "Python": {
-        "count": 39,
-        "percentage": 25.0
+        "count": 40,
+        "percentage": 25.2
       },
       "TypeScript": {
-        "count": 25,
-        "percentage": 16.0
+        "count": 26,
+        "percentage": 16.4
       },
       "Others": {
-        "count": 21,
-        "percentage": 13.5
+        "count": 22,
+        "percentage": 13.8
       },
       "JavaScript": {
         "count": 14,
-        "percentage": 9.0
+        "percentage": 8.8
       },
       "C++": {
         "count": 8,
-        "percentage": 5.1
+        "percentage": 5.0
       },
       "Java": {
         "count": 5,
-        "percentage": 3.2
+        "percentage": 3.1
       },
       "HTML": {
         "count": 4,
-        "percentage": 2.6
+        "percentage": 2.5
       },
       "Jupyter Notebook": {
         "count": 4,
-        "percentage": 2.6
+        "percentage": 2.5
       },
       "Vue": {
         "count": 4,
-        "percentage": 2.6
+        "percentage": 2.5
       },
       "Dart": {
         "count": 3,
@@ -173,6 +173,10 @@
         "count": 4
       },
       {
+        "topic": "awesome-list",
+        "count": 4
+      },
+      {
         "topic": "deep-learning",
         "count": 4
       },
@@ -187,10 +191,6 @@
       {
         "topic": "ntut",
         "count": 4
-      },
-      {
-        "topic": "profile-readme",
-        "count": 4
       }
     ],
     "starredByYear": {
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 52,
-      "2026": 39
+      "2026": 42
     }
   }
 }

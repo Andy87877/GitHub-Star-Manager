@@ -36,6 +36,8 @@ export class StarView {
     this.shortcutsBtn = document.getElementById('shortcutsBtn');
     this.shortcutsModal = document.getElementById('shortcutsModal');
     this.closeShortcutsModalBtn = document.getElementById('closeShortcutsModalBtn');
+    this.activeFiltersBar = document.getElementById('activeFiltersBar');
+    this.activeFiltersContainer = document.getElementById('activeFiltersContainer');
     this.previousFocus = null;
   }
 
@@ -117,7 +119,7 @@ export class StarView {
       `${this.escapeHtml(label)}</button>`;
   }
 
-  renderRepositories(repositories, notes, favorites, viewMode, paginationInfo) {
+  renderRepositories(repositories, notes, favorites, viewMode, paginationInfo, sortBy = 'starred-desc') {
     if (!repositories.length) {
       this.repoGrid.replaceChildren();
       this.emptyState.hidden = false;
@@ -126,7 +128,7 @@ export class StarView {
     }
     this.emptyState.hidden = true;
     if (viewMode === 'table') {
-      this.renderRepoTable(repositories, notes, favorites);
+      this.renderRepoTable(repositories, notes, favorites, sortBy);
     } else {
       this.renderRepoCards(repositories, notes, favorites);
     }
@@ -200,8 +202,39 @@ export class StarView {
     }).join('');
   }
 
-  renderRepoTable(repositories, notes, favorites = {}) {
+  renderActiveFilters(filters) {
+    if (!this.activeFiltersBar || !this.activeFiltersContainer) return;
+    const activeChips = [];
+    if (filters.keyword) {
+      activeChips.push(`<span class="active-filter-tag">搜尋: "${this.escapeHtml(filters.keyword)}" <button type="button" class="remove-filter-btn" data-filter="keyword" aria-label="清除搜尋">✕</button></span>`);
+    }
+    if (filters.language && filters.language !== 'all') {
+      activeChips.push(`<span class="active-filter-tag">語言: ${this.escapeHtml(filters.language)} <button type="button" class="remove-filter-btn" data-filter="language" aria-label="清除語言篩選">✕</button></span>`);
+    }
+    if (filters.topic && filters.topic !== 'all') {
+      const displayTopic = filters.topic === 'other' ? '其他 / other' : `#${filters.topic}`;
+      activeChips.push(`<span class="active-filter-tag">Topic: ${this.escapeHtml(displayTopic)} <button type="button" class="remove-filter-btn" data-filter="topic" aria-label="清除 Topic 篩選">✕</button></span>`);
+    }
+    if (filters.archive && filters.archive !== 'active') {
+      const labels = { all: '全部專案', favorites: '⭐ 僅限最愛', notes: '📝 僅有筆記', archived: '僅限 Archived' };
+      activeChips.push(`<span class="active-filter-tag">狀態: ${labels[filters.archive] || filters.archive} <button type="button" class="remove-filter-btn" data-filter="archive" aria-label="重置狀態篩選">✕</button></span>`);
+    }
+
+    if (activeChips.length > 0) {
+      activeChips.push(`<button type="button" id="clearAllActiveFiltersBtn" class="btn btn-compact btn-reset-filters">一鍵重置</button>`);
+      this.activeFiltersContainer.innerHTML = activeChips.join('');
+      this.activeFiltersBar.hidden = false;
+    } else {
+      this.activeFiltersContainer.innerHTML = '';
+      this.activeFiltersBar.hidden = true;
+    }
+  }
+
+  renderRepoTable(repositories, notes, favorites = {}, sortBy = 'starred-desc') {
     this.repoGrid.className = 'table-shell';
+    const starsIndicator = sortBy === 'stars-desc' ? ' ▼' : sortBy === 'stars-asc' ? ' ▲' : '';
+    const nameIndicator = sortBy === 'name-asc' ? ' ▲' : '';
+    const dateIndicator = sortBy === 'starred-desc' ? ' ▼' : '';
     const rows = repositories.map(repo => {
       const fullName = this.escapeHtml(repo.fullName);
       const note = notes[repo.fullName] || '';
@@ -247,11 +280,11 @@ export class StarView {
         <caption class="sr-only">目前篩選的 GitHub Star 專案</caption>
         <thead>
           <tr>
-            <th scope="col">Repository</th>
+            <th scope="col" class="sortable-th" data-sort-by="name-asc" title="按專案名稱排序">Repository${nameIndicator}</th>
             <th scope="col">語言</th>
-            <th scope="col" class="numeric-cell">Stars</th>
+            <th scope="col" class="numeric-cell sortable-th" data-sort-by="${sortBy === 'stars-desc' ? 'stars-asc' : 'stars-desc'}" title="點擊切換 Stars 排序">Stars${starsIndicator}</th>
             <th scope="col" class="numeric-cell">Forks</th>
-            <th scope="col">收藏日期</th>
+            <th scope="col" class="sortable-th" data-sort-by="starred-desc" title="按收藏日期排序">收藏日期${dateIndicator}</th>
             <th scope="col">狀態</th>
             <th scope="col"><span class="sr-only">操作</span></th>
           </tr>

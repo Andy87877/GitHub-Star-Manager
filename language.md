@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:44:09 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **159** 個公開 Star；資料快照：`2026-08-23 19:00:14 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -23,14 +23,14 @@
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
 - [MDX（3）](#language-mdx)
-- [Others（21）](#language-others)
+- [Others（22）](#language-others)
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
 - [Processing（1）](#language-processing)
-- [Python（39）](#language-python)
+- [Python（40）](#language-python)
 - [Rust（2）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（25）](#language-typescript)
+- [TypeScript（26）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -183,6 +183,7 @@
 
 ## Others
 
+- [little-brother/dcim-list](https://github.com/little-brother/dcim-list) — List of DCIM (data center infrastructure management) software
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
 - [cyizhuo/CIFAR-100-dataset](https://github.com/cyizhuo/CIFAR-100-dataset) — CIFAR-100 dataset by classes folder
@@ -229,6 +230,7 @@
 
 ## Python
 
+- [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [robotframework/robotframework](https://github.com/robotframework/robotframework) — Generic automation framework for acceptance testing and RPA
 - [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具集：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
@@ -286,6 +288,7 @@
 
 ## TypeScript
 
+- [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
 - [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
 - [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems

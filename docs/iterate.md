@@ -374,6 +374,21 @@
   - Robot Framework 測試擴充至 30 項（`Frontend Supports Keyboard Shortcuts Modal`），全數 30 / 30 PASS 100% 通過！
 - **狀態**：完成。
 
+## Iteration 25：實用性與 UI/UX 大幅升級：README Top 10 精選展台、現有篩選標籤列與點擊標頭排序
+
+- **日期**：2026-08-23
+- **使用者回饋**：
+  - 請針對實用性、UI/UX 與 README.md 可讀性進行全方位持續優化。
+- **實用性與 UI/UX 重大升級**：
+  - **README Top 10 展示台 (Showcase Table)**：在 `app/services/renderers.py` 的 `MarkdownTopicRenderer` 中新增「⭐ 收藏星數最高 Top 10 精選」表格，呈現在 GitHub 頁面頂端，供讀者快速預覽重點開源專案與語言分佈。
+  - **目前篩選條件標籤列 (`#activeFiltersBar`)**：在搜尋與篩選區域下方新增動態標籤列，直觀列出目前生效的關鍵字、語言、Topic 與狀態篩選，點擊 `✕` 可單一移除條件，並提供「一鍵重置」按鈕。
+  - **表格標頭點擊排序 (`.sortable-th`)**：使用者點擊 Table 欄位標頭（如 Repository、Stars、收藏日期）即可直接切換升降序排序，並有箭頭標示 (`▲`/`▼`)。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 159 筆最新真實 Star 快照。
+  - Robot Framework 測試擴充至 31 項（`Frontend Renders Clickable Table Headers And Active Filter Bar`），全數 31 / 31 PASS 100% 通過！
+- **狀態**：完成。
+
+
 
 
 

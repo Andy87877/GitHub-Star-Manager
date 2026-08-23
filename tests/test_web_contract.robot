@@ -113,4 +113,14 @@ Frontend Supports Keyboard Shortcuts Modal
     Should Contain    ${view}    openShortcutsModal
     Should Contain    ${controller}    toggleShortcutsModal
 
+Frontend Renders Clickable Table Headers And Active Filter Bar
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    ${controller}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}controllers${/}StarController.js
+    Should Contain    ${html}    id="activeFiltersBar"
+    Should Contain    ${html}    id="activeFiltersContainer"
+    Should Contain    ${view}    renderActiveFilters
+    Should Contain    ${view}    sortable-th
+    Should Contain    ${controller}    clearAllActiveFiltersBtn
+
 

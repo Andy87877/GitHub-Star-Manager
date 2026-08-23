@@ -26,6 +26,7 @@ export class StarController {
     };
     this.view.renderStats(this.model.getStatistics());
     this.view.renderStatus(this.model.dataStatus);
+    this.view.renderActiveFilters(this.model.filters);
     this.view.renderFilters(
       this.model.languages,
       this.model.topics,
@@ -36,7 +37,8 @@ export class StarController {
       this.model.notes,
       this.model.favorites,
       this.model.viewMode,
-      paginationInfo
+      paginationInfo,
+      this.model.filters.sortBy
     );
     this.view.renderViewToggle(this.model.viewMode);
     this.syncControls();
@@ -118,7 +120,30 @@ export class StarController {
       () => this.refreshLiveData()
     );
 
+    if (this.view.activeFiltersBar) {
+      this.view.activeFiltersBar.addEventListener('click', event => {
+        const removeBtn = event.target.closest('.remove-filter-btn');
+        if (removeBtn) {
+          const filterName = removeBtn.dataset.filter;
+          if (filterName === 'keyword') this.updateFilter('keyword', '');
+          else if (filterName === 'language') this.updateFilter('language', 'all');
+          else if (filterName === 'topic') this.updateFilter('topic', 'all');
+          else if (filterName === 'archive') this.updateFilter('archive', 'active');
+          return;
+        }
+        if (event.target.id === 'clearAllActiveFiltersBtn') {
+          this.model.clearFilters();
+          this.render();
+        }
+      });
+    }
+
     document.getElementById('repoGrid').addEventListener('click', async event => {
+      const th = event.target.closest('.sortable-th');
+      if (th && th.dataset.sortBy) {
+        this.updateFilter('sortBy', th.dataset.sortBy);
+        return;
+      }
       const copyBtn = event.target.closest('.copy-url-btn');
       if (copyBtn) {
         const url = copyBtn.dataset.url;

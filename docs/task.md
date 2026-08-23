@@ -230,6 +230,16 @@
 - [x] 重新同步 `Andy87877` 156 筆真實 Star 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 25：實用性與 UI/UX 大幅升級：README Top 10 精選展台、現有篩選標籤列與點擊標頭排序
+
+- [x] `README.md` 新增「⭐ 收藏星數最高 Top 10 精選 (Showcase)」展示表格，提升 GitHub 上直接瀏覽之實用性與可讀性
+- [x] Web 網頁新增「目前篩選條件標籤列 (`#activeFiltersBar`)」，支援單一條件 ✕ 移除與「一鍵重置」
+- [x] Web 網頁表格標頭 (Table Headers) 升級為「動態點擊排序 (`.sortable-th`)」，並顯示目前排序箭頭 (`▲`/`▼`)
+- [x] 擴充 Robot Framework `Frontend Renders Clickable Table Headers And Active Filter Bar` 測試（測試套件提升至 31/31 全數通過）
+- [x] 重新同步 `Andy87877` 159 筆最新真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+
 
 
 

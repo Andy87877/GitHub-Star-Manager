@@ -155,6 +155,31 @@ class MarkdownTopicRenderer(IRenderer):
         # Add visual diagrams and progress bar tables
         lines.extend(_build_visualizations(metadata))
 
+        # Collect top 10 starred repositories for Showcase section
+        seen_names: set[str] = set()
+        all_repos: List[Repository] = []
+        for repos in categorized.values():
+            for repo in repos:
+                if repo.full_name not in seen_names:
+                    seen_names.add(repo.full_name)
+                    all_repos.append(repo)
+        top_starred = sorted(all_repos, key=lambda r: r.stars, reverse=True)[:10]
+
+        if top_starred:
+            lines.extend([
+                "### ⭐ 收藏星數最高 Top 10 精選",
+                "",
+                "| 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |",
+                "| :--- | :---: | :---: | :--- |",
+            ])
+            for repo in top_starred:
+                clean_desc = _clean_inline_text(repo.description, limit=120)
+                lang_str = repo.language or "Others"
+                lines.append(
+                    f"| [{repo.full_name}]({repo.url}) | **{lang_str}** | `{repo.stars:,}` | {clean_desc} |"
+                )
+            lines.append("")
+
         lines.extend([
             "## 資料即時性與數據分析",
             "",
