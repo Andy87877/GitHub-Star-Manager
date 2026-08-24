@@ -1,23 +1,13 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-<<<<<<< HEAD
-  "generatedAt": "2026-08-24T08:54:15+00:00",
-  "formattedUpdatedAt": "2026-08-24 16:54:15 (UTC+8)",
+  "generatedAt": "2026-08-24T09:00:04+00:00",
+  "formattedUpdatedAt": "2026-08-24 17:00:04 (UTC+8)",
   "repositoryCount": 160,
   "previousRepositoryCount": 160,
   "deltaCount": 0,
   "formattedDelta": "0",
   "source": "GitHub REST API",
-=======
-  "generatedAt": "2026-08-23T19:13:39+00:00",
-  "formattedUpdatedAt": "2026-08-24 03:13:39 (UTC+8)",
-  "repositoryCount": 159,
-  "previousRepositoryCount": 156,
-  "deltaCount": 3,
-  "formattedDelta": "+3",
-  "source": "GitHub GraphQL API",
->>>>>>> adf250b91a8a2631f030c638c562d1ec94096d03
   "isLiveSnapshot": true,
   "totalTopicCount": 519,
   "focusedTopicCount": 30,
@@ -26,25 +16,15 @@
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-<<<<<<< HEAD
     "totalCount": 160,
-    "totalStars": 5424307,
-    "totalForks": 811023,
-=======
-    "totalCount": 159,
-    "totalStars": 5055282,
-    "totalForks": 765727,
->>>>>>> adf250b91a8a2631f030c638c562d1ec94096d03
+    "totalStars": 5424346,
+    "totalForks": 811027,
     "archivedCount": 10,
     "activeCount": 150,
     "languageBreakdown": {
       "Python": {
         "count": 39,
-<<<<<<< HEAD
         "percentage": 24.4
-=======
-        "percentage": 24.5
->>>>>>> adf250b91a8a2631f030c638c562d1ec94096d03
       },
       "TypeScript": {
         "count": 27,
@@ -112,11 +92,7 @@
       },
       "Markdown": {
         "count": 2,
-<<<<<<< HEAD
         "percentage": 1.2
-=======
-        "percentage": 1.3
->>>>>>> adf250b91a8a2631f030c638c562d1ec94096d03
       },
       "Astro": {
         "count": 1,
@@ -222,11 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-<<<<<<< HEAD
       "2026": 44
-=======
-      "2026": 43
->>>>>>> adf250b91a8a2631f030c638c562d1ec94096d03
     }
   }
 }

@@ -1,10 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-<<<<<<< HEAD
-> 收錄 **160** 個公開 Star；資料快照：`2026-08-24 16:54:15 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
-=======
-> 收錄 **159** 個公開 Star；資料快照：`2026-08-24 03:13:39 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
->>>>>>> adf250b91a8a2631f030c638c562d1ec94096d03
+> 收錄 **160** 個公開 Star；資料快照：`2026-08-24 17:00:04 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
