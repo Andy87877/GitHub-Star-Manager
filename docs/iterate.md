@@ -388,6 +388,22 @@
   - Robot Framework 測試擴充至 31 項（`Frontend Renders Clickable Table Headers And Active Filter Bar`），全數 31 / 31 PASS 100% 通過！
 - **狀態**：完成。
 
+## Iteration 26：資料導出格式重構、Markdown 渲染健壯化與 CI/CD Job 權限隔離架構優化
+
+- **日期**：2026-08-24
+- **架構與設計優化**：
+  - **CSV 導出相容性重構 (`StarModel.js`)**：在 `exportToCSV()` 中重構欄位格式化函數 `csvSafe()`，針對包含公式前綴符號（如 `=`, `+`, `-`, `@`）的欄位自動加入單引號轉義，確保在 Excel 或各類試算表軟體中開啟時格式正確且完全符合相容規範。
+  - **Markdown 渲染器文字轉義健壯化 (`app/services/renderers.py`)**：升級 `_clean_inline_text()`，完整轉義 Markdown 語法符號（如 `[` `]` `*` `_` `` ` ``），避免外部 GitHub 專案描述中的特殊符號干擾 README.md 與 language.md 的表格排版。
+  - **CI/CD 自動化管道解耦與權限精細化 (`.github/workflows/`)**：
+    - 將 `schedules.yml` 解耦拆分為 `fetch-and-verify` (唯讀執行測試與抓取快照) 與 `publish` (發布提交變更) 雙 Job 架構，符合最少權限原則 (Least Privilege)。
+    - 精細化 `ci-pages.yml` 的 Job 級別權限控制，僅在 `deploy` Job 啟用發布權限。
+  - **依賴套件限制更新 (`config/requirements.txt`)**：更新 `requests>=2.34.2,<3`。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 160 筆最新真實 Star 快照。
+  - Robot Framework 測試套件擴充至 34 項，全數 34 / 34 PASS 100% 通過！
+- **狀態**：完成。
+
+
 
 
 

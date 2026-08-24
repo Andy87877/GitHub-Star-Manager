@@ -239,6 +239,17 @@
 - [x] 重新同步 `Andy87877` 159 筆最新真實 Star 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 26：資料導出格式重構、Markdown 渲染健壯化與 CI/CD Job 權限隔離架構優化
+
+- [x] CSV 導出模組重構：在 `StarModel.js` 的 `exportToCSV()` 加入試算表公式前綴轉義規避 (`csvSafe`)
+- [x] Markdown 渲染器重構：在 `renderers.py` 的 `_clean_inline_text()` 加入完整語法字元轉義處理 (`[` `]` `*` `_` `` ` ``)
+- [x] GitHub Actions Workflow 權限隔離架構重構：將 `schedules.yml` 解耦拆分為 `fetch-and-verify` (唯讀) 與 `publish` (發布) 雙 Job 管道；`ci-pages.yml` 權限嚴格最少權限化 (Least Privilege)
+- [x] 依賴庫套件版本限制更新 (`config/requirements.txt`: `requests>=2.34.2,<3`)
+- [x] 擴充 Robot Framework 測試至 34 項 (包含 CSV 導出格式轉義、Markdown 文字轉義與 CI 管道權限隔離契約)，全數 34/34 PASS 100% 通過
+- [x] 重新同步 `Andy87877` 160 筆最新真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+
 
 
 

@@ -24,3 +24,9 @@ Verify JSON Dataset Renderer Format
     ${result}=    Run Process    ${PYTHON_BIN}    tests/test_helper.py    json
     Should Contain    ${result.stdout}    PASS
     Should Be Equal As Integers    ${result.rc}    0
+
+Verify Markdown Description Text Escaping
+    [Documentation]    Test that _clean_inline_text escapes Markdown syntax characters cleanly.
+    ${result}=    Run Process    ${PYTHON_BIN}    tests/test_helper.py    clean_text
+    Should Contain    ${result.stdout}    PASS
+    Should Be Equal As Integers    ${result.rc}    0

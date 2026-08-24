@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:44:09 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **160** 個公開 Star；資料快照：`2026-08-24 16:54:15 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -26,8 +26,8 @@ pie title 熱門 Topic 覆蓋 Top 10
 
 ```mermaid
 pie title 程式語言分佈 Top 10
-    "Python" : 40
-    "TypeScript" : 26
+    "Python" : 39
+    "TypeScript" : 27
     "Others" : 22
     "JavaScript" : 14
     "C++" : 8
@@ -44,14 +44,29 @@ pie title 程式語言分佈 Top 10
 | :--- | :---: | :--- |
 | **#ai** | 11 筆 (6.9%) | `███` |
 | **#hacktoberfest** | 11 筆 (6.9%) | `███` |
-| **#python** | 9 筆 (5.7%) | `██` |
+| **#python** | 9 筆 (5.6%) | `██` |
 | **#github** | 8 筆 (5.0%) | `██` |
 | **#openai** | 6 筆 (3.8%) | `██` |
-| **#javascript** | 5 筆 (3.2%) | `█` |
-| **#llm** | 5 筆 (3.2%) | `█` |
-| **#markdown** | 5 筆 (3.2%) | `█` |
-| **#trem** | 5 筆 (3.2%) | `█` |
-| **#awesome** | 4 筆 (2.6%) | `█` |
+| **#javascript** | 5 筆 (3.1%) | `█` |
+| **#llm** | 5 筆 (3.1%) | `█` |
+| **#markdown** | 5 筆 (3.1%) | `█` |
+| **#trem** | 5 筆 (3.1%) | `█` |
+| **#awesome** | 4 筆 (2.5%) | `█` |
+
+### ⭐ 收藏星數最高 Top 10 精選
+
+| 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
+| :--- | :---: | :---: | :--- |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `542,459` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,513` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `387,284` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,282` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `315,753` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `244,011` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `206,013` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,065` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,640` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `172,633` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -60,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **508** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**96** 個 repositories）。
+- 原始資料共有 **519** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**97** 個 repositories）。
 
 ## 特別感謝
 
@@ -115,6 +130,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [readme（4）](#topic-readme)
 - [taiwan（4）](#topic-taiwan)
 - [chatgpt（3）](#topic-chatgpt)
+- [computer-science（3）](#topic-computer-science)
 - [cross-platform（3）](#topic-cross-platform)
 - [css（3）](#topic-css)
 - [frontend（3）](#topic-frontend)
@@ -125,8 +141,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [nodejs（3）](#topic-nodejs)
 - [readme-stats（3）](#topic-readme-stats)
 - [security（3）](#topic-security)
-- [tts（3）](#topic-tts)
-- [other（96）](#topic-other)
+- [other（97）](#topic-other)
 
 ---
 
@@ -329,6 +344,14 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [0xk1h0/ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) — ChatGPT DAN, Jailbreaks prompt
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
+<a id="topic-computer-science"></a>
+
+## computer-science
+
+- [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — Interactive roadmaps, guides and other educational content to help developers grow in their careers.
+- [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
+- [goodjack/developer-roadmap-chinese](https://github.com/goodjack/developer-roadmap-chinese) — 2021 年成為 Web 開發人員的路線圖 台灣正體中文版
+
 <a id="topic-cross-platform"></a>
 
 ## cross-platform
@@ -409,25 +432,17 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — A list of useful payloads and bypass for Web Application Security and Pentest/CTF
 - [Ice1187/TW-Security-and-CTF-Resource](https://github.com/Ice1187/TW-Security-and-CTF-Resource) — 台灣資安 / CTF 學習資源整理
 
-<a id="topic-tts"></a>
-
-## tts
-
-- [index-tts/index-tts](https://github.com/index-tts/index-tts) — An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System
-- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
-- [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
-
 <a id="topic-other"></a>
 
 ## other
 
+- [openai/codex](https://github.com/openai/codex) — Lightweight coding agent that runs in your terminal
 - [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [little-brother/dcim-list](https://github.com/little-brother/dcim-list) — List of DCIM (data center infrastructure management) software
 - [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [mahlernim/google-timeline-visualizer](https://github.com/mahlernim/google-timeline-visualizer) — Visualize your year in travel using your Google Location History (Timeline) data
 - [FRC8725/FRC8725-Website-Design-Docs](https://github.com/FRC8725/FRC8725-Website-Design-Docs)
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
-- [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具集：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
 - [openai/whisper](https://github.com/openai/whisper) — Robust Speech Recognition via Large-Scale Weak Supervision
@@ -450,6 +465,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [06wuuntt/NTUT_Coursesystem](https://github.com/06wuuntt/NTUT_Coursesystem)
 - [gab61201/NTUT-iSchoolMate](https://github.com/gab61201/NTUT-iSchoolMate)
 - [cyesuta/Code-Guardian-Aegis](https://github.com/cyesuta/Code-Guardian-Aegis) — VibeCoding security shield for novice developers - preventing disaster-level security vulnerabilities
+- [index-tts/index-tts](https://github.com/index-tts/index-tts) — An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System
 - [google/googletest](https://github.com/google/googletest) — GoogleTest - Google Testing and Mocking Framework
 - [SR0725/short-link-tracker](https://github.com/SR0725/short-link-tracker)
 - [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
@@ -479,7 +495,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [XiangxinKong/manhuagui-downloader](https://github.com/XiangxinKong/manhuagui-downloader) — 漫画柜下载器，带图形界面，纯python。已打包exe，可直接运行
 - [Yucheng0208/NTUT-Linear-Algebra-Course](https://github.com/Yucheng0208/NTUT-Linear-Algebra-Course) — NTUT CS Linear Algebra Files.
 - [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3)
-- [eddy0117/NeverThinkAutoReply](https://github.com/eddy0117/NeverThinkAutoReply) — 多種智慧回覆模式，包括自動MyGO、正常、反駁、嘲諷，全程無需使用者動腦
 - [chingyen06/Digital-Design-Verilog](https://github.com/chingyen06/Digital-Design-Verilog)
 - [hneemann/Digital](https://github.com/hneemann/Digital) — A digital logic designer and circuit simulator.
 - [free5gc/free5GLabs](https://github.com/free5gc/free5GLabs) — A series of hands-on labs to guide you to build the 5G networks.
@@ -491,6 +506,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [linyiLYi/bilibot](https://github.com/linyiLYi/bilibot) — A local chatbot fine-tuned by bilibili user comments.
 - [torvalds/linux](https://github.com/torvalds/linux) — Linux kernel source tree
 - [robsoncouto/arduino-songs](https://github.com/robsoncouto/arduino-songs)
+- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
 - [yihong0618/SunoSongsCreator](https://github.com/yihong0618/SunoSongsCreator) — About High quality songs generation by https://www.suno.ai/. Reverse engineered API.
 - [pyinvest/ml_toturial](https://github.com/pyinvest/ml_toturial)
 - [bschen410/Coding](https://github.com/bschen410/Coding) — 一堆不想整理的程式碼

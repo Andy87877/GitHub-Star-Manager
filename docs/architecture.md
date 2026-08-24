@@ -247,8 +247,11 @@ Robot Framework 覆蓋：
 - 前端 ⌨️ 鍵盤快捷鍵指南 Modal (`shortcutsModal`) 與 `?` / `t` / `d` / `/` 快捷鍵契約。
 - README.md Top 10 Starred Showcase 精選展示表格契約。
 - 前端目前篩選條件標籤列 (`activeFiltersBar`) 與可點擊 Table 標頭排序 (`sortable-th`) 契約。
+- 前端 CSV 導出公式前綴符號轉義規避 (`csvSafe`) 契約。
+- Markdown 渲染器描述字元轉義 (`_clean_inline_text`) 契約。
+- GitHub Actions CI/CD 雙 Job 權限隔離與最少權限 (Least-Privilege) 契約。
 
-目前完整涵蓋 31 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖、Top 10 展示表格與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、目前篩選條件標籤列與點擊標頭排序順暢、鍵盤快捷鍵指南與快速鍵順暢、複製 URL 與回到頂部順暢、頁尾 Andy87877 CC0-1.0 版權聲明顯示正常、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
+目前完整涵蓋 34 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖、Top 10 展示表格與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常、最愛⭐與筆記可正常儲存與篩選、目前篩選條件標籤列與點擊標頭排序順暢、CSV 導出相容性良善、鍵盤快捷鍵指南與快速鍵順暢、複製 URL 與回到頂部順暢、頁尾 Andy87877 CC0-1.0 版權聲明顯示正常、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 

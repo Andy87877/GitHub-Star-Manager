@@ -12,8 +12,11 @@ from app.models.repository import Repository
 
 
 def _clean_inline_text(value: str, limit: int = 240) -> str:
-    """Normalize API text so one repository always occupies one Markdown row."""
+    """Normalize API text and escape Markdown syntax characters for clean tabular rendering."""
     normalized = " ".join((value or "").split()).replace("|", r"\|")
+    normalized = normalized.replace("[", r"\[").replace("]", r"\]")
+    normalized = normalized.replace("*", r"\*").replace("_", r"\_")
+    normalized = normalized.replace("`", r"\`")
     return normalized if len(normalized) <= limit else f"{normalized[: limit - 1]}…"
 
 

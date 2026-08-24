@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **156** 個公開 Star；資料快照：`2026-08-21 18:44:09 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **160** 個公開 Star；資料快照：`2026-08-24 16:54:15 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -27,10 +27,10 @@
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
 - [Processing（1）](#language-processing)
-- [Python（40）](#language-python)
-- [Rust（2）](#language-rust)
+- [Python（39）](#language-python)
+- [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（26）](#language-typescript)
+- [TypeScript（27）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -255,7 +255,6 @@
 - [YuCheng21/zuvio-rollcall](https://github.com/YuCheng21/zuvio-rollcall) — Zuvio 自動點名程式
 - [XiangxinKong/manhuagui-downloader](https://github.com/XiangxinKong/manhuagui-downloader) — 漫画柜下载器，带图形界面，纯python。已打包exe，可直接运行
 - [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3)
-- [eddy0117/NeverThinkAutoReply](https://github.com/eddy0117/NeverThinkAutoReply) — 多種智慧回覆模式，包括自動MyGO、正常、反駁、嘲諷，全程無需使用者動腦
 - [XPRAMT/anime-any-to-24fps](https://github.com/XPRAMT/anime-any-to-24fps) — 移除重複幀，將30幀的動畫還原成24幀
 - [gradio-app/gradio](https://github.com/gradio-app/gradio) — Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!
 - [MiuLab/Taiwan-LLM](https://github.com/MiuLab/Taiwan-LLM) — Traditional Mandarin LLMs for Taiwan
@@ -275,6 +274,7 @@
 
 ## Rust
 
+- [openai/codex](https://github.com/openai/codex) — Lightweight coding agent that runs in your terminal
 - [expressvpn/lightway](https://github.com/expressvpn/lightway) — Lightway Rust Open Source Workspace
 - [MaxOhn/rosu-pp](https://github.com/MaxOhn/rosu-pp) — PP and star calculation for all osu! gamemodes
 
@@ -288,6 +288,7 @@
 
 ## TypeScript
 
+- [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 - [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
 - [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security

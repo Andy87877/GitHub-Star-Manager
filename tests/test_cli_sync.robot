@@ -111,3 +111,12 @@ Verify LICENSE File Exists And Contains CC0 1.0
     Should Contain    ${license_text}    CC0 1.0 Universal
     Should Contain    ${license_text}    Statement of Purpose
 
+Verify GitHub Actions Workflow Least Privilege Decoupling
+    ${sched}=    Get File    ${CURDIR}${/}..${/}.github${/}workflows${/}schedules.yml
+    ${pages}=    Get File    ${CURDIR}${/}..${/}.github${/}workflows${/}ci-pages.yml
+    Should Contain    ${sched}    fetch-and-verify:
+    Should Contain    ${sched}    publish:
+    Should Contain    ${sched}    persist-credentials: false
+    Should Contain    ${pages}    permissions:
+    Should Contain    ${pages}    contents: read
+

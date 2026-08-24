@@ -435,7 +435,13 @@ export class StarModel {
   }
 
   exportToCSV() {
-    const quote = value => `"${String(value ?? '').replaceAll('"', '""')}"`;
+    const csvSafe = value => {
+      let text = String(value ?? '');
+      if (/^[\t\r ]*[=+\-@]/.test(text)) {
+        text = `'${text}`;
+      }
+      return `"${text.replaceAll('"', '""')}"`;
+    };
     const rows = this.filteredRepositories.map(repo => [
       repo.fullName,
       repo.url,
@@ -447,7 +453,7 @@ export class StarModel {
       repo.updatedAt,
       repo.description,
       this.getNote(repo.fullName)
-    ].map(quote).join(','));
+    ].map(csvSafe).join(','));
     return [
       'Repository,URL,Language,Topics,Stars,Forks,Starred At,Updated At,Description,Notes',
       ...rows

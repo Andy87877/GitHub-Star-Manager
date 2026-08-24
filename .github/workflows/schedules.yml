@@ -6,23 +6,27 @@ on:
     - cron: "0 19 * * *"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: github-stars-sync
   cancel-in-progress: false
 
 jobs:
-  verify-and-sync:
+  fetch-and-verify:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
@@ -50,6 +54,36 @@ jobs:
           assert data['repositoryCount'] > 0;
           assert data['isLiveSnapshot'] is True"
 
+      - name: Upload build output artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-sync-artifacts
+          path: |
+            README.md
+            language.md
+            web/data/stars.json
+            web/data/sync-meta.json
+          retention-days: 1
+
+  publish:
+    needs: fetch-and-verify
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Download build output artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-sync-artifacts
+
       - name: Commit changed generated artifacts
         shell: bash
         run: |
@@ -57,7 +91,7 @@ jobs:
             echo "Stars snapshot is already current."
             exit 0
           fi
-          COMMIT_TITLE=$(python -c "
+          COMMIT_TITLE=$(python3 -c "
           import json, pathlib
           data = json.loads(pathlib.Path('web/data/sync-meta.json').read_text(encoding='utf-8'))
           count = data.get('repositoryCount', 0)
@@ -65,7 +99,7 @@ jobs:
           ts = data.get('formattedUpdatedAt', data.get('generatedAt', ''))[:19]
           print(f'data: refresh Andy87877 GitHub Stars ({count} stars, delta: {delta} | {ts})')
           ")
-          COMMIT_BODY=$(python -c "
+          COMMIT_BODY=$(python3 -c "
           import json, pathlib
           data = json.loads(pathlib.Path('web/data/sync-meta.json').read_text(encoding='utf-8'))
           analytics = data.get('analytics', {})

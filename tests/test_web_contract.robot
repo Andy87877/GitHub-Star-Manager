@@ -123,4 +123,9 @@ Frontend Renders Clickable Table Headers And Active Filter Bar
     Should Contain    ${view}    sortable-th
     Should Contain    ${controller}    clearAllActiveFiltersBtn
 
+Frontend CSV Export Escapes Formula Prefixes
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    Should Contain    ${model}    const csvSafe
+    Should Contain    ${model}    /^[\\t\\r ]*[=+\\-@]/
+
 

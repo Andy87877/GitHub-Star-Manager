@@ -282,6 +282,18 @@ def test_empty_sync_preserves_outputs() -> str:
     return "PASS"
 
 
+def test_clean_inline_text_escaping() -> str:
+    from app.services.renderers import _clean_inline_text
+    raw_desc = "Important [Click link](http://example.com) *bold* _italic_ `code` | pipe"
+    cleaned = _clean_inline_text(raw_desc)
+    assert r"\[Click link\]" in cleaned
+    assert r"\*bold\*" in cleaned
+    assert r"\_italic\_" in cleaned
+    assert r"\`code\`" in cleaned
+    assert r"\| pipe" in cleaned
+    return "PASS"
+
+
 def main() -> None:
     tests = {
         "lang": test_language_categorizer,
@@ -294,6 +306,7 @@ def main() -> None:
         "rest_contract": test_rest_star_media_contract,
         "empty_preserves": test_empty_sync_preserves_outputs,
         "meta_delta": test_sync_metadata_delta,
+        "clean_text": test_clean_inline_text_escaping,
     }
     name = sys.argv[1]
     print(tests[name]())
