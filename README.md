@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **160** 個公開 Star；資料快照：`2026-08-25 03:20:45 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **161** 個公開 Star；資料快照：`2026-08-26 03:22:02 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -28,7 +28,7 @@ pie title 熱門 Topic 覆蓋 Top 10
 pie title 程式語言分佈 Top 10
     "Python" : 39
     "TypeScript" : 27
-    "Others" : 22
+    "Others" : 23
     "JavaScript" : 14
     "C++" : 8
     "Java" : 5
@@ -42,11 +42,11 @@ pie title 程式語言分佈 Top 10
 
 | Topic 標籤 | 涵蓋專案數 | 視覺化進度條 |
 | :--- | :---: | :--- |
-| **#ai** | 11 筆 (6.9%) | `███` |
-| **#hacktoberfest** | 11 筆 (6.9%) | `███` |
+| **#ai** | 11 筆 (6.8%) | `███` |
+| **#hacktoberfest** | 11 筆 (6.8%) | `███` |
 | **#python** | 9 筆 (5.6%) | `██` |
 | **#github** | 8 筆 (5.0%) | `██` |
-| **#openai** | 6 筆 (3.8%) | `██` |
+| **#openai** | 6 筆 (3.7%) | `█` |
 | **#javascript** | 5 筆 (3.1%) | `█` |
 | **#llm** | 5 筆 (3.1%) | `█` |
 | **#markdown** | 5 筆 (3.1%) | `█` |
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `542,603` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,539` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `387,389` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,320` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `315,831` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `244,221` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `206,372` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,115` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,640` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `172,729` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `542,912` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,593` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `387,593` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,380` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `316,030` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `244,383` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `207,087` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,247` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,652` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `172,922` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **519** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**97** 個 repositories）。
+- 原始資料共有 **519** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**98** 個 repositories）。
 
 ## 特別感謝
 
@@ -141,7 +141,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [nodejs（3）](#topic-nodejs)
 - [readme-stats（3）](#topic-readme-stats)
 - [security（3）](#topic-security)
-- [other（97）](#topic-other)
+- [other（98）](#topic-other)
 
 ---
 
@@ -436,6 +436,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## other
 
+- [Gatjuat-Wicteat-Riek/clean-code-book](https://github.com/Gatjuat-Wicteat-Riek/clean-code-book) — Here is the PDF version of the book "Clean Code" by Robert C. Martin. A must read books for upcoming (and senior) developers who want to learn how to write masterpieces and not just lines of code :)
 - [openai/codex](https://github.com/openai/codex) — Lightweight coding agent that runs in your terminal
 - [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [little-brother/dcim-list](https://github.com/little-brother/dcim-list) — List of DCIM (data center infrastructure management) software

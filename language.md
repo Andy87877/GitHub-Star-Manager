@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **160** 個公開 Star；資料快照：`2026-08-25 03:20:45 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **161** 個公開 Star；資料快照：`2026-08-26 03:22:02 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -23,7 +23,7 @@
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
 - [MDX（3）](#language-mdx)
-- [Others（22）](#language-others)
+- [Others（23）](#language-others)
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
 - [Processing（1）](#language-processing)
@@ -183,6 +183,7 @@
 
 ## Others
 
+- [Gatjuat-Wicteat-Riek/clean-code-book](https://github.com/Gatjuat-Wicteat-Riek/clean-code-book) — Here is the PDF version of the book "Clean Code" by Robert C. Martin. A must read books for upcoming (and senior) developers who want to learn how to write masterpieces and not just lines of code :)
 - [little-brother/dcim-list](https://github.com/little-brother/dcim-list) — List of DCIM (data center infrastructure management) software
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
