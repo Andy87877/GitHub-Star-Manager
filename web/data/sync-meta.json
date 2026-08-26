@@ -1,12 +1,12 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-25T19:22:02+00:00",
-  "formattedUpdatedAt": "2026-08-26 03:22:02 (UTC+8)",
+  "generatedAt": "2026-08-26T21:24:23+00:00",
+  "formattedUpdatedAt": "2026-08-27 05:24:23 (UTC+8)",
   "repositoryCount": 161,
-  "previousRepositoryCount": 160,
-  "deltaCount": 1,
-  "formattedDelta": "+1",
+  "previousRepositoryCount": 161,
+  "deltaCount": 0,
+  "formattedDelta": "0",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
   "totalTopicCount": 519,
@@ -17,14 +17,14 @@
   "topicOtherCategory": "other",
   "analytics": {
     "totalCount": 161,
-    "totalStars": 5432585,
-    "totalForks": 812188,
+    "totalStars": 5436874,
+    "totalForks": 812714,
     "archivedCount": 10,
     "activeCount": 151,
     "languageBreakdown": {
       "Python": {
-        "count": 39,
-        "percentage": 24.2
+        "count": 38,
+        "percentage": 23.6
       },
       "TypeScript": {
         "count": 27,
@@ -35,8 +35,8 @@
         "percentage": 14.3
       },
       "JavaScript": {
-        "count": 14,
-        "percentage": 8.7
+        "count": 15,
+        "percentage": 9.3
       },
       "C++": {
         "count": 8,
