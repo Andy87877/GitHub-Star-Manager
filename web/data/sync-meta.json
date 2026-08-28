@@ -1,38 +1,38 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-26T21:24:23+00:00",
-  "formattedUpdatedAt": "2026-08-27 05:24:23 (UTC+8)",
-  "repositoryCount": 161,
+  "generatedAt": "2026-08-28T02:22:42+00:00",
+  "formattedUpdatedAt": "2026-08-28 10:22:42 (UTC+8)",
+  "repositoryCount": 162,
   "previousRepositoryCount": 161,
-  "deltaCount": 0,
-  "formattedDelta": "0",
+  "deltaCount": 1,
+  "formattedDelta": "+1",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
   "totalTopicCount": 519,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 98,
+  "otherRepositoryCount": 99,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 161,
-    "totalStars": 5436874,
-    "totalForks": 812714,
+    "totalCount": 162,
+    "totalStars": 5441342,
+    "totalForks": 813295,
     "archivedCount": 10,
-    "activeCount": 151,
+    "activeCount": 152,
     "languageBreakdown": {
       "Python": {
         "count": 38,
-        "percentage": 23.6
+        "percentage": 23.5
       },
       "TypeScript": {
         "count": 27,
-        "percentage": 16.8
+        "percentage": 16.7
       },
       "Others": {
         "count": 23,
-        "percentage": 14.3
+        "percentage": 14.2
       },
       "JavaScript": {
         "count": 15,
@@ -40,7 +40,7 @@
       },
       "C++": {
         "count": 8,
-        "percentage": 5.0
+        "percentage": 4.9
       },
       "Java": {
         "count": 5,
@@ -57,6 +57,10 @@
       "Vue": {
         "count": 4,
         "percentage": 2.5
+      },
+      "C#": {
+        "count": 3,
+        "percentage": 1.9
       },
       "Dart": {
         "count": 3,
@@ -83,10 +87,6 @@
         "percentage": 1.9
       },
       "C": {
-        "count": 2,
-        "percentage": 1.2
-      },
-      "C#": {
         "count": 2,
         "percentage": 1.2
       },
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-      "2026": 45
+      "2026": 46
     }
   }
 }

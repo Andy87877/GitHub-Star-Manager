@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **161** 個公開 Star；資料快照：`2026-08-27 05:24:23 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **162** 個公開 Star；資料快照：`2026-08-28 10:22:42 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -9,7 +9,7 @@
 - [Astro（1）](#language-astro)
 - [Batchfile（1）](#language-batchfile)
 - [C（2）](#language-c)
-- [C#（2）](#language-c-sharp)
+- [C#（3）](#language-c-sharp)
 - [C++（8）](#language-c-plus-plus)
 - [CMake（1）](#language-cmake)
 - [Cuda（1）](#language-cuda)
@@ -59,6 +59,7 @@
 
 ## C#
 
+- [gatecat/BreadboardSim](https://github.com/gatecat/BreadboardSim) — Circuit Simulator with Breadboard UI
 - [Jack-Development/SuperMarioBros-CSharp-Remake](https://github.com/Jack-Development/SuperMarioBros-CSharp-Remake) — A project that recreates the classic Super Mario Bros game using C# and Visual Studio's Windows Forms Application platform. A modern interpretation of a timeless classic!
 - [Taro7221/MyBudgetApp](https://github.com/Taro7221/MyBudgetApp)
 
