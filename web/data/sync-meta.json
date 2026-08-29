@@ -1,42 +1,42 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-29T01:56:21+00:00",
-  "formattedUpdatedAt": "2026-08-29 09:56:21 (UTC+8)",
-  "repositoryCount": 162,
+  "generatedAt": "2026-08-29T21:21:40+00:00",
+  "formattedUpdatedAt": "2026-08-30 05:21:40 (UTC+8)",
+  "repositoryCount": 163,
   "previousRepositoryCount": 162,
-  "deltaCount": 0,
-  "formattedDelta": "0",
+  "deltaCount": 1,
+  "formattedDelta": "+1",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 519,
+  "totalTopicCount": 523,
   "focusedTopicCount": 30,
   "otherRepositoryCount": 99,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 162,
-    "totalStars": 5444587,
-    "totalForks": 813712,
+    "totalCount": 163,
+    "totalStars": 5462878,
+    "totalForks": 814657,
     "archivedCount": 10,
-    "activeCount": 152,
+    "activeCount": 153,
     "languageBreakdown": {
       "Python": {
         "count": 38,
-        "percentage": 23.5
+        "percentage": 23.3
       },
       "TypeScript": {
         "count": 27,
-        "percentage": 16.7
+        "percentage": 16.6
       },
       "Others": {
         "count": 23,
-        "percentage": 14.2
+        "percentage": 14.1
       },
       "JavaScript": {
-        "count": 15,
-        "percentage": 9.3
+        "count": 16,
+        "percentage": 9.8
       },
       "C++": {
         "count": 8,
@@ -60,31 +60,31 @@
       },
       "C#": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "Dart": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "Go": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "Kotlin": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "MDX": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "PHP": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "Rust": {
         "count": 3,
-        "percentage": 1.9
+        "percentage": 1.8
       },
       "C": {
         "count": 2,
@@ -149,12 +149,12 @@
         "count": 8
       },
       {
-        "topic": "openai",
+        "topic": "javascript",
         "count": 6
       },
       {
-        "topic": "javascript",
-        "count": 5
+        "topic": "openai",
+        "count": 6
       },
       {
         "topic": "llm",
@@ -189,7 +189,7 @@
         "count": 4
       },
       {
-        "topic": "ntut",
+        "topic": "nodejs",
         "count": 4
       }
     ],
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-      "2026": 46
+      "2026": 47
     }
   }
 }

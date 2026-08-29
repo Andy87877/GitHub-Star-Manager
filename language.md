@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **162** 個公開 Star；資料快照：`2026-08-29 09:56:21 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **163** 個公開 Star；資料快照：`2026-08-30 05:21:40 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -17,7 +17,7 @@
 - [Go（3）](#language-go)
 - [HTML（4）](#language-html)
 - [Java（5）](#language-java)
-- [JavaScript（15）](#language-javascript)
+- [JavaScript（16）](#language-javascript)
 - [Jupyter Notebook（4）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
 - [Lua（1）](#language-lua)
@@ -127,6 +127,7 @@
 
 ## JavaScript
 
+- [gpujs/gpu.js](https://github.com/gpujs/gpu.js) — GPU Accelerated JavaScript
 - [FRC8725/FRC8725-Website-Design-Docs](https://github.com/FRC8725/FRC8725-Website-Design-Docs)
 - [AuricTW/Ceylantify-YouTube](https://github.com/AuricTW/Ceylantify-YouTube) — 你的YT不需要其他插件，唯獨 Ceylantify-YouTube 你必須擁有。 Your YouTube Doesn't Need Plugins, But Ceylantify-YouTube is a must-have.
 - [06wuuntt/NTUT_Coursesystem](https://github.com/06wuuntt/NTUT_Coursesystem)

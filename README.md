@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **162** 個公開 Star；資料快照：`2026-08-29 09:56:21 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **163** 個公開 Star；資料快照：`2026-08-30 05:21:40 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -14,8 +14,8 @@ pie title 熱門 Topic 覆蓋 Top 10
     "hacktoberfest" : 11
     "python" : 9
     "github" : 8
+    "javascript" : 6
     "openai" : 6
-    "javascript" : 5
     "llm" : 5
     "markdown" : 5
     "trem" : 5
@@ -29,7 +29,7 @@ pie title 程式語言分佈 Top 10
     "Python" : 38
     "TypeScript" : 27
     "Others" : 23
-    "JavaScript" : 15
+    "JavaScript" : 16
     "C++" : 8
     "Java" : 5
     "HTML" : 4
@@ -42,12 +42,12 @@ pie title 程式語言分佈 Top 10
 
 | Topic 標籤 | 涵蓋專案數 | 視覺化進度條 |
 | :--- | :---: | :--- |
-| **#ai** | 11 筆 (6.8%) | `███` |
-| **#hacktoberfest** | 11 筆 (6.8%) | `███` |
-| **#python** | 9 筆 (5.6%) | `██` |
+| **#ai** | 11 筆 (6.7%) | `███` |
+| **#hacktoberfest** | 11 筆 (6.7%) | `███` |
+| **#python** | 9 筆 (5.5%) | `██` |
 | **#github** | 8 筆 (4.9%) | `██` |
+| **#javascript** | 6 筆 (3.7%) | `█` |
 | **#openai** | 6 筆 (3.7%) | `█` |
-| **#javascript** | 5 筆 (3.1%) | `█` |
 | **#llm** | 5 筆 (3.1%) | `█` |
 | **#markdown** | 5 筆 (3.1%) | `█` |
 | **#trem** | 5 筆 (3.1%) | `█` |
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `543,711` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,753` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `387,939` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,790` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `316,786` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `244,859` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `208,419` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,589` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,667` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `173,489` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `543,904` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,802` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `388,005` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,854` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `317,007` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `245,200` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `208,646` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,681` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,674` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `173,609` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **519** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**99** 個 repositories）。
+- 原始資料共有 **523** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**99** 個 repositories）。
 
 ## 特別感謝
 
@@ -115,8 +115,8 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [hacktoberfest（11）](#topic-hacktoberfest)
 - [python（9）](#topic-python)
 - [github（8）](#topic-github)
+- [javascript（6）](#topic-javascript)
 - [openai（6）](#topic-openai)
-- [javascript（5）](#topic-javascript)
 - [llm（5）](#topic-llm)
 - [markdown（5）](#topic-markdown)
 - [trem（5）](#topic-trem)
@@ -125,6 +125,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
 - [earthquake-early-warning（4）](#topic-earthquake-early-warning)
+- [nodejs（4）](#topic-nodejs)
 - [ntut（4）](#topic-ntut)
 - [profile-readme（4）](#topic-profile-readme)
 - [readme（4）](#topic-readme)
@@ -138,7 +139,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [machine-learning（3）](#topic-machine-learning)
 - [mcp（3）](#topic-mcp)
 - [nextjs（3）](#topic-nextjs)
-- [nodejs（3）](#topic-nodejs)
 - [readme-stats（3）](#topic-readme-stats)
 - [security（3）](#topic-security)
 - [other（99）](#topic-other)
@@ -204,6 +204,17 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) — 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
 - [rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile) — This repository will assist you in creating a more beautiful and appealing github profile, and you will have access to a comprehensive range of tools and tutorials for beautifying your github profile. 🪄 ⭐
 
+<a id="topic-javascript"></a>
+
+## javascript
+
+- [gpujs/gpu.js](https://github.com/gpujs/gpu.js) — GPU Accelerated JavaScript
+- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
+- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
+- [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
+- [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
+- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
+
 <a id="topic-openai"></a>
 
 ## openai
@@ -214,16 +225,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [0xk1h0/ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) — ChatGPT DAN, Jailbreaks prompt
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 - [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
-
-<a id="topic-javascript"></a>
-
-## javascript
-
-- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
-- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
-- [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
-- [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
-- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
 
 <a id="topic-llm"></a>
 
@@ -299,6 +300,15 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [ExpTechTW/TREM-Lite-v2](https://github.com/ExpTechTW/TREM-Lite-v2) — Taiwan Real-time Earthquake Monitoring Lite ( 臺灣即時地震監測 輕量版 )
 - [ExpTechTW/TREM-electron](https://github.com/ExpTechTW/TREM-electron) — Taiwan Real-time Earthquake Monitoring ( 臺灣即時地震監測 )
+
+<a id="topic-nodejs"></a>
+
+## nodejs
+
+- [gpujs/gpu.js](https://github.com/gpujs/gpu.js) — GPU Accelerated JavaScript
+- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
+- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
+- [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
 
 <a id="topic-ntut"></a>
 
@@ -407,14 +417,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [supabase/supabase](https://github.com/supabase/supabase) — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
 - [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-
-<a id="topic-nodejs"></a>
-
-## nodejs
-
-- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
-- [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
-- [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
 
 <a id="topic-readme-stats"></a>
 
