@@ -403,6 +403,38 @@
   - Robot Framework 測試套件擴充至 34 項，全數 34 / 34 PASS 100% 通過！
 - **狀態**：完成。
 
+## Iteration 27：衝突標記清除、Snapshot 完整性修復與自動化契約防護驗證
+
+- **日期**：2026-08-24
+- **問題診斷**：
+  - Robot Framework 測試 `Dataset Snapshot Integrity Contract` 捕捉到 `web/data/stars.json` 與 `web/data/sync-meta.json` 包含 Git 分支合併產生的衝突標記 (`<<<<<<< HEAD`)。
+- **重構與修復**：
+  - 執行 `main.py --username Andy87877` 重新抓取 160 筆最新 Star 資料並原子覆寫產出乾淨、合規之 `stars.json` 與 `sync-meta.json` 快照檔案。
+- **驗證結果**：
+  - 重新執行 `python -m robot --outputdir artifacts/robot-reports tests`，全數 34 項測試 100% 順利通過！
+- **狀態**：完成。
+
+## Iteration 28：專案創建時間 (createdAt) 全管道記錄、排序與年代分析升級
+
+- **日期**：2026-08-30
+- **使用者回饋**：
+  - 希望把該倉庫創建的時間也記下來（可以知道是什麼時間創建的），並著重在實用性、UI/UX 與可讀性。
+- **架構與設計優化**：
+  - **後端 Domain Model 升級 (`Repository`)**：在 `app/models/repository.py` 新增 `created_at` 屬性，並於 `to_dict()` 序列化為 `createdAt`，在 `from_dict()` 支援雙向相容反序列化。
+  - **GitHub API Clients 擴充**：
+    - `GitHubRESTClient`：自 Star media response 的 repo payload 提取 `created_at`。
+    - `GitHubGraphQLClient`：在 GraphQL 查詢 node 新增 `createdAt` 欄位並映射。
+    - `MockGitHubClient`：擴充測試 doubles 的 `created_at` 時間戳。
+  - **統計分析模組升級 (`AnalyticsCalculator`)**：在後端統計計算中新增 `createdByYear` 專案創建年份分佈。
+  - **Web 前端 Model & View 實用性與 UI/UX 升級**：
+    - `StarModel.js`：在 `normalizeRepository` 中納入 `createdAt`，新增 `created-desc`（創建時間由新到舊）與 `created-asc`（創建時間由舊到新）排序比較器，在 `calculateAnalytics` 新增 `createdYearlyTrend`，並在 `exportToCSV` 中加入 `Created At` 欄位。
+    - `StarView.js`：在 Cards 模式卡片底部加入「🌱 創建 YYYY-MM-DD」資訊；在 Table 模式加入「創建日期」獨立欄位與支援點擊切換升降序排序標頭；在數據分析 Modal 加入「專案創建年代分佈 (Created Timeline)」統計看板。
+    - `index.html`：在排序選單新增「創建時間 (新 → 舊)」與「創建時間 (舊 → 新)」選項。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 163 筆最新真實 Star 快照（包含各專案的 `createdAt`）。
+  - Robot Framework 測試擴充至 36 項（新增 `Verify Repository Created At Serialization Contract` 與 `Frontend Supports Created Time Tracking And Sorting`），全數 36 / 36 PASS 100% 通過！
+- **狀態**：完成。
+
 
 
 

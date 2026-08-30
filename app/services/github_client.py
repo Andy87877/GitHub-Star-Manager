@@ -152,6 +152,7 @@ class GitHubRESTClient(IGitHubClient):
                         stars=int(item.get("stargazers_count") or 0),
                         forks=int(item.get("forks_count") or 0),
                         is_archived=bool(item.get("archived", False)),
+                        created_at=item.get("created_at") or "",
                         starred_at=starred_at,
                         updated_at=item.get("updated_at") or "",
                     )
@@ -207,6 +208,7 @@ class GitHubGraphQLClient(IGitHubClient):
                   stargazerCount
                   forkCount
                   isArchived
+                  createdAt
                   updatedAt
                   primaryLanguage { name }
                   repositoryTopics(first: 100) {
@@ -283,6 +285,7 @@ class GitHubGraphQLClient(IGitHubClient):
                         stars=int(node.get("stargazerCount") or 0),
                         forks=int(node.get("forkCount") or 0),
                         is_archived=bool(node.get("isArchived", False)),
+                        created_at=node.get("createdAt") or "",
                         starred_at=edge.get("starredAt") or "",
                         updated_at=node.get("updatedAt") or "",
                     )
@@ -321,6 +324,7 @@ class MockGitHubClient(IGitHubClient):
                 topics=["python", "api", "fastapi"],
                 stars=75_000,
                 forks=6_200,
+                created_at="2018-12-08T08:21:00Z",
                 starred_at="2026-07-20T10:00:00Z",
                 updated_at="2026-07-28T15:30:00Z",
             ),
@@ -334,6 +338,7 @@ class MockGitHubClient(IGitHubClient):
                 topics=["javascript", "react", "frontend"],
                 stars=220_000,
                 forks=45_000,
+                created_at="2013-05-24T16:15:54Z",
                 starred_at="2026-07-15T08:20:00Z",
                 updated_at="2026-07-29T09:12:00Z",
             ),
@@ -347,6 +352,7 @@ class MockGitHubClient(IGitHubClient):
                 topics=["python", "testing", "robotframework"],
                 stars=10_500,
                 forks=2_400,
+                created_at="2010-09-08T09:00:00Z",
                 starred_at="2026-07-10T14:45:00Z",
                 updated_at="2026-07-27T11:00:00Z",
             ),

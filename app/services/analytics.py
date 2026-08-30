@@ -64,6 +64,17 @@ class AnalyticsCalculator:
 
         starred_by_year = dict(sorted(year_counter.items(), key=lambda x: x[0]))
 
+        # Created by Year
+        created_year_counter: Counter = Counter()
+        for repo in repositories:
+            created_at = repo.created_at or ""
+            if len(created_at) >= 4 and created_at[:4].isdigit():
+                created_year_counter[created_at[:4]] += 1
+            else:
+                created_year_counter["Unknown"] += 1
+
+        created_by_year = dict(sorted(created_year_counter.items(), key=lambda x: x[0]))
+
         return {
             "totalCount": total_count,
             "totalStars": total_stars,
@@ -73,4 +84,5 @@ class AnalyticsCalculator:
             "languageBreakdown": language_breakdown,
             "topTopics": top_topics,
             "starredByYear": starred_by_year,
+            "createdByYear": created_by_year,
         }

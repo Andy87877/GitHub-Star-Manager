@@ -128,4 +128,16 @@ Frontend CSV Export Escapes Formula Prefixes
     Should Contain    ${model}    const csvSafe
     Should Contain    ${model}    /^[\\t\\r ]*[=+\\-@]/
 
+Frontend Supports Created Time Tracking And Sorting
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
+    Should Contain    ${model}    createdAt
+    Should Contain    ${model}    created-desc
+    Should Contain    ${model}    created-asc
+    Should Contain    ${model}    createdYearlyTrend
+    Should Contain    ${view}    創建日期
+    Should Contain    ${html}    value="created-desc"
+    Should Contain    ${html}    value="created-asc"
+
 

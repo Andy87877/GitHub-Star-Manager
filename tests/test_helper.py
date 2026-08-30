@@ -36,6 +36,8 @@ def sample_repository(**overrides) -> Repository:
         "topics": ["python", "testing"],
         "stars": 100,
         "forks": 10,
+        "is_archived": False,
+        "created_at": "2024-01-01T00:00:00Z",
         "starred_at": "2026-07-29T00:00:00Z",
         "updated_at": "2026-07-28T00:00:00Z",
     }
@@ -294,6 +296,15 @@ def test_clean_inline_text_escaping() -> str:
     return "PASS"
 
 
+def test_repository_created_at_serialization() -> str:
+    repo = sample_repository(created_at="2023-03-15T12:00:00Z")
+    d = repo.to_dict()
+    assert d["createdAt"] == "2023-03-15T12:00:00Z"
+    reconstructed = Repository.from_dict(d)
+    assert reconstructed.created_at == "2023-03-15T12:00:00Z"
+    return "PASS"
+
+
 def main() -> None:
     tests = {
         "lang": test_language_categorizer,
@@ -307,6 +318,7 @@ def main() -> None:
         "empty_preserves": test_empty_sync_preserves_outputs,
         "meta_delta": test_sync_metadata_delta,
         "clean_text": test_clean_inline_text_escaping,
+        "repo_created_at": test_repository_created_at_serialization,
     }
     name = sys.argv[1]
     print(tests[name]())

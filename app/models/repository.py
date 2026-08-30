@@ -19,6 +19,7 @@ class Repository:
     stars: int = 0
     forks: int = 0
     is_archived: bool = False
+    created_at: str = ""
     starred_at: str = ""
     updated_at: str = ""
 
@@ -35,6 +36,7 @@ class Repository:
             "stars": self.stars,
             "forks": self.forks,
             "isArchived": self.is_archived,
+            "createdAt": self.created_at,
             "starredAt": self.starred_at,
             "updatedAt": self.updated_at
         }
@@ -53,6 +55,7 @@ class Repository:
             stars=data.get("stars", 0),
             forks=data.get("forks", 0),
             is_archived=data.get("isArchived", data.get("is_archived", False)),
+            created_at=data.get("createdAt", data.get("created_at", "")),
             starred_at=data.get("starredAt", data.get("starred_at", "")),
             updated_at=data.get("updatedAt", data.get("updated_at", ""))
         )

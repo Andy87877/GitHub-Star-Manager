@@ -139,7 +139,7 @@ export class StarModel {
   }
 
   normalizeRepository(repo, starredAt = '') {
-    const owner = repo.owner?.login || '';
+    const owner = repo.owner?.login || repo.owner || '';
     const name = repo.name || '';
     return {
       name,
@@ -152,7 +152,8 @@ export class StarModel {
       stars: Number(repo.stargazers_count ?? repo.stars ?? 0),
       forks: Number(repo.forks_count ?? repo.forks ?? 0),
       isArchived: Boolean(repo.archived ?? repo.isArchived ?? false),
-      starredAt: starredAt || repo.starredAt || '',
+      createdAt: repo.created_at || repo.createdAt || '',
+      starredAt: starredAt || repo.starredAt || repo.starred_at || '',
       updatedAt: repo.updated_at || repo.updatedAt || ''
     };
   }
@@ -284,6 +285,8 @@ export class StarModel {
       'stars-asc': (a, b) => a.stars - b.stars,
       'name-asc': (a, b) => a.fullName.localeCompare(b.fullName),
       'updated-desc': (a, b) => this.timestamp(b.updatedAt) - this.timestamp(a.updatedAt),
+      'created-desc': (a, b) => this.timestamp(b.createdAt) - this.timestamp(a.createdAt),
+      'created-asc': (a, b) => this.timestamp(a.createdAt) - this.timestamp(b.createdAt),
       'starred-desc': (a, b) => this.timestamp(b.starredAt) - this.timestamp(a.starredAt)
     };
     this.filteredRepositories.sort(
@@ -419,6 +422,18 @@ export class StarModel {
       .sort((a, b) => a[0].localeCompare(b[0]))
       .map(([year, count]) => ({ year, count }));
 
+    // Created Year Distribution
+    const createdYearMap = new Map();
+    this.repositories.forEach(r => {
+      const year = r.createdAt ? new Date(r.createdAt).getFullYear() : 'Unknown';
+      const key = Number.isNaN(year) ? 'Unknown' : String(year);
+      createdYearMap.set(key, (createdYearMap.get(key) || 0) + 1);
+    });
+    const createdYearlyTrend = Array.from(createdYearMap.entries())
+      .filter(([year]) => year !== 'Unknown')
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([year, count]) => ({ year, count }));
+
     return {
       totalRepos: total,
       totalStars,
@@ -430,7 +445,8 @@ export class StarModel {
       favoritesCount: Object.keys(this.favorites).length,
       languages,
       topTopics,
-      yearlyTrend
+      yearlyTrend,
+      createdYearlyTrend
     };
   }
 
@@ -449,13 +465,14 @@ export class StarModel {
       repo.topics.join(' '),
       repo.stars,
       repo.forks,
+      repo.createdAt,
       repo.starredAt,
       repo.updatedAt,
       repo.description,
       this.getNote(repo.fullName)
     ].map(csvSafe).join(','));
     return [
-      'Repository,URL,Language,Topics,Stars,Forks,Starred At,Updated At,Description,Notes',
+      'Repository,URL,Language,Topics,Stars,Forks,Created At,Starred At,Updated At,Description,Notes',
       ...rows
     ].join('\r\n');
   }

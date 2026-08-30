@@ -42,3 +42,9 @@ Verify Empty Fetch Cannot Replace Good Output
     ${result}=    Run Process    ${PYTHON_BIN}    tests/test_helper.py    empty_preserves
     Should Contain    ${result.stdout}    PASS
     Should Be Equal As Integers    ${result.rc}    0
+
+Verify Repository Created At Serialization Contract
+    [Documentation]    Test that Repository dataclass serializes and deserializes createdAt properly.
+    ${result}=    Run Process    ${PYTHON_BIN}    tests/test_helper.py    repo_created_at
+    Should Contain    ${result.stdout}    PASS
+    Should Be Equal As Integers    ${result.rc}    0

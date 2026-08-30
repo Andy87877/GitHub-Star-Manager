@@ -194,6 +194,7 @@ export class StarView {
               <span>${this.escapeHtml(repo.language || 'Others')}</span>
             </div>
             <div class="meta-stats" aria-label="專案統計">
+              ${repo.createdAt ? `<span title="專案創建時間：${this.formatDate(repo.createdAt)}">🌱 創建 ${this.formatShortDate(repo.createdAt)}</span>` : ''}
               <span title="GitHub Stars">⭐ ${repo.stars.toLocaleString()}</span>
               <span title="Forks">⑂ ${repo.forks.toLocaleString()}</span>
             </div>
@@ -234,7 +235,8 @@ export class StarView {
     this.repoGrid.className = 'table-shell';
     const starsIndicator = sortBy === 'stars-desc' ? ' ▼' : sortBy === 'stars-asc' ? ' ▲' : '';
     const nameIndicator = sortBy === 'name-asc' ? ' ▲' : '';
-    const dateIndicator = sortBy === 'starred-desc' ? ' ▼' : '';
+    const starredIndicator = sortBy === 'starred-desc' ? ' ▼' : '';
+    const createdIndicator = sortBy === 'created-desc' ? ' ▼' : sortBy === 'created-asc' ? ' ▲' : '';
     const rows = repositories.map(repo => {
       const fullName = this.escapeHtml(repo.fullName);
       const note = notes[repo.fullName] || '';
@@ -258,6 +260,7 @@ export class StarView {
           </td>
           <td class="numeric-cell">${repo.stars.toLocaleString()}</td>
           <td class="numeric-cell">${repo.forks.toLocaleString()}</td>
+          <td><time datetime="${this.escapeHtml(repo.createdAt)}">${this.formatShortDate(repo.createdAt)}</time></td>
           <td><time datetime="${this.escapeHtml(repo.starredAt)}">${this.formatShortDate(repo.starredAt)}</time></td>
           <td><span class="status-badge ${repo.isArchived ? 'archived' : ''}">${status}</span></td>
           <td class="action-cell">
@@ -284,7 +287,8 @@ export class StarView {
             <th scope="col">語言</th>
             <th scope="col" class="numeric-cell sortable-th" data-sort-by="${sortBy === 'stars-desc' ? 'stars-asc' : 'stars-desc'}" title="點擊切換 Stars 排序">Stars${starsIndicator}</th>
             <th scope="col" class="numeric-cell">Forks</th>
-            <th scope="col" class="sortable-th" data-sort-by="starred-desc" title="按收藏日期排序">收藏日期${dateIndicator}</th>
+            <th scope="col" class="sortable-th" data-sort-by="${sortBy === 'created-desc' ? 'created-asc' : 'created-desc'}" title="點擊切換創建日期排序">創建日期${createdIndicator}</th>
+            <th scope="col" class="sortable-th" data-sort-by="starred-desc" title="按收藏日期排序">收藏日期${starredIndicator}</th>
             <th scope="col">狀態</th>
             <th scope="col"><span class="sr-only">操作</span></th>
           </tr>
@@ -379,6 +383,13 @@ export class StarView {
       </div>
     `).join('');
 
+    const createdYearlyItems = (analytics.createdYearlyTrend || []).map(item => `
+      <div class="analytics-stat-pill">
+        <span class="pill-year">${this.escapeHtml(item.year)}</span>
+        <strong class="pill-count">${item.count} 筆</strong>
+      </div>
+    `).join('');
+
     this.analyticsModalBody.innerHTML = `
       <div class="analytics-summary-grid">
         <div class="analytics-card">
@@ -422,9 +433,15 @@ export class StarView {
       </div>
 
       <div class="analytics-section">
-        <h3>年度 Star 收藏趨勢</h3>
+        <h3>年度 Star 收藏趨勢 (Starred Timeline)</h3>
         <div class="analytics-years-grid">${yearlyItems}</div>
       </div>
+
+      ${createdYearlyItems ? `
+      <div class="analytics-section">
+        <h3>專案創建年代分佈 (Created Timeline)</h3>
+        <div class="analytics-years-grid">${createdYearlyItems}</div>
+      </div>` : ''}
     `;
   }
 

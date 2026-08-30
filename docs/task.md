@@ -249,6 +249,26 @@
 - [x] 重新同步 `Andy87877` 160 筆最新真實 Star 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 27：資料衝突標記清除與 Snapshot 完整性契約驗證
+
+- [x] 診斷並修復 `web/data/stars.json` 與 `web/data/sync-meta.json` 中因 Git 操作產生的 `<<<<<<< HEAD` 衝突標記
+- [x] 重新執行 `main.py` 完整同步機制，產出無衝突標記之乾淨靜態快照與 `README.md`、`language.md`
+- [x] 驗證 Robot Framework `Dataset Snapshot Integrity Contract` 測試案例全數 34/34 PASS 通過
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+## Phase 28：專案創建時間 (createdAt) 全管道記錄、排序與年代分析升級
+
+- [x] 後端 Model 升級：在 `Repository` 領域模型新增 `created_at` 屬性，並更新 `to_dict()` 與 `from_dict()` 序列化
+- [x] API Client 擴充：在 `GitHubRESTClient`、`GitHubGraphQLClient` 與 `MockGitHubClient` 中新增 `created_at` / `createdAt` 抓取與映射
+- [x] 統計分析器擴充：在 `AnalyticsCalculator` 中計算專案創建年份分佈 (`createdByYear`)
+- [x] 前端 Model & View 升級：
+  - `StarModel.js` 支援 `createdAt` 規格化、`created-desc` / `created-asc` 排序、`createdYearlyTrend` 計算與 CSV 匯出欄位
+  - `StarView.js` 在 Cards 檢視加入專案創建日期標籤、Table 檢視加入「創建日期」欄位與可點擊雙向排序標頭、數據分析 Modal 加入「專案創建年代分佈 (Created Timeline)」
+  - `index.html` 排序選單新增「創建時間 (新 → 舊)」與「創建時間 (舊 → 新)」
+- [x] 擴充 Robot Framework 測試至 36 項（新增 `Verify Repository Created At Serialization Contract` 與 `Frontend Supports Created Time Tracking And Sorting`），全數 36/36 PASS 100% 通過
+- [x] 重新同步 `Andy87877` 163 筆最新真實 Star 快照（包含各專案的 `createdAt`）
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
 
 
 
