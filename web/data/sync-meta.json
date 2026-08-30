@@ -1,46 +1,46 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-30T09:44:47+00:00",
-  "formattedUpdatedAt": "2026-08-30 17:44:47 (UTC+8)",
-  "repositoryCount": 164,
-  "previousRepositoryCount": 163,
+  "generatedAt": "2026-08-30T21:42:41+00:00",
+  "formattedUpdatedAt": "2026-08-31 05:42:41 (UTC+8)",
+  "repositoryCount": 165,
+  "previousRepositoryCount": 164,
   "deltaCount": 1,
   "formattedDelta": "+1",
-  "source": "GitHub REST API",
+  "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 524,
+  "totalTopicCount": 535,
   "focusedTopicCount": 30,
   "otherRepositoryCount": 100,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 164,
-    "totalStars": 5464289,
-    "totalForks": 814831,
+    "totalCount": 165,
+    "totalStars": 5466391,
+    "totalForks": 815103,
     "archivedCount": 10,
-    "activeCount": 154,
+    "activeCount": 155,
     "languageBreakdown": {
       "Python": {
-        "count": 38,
-        "percentage": 23.2
+        "count": 39,
+        "percentage": 23.6
       },
       "TypeScript": {
         "count": 28,
-        "percentage": 17.1
+        "percentage": 17.0
       },
       "Others": {
         "count": 23,
-        "percentage": 14.0
+        "percentage": 13.9
       },
       "JavaScript": {
         "count": 16,
-        "percentage": 9.8
+        "percentage": 9.7
       },
       "C++": {
         "count": 8,
-        "percentage": 4.9
+        "percentage": 4.8
       },
       "Java": {
         "count": 5,
@@ -157,6 +157,10 @@
         "count": 6
       },
       {
+        "topic": "awesome-list",
+        "count": 5
+      },
+      {
         "topic": "llm",
         "count": 5
       },
@@ -170,10 +174,6 @@
       },
       {
         "topic": "awesome",
-        "count": 4
-      },
-      {
-        "topic": "awesome-list",
         "count": 4
       },
       {
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-      "2026": 48
+      "2026": 49
     },
     "createdByYear": {
       "2011": 3,
@@ -216,7 +216,7 @@
       "2023": 13,
       "2024": 24,
       "2025": 26,
-      "2026": 15
+      "2026": 16
     }
   }
 }

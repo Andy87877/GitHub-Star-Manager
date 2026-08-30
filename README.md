@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **164** 個公開 Star；資料快照：`2026-08-30 17:44:47 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **165** 個公開 Star；資料快照：`2026-08-31 05:42:41 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -16,17 +16,17 @@ pie title 熱門 Topic 覆蓋 Top 10
     "github" : 8
     "javascript" : 6
     "openai" : 6
+    "awesome-list" : 5
     "llm" : 5
     "markdown" : 5
     "trem" : 5
-    "awesome" : 4
 ```
 
 ### 程式語言分佈 (Top 10)
 
 ```mermaid
 pie title 程式語言分佈 Top 10
-    "Python" : 38
+    "Python" : 39
     "TypeScript" : 28
     "Others" : 23
     "JavaScript" : 16
@@ -45,28 +45,28 @@ pie title 程式語言分佈 Top 10
 | **#ai** | 11 筆 (6.7%) | `███` |
 | **#hacktoberfest** | 11 筆 (6.7%) | `███` |
 | **#python** | 9 筆 (5.5%) | `██` |
-| **#github** | 8 筆 (4.9%) | `██` |
-| **#javascript** | 6 筆 (3.7%) | `█` |
-| **#openai** | 6 筆 (3.7%) | `█` |
+| **#github** | 8 筆 (4.8%) | `██` |
+| **#javascript** | 6 筆 (3.6%) | `█` |
+| **#openai** | 6 筆 (3.6%) | `█` |
+| **#awesome-list** | 5 筆 (3.0%) | `█` |
 | **#llm** | 5 筆 (3.0%) | `█` |
 | **#markdown** | 5 筆 (3.0%) | `█` |
 | **#trem** | 5 筆 (3.0%) | `█` |
-| **#awesome** | 4 筆 (2.4%) | `█` |
 
 ### ⭐ 收藏星數最高 Top 10 精選
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `543,969` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,718` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `388,047` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,873` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `317,095` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `245,242` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `208,761` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,723` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,677` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `173,702` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `544,078` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `454,732` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `388,083` | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `365,898` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `317,181` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `245,316` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `208,874` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `188,773` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,678` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `173,771` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **524** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**100** 個 repositories）。
+- 原始資料共有 **535** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**100** 個 repositories）。
 
 ## 特別感謝
 
@@ -117,11 +117,11 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [github（8）](#topic-github)
 - [javascript（6）](#topic-javascript)
 - [openai（6）](#topic-openai)
+- [awesome-list（5）](#topic-awesome-list)
 - [llm（5）](#topic-llm)
 - [markdown（5）](#topic-markdown)
 - [trem（5）](#topic-trem)
 - [awesome（4）](#topic-awesome)
-- [awesome-list（4）](#topic-awesome-list)
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
 - [earthquake-early-warning（4）](#topic-earthquake-early-warning)
@@ -130,7 +130,9 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [profile-readme（4）](#topic-profile-readme)
 - [readme（4）](#topic-readme)
 - [taiwan（4）](#topic-taiwan)
+- [ai-agents（3）](#topic-ai-agents)
 - [chatgpt（3）](#topic-chatgpt)
+- [codex（3）](#topic-codex)
 - [computer-science（3）](#topic-computer-science)
 - [cross-platform（3）](#topic-cross-platform)
 - [css（3）](#topic-css)
@@ -139,8 +141,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [machine-learning（3）](#topic-machine-learning)
 - [mcp（3）](#topic-mcp)
 - [nextjs（3）](#topic-nextjs)
-- [readme-stats（3）](#topic-readme-stats)
-- [security（3）](#topic-security)
 - [other（100）](#topic-other)
 
 ---
@@ -226,6 +226,16 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 - [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
 
+<a id="topic-awesome-list"></a>
+
+## awesome-list
+
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 67 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) — Master programming by recreating your favorite technologies from scratch.
+- [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
+- [vinta/awesome-python](https://github.com/vinta/awesome-python) — The definitive list that answers "I want to do X in Python, which tool should I use?"
+- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
+
 <a id="topic-llm"></a>
 
 ## llm
@@ -264,15 +274,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [vinta/awesome-python](https://github.com/vinta/awesome-python) — The definitive list that answers "I want to do X in Python, which tool should I use?"
 - [github/awesome-copilot](https://github.com/github/awesome-copilot) — Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
 - [deepseek-ai/awesome-deepseek-integration](https://github.com/deepseek-ai/awesome-deepseek-integration) — Integrate the DeepSeek API into popular software
-
-<a id="topic-awesome-list"></a>
-
-## awesome-list
-
-- [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) — Master programming by recreating your favorite technologies from scratch.
-- [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
-- [vinta/awesome-python](https://github.com/vinta/awesome-python) — The definitive list that answers "I want to do X in Python, which tool should I use?"
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
 <a id="topic-deep-learning"></a>
 
@@ -346,6 +347,14 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [Ice1187/TW-Security-and-CTF-Resource](https://github.com/Ice1187/TW-Security-and-CTF-Resource) — 台灣資安 / CTF 學習資源整理
 - [goodjack/developer-roadmap-chinese](https://github.com/goodjack/developer-roadmap-chinese) — 2021 年成為 Web 開發人員的路線圖 台灣正體中文版
 
+<a id="topic-ai-agents"></a>
+
+## ai-agents
+
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 67 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems
+- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
+
 <a id="topic-chatgpt"></a>
 
 ## chatgpt
@@ -353,6 +362,14 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [JimmyLv/awesome-nano-banana](https://github.com/JimmyLv/awesome-nano-banana) — Awesome curated collection of images and prompts generated by gemini-2.5-flash-image (aka Nano Banana) state-of-the-art image generation and editing model. Explore AI generated visuals created with Gemini, showcasing Google’s advanced imag…
 - [0xk1h0/ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) — ChatGPT DAN, Jailbreaks prompt
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
+
+<a id="topic-codex"></a>
+
+## codex
+
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 67 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
+- [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open) — Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme
 
 <a id="topic-computer-science"></a>
 
@@ -417,22 +434,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [supabase/supabase](https://github.com/supabase/supabase) — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
 - [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-
-<a id="topic-readme-stats"></a>
-
-## readme-stats
-
-- [DenverCoder1/github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) — 🔥 Stay motivated and show off your contribution streak! 🌟 Display your total contributions, current streak, and longest streak on your GitHub profile README
-- [vn7n24fzkq/github-profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) — A tool to generate your GitHub summary card for profile README
-- [avgupta456/github-trends](https://github.com/avgupta456/github-trends) — 🚀 Level up your GitHub profile readme with customizable cards including LOC statistics!
-
-<a id="topic-security"></a>
-
-## security
-
-- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
-- [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) — A list of useful payloads and bypass for Web Application Security and Pentest/CTF
-- [Ice1187/TW-Security-and-CTF-Resource](https://github.com/Ice1187/TW-Security-and-CTF-Resource) — 台灣資安 / CTF 學習資源整理
 
 <a id="topic-other"></a>
 
