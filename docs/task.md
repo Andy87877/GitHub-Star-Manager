@@ -269,6 +269,17 @@
 - [x] 重新同步 `Andy87877` 163 筆最新真實 Star 快照（包含各專案的 `createdAt`）
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
+## Phase 29：篩選介面大整頓、語言與 Topic 複選支援 (Multi-Select) 與精緻 UI/UX 升級
+
+- [x] 前端 Model 複選架構升級 (`StarModel.js`)：支援 `languages` 與 `topics` 多選陣列、`toggleLanguage()`, `toggleTopic()`, `setTopicMatchMode()` (支援 OR 聯集與 AND 交集)
+- [x] 介面佈局去蕪存菁 (`index.html`)：精簡介面並移除重複冗餘的下拉選單，建立專屬標籤複選群組
+- [x] 前端 View 交互升級 (`StarView.js`)：多選 Chip Pills 點選切換高亮與選中徽章 (`✓`)，多選 Topic 時提供匹配邏輯切換開關
+- [x] 篩選狀態列全面優化 (`activeFiltersBar`)：無條件時隱藏無任何虛線雜訊，有條件時提供單一條件獨立移除標籤與一鍵重置
+- [x] CSS 美化與自訂纖細捲軸 (`style.css`)：升級標籤區 5px 平滑微滾動條，徹底消除系統預設黑色粗捲軸
+- [x] 擴充 Robot Framework 測試至 37 項（新增 `Frontend Supports Multi-Select Filter Contracts`），全數 37/37 PASS 100% 通過
+- [x] 重新同步 `Andy87877` 163 筆最新真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
 
 
 

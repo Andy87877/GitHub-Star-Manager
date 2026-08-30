@@ -457,60 +457,64 @@ button:disabled {
 .filter-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 14px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-bottom: 4px;
 }
 
 .filter-group {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
-  flex: 1 1 180px;
+  flex: 0 1 auto;
 }
 
 .filter-label {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: var(--text-secondary);
+  white-space: nowrap;
 }
 
 .select-custom {
-  padding: 10px 16px;
+  padding: 8px 14px;
   background: var(--bg-glass-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   color: var(--text-primary);
   font-family: inherit;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   outline: none;
   cursor: pointer;
   min-width: 150px;
-  flex: 1;
+  transition: all var(--transition-fast);
 }
 
 .select-custom:focus {
   border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
 /* Active Filters Bar */
 .active-filters-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 14px;
-  padding: 10px 16px;
-  background: var(--bg-glass-card);
-  border: 1px dashed var(--accent-primary);
+  gap: 10px;
+  margin-top: 4px;
+  padding: 8px 14px;
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.25);
   border-radius: var(--radius-md);
   flex-wrap: wrap;
+  animation: fadeIn 0.2s ease-in-out;
 }
 
 .active-filters-label {
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--accent-primary);
+  white-space: nowrap;
 }
 
 .active-filters-container {
@@ -524,7 +528,7 @@ button:disabled {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: var(--radius-pill);
   background: var(--accent-primary);
   color: #ffffff;
@@ -549,9 +553,35 @@ button:disabled {
   opacity: 1;
 }
 
+.btn-match-mode {
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-match-mode:hover {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
 .btn-reset-filters {
   font-size: 0.76rem;
-  padding: 2px 10px;
+  padding: 3px 10px;
+  background: var(--bg-glass-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.btn-reset-filters:hover {
+  background: var(--bg-glass-hover);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
 }
 
 .sortable-th {
@@ -569,52 +599,98 @@ button:disabled {
   display: flex;
   gap: 8px;
   overflow-x: auto;
-  padding-bottom: 6px;
+  padding: 4px 2px 8px 2px;
   scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.4) transparent;
+}
+
+.chips-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.chips-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 99px;
+}
+
+.chips-container::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.35);
+  border-radius: 99px;
+}
+
+.chips-container::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
 }
 
 .chip-group {
   display: grid;
-  grid-template-columns: 90px minmax(0, 1fr);
+  grid-template-columns: 120px minmax(0, 1fr);
   align-items: start;
   gap: 12px;
   min-width: 0;
+  padding-top: 4px;
 }
 
 .chip-group > * {
   min-width: 0;
 }
 
-.chip-label {
+.chip-group-header {
   padding-top: 6px;
-  color: var(--text-secondary);
-  font-size: 0.8rem;
+}
+
+.chip-label {
+  color: var(--text-primary);
+  font-size: 0.84rem;
   font-weight: 700;
+  display: block;
+}
+
+.chip-sublabel {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .topic-policy-note {
-  margin-top: 3px;
+  margin-top: 4px;
   color: var(--text-muted);
   font-size: 0.75rem;
 }
 
 .chip {
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: var(--radius-pill);
   background: var(--bg-glass-card);
   border: 1px solid var(--border-color);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   cursor: pointer;
   white-space: nowrap;
   transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.chip:hover, .chip.active {
+.chip:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.chip.active {
   background: var(--accent-primary);
   color: #ffffff;
   border-color: var(--accent-primary);
   box-shadow: 0 2px 8px var(--accent-glow);
+  font-weight: 600;
+}
+
+.chip-check {
+  font-weight: 700;
+  font-size: 0.78rem;
 }
 
 /* Repo Cards Grid */

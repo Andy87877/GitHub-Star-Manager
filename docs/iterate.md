@@ -435,6 +435,30 @@
   - Robot Framework 測試擴充至 36 項（新增 `Verify Repository Created At Serialization Contract` 與 `Frontend Supports Created Time Tracking And Sorting`），全數 36 / 36 PASS 100% 通過！
 - **狀態**：完成。
 
+## Iteration 29：篩選介面大整頓、語言與 Topic 複選支援 (Multi-Select) 與精緻 UI/UX 升級
+
+- **日期**：2026-08-30
+- **使用者回饋**：
+  - 篩選介面稍顯雜亂且無法複選，希望能進一步優化實用性與 UI/UX。
+- **架構與設計優化**：
+  - **前端 Model 複選架構升級 (`StarModel.js`)**：
+    - 在 `filters` 狀態中納入 `languages` 與 `topics` 多選陣列以及 `topicMatchMode`（支援 `'any'` 聯集與 `'all'` 交集）。
+    - 實作 `toggleLanguage()`, `toggleTopic()`, `setTopicMatchMode()`, `clearLanguages()`, `clearTopics()` 核心領域方法。
+    - 在 `applyFilters()` 中實作高效的集合過濾邏輯。
+  - **介面去蕪存菁與佈局重構 (`index.html`)**：
+    - 移除介面中與標籤 Chip 互相重疊冗餘的下拉選單，介面大幅清爽化。
+    - 將標籤區正式標示為「主要語言 (可複選)」與「熱門 Topic (可複選)」。
+  - **View 交互與回饋升級 (`StarView.js`)**：
+    - 支援 Chip Pills 點選多選切換，選中時提供主題色高亮與「✓」勾選徽章。
+    - 當選中多個 Topic 時，動態於篩選列提供「模式：OR (符合任一) ⇄ AND (同時符合)」切換按鈕。
+    - 升級 `activeFiltersBar`，無條件時完全隱藏（徹底消除空白虛線框），有條件時提供各項目獨立 `✕` 移除與一鍵重置。
+  - **CSS 美化與自訂微滾動條 (`style.css`)**：
+    - 標籤群組提供 5px 纖細平滑主題色微滾動條，徹底告別系統預設粗黑滾動條。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 163 筆最新真實 Star 快照。
+  - Robot Framework 測試套件擴充至 37 項（新增 `Frontend Supports Multi-Select Filter Contracts`），全數 37 / 37 PASS 100% 通過！
+- **狀態**：完成。
+
 
 
 

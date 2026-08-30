@@ -57,8 +57,8 @@ python main.py --serve
 
 交付前至少確認：
 
-- Robot Framework 全數 36 項測試通過。
-- `web/index.html` 可載入快照與即時 GitHub 資料，頁尾載有 Andy87877 CC0-1.0 視覺化徽章與授權宣告，且數據分析 Dashboard Modal (含 Starred & Created 雙軸趨勢)、⌨️ 鍵盤快捷鍵 Modal、目前篩選條件標籤列、點擊標頭排序 (支援 Stars/創建日期/收藏日期) 與 CSV 格式導出功能正常。
+- Robot Framework 全數 37 項測試通過。
+- `web/index.html` 可載入快照與即時 GitHub 資料，頁尾載有 Andy87877 CC0-1.0 視覺化徽章與授權宣告，且多語言與 Topic 複選過濾、數據分析 Dashboard Modal (含 Starred & Created 雙軸趨勢)、⌨️ 鍵盤快捷鍵 Modal、目前篩選條件標籤列、點擊標頭排序 (支援 Stars/創建日期/收藏日期) 與 CSV 格式導出功能正常。
 - Table 為新使用者預設，Cards 明確偏好可還原。
 - 390px 下整頁不水平溢位，Table 僅在自身容器內捲動。
 - 根目錄沒有散落測試報告或額外可見檔案（僅有 LICENSE, README.md, language.md, main.py）。

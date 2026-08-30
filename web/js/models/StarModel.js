@@ -30,7 +30,10 @@ export class StarModel {
     this.filters = {
       keyword: '',
       language: 'all',
+      languages: [],
       topic: 'all',
+      topics: [],
+      topicMatchMode: 'any',
       archive: 'active',
       sortBy: 'starred-desc'
     };
@@ -201,24 +204,112 @@ export class StarModel {
     ];
   }
 
+  toggleLanguage(lang) {
+    if (!lang || lang === 'all') {
+      this.filters.languages = [];
+      this.filters.language = 'all';
+    } else {
+      if (this.filters.languages.includes(lang)) {
+        this.filters.languages = this.filters.languages.filter(l => l !== lang);
+      } else {
+        this.filters.languages.push(lang);
+      }
+      this.filters.language = this.filters.languages.length === 1 ? this.filters.languages[0] : (this.filters.languages.length === 0 ? 'all' : 'custom');
+    }
+    this.applyFilters();
+  }
+
+  isLanguageSelected(lang) {
+    if (!lang || lang === 'all') {
+      return this.filters.languages.length === 0;
+    }
+    return this.filters.languages.includes(lang);
+  }
+
+  clearLanguages() {
+    this.filters.languages = [];
+    this.filters.language = 'all';
+    this.applyFilters();
+  }
+
+  toggleTopic(topic) {
+    if (!topic || topic === 'all') {
+      this.filters.topics = [];
+      this.filters.topic = 'all';
+    } else {
+      if (this.filters.topics.includes(topic)) {
+        this.filters.topics = this.filters.topics.filter(t => t !== topic);
+      } else {
+        this.filters.topics.push(topic);
+      }
+      this.filters.topic = this.filters.topics.length === 1 ? this.filters.topics[0] : (this.filters.topics.length === 0 ? 'all' : 'custom');
+    }
+    this.applyFilters();
+  }
+
+  isTopicSelected(topic) {
+    if (!topic || topic === 'all') {
+      return this.filters.topics.length === 0;
+    }
+    return this.filters.topics.includes(topic);
+  }
+
+  setTopicMatchMode(mode) {
+    this.filters.topicMatchMode = mode === 'all' ? 'all' : 'any';
+    this.applyFilters();
+  }
+
+  clearTopics() {
+    this.filters.topics = [];
+    this.filters.topic = 'all';
+    this.applyFilters();
+  }
+
   applyFilters() {
     const keyword = this.filters.keyword.trim().toLocaleLowerCase();
+    const isOtherFilter = this.filters.topics.includes(this.topicPolicy.otherTopic) || this.filters.topic === this.topicPolicy.otherTopic;
+
     this.filteredRepositories = this.repositories.filter(repo => {
-      if (this.filters.language !== 'all' && repo.language !== this.filters.language) {
-        return false;
+      // 1. Language filter (multi-select OR)
+      if (this.filters.languages && this.filters.languages.length > 0) {
+        const repoLang = repo.language || 'Others';
+        if (!this.filters.languages.includes(repoLang)) {
+          return false;
+        }
+      } else if (this.filters.language !== 'all') {
+        if ((repo.language || 'Others') !== this.filters.language) {
+          return false;
+        }
       }
-      if (this.filters.topic !== 'all') {
-        const isOtherFilter = this.filters.topic === this.topicPolicy.otherTopic;
+
+      // 2. Topic filter (multi-select ANY/ALL or single-select)
+      if (this.filters.topics && this.filters.topics.length > 0) {
+        const matchesTopic = (topicName) => {
+          if (topicName === this.topicPolicy.otherTopic) {
+            return !repo.topics.some(t => this.focusedTopicNames.has(t));
+          }
+          return repo.topics.includes(topicName);
+        };
+
+        if (this.filters.topicMatchMode === 'all') {
+          if (!this.filters.topics.every(matchesTopic)) return false;
+        } else {
+          if (!this.filters.topics.some(matchesTopic)) return false;
+        }
+      } else if (this.filters.topic !== 'all') {
         const matchesTopic = isOtherFilter
           ? !repo.topics.some(topic => this.focusedTopicNames.has(topic))
           : repo.topics.includes(this.filters.topic);
         if (!matchesTopic) return false;
       }
+
+      // 3. Status filter
       if (this.filters.archive === 'active' && repo.isArchived) return false;
       if (this.filters.archive === 'archived' && !repo.isArchived) return false;
       if (this.filters.archive === 'favorites' && !this.isFavorite(repo.fullName)) return false;
       if (this.filters.archive === 'notes' && !this.getNote(repo.fullName)) return false;
 
+      // 4. Keyword search
       if (!keyword) return true;
 
       const searchable = [
@@ -231,6 +322,7 @@ export class StarModel {
       ].join(' ').toLocaleLowerCase();
       return searchable.includes(keyword);
     });
+
     this.sortRepositories();
     this.currentPage = 1;
   }
@@ -303,7 +395,10 @@ export class StarModel {
     this.filters = {
       keyword: '',
       language: 'all',
+      languages: [],
       topic: 'all',
+      topics: [],
+      topicMatchMode: 'any',
       archive: 'active',
       sortBy: 'starred-desc'
     };

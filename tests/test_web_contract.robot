@@ -140,4 +140,16 @@ Frontend Supports Created Time Tracking And Sorting
     Should Contain    ${html}    value="created-desc"
     Should Contain    ${html}    value="created-asc"
 
+Frontend Supports Multi-Select Filter Contracts
+    ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
+    ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    ${controller}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}controllers${/}StarController.js
+    Should Contain    ${model}    toggleLanguage
+    Should Contain    ${model}    toggleTopic
+    Should Contain    ${model}    topicMatchMode
+    Should Contain    ${model}    isLanguageSelected
+    Should Contain    ${model}    isTopicSelected
+    Should Contain    ${view}    chip-check
+    Should Contain    ${controller}    toggleTopicMatchModeBtn
+
 

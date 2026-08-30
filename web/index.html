@@ -91,18 +91,6 @@
 
       <div class="filter-controls">
         <label class="filter-group">
-          <span class="filter-label">主要語言</span>
-          <select id="languageSelect" class="select-custom">
-            <option value="all">全部語言</option>
-          </select>
-        </label>
-        <label class="filter-group">
-          <span class="filter-label">Topic</span>
-          <select id="topicSelect" class="select-custom">
-            <option value="all">全部 Topic</option>
-          </select>
-        </label>
-        <label class="filter-group">
           <span class="filter-label">狀態 / 標註</span>
           <select id="archiveSelect" class="select-custom">
             <option value="active">使用中 (非 Archived)</option>
@@ -113,7 +101,7 @@
           </select>
         </label>
         <label class="filter-group">
-          <span class="filter-label">排序</span>
+          <span class="filter-label">排序方式</span>
           <select id="sortSelect" class="select-custom">
             <option value="starred-desc">最近收藏</option>
             <option value="created-desc">創建時間 (新 → 舊)</option>
@@ -127,19 +115,24 @@
       </div>
 
       <div id="activeFiltersBar" class="active-filters-bar" hidden>
-        <span class="active-filters-label">目前篩選條件：</span>
+        <span class="active-filters-label">目前篩選：</span>
         <div id="activeFiltersContainer" class="active-filters-container"></div>
       </div>
 
       <div class="chip-group">
-        <span class="chip-label">語言捷徑</span>
-        <div id="languageChips" class="chips-container" aria-label="語言快速篩選"></div>
+        <div class="chip-group-header">
+          <span class="chip-label">主要語言 <small class="chip-sublabel">(可複選)</small></span>
+        </div>
+        <div id="languageChips" class="chips-container" aria-label="主要語言複選篩選"></div>
       </div>
+
       <div class="chip-group">
-        <span class="chip-label">熱門 Topic</span>
+        <div class="chip-group-header">
+          <span class="chip-label">熱門 Topic <small class="chip-sublabel">(可複選)</small></span>
+        </div>
         <div>
-          <div id="topicChips" class="chips-container" aria-label="Topic 快速篩選"></div>
-          <p class="topic-policy-note">顯示前 30 個聚焦 Topics；未命中聚焦分類的 repositories 收在最底下的 other，低頻原始標籤仍可用搜尋框找到。</p>
+          <div id="topicChips" class="chips-container" aria-label="熱門 Topic 複選篩選"></div>
+          <p class="topic-policy-note">支援多標籤複選過濾；未命中聚焦分類的 repositories 收在最底下的 other，低頻標籤亦可透過上方搜尋框直接查找。</p>
         </div>
       </div>
     </section>

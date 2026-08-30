@@ -81,25 +81,43 @@ export class StarController {
       );
     });
 
+    if (document.getElementById('languageSelect')) {
+      document.getElementById('languageSelect').addEventListener('change', event => {
+        if (event.target.value === 'all') this.model.clearLanguages();
+        else this.model.toggleLanguage(event.target.value);
+        this.render();
+      });
+    }
+    if (document.getElementById('topicSelect')) {
+      document.getElementById('topicSelect').addEventListener('change', event => {
+        if (event.target.value === 'all') this.model.clearTopics();
+        else this.model.toggleTopic(event.target.value);
+        this.render();
+      });
+    }
     [
-      ['languageSelect', 'language'],
-      ['topicSelect', 'topic'],
       ['sortSelect', 'sortBy'],
       ['archiveSelect', 'archive']
     ].forEach(([id, filter]) => {
-      document.getElementById(id).addEventListener(
-        'change',
-        event => this.updateFilter(filter, event.target.value)
-      );
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('change', event => this.updateFilter(filter, event.target.value));
+      }
     });
 
     document.getElementById('languageChips').addEventListener('click', event => {
       const chip = event.target.closest('[data-lang]');
-      if (chip) this.updateFilter('language', chip.dataset.lang);
+      if (chip) {
+        this.model.toggleLanguage(chip.dataset.lang);
+        this.render();
+      }
     });
     document.getElementById('topicChips').addEventListener('click', event => {
       const chip = event.target.closest('[data-topic]');
-      if (chip) this.updateFilter('topic', chip.dataset.topic);
+      if (chip) {
+        this.model.toggleTopic(chip.dataset.topic);
+        this.render();
+      }
     });
 
     document.getElementById('clearFiltersBtn').addEventListener('click', () => {
@@ -122,15 +140,34 @@ export class StarController {
 
     if (this.view.activeFiltersBar) {
       this.view.activeFiltersBar.addEventListener('click', event => {
+        const toggleModeBtn = event.target.closest('#toggleTopicMatchModeBtn');
+        if (toggleModeBtn) {
+          const newMode = this.model.filters.topicMatchMode === 'all' ? 'any' : 'all';
+          this.model.setTopicMatchMode(newMode);
+          this.render();
+          return;
+        }
+
         const removeBtn = event.target.closest('.remove-filter-btn');
         if (removeBtn) {
           const filterName = removeBtn.dataset.filter;
-          if (filterName === 'keyword') this.updateFilter('keyword', '');
-          else if (filterName === 'language') this.updateFilter('language', 'all');
-          else if (filterName === 'topic') this.updateFilter('topic', 'all');
-          else if (filterName === 'archive') this.updateFilter('archive', 'active');
+          const filterValue = removeBtn.dataset.value;
+          if (filterName === 'keyword') {
+            this.updateFilter('keyword', '');
+          } else if (filterName === 'language') {
+            if (filterValue) this.model.toggleLanguage(filterValue);
+            else this.model.clearLanguages();
+            this.render();
+          } else if (filterName === 'topic') {
+            if (filterValue) this.model.toggleTopic(filterValue);
+            else this.model.clearTopics();
+            this.render();
+          } else if (filterName === 'archive') {
+            this.updateFilter('archive', 'active');
+          }
           return;
         }
+
         if (event.target.id === 'clearAllActiveFiltersBtn') {
           this.model.clearFilters();
           this.render();

@@ -63,45 +63,53 @@ export class StarView {
     const focusedTopics = topics.filter(({ isOther }) => !isOther);
     const otherTopic = topics.find(({ isOther }) => isOther);
     const quickTopics = [
-      ...focusedTopics.slice(0, 17),
+      ...focusedTopics.slice(0, 20),
       ...(otherTopic ? [otherTopic] : [])
     ];
 
+    const selectedLanguages = filters.languages || [];
+    const isAllLanguages = selectedLanguages.length === 0 && (filters.language === 'all' || !filters.language);
+
     this.languageChips.innerHTML = [
-      this.chip('lang', 'all', '全部語言', filters.language === 'all'),
-      ...languages.map(language =>
-        this.chip('lang', language, language, filters.language === language)
-      )
+      this.chip('lang', 'all', '全部語言', isAllLanguages),
+      ...languages.map(language => {
+        const isSelected = selectedLanguages.includes(language) || (selectedLanguages.length === 0 && filters.language === language);
+        return this.chip('lang', language, language, isSelected);
+      })
     ].join('');
+
+    const selectedTopics = filters.topics || [];
+    const isAllTopics = selectedTopics.length === 0 && (filters.topic === 'all' || !filters.topic);
 
     this.topicChips.innerHTML = [
-      this.chip('topic', 'all', '全部 Topic', filters.topic === 'all'),
-      ...quickTopics.map(({ topic, count, isOther }) =>
-        this.chip(
-          'topic',
-          topic,
-          isOther ? `其他 / other ${count}` : `#${topic} ${count}`,
-          filters.topic === topic
+      this.chip('topic', 'all', '全部 Topic', isAllTopics),
+      ...quickTopics.map(({ topic, count, isOther }) => {
+        const isSelected = selectedTopics.includes(topic) || (selectedTopics.length === 0 && filters.topic === topic);
+        const label = isOther ? `其他 / other ${count}` : `#${topic} ${count}`;
+        return this.chip('topic', topic, label, isSelected);
+      })
+    ].join('');
+
+    if (this.languageSelect) {
+      this.languageSelect.innerHTML = [
+        '<option value="all">全部語言</option>',
+        ...languages.map(language =>
+          `<option value="${this.escapeHtml(language)}">${this.escapeHtml(language)}</option>`
         )
-      )
-    ].join('');
+      ].join('');
+      this.languageSelect.value = selectedLanguages.length === 1 ? selectedLanguages[0] : (selectedLanguages.length > 1 ? 'all' : filters.language);
+    }
 
-    this.languageSelect.innerHTML = [
-      '<option value="all">全部語言</option>',
-      ...languages.map(language =>
-        `<option value="${this.escapeHtml(language)}">${this.escapeHtml(language)}</option>`
-      )
-    ].join('');
-    this.languageSelect.value = filters.language;
-
-    this.topicSelect.innerHTML = [
-      '<option value="all">全部 Topic</option>',
-      ...topics.map(({ topic, count, isOther }) =>
-        `<option value="${this.escapeHtml(topic)}">` +
-        `${isOther ? '其他 / other' : `#${this.escapeHtml(topic)}`}（${count}）</option>`
-      )
-    ].join('');
-    this.topicSelect.value = filters.topic;
+    if (this.topicSelect) {
+      this.topicSelect.innerHTML = [
+        '<option value="all">全部 Topic</option>',
+        ...topics.map(({ topic, count, isOther }) =>
+          `<option value="${this.escapeHtml(topic)}">` +
+          `${isOther ? '其他 / other' : `#${this.escapeHtml(topic)}`}（${count}）</option>`
+        )
+      ].join('');
+      this.topicSelect.value = selectedTopics.length === 1 ? selectedTopics[0] : (selectedTopics.length > 1 ? 'all' : filters.topic);
+    }
   }
 
   renderViewToggle(viewMode) {
@@ -114,9 +122,10 @@ export class StarView {
 
   chip(type, value, label, active) {
     const attribute = type === 'lang' ? 'data-lang' : 'data-topic';
+    const checkmark = active && value !== 'all' ? '<span class="chip-check" aria-hidden="true">✓ </span>' : '';
     return `<button type="button" class="chip${active ? ' active' : ''}" ` +
       `${attribute}="${this.escapeHtml(value)}" aria-pressed="${active}">` +
-      `${this.escapeHtml(label)}</button>`;
+      `${checkmark}${this.escapeHtml(label)}</button>`;
   }
 
   renderRepositories(repositories, notes, favorites, viewMode, paginationInfo, sortBy = 'starred-desc') {
@@ -207,15 +216,34 @@ export class StarView {
     if (!this.activeFiltersBar || !this.activeFiltersContainer) return;
     const activeChips = [];
     if (filters.keyword) {
-      activeChips.push(`<span class="active-filter-tag">搜尋: "${this.escapeHtml(filters.keyword)}" <button type="button" class="remove-filter-btn" data-filter="keyword" aria-label="清除搜尋">✕</button></span>`);
+      activeChips.push(`<span class="active-filter-tag">🔍 "${this.escapeHtml(filters.keyword)}" <button type="button" class="remove-filter-btn" data-filter="keyword" aria-label="清除搜尋">✕</button></span>`);
     }
-    if (filters.language && filters.language !== 'all') {
-      activeChips.push(`<span class="active-filter-tag">語言: ${this.escapeHtml(filters.language)} <button type="button" class="remove-filter-btn" data-filter="language" aria-label="清除語言篩選">✕</button></span>`);
+
+    // Multi-select languages
+    if (filters.languages && filters.languages.length > 0) {
+      filters.languages.forEach(lang => {
+        activeChips.push(`<span class="active-filter-tag">語言: ${this.escapeHtml(lang)} <button type="button" class="remove-filter-btn" data-filter="language" data-value="${this.escapeHtml(lang)}" aria-label="移除語言 ${this.escapeHtml(lang)}">✕</button></span>`);
+      });
+    } else if (filters.language && filters.language !== 'all') {
+      activeChips.push(`<span class="active-filter-tag">語言: ${this.escapeHtml(filters.language)} <button type="button" class="remove-filter-btn" data-filter="language" data-value="${this.escapeHtml(filters.language)}" aria-label="清除語言篩選">✕</button></span>`);
     }
-    if (filters.topic && filters.topic !== 'all') {
+
+    // Multi-select topics
+    if (filters.topics && filters.topics.length > 0) {
+      filters.topics.forEach(topic => {
+        const displayTopic = topic === 'other' ? '其他 / other' : `#${topic}`;
+        activeChips.push(`<span class="active-filter-tag">Topic: ${this.escapeHtml(displayTopic)} <button type="button" class="remove-filter-btn" data-filter="topic" data-value="${this.escapeHtml(topic)}" aria-label="移除 Topic ${this.escapeHtml(displayTopic)}">✕</button></span>`);
+      });
+      if (filters.topics.length > 1) {
+        const modeLabel = filters.topicMatchMode === 'all' ? 'AND (同時符合)' : 'OR (符合任一)';
+        activeChips.push(`<button type="button" id="toggleTopicMatchModeBtn" class="btn-match-mode" title="點擊切換 Topic 匹配模式：${modeLabel}">模式: ${modeLabel} ⇄</button>`);
+      }
+    } else if (filters.topic && filters.topic !== 'all') {
       const displayTopic = filters.topic === 'other' ? '其他 / other' : `#${filters.topic}`;
-      activeChips.push(`<span class="active-filter-tag">Topic: ${this.escapeHtml(displayTopic)} <button type="button" class="remove-filter-btn" data-filter="topic" aria-label="清除 Topic 篩選">✕</button></span>`);
+      activeChips.push(`<span class="active-filter-tag">Topic: ${this.escapeHtml(displayTopic)} <button type="button" class="remove-filter-btn" data-filter="topic" data-value="${this.escapeHtml(filters.topic)}" aria-label="清除 Topic 篩選">✕</button></span>`);
     }
+
+    // Archive / status filter
     if (filters.archive && filters.archive !== 'active') {
       const labels = { all: '全部專案', favorites: '⭐ 僅限最愛', notes: '📝 僅有筆記', archived: '僅限 Archived' };
       activeChips.push(`<span class="active-filter-tag">狀態: ${labels[filters.archive] || filters.archive} <button type="button" class="remove-filter-btn" data-filter="archive" aria-label="重置狀態篩選">✕</button></span>`);

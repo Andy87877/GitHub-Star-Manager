@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **163** 個公開 Star；資料快照：`2026-08-30 12:34:57 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **164** 個公開 Star；資料快照：`2026-08-30 17:44:47 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -30,7 +30,7 @@
 - [Python（38）](#language-python)
 - [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（27）](#language-typescript)
+- [TypeScript（28）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -291,6 +291,7 @@
 
 ## TypeScript
 
+- [LYiHub/Card-master-browser-extension-public](https://github.com/LYiHub/Card-master-browser-extension-public) — 一个卡牌游戏浏览器扩展，可以把各种浏览器脚本、扩展做成可游玩的卡牌，还可以用AI自动生成全新卡牌插件
 - [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 - [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
