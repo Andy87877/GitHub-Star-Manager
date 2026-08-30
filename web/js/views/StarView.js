@@ -31,13 +31,17 @@ export class StarView {
     this.analyticsModalBody = document.getElementById('analyticsModalBody');
     this.paginationBar = document.getElementById('paginationBar');
     this.pageSizeSelect = document.getElementById('pageSizeSelect');
+    this.firstPageBtn = document.getElementById('firstPageBtn');
     this.prevPageBtn = document.getElementById('prevPageBtn');
+    this.pageIndicator = document.getElementById('pageIndicator');
     this.nextPageBtn = document.getElementById('nextPageBtn');
+    this.lastPageBtn = document.getElementById('lastPageBtn');
     this.shortcutsBtn = document.getElementById('shortcutsBtn');
     this.shortcutsModal = document.getElementById('shortcutsModal');
     this.closeShortcutsModalBtn = document.getElementById('closeShortcutsModalBtn');
     this.activeFiltersBar = document.getElementById('activeFiltersBar');
     this.activeFiltersContainer = document.getElementById('activeFiltersContainer');
+    this.backToTopBtn = document.getElementById('backToTopBtn');
     this.previousFocus = null;
   }
 
@@ -146,14 +150,21 @@ export class StarView {
 
   renderPagination(info) {
     if (!info || info.totalCount <= 0 || info.pageSize === 'all') {
-      this.paginationBar.hidden = true;
+      if (this.paginationBar) this.paginationBar.hidden = true;
       return;
     }
-    this.paginationBar.hidden = false;
-    this.pageSizeSelect.value = String(info.pageSize);
-    this.pageIndicator.textContent = `第 ${info.currentPage} / ${info.totalPages} 頁 (共 ${info.totalCount} 筆)`;
-    this.prevPageBtn.disabled = info.currentPage <= 1;
-    this.nextPageBtn.disabled = info.currentPage >= info.totalPages;
+    if (this.paginationBar) this.paginationBar.hidden = false;
+    if (this.pageSizeSelect) this.pageSizeSelect.value = String(info.pageSize);
+    if (this.pageIndicator) {
+      this.pageIndicator.textContent = `第 ${info.currentPage} / ${info.totalPages} 頁 (共 ${info.totalCount} 筆)`;
+    }
+    const isFirstPage = info.currentPage <= 1;
+    const isLastPage = info.currentPage >= info.totalPages;
+
+    if (this.firstPageBtn) this.firstPageBtn.disabled = isFirstPage;
+    if (this.prevPageBtn) this.prevPageBtn.disabled = isFirstPage;
+    if (this.nextPageBtn) this.nextPageBtn.disabled = isLastPage;
+    if (this.lastPageBtn) this.lastPageBtn.disabled = isLastPage;
   }
 
   renderRepoCards(repositories, notes, favorites = {}) {

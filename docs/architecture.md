@@ -251,10 +251,10 @@ Robot Framework 覆蓋：
 - Markdown 渲染器描述字元轉義 (`_clean_inline_text`) 契約。
 - GitHub Actions CI/CD 雙 Job 權限隔離與最少權限 (Least-Privilege) 契約。
 - 專案創建時間 (`createdAt` / `created_at`) 領域模型序列化與資料管道契約。
-- 前端創建時間雙向排序 (`created-desc` / `created-asc`)、Table 欄位與年代分佈分析契約。
 - 前端多語言與多 Topic 複選過濾 (`toggleLanguage`, `toggleTopic`, `topicMatchMode`) 與動態條件移除契約。
+- 前端動態分頁頁碼與極致導航控制 (`firstPageBtn`, `prevPageBtn`, `nextPageBtn`, `lastPageBtn`, `pageIndicator`) 契約。
 
-目前完整涵蓋 37 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖、Top 10 展示表格與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常（包含年度 Star 收藏趨勢與專案創建年代分佈）、多選標籤與語言複選過濾順暢、Topic 聯集/交集匹配模式切換正常、目前篩選條件標籤列無多餘雜訊且支援單一項目移除、點擊標頭排序順暢、專案創建時間排序流暢、CSV 導出相容性良善、鍵盤快捷鍵指南與快速鍵順暢、複製 URL 與回到頂部順暢、頁尾 Andy87877 CC0-1.0 版權聲明顯示正常、動態分頁正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
+目前完整涵蓋 37 項 Robot 契約，100% 通過。測試報告統一寫入 `artifacts/robot-reports/`。真實瀏覽器已從 `main.py --serve` 提供的 `web/` 驗證：Mermaid 圓餅圖、Top 10 展示表格與視覺化長條圖在 README 完美呈現、數據分析 Modal 顯示正常（包含年度 Star 收藏趨勢與專案創建年代分佈）、多選標籤與語言複選過濾順暢、Topic 聯集/交集匹配模式切換正常、目前篩選條件標籤列無多餘雜訊且支援單一項目移除、點擊標頭排序順暢、專案創建時間排序流暢、分頁頁碼動態計算與平滑首末頁切換極致流暢、CSV 導出相容性良善、鍵盤快捷鍵指南與快速鍵順暢、複製 URL 與回到頂部順暢、頁尾 Andy87877 CC0-1.0 版權聲明顯示正常、390px 下整頁無水平溢位且 Table 容器可獨立捲動，console 無 error／warning。
 
 ## 10. 安全與隱私
 

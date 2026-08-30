@@ -81,11 +81,18 @@ Frontend Supports Pagination Navigation Controls
     ${html}=    Get File    ${CURDIR}${/}..${/}web${/}index.html
     ${model}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}models${/}StarModel.js
     ${view}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}views${/}StarView.js
+    ${controller}=    Get File    ${CURDIR}${/}..${/}web${/}js${/}controllers${/}StarController.js
     Should Contain    ${html}    id="paginationBar"
     Should Contain    ${html}    id="pageSizeSelect"
+    Should Contain    ${html}    id="pageIndicator"
+    Should Contain    ${html}    id="firstPageBtn"
+    Should Contain    ${html}    id="lastPageBtn"
     Should Contain    ${model}    getPaginatedRepositories
     Should Contain    ${model}    setPageSize
     Should Contain    ${view}    renderPagination
+    Should Contain    ${view}    this.pageIndicator
+    Should Contain    ${controller}    firstPageBtn
+    Should Contain    ${controller}    lastPageBtn
 
 Dataset Snapshot Integrity Contract
     ${stars_content}=    Get File    ${CURDIR}${/}..${/}web${/}data${/}stars.json

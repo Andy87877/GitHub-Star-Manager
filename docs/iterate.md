@@ -455,8 +455,27 @@
   - **CSS 美化與自訂微滾動條 (`style.css`)**：
     - 標籤群組提供 5px 纖細平滑主題色微滾動條，徹底告別系統預設粗黑滾動條。
 - **驗證結果**：
-  - 重新同步 `Andy87877` 163 筆最新真實 Star 快照。
+  - 重新同步 `Andy87877` 164 筆最新真實 Star 快照。
   - Robot Framework 測試套件擴充至 37 項（新增 `Frontend Supports Multi-Select Filter Contracts`），全數 37 / 37 PASS 100% 通過！
+- **狀態**：完成。
+
+## Iteration 30：動態分頁頁碼狀態修復與極致平滑導航升級 (Pagination UX Hardening)
+
+- **日期**：2026-08-30
+- **使用者回饋**：
+  - 分頁列顯示「第 1 / 1 頁」有誤，未動態計算並呈現總頁數與總筆數。
+- **架構與設計優化**：
+  - **View DOM 引用補全 (`StarView.js`)**：
+    - 修復 `this.pageIndicator`、`this.firstPageBtn`、`this.lastPageBtn`、`this.backToTopBtn` 在 `StarView` 建構式中的屬性綁定，確保 `renderPagination()` 正確更新「第 X / Y 頁 (共 N 筆)」文字與狀態。
+  - **分頁導航全功能閉環 (`index.html`)**：
+    - 新增「« 首頁」與「末頁 »」快捷按鈕，提供快速跳轉首末頁的能力。
+  - **互動控制器與平滑體驗 (`StarController.js`)**：
+    - 綁定完整分頁事件，並在換頁時自動觸發 `scrollToRepositories()` 平滑滾動至列表頂部。
+  - **CSS 視覺升級 (`style.css`)**：
+    - 將頁碼標籤封裝為帶主題色邊框與半透明底色之現代膠囊徽章，並細緻優化按鈕禁用與懸停效果。
+- **驗證結果**：
+  - 重新同步 `Andy87877` 164 筆最新真實 Star 快照。
+  - Robot Framework 測試套件 37 項測試全數 37 / 37 PASS 100% 通過！
 - **狀態**：完成。
 
 

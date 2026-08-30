@@ -241,18 +241,40 @@ export class StarController {
     });
 
     // Pagination Events
-    this.view.pageSizeSelect.addEventListener('change', event => {
-      this.model.setPageSize(event.target.value);
-      this.render();
-    });
-    this.view.prevPageBtn.addEventListener('click', () => {
-      this.model.setPage(this.model.currentPage - 1);
-      this.render();
-    });
-    this.view.nextPageBtn.addEventListener('click', () => {
-      this.model.setPage(this.model.currentPage + 1);
-      this.render();
-    });
+    if (this.view.pageSizeSelect) {
+      this.view.pageSizeSelect.addEventListener('change', event => {
+        this.model.setPageSize(event.target.value);
+        this.render();
+      });
+    }
+    if (this.view.firstPageBtn) {
+      this.view.firstPageBtn.addEventListener('click', () => {
+        this.model.setPage(1);
+        this.render();
+        this.scrollToRepositories();
+      });
+    }
+    if (this.view.prevPageBtn) {
+      this.view.prevPageBtn.addEventListener('click', () => {
+        this.model.setPage(this.model.currentPage - 1);
+        this.render();
+        this.scrollToRepositories();
+      });
+    }
+    if (this.view.nextPageBtn) {
+      this.view.nextPageBtn.addEventListener('click', () => {
+        this.model.setPage(this.model.currentPage + 1);
+        this.render();
+        this.scrollToRepositories();
+      });
+    }
+    if (this.view.lastPageBtn) {
+      this.view.lastPageBtn.addEventListener('click', () => {
+        this.model.setPage(this.model.getTotalPages());
+        this.render();
+        this.scrollToRepositories();
+      });
+    }
 
     // Shortcuts Modal Events
     if (this.view.shortcutsBtn) {
@@ -338,5 +360,12 @@ export class StarController {
     this.view.closeNoteModal();
     this.view.showToast('研究筆記已儲存在這個瀏覽器。', 'success');
     this.render();
+  }
+
+  scrollToRepositories() {
+    const reposEl = document.getElementById('repositories');
+    if (reposEl) {
+      reposEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

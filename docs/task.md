@@ -277,7 +277,17 @@
 - [x] 篩選狀態列全面優化 (`activeFiltersBar`)：無條件時隱藏無任何虛線雜訊，有條件時提供單一條件獨立移除標籤與一鍵重置
 - [x] CSS 美化與自訂纖細捲軸 (`style.css`)：升級標籤區 5px 平滑微滾動條，徹底消除系統預設黑色粗捲軸
 - [x] 擴充 Robot Framework 測試至 37 項（新增 `Frontend Supports Multi-Select Filter Contracts`），全數 37/37 PASS 100% 通過
-- [x] 重新同步 `Andy87877` 163 筆最新真實 Star 快照
+- [x] 重新同步 `Andy87877` 164 筆最新真實 Star 快照
+- [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
+
+## Phase 30：動態分頁頁碼狀態修復與極致平滑導航升級 (Pagination UX Hardening)
+
+- [x] View DOM 引用補全 (`StarView.js`)：修復 `this.pageIndicator`、`this.firstPageBtn`、`this.lastPageBtn`、`this.backToTopBtn` 於建構式之未綁定問題，確保「第 X / Y 頁 (共 N 筆)」動態正確計算與渲染
+- [x] 分頁導航強化 (`index.html`)：新增「« 首頁」與「末頁 »」快捷按鈕，形成「« 首頁 ‹ 上一頁 [第 1 / 9 頁 (共 164 筆)] 下一頁 › 末頁 »」完整控制鏈
+- [x] 互動控制器升級 (`StarController.js`)：綁定所有分頁按鈕並實作 `scrollToRepositories()` 平滑滾動至專案列表頂部，切換頁面不迷航
+- [x] UI/UX 樣式美化 (`style.css`)：升級分頁標籤膠囊高亮外觀、加強按鈕 disabled 狀態視覺反饋與響應式排版
+- [x] 擴充 Robot Framework 測試：強化 `Frontend Supports Pagination Navigation Controls` 契約檢驗
+- [x] 重新同步 `Andy87877` 164 筆最新真實 Star 快照
 - [x] 完整更新活文件 (`README.md`、`docs/architecture.md`、`docs/iterate.md`、`docs/task.md`、`docs/AGENT.md`)
 
 
