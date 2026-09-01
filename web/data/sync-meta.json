@@ -1,50 +1,54 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-08-31T23:03:29+00:00",
-  "formattedUpdatedAt": "2026-09-01 07:03:29 (UTC+8)",
-  "repositoryCount": 165,
+  "generatedAt": "2026-09-01T21:28:54+00:00",
+  "formattedUpdatedAt": "2026-09-02 05:28:54 (UTC+8)",
+  "repositoryCount": 167,
   "previousRepositoryCount": 165,
-  "deltaCount": 0,
-  "formattedDelta": "0",
+  "deltaCount": 2,
+  "formattedDelta": "+2",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 535,
+  "totalTopicCount": 546,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 100,
+  "otherRepositoryCount": 101,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 165,
-    "totalStars": 5469779,
-    "totalForks": 815562,
+    "totalCount": 167,
+    "totalStars": 5499761,
+    "totalForks": 822334,
     "archivedCount": 10,
-    "activeCount": 155,
+    "activeCount": 157,
     "languageBreakdown": {
       "Python": {
         "count": 39,
-        "percentage": 23.6
+        "percentage": 23.4
       },
       "TypeScript": {
         "count": 28,
-        "percentage": 17.0
+        "percentage": 16.8
       },
       "Others": {
         "count": 23,
-        "percentage": 13.9
+        "percentage": 13.8
       },
       "JavaScript": {
         "count": 16,
-        "percentage": 9.7
+        "percentage": 9.6
       },
       "C++": {
         "count": 8,
         "percentage": 4.8
       },
       "Java": {
-        "count": 5,
-        "percentage": 3.0
+        "count": 6,
+        "percentage": 3.6
+      },
+      "Dart": {
+        "count": 4,
+        "percentage": 2.4
       },
       "HTML": {
         "count": 4,
@@ -59,10 +63,6 @@
         "percentage": 2.4
       },
       "C#": {
-        "count": 3,
-        "percentage": 1.8
-      },
-      "Dart": {
         "count": 3,
         "percentage": 1.8
       },
@@ -157,6 +157,10 @@
         "count": 6
       },
       {
+        "topic": "awesome",
+        "count": 5
+      },
+      {
         "topic": "awesome-list",
         "count": 5
       },
@@ -171,10 +175,6 @@
       {
         "topic": "trem",
         "count": 5
-      },
-      {
-        "topic": "awesome",
-        "count": 4
       },
       {
         "topic": "deep-learning",
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-      "2026": 49
+      "2026": 51
     },
     "createdByYear": {
       "2011": 3,
@@ -213,9 +213,9 @@
       "2020": 15,
       "2021": 14,
       "2022": 19,
-      "2023": 13,
+      "2023": 14,
       "2024": 24,
-      "2025": 26,
+      "2025": 27,
       "2026": 16
     }
   }

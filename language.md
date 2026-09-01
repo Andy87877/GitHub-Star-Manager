@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **165** 個公開 Star；資料快照：`2026-09-01 07:03:29 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **167** 個公開 Star；資料快照：`2026-09-02 05:28:54 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -13,10 +13,10 @@
 - [C++（8）](#language-c-plus-plus)
 - [CMake（1）](#language-cmake)
 - [Cuda（1）](#language-cuda)
-- [Dart（3）](#language-dart)
+- [Dart（4）](#language-dart)
 - [Go（3）](#language-go)
 - [HTML（4）](#language-html)
-- [Java（5）](#language-java)
+- [Java（6）](#language-java)
 - [JavaScript（16）](#language-javascript)
 - [Jupyter Notebook（4）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
@@ -92,6 +92,7 @@
 
 ## Dart
 
+- [NTUT-NPC/tattoo](https://github.com/NTUT-NPC/tattoo) — Project Tattoo: A modern reimplementation of TAT
 - [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
 - [ExpTechTW/DPIP](https://github.com/ExpTechTW/DPIP) — Disaster Prevention Information Platform (防災資訊整合平台)
 - [NEO-TAT/tat_flutter](https://github.com/NEO-TAT/tat_flutter) — An App for Taipei Tech students. NTUT Life TAT, convenient, concise, fast, powerful, enrich your NTUT life!
@@ -117,6 +118,7 @@
 
 ## Java
 
+- [ashishps1/awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) — Learn Low Level Design (LLD) and prepare for interviews using free resources.
 - [dataease/dataease](https://github.com/dataease/dataease) — 🔥 人人可用的开源 BI 工具，数据可视化神器。An open-source BI tool alternative to Tableau.
 - [Yucheng0208/NTUT-Linear-Algebra-Course](https://github.com/Yucheng0208/NTUT-Linear-Algebra-Course) — NTUT CS Linear Algebra Files.
 - [hneemann/Digital](https://github.com/hneemann/Digital) — A digital logic designer and circuit simulator.
