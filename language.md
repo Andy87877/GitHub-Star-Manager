@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **167** 個公開 Star；資料快照：`2026-09-03 05:24:58 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **167** 個公開 Star；資料快照：`2026-09-04 05:27:47 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -303,7 +303,7 @@
 - [NTUT-NPC/ntut-sso-plus](https://github.com/NTUT-NPC/ntut-sso-plus) — 北科校園入口 Chrome / Firefox 擴充功能
 - [pixel-agents-hq/pixel-agents](https://github.com/pixel-agents-hq/pixel-agents) — Pixel office.
 - [supabase/supabase](https://github.com/supabase/supabase) — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
-- [openclaw/openclaw](https://github.com/openclaw/openclaw) — Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞
+- [openclaw/openclaw](https://github.com/openclaw/openclaw) — The AI that really does things. Any OS. Any Platform. The lobster way. 🦞
 - [sitcon-tw/tickets](https://github.com/sitcon-tw/tickets) — SITCON 報名系統
 - [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) — Virtual whiteboard for sketching hand-drawn like diagrams
 - [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
