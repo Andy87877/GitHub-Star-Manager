@@ -1,42 +1,42 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-09-05T20:47:07+00:00",
-  "formattedUpdatedAt": "2026-09-06 04:47:07 (UTC+8)",
-  "repositoryCount": 167,
+  "generatedAt": "2026-09-06T20:54:51+00:00",
+  "formattedUpdatedAt": "2026-09-07 04:54:51 (UTC+8)",
+  "repositoryCount": 168,
   "previousRepositoryCount": 167,
-  "deltaCount": 0,
-  "formattedDelta": "0",
+  "deltaCount": 1,
+  "formattedDelta": "+1",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 546,
+  "totalTopicCount": 549,
   "focusedTopicCount": 30,
   "otherRepositoryCount": 101,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 167,
-    "totalStars": 5512056,
-    "totalForks": 823752,
+    "totalCount": 168,
+    "totalStars": 5531149,
+    "totalForks": 825753,
     "archivedCount": 10,
-    "activeCount": 157,
+    "activeCount": 158,
     "languageBreakdown": {
       "Python": {
-        "count": 39,
-        "percentage": 23.4
+        "count": 40,
+        "percentage": 23.8
       },
       "TypeScript": {
         "count": 28,
-        "percentage": 16.8
+        "percentage": 16.7
       },
       "Others": {
         "count": 23,
-        "percentage": 13.8
+        "percentage": 13.7
       },
       "JavaScript": {
         "count": 16,
-        "percentage": 9.6
+        "percentage": 9.5
       },
       "C++": {
         "count": 8,
@@ -149,20 +149,20 @@
         "count": 8
       },
       {
+        "topic": "awesome",
+        "count": 6
+      },
+      {
+        "topic": "awesome-list",
+        "count": 6
+      },
+      {
         "topic": "javascript",
         "count": 6
       },
       {
         "topic": "openai",
         "count": 6
-      },
-      {
-        "topic": "awesome",
-        "count": 5
-      },
-      {
-        "topic": "awesome-list",
-        "count": 5
       },
       {
         "topic": "llm",
@@ -198,14 +198,14 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-      "2026": 51
+      "2026": 52
     },
     "createdByYear": {
       "2011": 3,
       "2012": 1,
       "2013": 1,
       "2014": 5,
-      "2015": 3,
+      "2015": 4,
       "2016": 10,
       "2017": 7,
       "2018": 4,
