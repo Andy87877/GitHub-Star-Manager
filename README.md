@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **168** 個公開 Star；資料快照：`2026-09-07 04:54:51 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **168** 個公開 Star；資料快照：`2026-09-08 05:49:39 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -17,9 +17,9 @@ pie title 熱門 Topic 覆蓋 Top 10
     "awesome" : 6
     "awesome-list" : 6
     "javascript" : 6
+    "markdown" : 6
     "openai" : 6
     "llm" : 5
-    "markdown" : 5
 ```
 
 ### 程式語言分佈 (Top 10)
@@ -49,24 +49,24 @@ pie title 程式語言分佈 Top 10
 | **#awesome** | 6 筆 (3.6%) | `█` |
 | **#awesome-list** | 6 筆 (3.6%) | `█` |
 | **#javascript** | 6 筆 (3.6%) | `█` |
+| **#markdown** | 6 筆 (3.6%) | `█` |
 | **#openai** | 6 筆 (3.6%) | `█` |
 | **#llm** | 5 筆 (3.0%) | `█` |
-| **#markdown** | 5 筆 (3.0%) | `█` |
 
 ### ⭐ 收藏星數最高 Top 10 精選
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `545,604` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `455,120` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `389,039` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `366,425` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `318,819` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `246,866` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `210,584` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `189,568` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `175,089` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,731` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `545,832` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `455,180` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `389,135` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `366,523` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `319,117` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `247,404` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `210,891` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `189,708` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `175,282` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,738` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **549** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**101** 個 repositories）。
+- 原始資料共有 **557** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**100** 個 repositories）。
 
 ## 特別感謝
 
@@ -118,9 +118,9 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [awesome（6）](#topic-awesome)
 - [awesome-list（6）](#topic-awesome-list)
 - [javascript（6）](#topic-javascript)
+- [markdown（6）](#topic-markdown)
 - [openai（6）](#topic-openai)
 - [llm（5）](#topic-llm)
-- [markdown（5）](#topic-markdown)
 - [trem（5）](#topic-trem)
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
@@ -136,12 +136,12 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [computer-science（3）](#topic-computer-science)
 - [cross-platform（3）](#topic-cross-platform)
 - [css（3）](#topic-css)
+- [flutter（3）](#topic-flutter)
 - [frontend（3）](#topic-frontend)
 - [github-profile（3）](#topic-github-profile)
 - [machine-learning（3）](#topic-machine-learning)
 - [mcp（3）](#topic-mcp)
-- [nextjs（3）](#topic-nextjs)
-- [other（101）](#topic-other)
+- [other（100）](#topic-other)
 
 ---
 
@@ -237,6 +237,17 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 - [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
 
+<a id="topic-markdown"></a>
+
+## markdown
+
+- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
+- [cloudflare/cloudflare-docs](https://github.com/cloudflare/cloudflare-docs) — Cloudflare’s documentation
+- [sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) — Chinese copywriting guidelines for better written communication／中文文案排版指北
+- [kwchang0831/svelte-QWER](https://github.com/kwchang0831/svelte-QWER) — ✒︎ Simply Awesome Blog Starter built with SvelteKit and Love ❤
+- [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) — 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
+- [rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile) — This repository will assist you in creating a more beautiful and appealing github profile, and you will have access to a comprehensive range of tools and tutorials for beautifying your github profile. 🪄 ⭐
+
 <a id="topic-openai"></a>
 
 ## openai
@@ -257,16 +268,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [microsoft/poml](https://github.com/microsoft/poml) — Prompt Orchestration Markup Language
 - [MiuLab/Taiwan-LLM](https://github.com/MiuLab/Taiwan-LLM) — Traditional Mandarin LLMs for Taiwan
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-
-<a id="topic-markdown"></a>
-
-## markdown
-
-- [cloudflare/cloudflare-docs](https://github.com/cloudflare/cloudflare-docs) — Cloudflare’s documentation
-- [sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) — Chinese copywriting guidelines for better written communication／中文文案排版指北
-- [kwchang0831/svelte-QWER](https://github.com/kwchang0831/svelte-QWER) — ✒︎ Simply Awesome Blog Starter built with SvelteKit and Love ❤
-- [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) — 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
-- [rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile) — This repository will assist you in creating a more beautiful and appealing github profile, and you will have access to a comprehensive range of tools and tutorials for beautifying your github profile. 🪄 ⭐
 
 <a id="topic-trem"></a>
 
@@ -398,6 +399,14 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) — Chinese copywriting guidelines for better written communication／中文文案排版指北
 - [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
+<a id="topic-flutter"></a>
+
+## flutter
+
+- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
+- [ExpTechTW/DPIP](https://github.com/ExpTechTW/DPIP) — Disaster Prevention Information Platform (防災資訊整合平台)
+- [NEO-TAT/tat_flutter](https://github.com/NEO-TAT/tat_flutter) — An App for Taipei Tech students. NTUT Life TAT, convenient, concise, fast, powerful, enrich your NTUT life!
+
 <a id="topic-frontend"></a>
 
 ## frontend
@@ -429,14 +438,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
 - [github/github-mcp-server](https://github.com/github/github-mcp-server) — GitHub's official MCP Server
-
-<a id="topic-nextjs"></a>
-
-## nextjs
-
-- [supabase/supabase](https://github.com/supabase/supabase) — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
-- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
 <a id="topic-other"></a>
 
@@ -478,7 +479,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [index-tts/index-tts](https://github.com/index-tts/index-tts) — An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System
 - [google/googletest](https://github.com/google/googletest) — GoogleTest - Google Testing and Mocking Framework
 - [SR0725/short-link-tracker](https://github.com/SR0725/short-link-tracker)
-- [Demizo/Daily_You](https://github.com/Demizo/Daily_You) — Daily diary & journaling app
 - [cyprieng/github-breakout](https://github.com/cyprieng/github-breakout) — Generate a Breakout game SVG from a GitHub user's contributions graph
 - [xyTom/snippai](https://github.com/xyTom/snippai) — Snip Anything Solve Everything​
 - [abyesilyurt/vibesort](https://github.com/abyesilyurt/vibesort) — GPT powered sorting using structured output
