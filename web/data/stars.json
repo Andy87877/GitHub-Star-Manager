@@ -1,5 +1,20 @@
 [
   {
+    "name": "Database-System-Example-Project",
+    "owner": "ntutselab",
+    "fullName": "ntutselab/Database-System-Example-Project",
+    "url": "https://github.com/ntutselab/Database-System-Example-Project",
+    "description": "",
+    "language": "Vue",
+    "topics": [],
+    "stars": 2,
+    "forks": 0,
+    "isArchived": false,
+    "createdAt": "2023-09-04T06:02:57Z",
+    "starredAt": "2026-09-09T02:34:18Z",
+    "updatedAt": "2026-09-09T02:34:18Z"
+  },
+  {
     "name": "awesome-math",
     "owner": "rossant",
     "fullName": "rossant/awesome-math",
@@ -13,12 +28,12 @@
       "lecture-notes",
       "list"
     ],
-    "stars": 16373,
-    "forks": 1605,
+    "stars": 16391,
+    "forks": 1606,
     "isArchived": false,
     "createdAt": "2015-09-02T09:42:31Z",
     "starredAt": "2026-09-05T21:37:20Z",
-    "updatedAt": "2026-09-08T18:58:40Z"
+    "updatedAt": "2026-09-09T19:46:47Z"
   },
   {
     "name": "tattoo",
@@ -33,7 +48,7 @@
     "isArchived": false,
     "createdAt": "2025-10-31T15:02:57Z",
     "starredAt": "2026-09-01T17:02:24Z",
-    "updatedAt": "2026-09-08T13:17:41Z"
+    "updatedAt": "2026-09-09T16:56:10Z"
   },
   {
     "name": "awesome-low-level-design",
@@ -56,12 +71,12 @@
       "uml",
       "lld"
     ],
-    "stars": 26666,
-    "forks": 6467,
+    "stars": 26689,
+    "forks": 6475,
     "isArchived": false,
     "createdAt": "2023-11-17T10:15:12Z",
     "starredAt": "2026-09-01T10:39:14Z",
-    "updatedAt": "2026-09-08T20:22:58Z"
+    "updatedAt": "2026-09-09T21:00:27Z"
   },
   {
     "name": "awesome-gamedev-agent-skills",
@@ -91,12 +106,12 @@
       "windsurf",
       "game-dev"
     ],
-    "stars": 893,
-    "forks": 68,
+    "stars": 918,
+    "forks": 70,
     "isArchived": false,
     "createdAt": "2026-06-24T07:18:39Z",
     "starredAt": "2026-08-30T13:16:43Z",
-    "updatedAt": "2026-09-08T16:59:47Z"
+    "updatedAt": "2026-09-09T20:55:35Z"
   },
   {
     "name": "Card-master-browser-extension-public",
@@ -195,12 +210,12 @@
       "qa-roadmap",
       "software-architect-roadmap"
     ],
-    "stars": 366618,
-    "forks": 44906,
+    "stars": 366736,
+    "forks": 44911,
     "isArchived": false,
     "createdAt": "2017-03-15T13:45:52Z",
     "starredAt": "2026-08-24T08:23:37Z",
-    "updatedAt": "2026-09-08T21:28:01Z"
+    "updatedAt": "2026-09-09T21:19:36Z"
   },
   {
     "name": "codex",
@@ -210,12 +225,12 @@
     "description": "Lightweight coding agent that runs in your terminal",
     "language": "Rust",
     "topics": [],
-    "stars": 122534,
-    "forks": 18817,
+    "stars": 122826,
+    "forks": 18889,
     "isArchived": false,
     "createdAt": "2025-04-13T05:37:54Z",
     "starredAt": "2026-08-23T12:04:04Z",
-    "updatedAt": "2026-09-08T21:29:29Z"
+    "updatedAt": "2026-09-09T21:15:47Z"
   },
   {
     "name": "GeoLibre",
@@ -234,12 +249,12 @@
       "geolibre",
       "gis"
     ],
-    "stars": 7235,
-    "forks": 752,
+    "stars": 7247,
+    "forks": 755,
     "isArchived": false,
     "createdAt": "2026-05-27T19:34:31Z",
     "starredAt": "2026-08-22T02:17:01Z",
-    "updatedAt": "2026-09-08T20:36:23Z"
+    "updatedAt": "2026-09-09T19:50:42Z"
   },
   {
     "name": "dcim-list",
@@ -263,13 +278,16 @@
     "url": "https://github.com/Andy87877/GitHub-Star-Manager",
     "description": "Andy's GitHub Star 倉庫",
     "language": "Python",
-    "topics": [],
+    "topics": [
+      "data",
+      "ci-cd"
+    ],
     "stars": 1,
     "forks": 0,
     "isArchived": false,
     "createdAt": "2026-07-29T03:55:58Z",
     "starredAt": "2026-08-21T07:04:01Z",
-    "updatedAt": "2026-09-07T21:49:55Z"
+    "updatedAt": "2026-09-09T14:21:02Z"
   },
   {
     "name": "AI-For-Beginners",
@@ -290,12 +308,12 @@
       "gan",
       "microsoft-for-beginners"
     ],
-    "stars": 68264,
-    "forks": 13166,
+    "stars": 68314,
+    "forks": 13176,
     "isArchived": false,
     "createdAt": "2021-03-03T16:27:36Z",
     "starredAt": "2026-08-20T16:24:25Z",
-    "updatedAt": "2026-09-08T20:17:23Z"
+    "updatedAt": "2026-09-09T19:42:31Z"
   },
   {
     "name": "ai-agent-book",
@@ -319,12 +337,12 @@
       "rag",
       "reinforcement-learning"
     ],
-    "stars": 45290,
-    "forks": 5029,
+    "stars": 45401,
+    "forks": 5054,
     "isArchived": false,
     "createdAt": "2025-09-09T02:41:44Z",
     "starredAt": "2026-08-20T16:15:36Z",
-    "updatedAt": "2026-09-08T20:05:08Z"
+    "updatedAt": "2026-09-09T21:17:42Z"
   },
   {
     "name": "google-timeline-visualizer",
@@ -335,11 +353,11 @@
     "language": "Kotlin",
     "topics": [],
     "stars": 2980,
-    "forks": 398,
+    "forks": 400,
     "isArchived": false,
     "createdAt": "2025-12-16T06:49:16Z",
     "starredAt": "2026-08-20T08:50:42Z",
-    "updatedAt": "2026-09-08T17:17:41Z"
+    "updatedAt": "2026-09-09T19:28:11Z"
   },
   {
     "name": "FRC8725-Website-Design-Docs",
@@ -389,12 +407,12 @@
       "aisys",
       "dlsys"
     ],
-    "stars": 17768,
-    "forks": 2472,
+    "stars": 17776,
+    "forks": 2471,
     "isArchived": false,
     "createdAt": "2022-09-22T08:57:58Z",
     "starredAt": "2026-07-31T17:10:20Z",
-    "updatedAt": "2026-09-08T15:22:34Z"
+    "updatedAt": "2026-09-09T17:09:11Z"
   },
   {
     "name": "build-your-own-x",
@@ -411,12 +429,12 @@
       "free",
       "awesome-list"
     ],
-    "stars": 546051,
-    "forks": 51398,
+    "stars": 546232,
+    "forks": 51400,
     "isArchived": false,
     "createdAt": "2018-05-09T12:03:18Z",
     "starredAt": "2026-07-29T07:04:18Z",
-    "updatedAt": "2026-09-08T21:27:44Z"
+    "updatedAt": "2026-09-09T21:14:01Z"
   },
   {
     "name": "codex-security",
@@ -442,12 +460,12 @@
       "typescript",
       "vulnerability-scanning"
     ],
-    "stars": 10575,
-    "forks": 771,
+    "stars": 10600,
+    "forks": 769,
     "isArchived": false,
     "createdAt": "2026-07-13T22:00:13Z",
     "starredAt": "2026-07-29T06:50:53Z",
-    "updatedAt": "2026-09-08T21:25:07Z"
+    "updatedAt": "2026-09-09T21:04:43Z"
   },
   {
     "name": "robotframework",
@@ -466,12 +484,12 @@
       "rpa",
       "python"
     ],
-    "stars": 11872,
+    "stars": 11873,
     "forks": 2560,
     "isArchived": false,
     "createdAt": "2014-06-27T11:10:38Z",
     "starredAt": "2026-07-03T02:24:37Z",
-    "updatedAt": "2026-09-08T09:34:35Z"
+    "updatedAt": "2026-09-09T16:46:34Z"
   },
   {
     "name": "open-source-cs",
@@ -483,12 +501,12 @@
     "topics": [
       "computer-science"
     ],
-    "stars": 23752,
+    "stars": 23754,
     "forks": 3310,
     "isArchived": false,
     "createdAt": "2019-01-19T04:11:33Z",
     "starredAt": "2026-06-28T15:11:50Z",
-    "updatedAt": "2026-09-08T19:15:34Z"
+    "updatedAt": "2026-09-09T15:02:29Z"
   },
   {
     "name": "jt-live-whisper",
@@ -513,12 +531,12 @@
     "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
     "language": "Others",
     "topics": [],
-    "stars": 211388,
-    "forks": 21469,
+    "stars": 211867,
+    "forks": 21492,
     "isArchived": false,
     "createdAt": "2026-01-27T03:53:13Z",
     "starredAt": "2026-06-18T11:19:22Z",
-    "updatedAt": "2026-09-08T21:28:58Z"
+    "updatedAt": "2026-09-09T21:06:12Z"
   },
   {
     "name": "whisper",
@@ -528,12 +546,12 @@
     "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
     "language": "Python",
     "topics": [],
-    "stars": 108759,
-    "forks": 13183,
+    "stars": 108790,
+    "forks": 13187,
     "isArchived": false,
     "createdAt": "2022-09-16T20:02:54Z",
     "starredAt": "2026-06-17T02:30:07Z",
-    "updatedAt": "2026-09-08T20:51:36Z"
+    "updatedAt": "2026-09-09T20:56:05Z"
   },
   {
     "name": "ticket-platform",
@@ -569,12 +587,12 @@
       "threejs",
       "webgpu"
     ],
-    "stars": 649,
-    "forks": 120,
+    "stars": 651,
+    "forks": 121,
     "isArchived": false,
     "createdAt": "2026-02-19T11:59:51Z",
     "starredAt": "2026-05-22T12:59:53Z",
-    "updatedAt": "2026-09-08T20:19:13Z"
+    "updatedAt": "2026-09-09T08:30:36Z"
   },
   {
     "name": "Ceylantify-YouTube",
@@ -604,7 +622,7 @@
       "keras"
     ],
     "stars": 2196,
-    "forks": 677,
+    "forks": 676,
     "isArchived": false,
     "createdAt": "2017-11-07T14:15:00Z",
     "starredAt": "2026-05-02T06:38:28Z",
@@ -632,7 +650,7 @@
       "scaledyolov4"
     ],
     "stars": 22147,
-    "forks": 7846,
+    "forks": 7844,
     "isArchived": false,
     "createdAt": "2016-12-02T11:14:00Z",
     "starredAt": "2026-04-30T10:31:37Z",
@@ -677,7 +695,7 @@
     "language": "C++",
     "topics": [],
     "stars": 777,
-    "forks": 93,
+    "forks": 94,
     "isArchived": false,
     "createdAt": "2014-10-10T03:42:35Z",
     "starredAt": "2026-04-02T10:31:31Z",
@@ -708,12 +726,12 @@
       "powershell",
       "tsforge"
     ],
-    "stars": 189827,
-    "forks": 18090,
+    "stars": 189921,
+    "forks": 18088,
     "isArchived": false,
     "createdAt": "2020-01-12T23:03:34Z",
     "starredAt": "2026-03-11T05:20:43Z",
-    "updatedAt": "2026-09-08T21:27:30Z"
+    "updatedAt": "2026-09-09T21:15:08Z"
   },
   {
     "name": "SuperMarioBros-CSharp-Remake",
@@ -799,7 +817,7 @@
     "isArchived": false,
     "createdAt": "2025-08-18T07:23:20Z",
     "starredAt": "2026-03-02T09:47:22Z",
-    "updatedAt": "2026-09-07T22:57:28Z"
+    "updatedAt": "2026-09-08T22:53:58Z"
   },
   {
     "name": "pixel-agents",
@@ -809,12 +827,12 @@
     "description": "Pixel office.",
     "language": "TypeScript",
     "topics": [],
-    "stars": 9212,
-    "forks": 1498,
+    "stars": 9230,
+    "forks": 1508,
     "isArchived": false,
     "createdAt": "2026-02-08T19:14:11Z",
     "starredAt": "2026-02-26T08:30:10Z",
-    "updatedAt": "2026-09-08T18:56:51Z"
+    "updatedAt": "2026-09-09T18:45:24Z"
   },
   {
     "name": "Apptopia",
@@ -859,12 +877,12 @@
       "postgis",
       "ai"
     ],
-    "stars": 108980,
-    "forks": 13731,
+    "stars": 108999,
+    "forks": 13725,
     "isArchived": false,
     "createdAt": "2019-10-12T05:56:49Z",
     "starredAt": "2026-02-10T02:32:55Z",
-    "updatedAt": "2026-09-08T21:27:13Z"
+    "updatedAt": "2026-09-09T20:29:03Z"
   },
   {
     "name": "cuda-course",
@@ -874,12 +892,12 @@
     "description": "",
     "language": "Cuda",
     "topics": [],
-    "stars": 4029,
+    "stars": 4030,
     "forks": 691,
     "isArchived": false,
     "createdAt": "2024-07-08T14:20:35Z",
     "starredAt": "2026-02-09T22:19:04Z",
-    "updatedAt": "2026-09-08T21:28:20Z"
+    "updatedAt": "2026-09-09T02:06:15Z"
   },
   {
     "name": "jieba",
@@ -889,12 +907,12 @@
     "description": "结巴中文分词",
     "language": "Python",
     "topics": [],
-    "stars": 35144,
-    "forks": 6683,
+    "stars": 35146,
+    "forks": 6682,
     "isArchived": false,
     "createdAt": "2012-09-29T07:52:01Z",
     "starredAt": "2026-02-02T11:26:58Z",
-    "updatedAt": "2026-09-08T15:50:30Z"
+    "updatedAt": "2026-09-09T10:45:31Z"
   },
   {
     "name": "prophet",
@@ -908,12 +926,12 @@
       "r",
       "python"
     ],
-    "stars": 20391,
-    "forks": 4634,
+    "stars": 20393,
+    "forks": 4635,
     "isArchived": false,
     "createdAt": "2016-11-16T01:50:08Z",
     "starredAt": "2026-01-29T09:00:39Z",
-    "updatedAt": "2026-09-08T02:58:14Z"
+    "updatedAt": "2026-09-09T02:58:14Z"
   },
   {
     "name": "openclaw",
@@ -931,12 +949,12 @@
       "molty",
       "openclaw"
     ],
-    "stars": 389234,
-    "forks": 81793,
+    "stars": 389305,
+    "forks": 81817,
     "isArchived": false,
     "createdAt": "2025-11-24T10:16:47Z",
     "starredAt": "2026-01-28T12:53:17Z",
-    "updatedAt": "2026-09-08T21:28:04Z"
+    "updatedAt": "2026-09-09T21:14:39Z"
   },
   {
     "name": "tickets",
@@ -970,12 +988,12 @@
       "python",
       "visualdesign"
     ],
-    "stars": 14094,
+    "stars": 14101,
     "forks": 1254,
     "isArchived": false,
     "createdAt": "2026-01-08T12:29:35Z",
     "starredAt": "2026-01-22T13:44:36Z",
-    "updatedAt": "2026-09-08T17:47:13Z"
+    "updatedAt": "2026-09-09T18:17:58Z"
   },
   {
     "name": "HelloGitHub",
@@ -990,12 +1008,12 @@
       "python",
       "awesome"
     ],
-    "stars": 175495,
-    "forks": 12748,
+    "stars": 175691,
+    "forks": 12757,
     "isArchived": false,
     "createdAt": "2016-05-04T06:24:11Z",
     "starredAt": "2026-01-22T05:00:57Z",
-    "updatedAt": "2026-09-08T21:12:40Z"
+    "updatedAt": "2026-09-09T20:25:32Z"
   },
   {
     "name": "pik_tool",
@@ -1070,12 +1088,12 @@
       "canvas",
       "hacktoberfest"
     ],
-    "stars": 131430,
-    "forks": 15173,
+    "stars": 131512,
+    "forks": 15184,
     "isArchived": false,
     "createdAt": "2020-01-02T01:04:43Z",
     "starredAt": "2025-11-16T15:42:03Z",
-    "updatedAt": "2026-09-08T20:43:36Z"
+    "updatedAt": "2026-09-09T21:07:59Z"
   },
   {
     "name": "NTUT-iSchoolMate",
@@ -1133,12 +1151,12 @@
       "payloads",
       "hacktoberfest"
     ],
-    "stars": 80727,
-    "forks": 17353,
+    "stars": 80756,
+    "forks": 17355,
     "isArchived": false,
     "createdAt": "2016-10-18T07:29:07Z",
     "starredAt": "2025-09-22T12:39:36Z",
-    "updatedAt": "2026-09-08T20:04:58Z"
+    "updatedAt": "2026-09-09T21:08:33Z"
   },
   {
     "name": "dify",
@@ -1168,12 +1186,12 @@
       "skills",
       "deepseek"
     ],
-    "stars": 155065,
-    "forks": 24490,
+    "stars": 155233,
+    "forks": 24510,
     "isArchived": false,
     "createdAt": "2023-04-12T07:40:24Z",
     "starredAt": "2025-09-18T03:21:31Z",
-    "updatedAt": "2026-09-08T21:26:57Z"
+    "updatedAt": "2026-09-09T20:50:19Z"
   },
   {
     "name": "index-tts",
@@ -1191,12 +1209,12 @@
       "voice-clone",
       "zero-shot-tts"
     ],
-    "stars": 23839,
-    "forks": 2849,
+    "stars": 23852,
+    "forks": 2852,
     "isArchived": false,
     "createdAt": "2025-02-06T04:08:05Z",
     "starredAt": "2025-09-14T15:21:24Z",
-    "updatedAt": "2026-09-08T18:34:16Z"
+    "updatedAt": "2026-09-09T17:56:13Z"
   },
   {
     "name": "googletest",
@@ -1206,12 +1224,12 @@
     "description": "GoogleTest - Google Testing and Mocking Framework",
     "language": "C++",
     "topics": [],
-    "stars": 39504,
+    "stars": 39507,
     "forks": 10890,
     "isArchived": false,
     "createdAt": "2015-07-28T15:07:53Z",
     "starredAt": "2025-09-08T03:19:46Z",
-    "updatedAt": "2026-09-08T19:46:07Z"
+    "updatedAt": "2026-09-09T18:37:26Z"
   },
   {
     "name": "awesome-nano-banana",
@@ -1228,12 +1246,12 @@
       "grok",
       "nano-banana"
     ],
-    "stars": 8816,
+    "stars": 8814,
     "forks": 888,
     "isArchived": false,
     "createdAt": "2025-08-30T06:30:46Z",
     "starredAt": "2025-09-03T19:02:43Z",
-    "updatedAt": "2026-09-08T19:40:30Z"
+    "updatedAt": "2026-09-09T12:43:02Z"
   },
   {
     "name": "short-link-tracker",
@@ -1269,12 +1287,12 @@
       "offline-first",
       "privacy"
     ],
-    "stars": 1293,
+    "stars": 1298,
     "forks": 58,
     "isArchived": false,
     "createdAt": "2023-08-05T04:01:03Z",
     "starredAt": "2025-08-18T10:18:55Z",
-    "updatedAt": "2026-09-08T21:23:18Z"
+    "updatedAt": "2026-09-09T15:35:28Z"
   },
   {
     "name": "github-breakout",
@@ -1293,12 +1311,12 @@
       "svg-animations",
       "fortheloveofcode"
     ],
-    "stars": 849,
+    "stars": 848,
     "forks": 92,
     "isArchived": false,
     "createdAt": "2025-07-16T16:05:57Z",
     "starredAt": "2025-08-17T05:49:11Z",
-    "updatedAt": "2026-09-01T07:36:59Z"
+    "updatedAt": "2026-09-09T14:37:41Z"
   },
   {
     "name": "poml",
@@ -1313,12 +1331,12 @@
       "prompt",
       "vscode-extension"
     ],
-    "stars": 4954,
+    "stars": 4953,
     "forks": 256,
     "isArchived": false,
     "createdAt": "2024-11-29T07:43:56Z",
     "starredAt": "2025-08-16T07:05:19Z",
-    "updatedAt": "2026-09-06T13:25:39Z"
+    "updatedAt": "2026-09-09T08:54:17Z"
   },
   {
     "name": "snippai",
@@ -1328,12 +1346,12 @@
     "description": "Snip Anything Solve Everything​",
     "language": "TypeScript",
     "topics": [],
-    "stars": 1849,
+    "stars": 1855,
     "forks": 121,
     "isArchived": false,
     "createdAt": "2024-02-06T04:32:07Z",
     "starredAt": "2025-08-15T04:28:21Z",
-    "updatedAt": "2026-09-08T21:11:29Z"
+    "updatedAt": "2026-09-09T20:34:46Z"
   },
   {
     "name": "deepwiki-open",
@@ -1355,12 +1373,12 @@
       "codex",
       "grok-cli"
     ],
-    "stars": 17916,
-    "forks": 2002,
+    "stars": 17931,
+    "forks": 2001,
     "isArchived": false,
     "createdAt": "2025-04-30T06:01:29Z",
     "starredAt": "2025-08-14T18:06:14Z",
-    "updatedAt": "2026-09-08T12:13:36Z"
+    "updatedAt": "2026-09-09T20:07:22Z"
   },
   {
     "name": "free-for-dev",
@@ -1373,12 +1391,12 @@
       "free-for-developers",
       "awesome-list"
     ],
-    "stars": 136933,
-    "forks": 14396,
+    "stars": 137008,
+    "forks": 14408,
     "isArchived": false,
     "createdAt": "2015-03-18T21:06:26Z",
     "starredAt": "2025-08-13T15:43:14Z",
-    "updatedAt": "2026-09-08T21:28:04Z"
+    "updatedAt": "2026-09-09T20:55:59Z"
   },
   {
     "name": "awesome-python",
@@ -1395,12 +1413,12 @@
       "python-tools",
       "awesome-list"
     ],
-    "stars": 319351,
-    "forks": 28691,
+    "stars": 319559,
+    "forks": 28699,
     "isArchived": false,
     "createdAt": "2014-06-27T21:00:06Z",
     "starredAt": "2025-08-12T03:22:36Z",
-    "updatedAt": "2026-09-08T21:23:10Z"
+    "updatedAt": "2026-09-09T20:58:50Z"
   },
   {
     "name": "vibesort",
@@ -1434,12 +1452,12 @@
       "awesome",
       "custom-agents"
     ],
-    "stars": 38776,
-    "forks": 4909,
+    "stars": 38815,
+    "forks": 4918,
     "isArchived": false,
     "createdAt": "2025-06-11T16:57:39Z",
     "starredAt": "2025-08-10T08:13:45Z",
-    "updatedAt": "2026-09-08T19:34:47Z"
+    "updatedAt": "2026-09-09T21:11:31Z"
   },
   {
     "name": "mcp-chrome",
@@ -1449,12 +1467,12 @@
     "description": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
     "language": "TypeScript",
     "topics": [],
-    "stars": 12394,
-    "forks": 1131,
+    "stars": 12396,
+    "forks": 1130,
     "isArchived": false,
     "createdAt": "2025-06-09T09:07:06Z",
     "starredAt": "2025-08-09T18:12:35Z",
-    "updatedAt": "2026-09-08T12:43:19Z"
+    "updatedAt": "2026-09-09T18:56:37Z"
   },
   {
     "name": "lightway",
@@ -1498,12 +1516,12 @@
       "ai-agents",
       "rules"
     ],
-    "stars": 74076,
+    "stars": 74084,
     "forks": 6733,
     "isArchived": false,
     "createdAt": "2017-10-16T10:12:36Z",
     "starredAt": "2025-08-09T04:29:47Z",
-    "updatedAt": "2026-09-08T20:46:08Z"
+    "updatedAt": "2026-09-09T21:16:37Z"
   },
   {
     "name": "hardtime.nvim",
@@ -1556,12 +1574,12 @@
     "description": "gpt-oss-120b and gpt-oss-20b are two open-weight language models by OpenAI",
     "language": "Python",
     "topics": [],
-    "stars": 20381,
-    "forks": 2148,
+    "stars": 20379,
+    "forks": 2149,
     "isArchived": false,
     "createdAt": "2025-06-23T16:43:33Z",
     "starredAt": "2025-08-06T19:38:43Z",
-    "updatedAt": "2026-09-08T19:54:28Z"
+    "updatedAt": "2026-09-09T16:05:07Z"
   },
   {
     "name": "vscode-copilot-release",
@@ -1612,7 +1630,7 @@
     "isArchived": false,
     "createdAt": "2024-07-17T03:08:39Z",
     "starredAt": "2025-08-02T02:47:04Z",
-    "updatedAt": "2026-09-08T01:09:11Z"
+    "updatedAt": "2026-09-09T01:08:24Z"
   },
   {
     "name": "github-mcp-server",
@@ -1626,12 +1644,12 @@
       "mcp",
       "mcp-server"
     ],
-    "stars": 32813,
-    "forks": 4937,
+    "stars": 32829,
+    "forks": 4939,
     "isArchived": false,
     "createdAt": "2025-03-04T16:42:04Z",
     "starredAt": "2025-07-27T06:31:11Z",
-    "updatedAt": "2026-09-08T20:36:23Z"
+    "updatedAt": "2026-09-09T20:26:53Z"
   },
   {
     "name": "dataease",
@@ -1650,12 +1668,12 @@
       "echarts",
       "kettle"
     ],
-    "stars": 24415,
-    "forks": 4248,
+    "stars": 24418,
+    "forks": 4240,
     "isArchived": false,
     "createdAt": "2021-02-02T04:10:21Z",
     "starredAt": "2025-07-27T02:29:19Z",
-    "updatedAt": "2026-09-08T10:59:47Z"
+    "updatedAt": "2026-09-09T18:00:47Z"
   },
   {
     "name": "rebas.tw-open-data",
@@ -1695,12 +1713,12 @@
     "description": "Model Context Protocol Servers",
     "language": "TypeScript",
     "topics": [],
-    "stars": 90165,
-    "forks": 11597,
+    "stars": 90190,
+    "forks": 11608,
     "isArchived": false,
     "createdAt": "2024-11-19T01:10:17Z",
     "starredAt": "2025-07-22T03:36:46Z",
-    "updatedAt": "2026-09-08T19:35:29Z"
+    "updatedAt": "2026-09-09T21:11:06Z"
   },
   {
     "name": "context-engineering-intro-zh",
@@ -1725,12 +1743,12 @@
     "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
     "language": "Python",
     "topics": [],
-    "stars": 144458,
+    "stars": 144564,
     "forks": 23073,
     "isArchived": false,
     "createdAt": "2025-02-22T17:41:21Z",
     "starredAt": "2025-07-09T04:31:40Z",
-    "updatedAt": "2026-09-08T21:29:05Z"
+    "updatedAt": "2026-09-09T21:17:15Z"
   },
   {
     "name": "TicketPlatform",
@@ -1761,12 +1779,12 @@
       "markdown",
       "hacktoberfest"
     ],
-    "stars": 5203,
-    "forks": 16641,
+    "stars": 5205,
+    "forks": 16642,
     "isArchived": false,
     "createdAt": "2020-09-03T20:29:26Z",
     "starredAt": "2025-06-18T08:01:41Z",
-    "updatedAt": "2026-09-08T21:12:17Z"
+    "updatedAt": "2026-09-09T20:45:44Z"
   },
   {
     "name": "generative_agents",
@@ -1776,12 +1794,12 @@
     "description": "Generative Agents: Interactive Simulacra of Human Behavior",
     "language": "Others",
     "topics": [],
-    "stars": 22075,
+    "stars": 22081,
     "forks": 3095,
     "isArchived": false,
     "createdAt": "2023-07-23T08:26:49Z",
     "starredAt": "2025-06-07T06:03:49Z",
-    "updatedAt": "2026-09-08T20:56:14Z"
+    "updatedAt": "2026-09-09T19:10:34Z"
   },
   {
     "name": "mad-professor-public",
@@ -1791,12 +1809,12 @@
     "description": "An AI companion for reading papers.",
     "language": "JavaScript",
     "topics": [],
-    "stars": 1604,
+    "stars": 1603,
     "forks": 196,
     "isArchived": false,
     "createdAt": "2025-04-18T11:37:57Z",
     "starredAt": "2025-05-03T14:30:15Z",
-    "updatedAt": "2026-09-08T01:33:20Z"
+    "updatedAt": "2026-09-09T13:28:47Z"
   },
   {
     "name": "MyBudgetApp",
@@ -1827,12 +1845,12 @@
       "astro",
       "hacktoberfest"
     ],
-    "stars": 268,
+    "stars": 267,
     "forks": 7,
     "isArchived": false,
     "createdAt": "2024-06-01T01:38:30Z",
     "starredAt": "2025-04-02T09:54:15Z",
-    "updatedAt": "2026-09-05T08:18:56Z"
+    "updatedAt": "2026-09-09T07:02:15Z"
   },
   {
     "name": "MathHub-Backend",
@@ -1937,7 +1955,7 @@
     "isArchived": false,
     "createdAt": "2020-05-29T23:21:52Z",
     "starredAt": "2025-03-01T14:09:28Z",
-    "updatedAt": "2026-06-25T03:44:42Z"
+    "updatedAt": "2026-09-09T18:41:31Z"
   },
   {
     "name": "NTUT-Linear-Algebra-Course",
@@ -1970,12 +1988,12 @@
       "awesome",
       "deepseek"
     ],
-    "stars": 39062,
-    "forks": 4254,
+    "stars": 39070,
+    "forks": 4252,
     "isArchived": false,
     "createdAt": "2024-01-11T02:43:17Z",
     "starredAt": "2025-02-03T11:30:11Z",
-    "updatedAt": "2026-09-08T16:44:29Z"
+    "updatedAt": "2026-09-09T20:26:24Z"
   },
   {
     "name": "DeepSeek-V3",
@@ -1985,12 +2003,12 @@
     "description": "",
     "language": "Python",
     "topics": [],
-    "stars": 104432,
-    "forks": 16735,
+    "stars": 104424,
+    "forks": 16730,
     "isArchived": false,
     "createdAt": "2024-12-26T09:52:40Z",
     "starredAt": "2025-02-03T09:26:25Z",
-    "updatedAt": "2026-09-08T17:13:51Z"
+    "updatedAt": "2026-09-09T19:32:56Z"
   },
   {
     "name": "TREM-Lite",
@@ -2043,12 +2061,12 @@
       "education",
       "logic"
     ],
-    "stars": 5984,
+    "stars": 5986,
     "forks": 592,
     "isArchived": false,
     "createdAt": "2016-06-28T17:40:16Z",
     "starredAt": "2024-12-14T07:21:34Z",
-    "updatedAt": "2026-09-08T19:31:46Z"
+    "updatedAt": "2026-09-09T09:53:20Z"
   },
   {
     "name": "chinese-copywriting-guidelines",
@@ -2068,12 +2086,12 @@
       "documentation",
       "leancloud"
     ],
-    "stars": 15674,
+    "stars": 15675,
     "forks": 1832,
     "isArchived": false,
     "createdAt": "2014-03-17T08:27:16Z",
     "starredAt": "2024-11-21T16:15:48Z",
-    "updatedAt": "2026-09-08T05:49:47Z"
+    "updatedAt": "2026-09-09T09:11:00Z"
   },
   {
     "name": "github-readme-streak-stats",
@@ -2096,12 +2114,12 @@
       "hacktoberfest",
       "php"
     ],
-    "stars": 7127,
-    "forks": 1758,
+    "stars": 7129,
+    "forks": 1763,
     "isArchived": false,
     "createdAt": "2020-10-25T03:44:54Z",
     "starredAt": "2024-11-16T16:52:38Z",
-    "updatedAt": "2026-09-07T17:52:52Z"
+    "updatedAt": "2026-09-09T17:07:09Z"
   },
   {
     "name": "DPIP",
@@ -2211,12 +2229,12 @@
       "readme-stats",
       "hacktoberfest"
     ],
-    "stars": 3649,
+    "stars": 3650,
     "forks": 516,
     "isArchived": false,
     "createdAt": "2020-09-01T18:19:20Z",
     "starredAt": "2024-08-03T03:29:58Z",
-    "updatedAt": "2026-09-08T15:56:28Z"
+    "updatedAt": "2026-09-09T19:31:50Z"
   },
   {
     "name": "ntut-course-web",
@@ -2277,12 +2295,12 @@
       "python-notebook",
       "deploy"
     ],
-    "stars": 43494,
+    "stars": 43503,
     "forks": 3591,
     "isArchived": false,
     "createdAt": "2018-12-19T08:24:04Z",
     "starredAt": "2024-06-07T09:06:14Z",
-    "updatedAt": "2026-09-08T21:10:49Z"
+    "updatedAt": "2026-09-09T19:23:05Z"
   },
   {
     "name": "issues",
@@ -2349,12 +2367,12 @@
     "description": "A local chatbot fine-tuned by bilibili user comments.",
     "language": "Python",
     "topics": [],
-    "stars": 3138,
+    "stars": 3137,
     "forks": 369,
     "isArchived": false,
     "createdAt": "2024-05-06T09:02:52Z",
     "starredAt": "2024-05-14T10:25:45Z",
-    "updatedAt": "2026-09-07T07:07:52Z"
+    "updatedAt": "2026-09-09T06:32:13Z"
   },
   {
     "name": "linux",
@@ -2364,12 +2382,12 @@
     "description": "Linux kernel source tree",
     "language": "C",
     "topics": [],
-    "stars": 247569,
-    "forks": 64444,
+    "stars": 247627,
+    "forks": 64452,
     "isArchived": false,
     "createdAt": "2011-09-04T22:48:12Z",
     "starredAt": "2024-05-14T03:33:31Z",
-    "updatedAt": "2026-09-08T21:27:50Z"
+    "updatedAt": "2026-09-09T21:19:32Z"
   },
   {
     "name": "arduino-songs",
@@ -2379,12 +2397,12 @@
     "description": "",
     "language": "C++",
     "topics": [],
-    "stars": 1495,
+    "stars": 1494,
     "forks": 490,
     "isArchived": false,
     "createdAt": "2018-11-09T02:45:45Z",
     "starredAt": "2024-04-30T03:18:39Z",
-    "updatedAt": "2026-09-07T05:23:46Z"
+    "updatedAt": "2026-09-09T07:01:21Z"
   },
   {
     "name": "GPT-SoVITS",
@@ -2401,12 +2419,12 @@
       "voice-cloneai",
       "voice-cloning"
     ],
-    "stars": 61639,
-    "forks": 6650,
+    "stars": 61661,
+    "forks": 6649,
     "isArchived": false,
     "createdAt": "2024-01-14T18:05:21Z",
     "starredAt": "2024-04-13T02:01:25Z",
-    "updatedAt": "2026-09-08T20:51:35Z"
+    "updatedAt": "2026-09-09T21:14:16Z"
   },
   {
     "name": "TREM-tauri",
@@ -2524,12 +2542,12 @@
       "community",
       "freecodecamp"
     ],
-    "stars": 455237,
-    "forks": 46156,
+    "stars": 455221,
+    "forks": 46146,
     "isArchived": false,
     "createdAt": "2014-12-24T17:49:19Z",
     "starredAt": "2024-03-21T07:09:39Z",
-    "updatedAt": "2026-09-08T20:41:17Z"
+    "updatedAt": "2026-09-09T20:07:25Z"
   },
   {
     "name": "uniqlo",
@@ -2568,12 +2586,12 @@
       "adblock",
       "spotx"
     ],
-    "stars": 22294,
+    "stars": 22307,
     "forks": 1117,
     "isArchived": false,
     "createdAt": "2021-08-11T18:01:20Z",
     "starredAt": "2023-12-02T16:20:56Z",
-    "updatedAt": "2026-09-08T21:08:24Z"
+    "updatedAt": "2026-09-09T21:14:22Z"
   },
   {
     "name": "2023-Robot",
@@ -2605,12 +2623,12 @@
       "gpt-4",
       "gpt-3-5"
     ],
-    "stars": 12396,
-    "forks": 1204,
+    "stars": 12401,
+    "forks": 1207,
     "isArchived": false,
     "createdAt": "2023-02-15T09:48:18Z",
     "starredAt": "2023-03-17T14:55:26Z",
-    "updatedAt": "2026-09-08T21:16:08Z"
+    "updatedAt": "2026-09-09T20:25:23Z"
   },
   {
     "name": "prompts.chat",
@@ -2639,12 +2657,12 @@
       "typescript",
       "prompts-chat"
     ],
-    "stars": 169697,
-    "forks": 21834,
+    "stars": 169799,
+    "forks": 21840,
     "isArchived": false,
     "createdAt": "2022-12-05T13:54:13Z",
     "starredAt": "2023-02-25T14:23:45Z",
-    "updatedAt": "2026-09-08T21:27:50Z"
+    "updatedAt": "2026-09-09T21:19:28Z"
   },
   {
     "name": "-Prototype-AIVTuber",
@@ -2687,12 +2705,12 @@
       "monkeytype",
       "typingtest"
     ],
-    "stars": 20670,
-    "forks": 3314,
+    "stars": 20674,
+    "forks": 3316,
     "isArchived": false,
     "createdAt": "2020-05-14T17:41:09Z",
     "starredAt": "2022-11-19T06:02:05Z",
-    "updatedAt": "2026-09-08T15:04:30Z"
+    "updatedAt": "2026-09-09T19:59:21Z"
   },
   {
     "name": "review-heatmap",
@@ -2781,12 +2799,12 @@
       "translation",
       "stfw"
     ],
-    "stars": 35724,
-    "forks": 5839,
+    "stars": 35732,
+    "forks": 5841,
     "isArchived": false,
     "createdAt": "2015-03-28T16:52:40Z",
     "starredAt": "2022-09-28T15:03:22Z",
-    "updatedAt": "2026-09-08T19:27:12Z"
+    "updatedAt": "2026-09-09T17:46:19Z"
   },
   {
     "name": "github-profile-achievements",
@@ -2804,12 +2822,12 @@
       "achievement",
       "galaxy-brain"
     ],
-    "stars": 5068,
+    "stars": 5067,
     "forks": 451,
     "isArchived": false,
     "createdAt": "2021-04-20T14:56:09Z",
     "starredAt": "2022-09-24T11:24:08Z",
-    "updatedAt": "2026-09-05T19:24:33Z"
+    "updatedAt": "2026-09-09T16:25:33Z"
   },
   {
     "name": "github-trends",
@@ -2825,12 +2843,12 @@
       "github-api",
       "github-wrapped"
     ],
-    "stars": 15974,
+    "stars": 15972,
     "forks": 117,
     "isArchived": true,
     "createdAt": "2020-12-18T03:35:34Z",
     "starredAt": "2022-09-24T05:50:26Z",
-    "updatedAt": "2026-09-07T18:13:19Z"
+    "updatedAt": "2026-09-09T20:00:50Z"
   },
   {
     "name": "TREM-electron",
@@ -2900,12 +2918,12 @@
       "dislikes-count",
       "dislike-button"
     ],
-    "stars": 13744,
-    "forks": 628,
+    "stars": 13758,
+    "forks": 631,
     "isArchived": false,
     "createdAt": "2021-11-15T00:40:50Z",
     "starredAt": "2022-09-10T08:53:26Z",
-    "updatedAt": "2026-09-08T20:32:14Z"
+    "updatedAt": "2026-09-09T20:20:02Z"
   },
   {
     "name": "TW-Security-and-CTF-Resource",
@@ -2924,7 +2942,7 @@
     "isArchived": false,
     "createdAt": "2022-01-30T09:17:43Z",
     "starredAt": "2022-09-07T14:38:42Z",
-    "updatedAt": "2026-09-06T15:22:37Z"
+    "updatedAt": "2026-09-09T10:32:13Z"
   },
   {
     "name": "cms",
@@ -2940,12 +2958,12 @@
       "competitive-programming",
       "competitive-programming-contests"
     ],
-    "stars": 1036,
+    "stars": 1035,
     "forks": 411,
     "isArchived": false,
     "createdAt": "2011-10-03T13:37:02Z",
     "starredAt": "2022-09-04T12:53:14Z",
-    "updatedAt": "2026-09-07T06:44:09Z"
+    "updatedAt": "2026-09-09T18:11:01Z"
   },
   {
     "name": "SITCON-2022-agenda-reference",
@@ -3111,12 +3129,12 @@
       "css-framework",
       "sass"
     ],
-    "stars": 174755,
-    "forks": 78612,
+    "stars": 174758,
+    "forks": 78615,
     "isArchived": false,
     "createdAt": "2011-07-29T21:19:00Z",
     "starredAt": "2022-06-16T12:59:58Z",
-    "updatedAt": "2026-09-08T20:45:02Z"
+    "updatedAt": "2026-09-09T20:48:08Z"
   },
   {
     "name": "ARDU-swerve",
@@ -3149,12 +3167,12 @@
       "markdown",
       "hacktoberfest"
     ],
-    "stars": 24428,
+    "stars": 24429,
     "forks": 8404,
     "isArchived": false,
     "createdAt": "2020-07-15T11:20:48Z",
     "starredAt": "2022-06-09T11:27:12Z",
-    "updatedAt": "2026-09-08T18:15:08Z"
+    "updatedAt": "2026-09-09T19:36:33Z"
   },
   {
     "name": "sql-generator",
@@ -3178,12 +3196,12 @@
       "monaco-editor",
       "vue3"
     ],
-    "stars": 3424,
+    "stars": 3421,
     "forks": 687,
     "isArchived": false,
     "createdAt": "2022-05-12T08:05:38Z",
     "starredAt": "2022-06-08T16:17:54Z",
-    "updatedAt": "2026-08-28T15:26:25Z"
+    "updatedAt": "2026-09-09T18:28:25Z"
   },
   {
     "name": "ChatTriggers",
@@ -3201,12 +3219,12 @@
       "forge",
       "hacktoberfest"
     ],
-    "stars": 201,
+    "stars": 200,
     "forks": 41,
     "isArchived": false,
     "createdAt": "2017-09-12T20:58:45Z",
     "starredAt": "2022-05-20T11:39:02Z",
-    "updatedAt": "2026-08-25T23:11:44Z"
+    "updatedAt": "2026-09-09T07:01:15Z"
   },
   {
     "name": "beautify-github-profile",
@@ -3230,12 +3248,12 @@
       "github-api",
       "markdown"
     ],
-    "stars": 12509,
+    "stars": 12510,
     "forks": 658,
     "isArchived": false,
     "createdAt": "2022-05-13T13:39:42Z",
     "starredAt": "2022-05-16T15:00:59Z",
-    "updatedAt": "2026-09-08T17:45:16Z"
+    "updatedAt": "2026-09-09T19:48:53Z"
   },
   {
     "name": "copilot-docs",
@@ -3245,12 +3263,12 @@
     "description": "Documentation for GitHub Copilot",
     "language": "Others",
     "topics": [],
-    "stars": 23198,
+    "stars": 23197,
     "forks": 2365,
     "isArchived": true,
     "createdAt": "2021-10-23T16:07:04Z",
     "starredAt": "2022-04-30T11:45:15Z",
-    "updatedAt": "2026-09-08T09:35:35Z"
+    "updatedAt": "2026-09-09T07:01:55Z"
   },
   {
     "name": "github-readme-activity-graph",
@@ -3269,12 +3287,12 @@
       "hacktoberfest2021",
       "hacktoberfest"
     ],
-    "stars": 2330,
-    "forks": 1191,
+    "stars": 2329,
+    "forks": 1197,
     "isArchived": false,
     "createdAt": "2020-11-10T11:21:45Z",
     "starredAt": "2022-04-26T01:26:27Z",
-    "updatedAt": "2026-09-07T14:31:00Z"
+    "updatedAt": "2026-09-09T11:04:26Z"
   },
   {
     "name": "social-distancing-android",
@@ -3306,12 +3324,12 @@
       "100joursdecode",
       "habit-tracking"
     ],
-    "stars": 7036,
-    "forks": 11566,
+    "stars": 7037,
+    "forks": 11565,
     "isArchived": false,
     "createdAt": "2016-06-22T02:25:16Z",
     "starredAt": "2022-04-09T02:02:36Z",
-    "updatedAt": "2026-09-04T09:51:24Z"
+    "updatedAt": "2026-09-09T17:20:04Z"
   },
   {
     "name": "awesome-cs-training",
