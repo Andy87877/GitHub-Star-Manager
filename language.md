@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **169** 個公開 Star；資料快照：`2026-09-11 05:16:24 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **170** 個公開 Star；資料快照：`2026-09-12 05:24:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -18,7 +18,7 @@
 - [HTML（4）](#language-html)
 - [Java（6）](#language-java)
 - [JavaScript（16）](#language-javascript)
-- [Jupyter Notebook（4）](#language-jupyter-notebook)
+- [Jupyter Notebook（5）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
@@ -150,6 +150,7 @@
 
 ## Jupyter Notebook
 
+- [CalvinXKY/InfraTech](https://github.com/CalvinXKY/InfraTech) — 分享AI Infra知识&代码练习：PyTorch、vLLM/SGLang、slime/vime框架入门⚡️、性能加速🚀、大模型基础🧠、AI软硬件🔧等
 - [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners) — 12 Weeks, 24 Lessons, AI for All!
 - [Infrasys-AI/AISystem](https://github.com/Infrasys-AI/AISystem) — AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术
 - [erhwenkuo/deep-learning-with-keras-notebooks](https://github.com/erhwenkuo/deep-learning-with-keras-notebooks) — Jupyter notebooks for using & learning Keras
