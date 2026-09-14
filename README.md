@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **170** 個公開 Star；資料快照：`2026-09-14 05:11:19 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **170** 個公開 Star；資料快照：`2026-09-15 06:10:26 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -26,16 +26,16 @@ pie title 熱門 Topic 覆蓋 Top 10
 
 ```mermaid
 pie title 程式語言分佈 Top 10
-    "Python" : 40
-    "TypeScript" : 28
+    "Python" : 39
+    "TypeScript" : 30
     "Others" : 23
     "JavaScript" : 16
     "C++" : 8
     "Java" : 6
     "Jupyter Notebook" : 5
-    "Vue" : 5
     "Dart" : 4
     "HTML" : 4
+    "Vue" : 4
 ```
 
 ### 熱門 Topic 涵蓋專案進度條
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `547,019` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `455,396` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `389,614` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `367,084` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `320,426` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `248,813` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `212,764` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `190,455` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `176,368` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,784` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `547,250` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `455,433` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `389,692` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `367,214` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `320,642` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `249,018` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `212,982` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `190,605` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `176,554` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,801` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
 
 ## 資料即時性與數據分析
 

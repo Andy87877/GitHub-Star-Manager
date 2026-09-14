@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **170** 個公開 Star；資料快照：`2026-09-14 05:11:19 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **170** 個公開 Star；資料快照：`2026-09-15 06:10:26 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -27,12 +27,12 @@
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
 - [Processing（1）](#language-processing)
-- [Python（40）](#language-python)
+- [Python（39）](#language-python)
 - [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（28）](#language-typescript)
+- [TypeScript（30）](#language-typescript)
 - [Verilog（1）](#language-verilog)
-- [Vue（5）](#language-vue)
+- [Vue（4）](#language-vue)
 
 ---
 
@@ -258,7 +258,6 @@
 - [abyesilyurt/vibesort](https://github.com/abyesilyurt/vibesort) — GPT powered sorting using structured output
 - [cgoldberg/python-unittest-tutorial](https://github.com/cgoldberg/python-unittest-tutorial) — Python tutorial - unittest module
 - [openai/gpt-oss](https://github.com/openai/gpt-oss) — gpt-oss-120b and gpt-oss-20b are two open-weight language models by OpenAI
-- [anthropics/claude-code](https://github.com/anthropics/claude-code) — Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
 - [Siestea/Pygame-chess](https://github.com/Siestea/Pygame-chess)
 - [YuCheng21/zuvio-rollcall](https://github.com/YuCheng21/zuvio-rollcall) — Zuvio 自動點名程式
 - [XiangxinKong/manhuagui-downloader](https://github.com/XiangxinKong/manhuagui-downloader) — 漫画柜下载器，带图形界面，纯python。已打包exe，可直接运行
@@ -317,9 +316,11 @@
 - [COSCUP/2025](https://github.com/COSCUP/2025) — Official page of COSCUP x RubyConf Taiwan 2025
 - [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — Model Context Protocol Servers
 - [GitYCC/context-engineering-intro-zh](https://github.com/GitYCC/context-engineering-intro-zh) — Context engineering 是新的 Vibe Coding —— 它是讓 AI 程式助理真正發揮作用的關鍵方式。Claude Code 是目前最適合做這件事的工具，所以這個 repo 會以它為核心，但其實你也可以把這個策略應用在任何 AI 程式助理上！
+- [anthropics/claude-code](https://github.com/anthropics/claude-code) — Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
 - [IaintHamburger/MathHub-Backend](https://github.com/IaintHamburger/MathHub-Backend) — MathHub Project
 - [Vincent550102/nPassword](https://github.com/Vincent550102/nPassword) — A Windows AD Password Manager for ATTACKER(Redteamer/Pentester).
 - [vn7n24fzkq/github-profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) — A tool to generate your GitHub summary card for profile README
+- [gnehs/ntut-course-web](https://github.com/gnehs/ntut-course-web) — 這裡是北科課程好朋友，提供使用者以輕鬆的方式查詢與檢視課程資訊！
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
 - [monkeytypegame/monkeytype](https://github.com/monkeytypegame/monkeytype) — The most customizable typing website with a minimalistic design and a ton of features. Test yourself in various modes, track your progress and improve your speed.
 - [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) — 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
@@ -337,7 +338,6 @@
 
 - [ntutselab/Database-System-Example-Project](https://github.com/ntutselab/Database-System-Example-Project)
 - [scott0127/pik_tool](https://github.com/scott0127/pik_tool)
-- [gnehs/ntut-course-web](https://github.com/gnehs/ntut-course-web) — 這裡是北科課程好朋友，提供使用者以輕鬆的方式查詢與檢視課程資訊！
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) `Archived` — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
 
