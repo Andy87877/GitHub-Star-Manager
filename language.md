@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **170** 個公開 Star；資料快照：`2026-09-18 05:49:41 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **170** 個公開 Star；資料快照：`2026-09-19 05:19:58 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -242,7 +242,7 @@
 - [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [robotframework/robotframework](https://github.com/robotframework/robotframework) — Generic automation framework for acceptance testing and RPA
-- [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具集：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
+- [jasoncheng7115/jt-live-whisper](https://github.com/jasoncheng7115/jt-live-whisper) — 100% 全地端 AI 語音工具箱：即時轉錄、即時翻譯、錄音檔批次處理、講者辨識、會議摘要，所有 AI 模型皆在自有設備上運行，資料不經過任何雲端服務。
 - [openai/whisper](https://github.com/openai/whisper) — Robust Speech Recognition via Large-Scale Weak Supervision
 - [XWJWPIY/traffic_estimator](https://github.com/XWJWPIY/traffic_estimator)
 - [doggy8088/Apptopia](https://github.com/doggy8088/Apptopia) `Archived` — 用 Issue 許願，我會用 AI 幫你完成實作
