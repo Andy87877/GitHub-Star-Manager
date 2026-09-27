@@ -1,8 +1,8 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-09-26T21:40:28+00:00",
-  "formattedUpdatedAt": "2026-09-27 05:40:28 (UTC+8)",
+  "generatedAt": "2026-09-27T21:42:47+00:00",
+  "formattedUpdatedAt": "2026-09-28 05:42:47 (UTC+8)",
   "repositoryCount": 171,
   "previousRepositoryCount": 171,
   "deltaCount": 0,
@@ -17,8 +17,8 @@
   "topicOtherCategory": "other",
   "analytics": {
     "totalCount": 171,
-    "totalStars": 5631293,
-    "totalForks": 841927,
+    "totalStars": 5633790,
+    "totalForks": 842723,
     "archivedCount": 10,
     "activeCount": 161,
     "languageBreakdown": {
@@ -27,16 +27,16 @@
         "percentage": 22.8
       },
       "TypeScript": {
-        "count": 31,
-        "percentage": 18.1
+        "count": 32,
+        "percentage": 18.7
       },
       "Others": {
         "count": 23,
         "percentage": 13.5
       },
       "JavaScript": {
-        "count": 16,
-        "percentage": 9.4
+        "count": 15,
+        "percentage": 8.8
       },
       "C++": {
         "count": 8,

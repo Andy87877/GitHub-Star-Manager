@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **171** 個公開 Star；資料快照：`2026-09-27 05:40:28 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **171** 個公開 Star；資料快照：`2026-09-28 05:42:47 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -17,7 +17,7 @@
 - [Go（3）](#language-go)
 - [HTML（4）](#language-html)
 - [Java（6）](#language-java)
-- [JavaScript（16）](#language-javascript)
+- [JavaScript（15）](#language-javascript)
 - [Jupyter Notebook（5）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
 - [Lua（1）](#language-lua)
@@ -30,7 +30,7 @@
 - [Python（39）](#language-python)
 - [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（31）](#language-typescript)
+- [TypeScript（32）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -137,7 +137,6 @@
 - [github/awesome-copilot](https://github.com/github/awesome-copilot) — Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
 - [gnehs/userscripts](https://github.com/gnehs/userscripts) — 勝勝寫的 userscript 都在這邊
 - [LYiHub/mad-professor-public](https://github.com/LYiHub/mad-professor-public) — An AI companion for reading papers.
-- [ExpTechTW/TREM-Lite](https://github.com/ExpTechTW/TREM-Lite) — Taiwan Real-time Earthquake Monitoring (Lite)
 - [ExpTechTW/TREM-Lite-v2](https://github.com/ExpTechTW/TREM-Lite-v2) `Archived` — Taiwan Real-time Earthquake Monitoring Lite ( 臺灣即時地震監測 輕量版 )
 - [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) `Archived` — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
 - [tobspr-games/shapez.io](https://github.com/tobspr-games/shapez.io) — shapez is an open source base building game on Steam inspired by factorio!
@@ -238,7 +237,7 @@
 ## Python
 
 - [rossant/awesome-math](https://github.com/rossant/awesome-math) — A curated list of awesome mathematics resources
-- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 73 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
 - [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [robotframework/robotframework](https://github.com/robotframework/robotframework) — Generic automation framework for acceptance testing and RPA
@@ -320,6 +319,7 @@
 - [anthropics/claude-code](https://github.com/anthropics/claude-code) — Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
 - [IaintHamburger/MathHub-Backend](https://github.com/IaintHamburger/MathHub-Backend) — MathHub Project
 - [Vincent550102/nPassword](https://github.com/Vincent550102/nPassword) — A Windows AD Password Manager for ATTACKER(Redteamer/Pentester).
+- [ExpTechTW/TREM-Lite](https://github.com/ExpTechTW/TREM-Lite) — Taiwan Real-time Earthquake Monitoring (Lite)
 - [vn7n24fzkq/github-profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) — A tool to generate your GitHub summary card for profile README
 - [gnehs/ntut-course-web](https://github.com/gnehs/ntut-course-web) — 這裡是北科課程好朋友，提供使用者以輕鬆的方式查詢與檢視課程資訊！
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
