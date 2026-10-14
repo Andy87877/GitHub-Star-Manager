@@ -1,42 +1,42 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-10-13T23:08:55+00:00",
-  "formattedUpdatedAt": "2026-10-14 07:08:55 (UTC+8)",
-  "repositoryCount": 171,
+  "generatedAt": "2026-10-14T21:59:07+00:00",
+  "formattedUpdatedAt": "2026-10-15 05:59:07 (UTC+8)",
+  "repositoryCount": 172,
   "previousRepositoryCount": 171,
-  "deltaCount": 0,
-  "formattedDelta": "0",
+  "deltaCount": 1,
+  "formattedDelta": "+1",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 568,
+  "totalTopicCount": 581,
   "focusedTopicCount": 30,
   "otherRepositoryCount": 103,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
-    "totalCount": 171,
-    "totalStars": 5675206,
-    "totalForks": 853723,
+    "totalCount": 172,
+    "totalStars": 5917716,
+    "totalForks": 913944,
     "archivedCount": 10,
-    "activeCount": 161,
+    "activeCount": 162,
     "languageBreakdown": {
       "Python": {
         "count": 39,
-        "percentage": 22.8
+        "percentage": 22.7
       },
       "TypeScript": {
-        "count": 31,
-        "percentage": 18.1
+        "count": 32,
+        "percentage": 18.6
       },
       "Others": {
         "count": 23,
-        "percentage": 13.5
+        "percentage": 13.4
       },
       "JavaScript": {
         "count": 16,
-        "percentage": 9.4
+        "percentage": 9.3
       },
       "C++": {
         "count": 8,
@@ -64,27 +64,27 @@
       },
       "C#": {
         "count": 3,
-        "percentage": 1.8
+        "percentage": 1.7
       },
       "Go": {
         "count": 3,
-        "percentage": 1.8
+        "percentage": 1.7
       },
       "Kotlin": {
         "count": 3,
-        "percentage": 1.8
+        "percentage": 1.7
       },
       "MDX": {
         "count": 3,
-        "percentage": 1.8
+        "percentage": 1.7
       },
       "PHP": {
         "count": 3,
-        "percentage": 1.8
+        "percentage": 1.7
       },
       "Rust": {
         "count": 3,
-        "percentage": 1.8
+        "percentage": 1.7
       },
       "C": {
         "count": 2,
@@ -149,6 +149,10 @@
         "count": 8
       },
       {
+        "topic": "llm",
+        "count": 7
+      },
+      {
         "topic": "openai",
         "count": 7
       },
@@ -165,31 +169,27 @@
         "count": 6
       },
       {
-        "topic": "llm",
+        "topic": "markdown",
         "count": 6
       },
       {
-        "topic": "markdown",
-        "count": 6
+        "topic": "mcp",
+        "count": 5
       },
       {
         "topic": "trem",
         "count": 5
       },
       {
-        "topic": "deep-learning",
+        "topic": "ai-agents",
         "count": 4
       },
       {
-        "topic": "earthquake",
+        "topic": "cli",
         "count": 4
       },
       {
-        "topic": "earthquake-early-warning",
-        "count": 4
-      },
-      {
-        "topic": "mcp",
+        "topic": "codex",
         "count": 4
       }
     ],
@@ -198,7 +198,7 @@
       "2023": 5,
       "2024": 27,
       "2025": 51,
-      "2026": 55
+      "2026": 56
     },
     "createdByYear": {
       "2011": 3,
@@ -216,7 +216,7 @@
       "2023": 15,
       "2024": 24,
       "2025": 29,
-      "2026": 16
+      "2026": 17
     }
   }
 }

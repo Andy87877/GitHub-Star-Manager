@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **171** 個公開 Star；資料快照：`2026-10-14 07:08:55 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **172** 個公開 Star；資料快照：`2026-10-15 05:59:07 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -14,11 +14,11 @@ pie title 熱門 Topic 覆蓋 Top 10
     "hacktoberfest" : 11
     "python" : 9
     "github" : 8
+    "llm" : 7
     "openai" : 7
     "awesome" : 6
     "awesome-list" : 6
     "javascript" : 6
-    "llm" : 6
     "markdown" : 6
 ```
 
@@ -27,7 +27,7 @@ pie title 熱門 Topic 覆蓋 Top 10
 ```mermaid
 pie title 程式語言分佈 Top 10
     "Python" : 39
-    "TypeScript" : 31
+    "TypeScript" : 32
     "Others" : 23
     "JavaScript" : 16
     "C++" : 8
@@ -44,29 +44,29 @@ pie title 程式語言分佈 Top 10
 | :--- | :---: | :--- |
 | **#ai** | 11 筆 (6.4%) | `███` |
 | **#hacktoberfest** | 11 筆 (6.4%) | `███` |
-| **#python** | 9 筆 (5.3%) | `██` |
+| **#python** | 9 筆 (5.2%) | `██` |
 | **#github** | 8 筆 (4.7%) | `██` |
+| **#llm** | 7 筆 (4.1%) | `██` |
 | **#openai** | 7 筆 (4.1%) | `██` |
 | **#awesome** | 6 筆 (3.5%) | `█` |
 | **#awesome-list** | 6 筆 (3.5%) | `█` |
 | **#javascript** | 6 筆 (3.5%) | `█` |
-| **#llm** | 6 筆 (3.5%) | `█` |
 | **#markdown** | 6 筆 (3.5%) | `█` |
 
 ### ⭐ 收藏星數最高 Top 10 精選
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `553,050` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `457,002` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `391,902` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `369,316` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `327,173` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `251,878` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `219,485` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `194,305` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `181,885` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | **MDX** | `174,833` | The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `553,241` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `457,061` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `392,021` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `369,395` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `327,437` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `251,833` | Linux kernel source tree |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `239,473` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `219,792` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `194,470` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `182,144` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **568** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**103** 個 repositories）。
+- 原始資料共有 **581** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**103** 個 repositories）。
 
 ## 特別感謝
 
@@ -115,32 +115,32 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [hacktoberfest（11）](#topic-hacktoberfest)
 - [python（9）](#topic-python)
 - [github（8）](#topic-github)
+- [llm（7）](#topic-llm)
 - [openai（7）](#topic-openai)
 - [awesome（6）](#topic-awesome)
 - [awesome-list（6）](#topic-awesome-list)
 - [javascript（6）](#topic-javascript)
-- [llm（6）](#topic-llm)
 - [markdown（6）](#topic-markdown)
+- [mcp（5）](#topic-mcp)
 - [trem（5）](#topic-trem)
+- [ai-agents（4）](#topic-ai-agents)
+- [cli（4）](#topic-cli)
+- [codex（4）](#topic-codex)
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
 - [earthquake-early-warning（4）](#topic-earthquake-early-warning)
-- [mcp（4）](#topic-mcp)
 - [nodejs（4）](#topic-nodejs)
 - [ntut（4）](#topic-ntut)
 - [profile-readme（4）](#topic-profile-readme)
 - [readme（4）](#topic-readme)
 - [taiwan（4）](#topic-taiwan)
 - [typescript（4）](#topic-typescript)
+- [agent-skills（3）](#topic-agent-skills)
 - [ai-agent（3）](#topic-ai-agent)
-- [ai-agents（3）](#topic-ai-agents)
 - [chatgpt（3）](#topic-chatgpt)
 - [claude（3）](#topic-claude)
-- [cli（3）](#topic-cli)
-- [codex（3）](#topic-codex)
 - [computer-science（3）](#topic-computer-science)
 - [cross-platform（3）](#topic-cross-platform)
-- [css（3）](#topic-css)
 - [other（103）](#topic-other)
 
 ---
@@ -204,6 +204,18 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) — 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
 - [rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile) — This repository will assist you in creating a more beautiful and appealing github profile, and you will have access to a comprehensive range of tools and tutorials for beautifying your github profile. 🪄 ⭐
 
+<a id="topic-llm"></a>
+
+## llm
+
+- [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
+- [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
+- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
+- [microsoft/poml](https://github.com/microsoft/poml) — Prompt Orchestration Markup Language
+- [MiuLab/Taiwan-LLM](https://github.com/MiuLab/Taiwan-LLM) — Traditional Mandarin LLMs for Taiwan
+- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
+
 <a id="topic-openai"></a>
 
 ## openai
@@ -249,17 +261,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 - [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
 
-<a id="topic-llm"></a>
-
-## llm
-
-- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
-- [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
-- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
-- [microsoft/poml](https://github.com/microsoft/poml) — Prompt Orchestration Markup Language
-- [MiuLab/Taiwan-LLM](https://github.com/MiuLab/Taiwan-LLM) — Traditional Mandarin LLMs for Taiwan
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-
 <a id="topic-markdown"></a>
 
 ## markdown
@@ -271,6 +272,16 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [rahuldkjain/github-profile-readme-generator](https://github.com/rahuldkjain/github-profile-readme-generator) — 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI.
 - [rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile) — This repository will assist you in creating a more beautiful and appealing github profile, and you will have access to a comprehensive range of tools and tutorials for beautifying your github profile. 🪄 ⭐
 
+<a id="topic-mcp"></a>
+
+## mcp
+
+- [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
+- [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
+- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
+- [github/github-mcp-server](https://github.com/github/github-mcp-server) — GitHub's official MCP Server
+
 <a id="topic-trem"></a>
 
 ## trem
@@ -280,6 +291,33 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [ExpTechTW/TREM-Lite-v2](https://github.com/ExpTechTW/TREM-Lite-v2) — Taiwan Real-time Earthquake Monitoring Lite ( 臺灣即時地震監測 輕量版 )
 - [ExpTechTW/TREM-electron](https://github.com/ExpTechTW/TREM-electron) — Taiwan Real-time Earthquake Monitoring ( 臺灣即時地震監測 )
+
+<a id="topic-ai-agents"></a>
+
+## ai-agents
+
+- [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems
+- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
+
+<a id="topic-cli"></a>
+
+## cli
+
+- [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
+- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
+- [joelibaceta/video-to-ascii](https://github.com/joelibaceta/video-to-ascii) — It is a simple python package to play videos in the terminal using characters as pixels
+
+<a id="topic-codex"></a>
+
+## codex
+
+- [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
+- [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open) — Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme
 
 <a id="topic-deep-learning"></a>
 
@@ -307,15 +345,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [ExpTechTW/TREM-Lite-v2](https://github.com/ExpTechTW/TREM-Lite-v2) — Taiwan Real-time Earthquake Monitoring Lite ( 臺灣即時地震監測 輕量版 )
 - [ExpTechTW/TREM-electron](https://github.com/ExpTechTW/TREM-electron) — Taiwan Real-time Earthquake Monitoring ( 臺灣即時地震監測 )
-
-<a id="topic-mcp"></a>
-
-## mcp
-
-- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
-- [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
-- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
-- [github/github-mcp-server](https://github.com/github/github-mcp-server) — GitHub's official MCP Server
 
 <a id="topic-nodejs"></a>
 
@@ -371,20 +400,20 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 - [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
 
+<a id="topic-agent-skills"></a>
+
+## agent-skills
+
+- [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [github/awesome-copilot](https://github.com/github/awesome-copilot) — Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.
+
 <a id="topic-ai-agent"></a>
 
 ## ai-agent
 
 - [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
-- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
-
-<a id="topic-ai-agents"></a>
-
-## ai-agents
-
-- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
-- [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems
 - [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
 
 <a id="topic-chatgpt"></a>
@@ -403,22 +432,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
-<a id="topic-cli"></a>
-
-## cli
-
-- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
-- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
-- [joelibaceta/video-to-ascii](https://github.com/joelibaceta/video-to-ascii) — It is a simple python package to play videos in the terminal using characters as pixels
-
-<a id="topic-codex"></a>
-
-## codex
-
-- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
-- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
-- [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open) — Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme
-
 <a id="topic-computer-science"></a>
 
 ## computer-science
@@ -434,14 +447,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ntut-open-source-club/practical-tools-for-simple-design](https://github.com/ntut-open-source-club/practical-tools-for-simple-design) — A Game Framework for NTUT OOPL Course
 - [ExpTechTW/TREM-Lite](https://github.com/ExpTechTW/TREM-Lite) — Taiwan Real-time Earthquake Monitoring (Lite)
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
-
-<a id="topic-css"></a>
-
-## css
-
-- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
-- [sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) — Chinese copywriting guidelines for better written communication／中文文案排版指北
-- [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
 <a id="topic-other"></a>
 
