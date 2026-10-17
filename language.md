@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **172** 個公開 Star；資料快照：`2026-10-17 05:48:27 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **173** 個公開 Star；資料快照：`2026-10-18 05:06:54 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -20,6 +20,7 @@
 - [JavaScript（16）](#language-javascript)
 - [Jupyter Notebook（5）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
+- [Lean（1）](#language-lean)
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
 - [MDX（3）](#language-mdx)
@@ -163,6 +164,12 @@
 - [mahlernim/google-timeline-visualizer](https://github.com/mahlernim/google-timeline-visualizer) — Visualize your year in travel using your Google Location History (Timeline) data
 - [ChatTriggers/ChatTriggers](https://github.com/ChatTriggers/ChatTriggers) — A framework for Minecraft Forge that allows for client modifications to be scripted in JavaScript
 - [ailabstw/social-distancing-android](https://github.com/ailabstw/social-distancing-android) — Taiwan Social Distancing App - Android
+
+<a id="language-lean"></a>
+
+## Lean
+
+- [openai/math](https://github.com/openai/math)
 
 <a id="language-lua"></a>
 

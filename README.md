@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **172** 個公開 Star；資料快照：`2026-10-17 05:48:27 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **173** 個公開 Star；資料快照：`2026-10-18 05:06:54 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -45,9 +45,9 @@ pie title 程式語言分佈 Top 10
 | **#ai** | 11 筆 (6.4%) | `███` |
 | **#hacktoberfest** | 11 筆 (6.4%) | `███` |
 | **#python** | 9 筆 (5.2%) | `██` |
-| **#github** | 8 筆 (4.7%) | `██` |
-| **#llm** | 7 筆 (4.1%) | `██` |
-| **#openai** | 7 筆 (4.1%) | `██` |
+| **#github** | 8 筆 (4.6%) | `██` |
+| **#llm** | 7 筆 (4.0%) | `██` |
+| **#openai** | 7 筆 (4.0%) | `██` |
 | **#awesome** | 6 筆 (3.5%) | `█` |
 | **#awesome-list** | 6 筆 (3.5%) | `█` |
 | **#javascript** | 6 筆 (3.5%) | `█` |
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `553,784` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `457,181` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `392,192` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `369,559` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `327,944` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `289,792` | Reverse engineer anything with agents, from app behavior down to native binaries. |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `252,162` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `220,348` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `194,723` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `182,516` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `554,107` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `457,312` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `392,282` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `369,695` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `328,194` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `306,146` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `252,278` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `220,593` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `194,834` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `182,716` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **581** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**103** 個 repositories）。
+- 原始資料共有 **581** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**104** 個 repositories）。
 
 ## 特別感謝
 
@@ -141,7 +141,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [claude（3）](#topic-claude)
 - [computer-science（3）](#topic-computer-science)
 - [cross-platform（3）](#topic-cross-platform)
-- [other（103）](#topic-other)
+- [other（104）](#topic-other)
 
 ---
 
@@ -452,6 +452,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## other
 
+- [openai/math](https://github.com/openai/math)
 - [CalvinXKY/InfraTech](https://github.com/CalvinXKY/InfraTech) — 分享AI Infra知识&代码练习：PyTorch、vLLM/SGLang、slime/vime框架入门⚡️、性能加速🚀、大模型基础🧠、AI软硬件🔧等
 - [ntutselab/Database-System-Example-Project](https://github.com/ntutselab/Database-System-Example-Project)
 - [NTUT-NPC/tattoo](https://github.com/NTUT-NPC/tattoo) — Project Tattoo: A modern reimplementation of TAT
