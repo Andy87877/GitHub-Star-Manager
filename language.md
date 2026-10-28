@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **173** 個公開 Star；資料快照：`2026-10-28 06:42:56 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **173** 個公開 Star；資料快照：`2026-10-29 06:54:23 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -24,14 +24,14 @@
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
 - [MDX（3）](#language-mdx)
-- [Others（24）](#language-others)
+- [Others（23）](#language-others)
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
 - [Processing（1）](#language-processing)
 - [Python（40）](#language-python)
 - [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（31）](#language-typescript)
+- [TypeScript（32）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -197,7 +197,6 @@
 
 - [Gatjuat-Wicteat-Riek/clean-code-book](https://github.com/Gatjuat-Wicteat-Riek/clean-code-book) — Here is the PDF version of the book "Clean Code" by Robert C. Martin. A must read books for upcoming (and senior) developers who want to learn how to write masterpieces and not just lines of code :)
 - [little-brother/dcim-list](https://github.com/little-brother/dcim-list) — List of DCIM (data center infrastructure management) software
-- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) — A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
 - [cyizhuo/CIFAR-100-dataset](https://github.com/cyizhuo/CIFAR-100-dataset) — CIFAR-100 dataset by classes folder
@@ -245,7 +244,7 @@
 ## Python
 
 - [rossant/awesome-math](https://github.com/rossant/awesome-math) — A curated list of awesome mathematics resources
-- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 77 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
 - [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [robotframework/robotframework](https://github.com/robotframework/robotframework) — Generic automation framework for acceptance testing and RPA
@@ -254,7 +253,7 @@
 - [XWJWPIY/traffic_estimator](https://github.com/XWJWPIY/traffic_estimator)
 - [doggy8088/Apptopia](https://github.com/doggy8088/Apptopia) `Archived` — 用 Issue 許願，我會用 AI 幫你完成實作
 - [fxsjy/jieba](https://github.com/fxsjy/jieba) — 结巴中文分词
-- [facebook/prophet](https://github.com/facebook/prophet) — Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
+- [meta/prophet](https://github.com/meta/prophet) — Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
 - [originalankur/maptoposter](https://github.com/originalankur/maptoposter) — Transform your favorite cities into beautiful, minimalist designs. MapToPoster lets you create and export visually striking map posters with code.
 - [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) — :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.
 - [gab61201/NTUT-iSchoolMate](https://github.com/gab61201/NTUT-iSchoolMate)
@@ -309,6 +308,7 @@
 - [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 - [opengeos/GeoLibre](https://github.com/opengeos/GeoLibre) — A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.
 - [microsoft/clarity](https://github.com/microsoft/clarity) — A behavioral analytics library that uses dom mutations and user interactions to generate aggregated insights.
+- [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
 - [arturitu/the-delegation](https://github.com/arturitu/the-delegation) — A no-code 3D playground to explore, design, and interact with Agentic AI systems
 - [NTUT-NPC/ntut-sso-plus](https://github.com/NTUT-NPC/ntut-sso-plus) — 北科校園入口 Chrome / Firefox 擴充功能
 - [pixel-agents-hq/pixel-agents](https://github.com/pixel-agents-hq/pixel-agents) — Pixel office.
