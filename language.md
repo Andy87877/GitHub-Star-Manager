@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **173** 個公開 Star；資料快照：`2026-11-01 05:59:27 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **173** 個公開 Star；資料快照：`2026-11-02 06:30:29 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -15,7 +15,7 @@
 - [Cuda（1）](#language-cuda)
 - [Dart（4）](#language-dart)
 - [Go（3）](#language-go)
-- [HTML（4）](#language-html)
+- [HTML（3）](#language-html)
 - [Java（6）](#language-java)
 - [JavaScript（15）](#language-javascript)
 - [Jupyter Notebook（5）](#language-jupyter-notebook)
@@ -23,7 +23,7 @@
 - [Lean（1）](#language-lean)
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
-- [MDX（3）](#language-mdx)
+- [MDX（4）](#language-mdx)
 - [Others（23）](#language-others)
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
@@ -112,7 +112,6 @@
 
 - [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) — A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 - [bschen410/Coding](https://github.com/bschen410/Coding) — 一堆不想整理的程式碼
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 - [globaldothealth/monkeypox](https://github.com/globaldothealth/monkeypox) — Mpox 2022 repository
 
 <a id="language-java"></a>
@@ -189,6 +188,7 @@
 
 - [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
 - [cloudflare/cloudflare-docs](https://github.com/cloudflare/cloudflare-docs) — Cloudflare’s documentation
+- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 - [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
 <a id="language-others"></a>
