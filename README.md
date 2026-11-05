@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **173** 個公開 Star；資料快照：`2026-11-05 08:00:23 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **173** 個公開 Star；資料快照：`2026-11-06 07:52:23 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `559,845` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `458,551` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `430,795` | Reverse engineer anything with agents, from app behavior down to native binaries. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `393,916` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `371,271` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `332,524` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `254,406` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `229,493` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `197,684` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `186,883` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `560,131` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `458,609` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `434,253` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `393,984` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `371,346` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `332,755` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `254,513` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `229,870` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `197,790` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `187,088` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
