@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **173** 個公開 Star；資料快照：`2026-11-11 07:48:20 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **173** 個公開 Star；資料快照：`2026-11-12 09:07:35 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -244,7 +244,7 @@
 ## Python
 
 - [rossant/awesome-math](https://github.com/rossant/awesome-math) — A curated list of awesome mathematics resources
-- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — 77 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill…
+- [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — Make games with your AI coding agent: 79 game-dev skills and a router for Godot, Unity, Unreal, Roblox, three.js, Phaser and 6 more engines. Checked on the real engines.
 - [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
 - [bojieli/ai-agent-book](https://github.com/bojieli/ai-agent-book) — 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码
 - [robotframework/robotframework](https://github.com/robotframework/robotframework) — Generic automation framework for acceptance testing and RPA
