@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **173** 個公開 Star；資料快照：`2026-11-13 07:55:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **174** 個公開 Star；資料快照：`2026-11-14 07:58:54 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -31,7 +31,7 @@
 - [Python（40）](#language-python)
 - [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（32）](#language-typescript)
+- [TypeScript（33）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -302,6 +302,7 @@
 
 ## TypeScript
 
+- [rrweb-io/rrweb](https://github.com/rrweb-io/rrweb) — record and replay the web
 - [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
 - [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
 - [LYiHub/Card-master-browser-extension-public](https://github.com/LYiHub/Card-master-browser-extension-public) — 一个卡牌游戏浏览器扩展，可以把各种浏览器脚本、扩展做成可游玩的卡牌，还可以用AI自动生成全新卡牌插件

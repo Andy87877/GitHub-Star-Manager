@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **173** 個公開 Star；資料快照：`2026-11-13 07:55:13 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **174** 個公開 Star；資料快照：`2026-11-14 07:58:54 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -27,7 +27,7 @@ pie title 熱門 Topic 覆蓋 Top 10
 ```mermaid
 pie title 程式語言分佈 Top 10
     "Python" : 40
-    "TypeScript" : 32
+    "TypeScript" : 33
     "Others" : 23
     "JavaScript" : 15
     "C++" : 8
@@ -43,30 +43,30 @@ pie title 程式語言分佈 Top 10
 | Topic 標籤 | 涵蓋專案數 | 視覺化進度條 |
 | :--- | :---: | :--- |
 | **#ai** | 12 筆 (6.9%) | `███` |
-| **#hacktoberfest** | 11 筆 (6.4%) | `███` |
-| **#python** | 10 筆 (5.8%) | `██` |
+| **#hacktoberfest** | 11 筆 (6.3%) | `███` |
+| **#python** | 10 筆 (5.7%) | `██` |
 | **#github** | 8 筆 (4.6%) | `██` |
 | **#javascript** | 7 筆 (4.0%) | `██` |
 | **#openai** | 7 筆 (4.0%) | `██` |
-| **#awesome** | 6 筆 (3.5%) | `█` |
-| **#awesome-list** | 6 筆 (3.5%) | `█` |
-| **#llm** | 6 筆 (3.5%) | `█` |
-| **#markdown** | 6 筆 (3.5%) | `█` |
+| **#awesome** | 6 筆 (3.4%) | `█` |
+| **#awesome-list** | 6 筆 (3.4%) | `█` |
+| **#llm** | 6 筆 (3.4%) | `█` |
+| **#markdown** | 6 筆 (3.4%) | `█` |
 
 ### ⭐ 收藏星數最高 Top 10 精選
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `562,140` | Master programming by recreating your favorite technologies from scratch. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,052` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `455,219` | Reverse engineer anything with agents, from app behavior down to native binaries. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `394,410` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `371,910` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `334,321` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `255,521` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `232,542` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `198,739` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `188,441` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `562,347` | Master programming by recreating your favorite technologies from scratch. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,100` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `457,623` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `394,400` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `371,962` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `334,566` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `255,596` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `232,869` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `198,891` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `188,660` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **570** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**106** 個 repositories）。
+- 原始資料共有 **574** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**107** 個 repositories）。
 
 ## 特別感謝
 
@@ -141,7 +141,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [chatgpt（3）](#topic-chatgpt)
 - [claude（3）](#topic-claude)
 - [codex（3）](#topic-codex)
-- [other（106）](#topic-other)
+- [other（107）](#topic-other)
 
 ---
 
@@ -455,6 +455,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## other
 
+- [rrweb-io/rrweb](https://github.com/rrweb-io/rrweb) — record and replay the web
 - [openai/math](https://github.com/openai/math)
 - [CalvinXKY/InfraTech](https://github.com/CalvinXKY/InfraTech) — 分享AI Infra知识&代码练习：PyTorch、vLLM/SGLang、slime/vime框架入门⚡️、性能加速🚀、大模型基础🧠、AI软硬件🔧等
 - [ntutselab/Database-System-Example-Project](https://github.com/ntutselab/Database-System-Example-Project)
