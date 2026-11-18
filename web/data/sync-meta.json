@@ -1,24 +1,24 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-11-17T02:10:31+00:00",
-  "formattedUpdatedAt": "2026-11-17 10:10:31 (UTC+8)",
+  "generatedAt": "2026-11-18T01:25:21+00:00",
+  "formattedUpdatedAt": "2026-11-18 09:25:21 (UTC+8)",
   "repositoryCount": 176,
-  "previousRepositoryCount": 175,
-  "deltaCount": 1,
-  "formattedDelta": "+1",
+  "previousRepositoryCount": 176,
+  "deltaCount": 0,
+  "formattedDelta": "0",
   "source": "GitHub GraphQL API",
   "isLiveSnapshot": true,
-  "totalTopicCount": 593,
+  "totalTopicCount": 594,
   "focusedTopicCount": 30,
-  "otherRepositoryCount": 105,
+  "otherRepositoryCount": 104,
   "topicMinimumRepositoryCount": 2,
   "topicMaximumCategories": 30,
   "topicOtherCategory": "other",
   "analytics": {
     "totalCount": 176,
-    "totalStars": 6301435,
-    "totalForks": 980461,
+    "totalStars": 6307268,
+    "totalForks": 981576,
     "archivedCount": 10,
     "activeCount": 166,
     "languageBreakdown": {
@@ -177,6 +177,10 @@
         "count": 6
       },
       {
+        "topic": "cli",
+        "count": 5
+      },
+      {
         "topic": "mcp",
         "count": 5
       },
@@ -191,10 +195,6 @@
       {
         "topic": "typescript",
         "count": 5
-      },
-      {
-        "topic": "android",
-        "count": 4
       }
     ],
     "starredByYear": {
