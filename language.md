@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-19 08:49:37 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-20 08:57:35 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -17,13 +17,13 @@
 - [Go（3）](#language-go)
 - [HTML（3）](#language-html)
 - [Java（6）](#language-java)
-- [JavaScript（15）](#language-javascript)
+- [JavaScript（16）](#language-javascript)
 - [Jupyter Notebook（5）](#language-jupyter-notebook)
 - [Kotlin（3）](#language-kotlin)
 - [Lean（1）](#language-lean)
 - [Lua（1）](#language-lua)
 - [Markdown（2）](#language-markdown)
-- [MDX（4）](#language-mdx)
+- [MDX（3）](#language-mdx)
 - [Others（23）](#language-others)
 - [PHP（3）](#language-php)
 - [PowerShell（1）](#language-powershell)
@@ -144,6 +144,7 @@
 - [ExpTechTW/TREM-electron](https://github.com/ExpTechTW/TREM-electron) `Archived` — Taiwan Real-time Earthquake Monitoring ( 臺灣即時地震監測 )
 - [kiang/covid19](https://github.com/kiang/covid19) — This project intended to provide a map view of the latest covid-19 cnofirmed cases distribution in Taiwan.
 - [Anarios/return-youtube-dislike](https://github.com/Anarios/return-youtube-dislike) — Chrome extension to return youtube dislikes
+- [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
 <a id="language-jupyter-notebook"></a>
 
@@ -189,7 +190,6 @@
 - [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
 - [cloudflare/cloudflare-docs](https://github.com/cloudflare/cloudflare-docs) — Cloudflare’s documentation
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-- [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
 <a id="language-others"></a>
 

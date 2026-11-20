@@ -1,8 +1,8 @@
 {
   "username": "Andy87877",
   "profileUrl": "https://github.com/Andy87877?tab=stars",
-  "generatedAt": "2026-11-19T00:49:37+00:00",
-  "formattedUpdatedAt": "2026-11-19 08:49:37 (UTC+8)",
+  "generatedAt": "2026-11-20T00:57:35+00:00",
+  "formattedUpdatedAt": "2026-11-20 08:57:35 (UTC+8)",
   "repositoryCount": 176,
   "previousRepositoryCount": 176,
   "deltaCount": 0,
@@ -17,8 +17,8 @@
   "topicOtherCategory": "other",
   "analytics": {
     "totalCount": 176,
-    "totalStars": 6311396,
-    "totalForks": 982044,
+    "totalStars": 6314852,
+    "totalForks": 982744,
     "archivedCount": 10,
     "activeCount": 166,
     "languageBreakdown": {
@@ -35,8 +35,8 @@
         "percentage": 13.1
       },
       "JavaScript": {
-        "count": 15,
-        "percentage": 8.5
+        "count": 16,
+        "percentage": 9.1
       },
       "C++": {
         "count": 8,
@@ -51,10 +51,6 @@
         "percentage": 2.8
       },
       "Dart": {
-        "count": 4,
-        "percentage": 2.3
-      },
-      "MDX": {
         "count": 4,
         "percentage": 2.3
       },
@@ -75,6 +71,10 @@
         "percentage": 1.7
       },
       "Kotlin": {
+        "count": 3,
+        "percentage": 1.7
+      },
+      "MDX": {
         "count": 3,
         "percentage": 1.7
       },
