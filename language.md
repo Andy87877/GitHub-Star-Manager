@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-21 08:24:26 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-22 07:37:44 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -22,7 +22,7 @@
 - [Kotlin（3）](#language-kotlin)
 - [Lean（1）](#language-lean)
 - [Lua（1）](#language-lua)
-- [Markdown（2）](#language-markdown)
+- [Markdown（3）](#language-markdown)
 - [MDX（3）](#language-mdx)
 - [Others（23）](#language-others)
 - [PHP（3）](#language-php)
@@ -31,7 +31,7 @@
 - [Python（41）](#language-python)
 - [Rust（3）](#language-rust)
 - [Svelte（1）](#language-svelte)
-- [TypeScript（34）](#language-typescript)
+- [TypeScript（33）](#language-typescript)
 - [Verilog（1）](#language-verilog)
 - [Vue（4）](#language-vue)
 
@@ -180,6 +180,7 @@
 
 ## Markdown
 
+- [walkccc/CLRS](https://github.com/walkccc/CLRS) — 📚 Solutions to Introduction to Algorithms Third Edition
 - [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) — Master programming by recreating your favorite technologies from scratch.
 - [Schweinepriester/github-profile-achievements](https://github.com/Schweinepriester/github-profile-achievements) — A collection listing all Achievements available on the GitHub profile 🏆
 
@@ -303,7 +304,6 @@
 
 ## TypeScript
 
-- [hnykda/wifi-heatmapper](https://github.com/hnykda/wifi-heatmapper) — Free Wi-Fi heat map and site survey app for macOS, Windows and Linux: map coverage, find dead zones, measure real speed with iperf3"
 - [rrweb-io/rrweb](https://github.com/rrweb-io/rrweb) — record and replay the web
 - [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
 - [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.

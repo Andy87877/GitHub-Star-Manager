@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-21 08:24:26 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-22 07:37:44 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -27,7 +27,7 @@ pie title 熱門 Topic 覆蓋 Top 10
 ```mermaid
 pie title 程式語言分佈 Top 10
     "Python" : 41
-    "TypeScript" : 34
+    "TypeScript" : 33
     "Others" : 23
     "JavaScript" : 16
     "C++" : 8
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `564,155` | Master programming by recreating your favorite technologies from scratch. |
-| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `471,485` | Reverse engineer anything with agents, from app behavior down to native binaries. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,398` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `394,932` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `372,455` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `336,070` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `256,255` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `234,755` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `200,319` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `190,223` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `564,467` | Master programming by recreating your favorite technologies from scratch. |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `472,751` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,440` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `394,989` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `372,510` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `336,268` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `256,339` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `234,915` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `200,420` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `190,397` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **594** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**104** 個 repositories）。
+- 原始資料共有 **589** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**105** 個 repositories）。
 
 ## 特別感謝
 
@@ -132,7 +132,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
 - [earthquake-early-warning（4）](#topic-earthquake-early-warning)
-- [nextjs（4）](#topic-nextjs)
 - [ntut（4）](#topic-ntut)
 - [profile-readme（4）](#topic-profile-readme)
 - [readme（4）](#topic-readme)
@@ -141,7 +140,8 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [agent-skills（3）](#topic-agent-skills)
 - [ai-agent（3）](#topic-ai-agent)
 - [chatgpt（3）](#topic-chatgpt)
-- [other（104）](#topic-other)
+- [claude（3）](#topic-claude)
+- [other（105）](#topic-other)
 
 ---
 
@@ -378,15 +378,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ExpTechTW/TREM-Lite-v2](https://github.com/ExpTechTW/TREM-Lite-v2) — Taiwan Real-time Earthquake Monitoring Lite ( 臺灣即時地震監測 輕量版 )
 - [ExpTechTW/TREM-electron](https://github.com/ExpTechTW/TREM-electron) — Taiwan Real-time Earthquake Monitoring ( 臺灣即時地震監測 )
 
-<a id="topic-nextjs"></a>
-
-## nextjs
-
-- [hnykda/wifi-heatmapper](https://github.com/hnykda/wifi-heatmapper) — Free Wi-Fi heat map and site survey app for macOS, Windows and Linux: map coverage, find dead zones, measure real speed with iperf3"
-- [supabase/supabase](https://github.com/supabase/supabase) — The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
-- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-
 <a id="topic-ntut"></a>
 
 ## ntut
@@ -456,10 +447,19 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [0xk1h0/ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) — ChatGPT DAN, Jailbreaks prompt
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
+<a id="topic-claude"></a>
+
+## claude
+
+- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
+- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
+- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
+
 <a id="topic-other"></a>
 
 ## other
 
+- [walkccc/CLRS](https://github.com/walkccc/CLRS) — 📚 Solutions to Introduction to Algorithms Third Edition
 - [rrweb-io/rrweb](https://github.com/rrweb-io/rrweb) — record and replay the web
 - [openai/math](https://github.com/openai/math)
 - [CalvinXKY/InfraTech](https://github.com/CalvinXKY/InfraTech) — 分享AI Infra知识&代码练习：PyTorch、vLLM/SGLang、slime/vime框架入门⚡️、性能加速🚀、大模型基础🧠、AI软硬件🔧等
