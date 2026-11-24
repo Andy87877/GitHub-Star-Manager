@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-23 07:55:43 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-24 12:07:28 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `564,741` | Master programming by recreating your favorite technologies from scratch. |
-| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `474,055` | Reverse engineer anything with agents, from app behavior down to native binaries. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,499` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `395,053` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `372,580` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `336,486` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `256,481` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `235,094` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `200,545` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `190,583` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `565,047` | Master programming by recreating your favorite technologies from scratch. |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `475,805` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,543` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `395,123` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `372,654` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `336,735` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `256,472` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `235,331` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `200,702` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `190,843` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -75,7 +75,7 @@ pie title 程式語言分佈 Top 10
 - `Refresh GitHub Stars snapshot` workflow 每日 03:00（Asia/Taipei）及手動觸發同步本 README、`language.md` 與 `web/data/stars.json`。
 - 每次 push／pull request 都先執行 Robot 驗收；`main` 驗證成功後才打包純靜態網站並部署 GitHub Pages。
 - 同步採失敗關閉策略：API 錯誤、分頁不完整或取得 0 筆時，不會覆寫上一份有效資料。
-- 原始資料共有 **589** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**105** 個 repositories）。
+- 原始資料共有 **594** 個 Topics；本 README 依 Focus Topic 原則精選 **30** 個高頻標籤，未命中聚焦標籤的專案收進最底下的 `other` （**104** 個 repositories）。
 
 ## 特別感謝
 
@@ -132,6 +132,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [deep-learning（4）](#topic-deep-learning)
 - [earthquake（4）](#topic-earthquake)
 - [earthquake-early-warning（4）](#topic-earthquake-early-warning)
+- [frontend（4）](#topic-frontend)
 - [ntut（4）](#topic-ntut)
 - [profile-readme（4）](#topic-profile-readme)
 - [readme（4）](#topic-readme)
@@ -140,8 +141,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [agent-skills（3）](#topic-agent-skills)
 - [ai-agent（3）](#topic-ai-agent)
 - [chatgpt（3）](#topic-chatgpt)
-- [claude（3）](#topic-claude)
-- [other（105）](#topic-other)
+- [other（104）](#topic-other)
 
 ---
 
@@ -216,7 +216,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) — freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.
 - [ponlponl123/-Prototype-AIVTuber](https://github.com/ponlponl123/-Prototype-AIVTuber) — a open-source Artificial Intelligence Virtual Youtuber (AI VTuber), (this project is deprecated)
 - [twbs/bootstrap](https://github.com/twbs/bootstrap) — The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
-- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
+- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 结构化复杂 SQL 生成器（SQL Generator）是由程序员鱼皮开源的纯前端在线工具，支持用 JSON 模板以类似函数调用与嵌套传参的方式编写结构化语句并一键生成完整的复杂 SQL，也可作为通用重复代码生成器使用。项目面向大数据离线分析、Hive 与 Spark 数仓开发及日常 MySQL 查询场景，内置静态参数替换、参数透传、括号嵌套子查询解析与可视化调用树分析功能，有效降低上千行重复 SQL 的维护成本。技术栈基于 Vue 3、TypeScript、Vite、An…
 
 <a id="topic-openai"></a>
 
@@ -322,7 +322,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
 - [openai/codex-security](https://github.com/openai/codex-security) — OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
+- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 结构化复杂 SQL 生成器（SQL Generator）是由程序员鱼皮开源的纯前端在线工具，支持用 JSON 模板以类似函数调用与嵌套传参的方式编写结构化语句并一键生成完整的复杂 SQL，也可作为通用重复代码生成器使用。项目面向大数据离线分析、Hive 与 Spark 数仓开发及日常 MySQL 查询场景，内置静态参数替换、参数透传、括号嵌套子查询解析与可视化调用树分析功能，有效降低上千行重复 SQL 的维护成本。技术栈基于 Vue 3、TypeScript、Vite、An…
 
 <a id="topic-ai-agents"></a>
 
@@ -377,6 +377,15 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
 - [ExpTechTW/TREM-Lite-v2](https://github.com/ExpTechTW/TREM-Lite-v2) — Taiwan Real-time Earthquake Monitoring Lite ( 臺灣即時地震監測 輕量版 )
 - [ExpTechTW/TREM-electron](https://github.com/ExpTechTW/TREM-electron) — Taiwan Real-time Earthquake Monitoring ( 臺灣即時地震監測 )
+
+<a id="topic-frontend"></a>
+
+## frontend
+
+- [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) — 🗂 The essential checklist for modern web development, for humans and AI agents
+- [Vincent550102/nPassword](https://github.com/Vincent550102/nPassword) — A Windows AD Password Manager for ATTACKER(Redteamer/Pentester).
+- [goodjack/developer-roadmap-chinese](https://github.com/goodjack/developer-roadmap-chinese) — 2021 年成為 Web 開發人員的路線圖 台灣正體中文版
+- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 结构化复杂 SQL 生成器（SQL Generator）是由程序员鱼皮开源的纯前端在线工具，支持用 JSON 模板以类似函数调用与嵌套传参的方式编写结构化语句并一键生成完整的复杂 SQL，也可作为通用重复代码生成器使用。项目面向大数据离线分析、Hive 与 Spark 数仓开发及日常 MySQL 查询场景，内置静态参数替换、参数透传、括号嵌套子查询解析与可视化调用树分析功能，有效降低上千行重复 SQL 的维护成本。技术栈基于 Vue 3、TypeScript、Vite、An…
 
 <a id="topic-ntut"></a>
 
@@ -447,14 +456,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [0xk1h0/ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) — ChatGPT DAN, Jailbreaks prompt
 - [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
 
-<a id="topic-claude"></a>
-
-## claude
-
-- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.
-- [langgenius/dify](https://github.com/langgenius/dify) — Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.
-- [f/prompts.chat](https://github.com/f/prompts.chat) — f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.
-
 <a id="topic-other"></a>
 
 ## other
@@ -521,7 +522,6 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [IaintHamburger/MathHub-Backend](https://github.com/IaintHamburger/MathHub-Backend) — MathHub Project
 - [Siestea/Pygame-chess](https://github.com/Siestea/Pygame-chess)
 - [Larryeng/Fall_detection](https://github.com/Larryeng/Fall_detection) — An early warning device for the elderly when they fall
-- [Vincent550102/nPassword](https://github.com/Vincent550102/nPassword) — A Windows AD Password Manager for ATTACKER(Redteamer/Pentester).
 - [YuCheng21/zuvio-rollcall](https://github.com/YuCheng21/zuvio-rollcall) — Zuvio 自動點名程式
 - [XiangxinKong/manhuagui-downloader](https://github.com/XiangxinKong/manhuagui-downloader) — 漫画柜下载器，带图形界面，纯python。已打包exe，可直接运行
 - [Yucheng0208/NTUT-Linear-Algebra-Course](https://github.com/Yucheng0208/NTUT-Linear-Algebra-Course) — NTUT CS Linear Algebra Files.
@@ -537,7 +537,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 - [linyiLYi/bilibot](https://github.com/linyiLYi/bilibot) — A local chatbot fine-tuned by bilibili user comments.
 - [torvalds/linux](https://github.com/torvalds/linux) — Linux kernel source tree
 - [robsoncouto/arduino-songs](https://github.com/robsoncouto/arduino-songs)
-- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
+- [bilibili/GPT-SoVITS](https://github.com/bilibili/GPT-SoVITS) — 1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
 - [yihong0618/SunoSongsCreator](https://github.com/yihong0618/SunoSongsCreator) — About High quality songs generation by https://www.suno.ai/. Reverse engineered API.
 - [pyinvest/ml_toturial](https://github.com/pyinvest/ml_toturial)
 - [bschen410/Coding](https://github.com/bschen410/Coding) — 一堆不想整理的程式碼

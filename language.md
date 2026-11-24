@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-23 07:55:43 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-24 12:07:28 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -275,7 +275,7 @@
 - [gradio-app/gradio](https://github.com/gradio-app/gradio) — Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!
 - [MiuLab/Taiwan-LLM](https://github.com/MiuLab/Taiwan-LLM) — Traditional Mandarin LLMs for Taiwan
 - [linyiLYi/bilibot](https://github.com/linyiLYi/bilibot) — A local chatbot fine-tuned by bilibili user comments.
-- [RVC-Boss/GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) — 1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
+- [bilibili/GPT-SoVITS](https://github.com/bilibili/GPT-SoVITS) — 1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
 - [yihong0618/SunoSongsCreator](https://github.com/yihong0618/SunoSongsCreator) — About High quality songs generation by https://www.suno.ai/. Reverse engineered API.
 - [glutanimate/review-heatmap](https://github.com/glutanimate/review-heatmap) — Anki add-on to help you keep track of your review activity
 - [owid/covid-19-data](https://github.com/owid/covid-19-data) `Archived` — Data on COVID-19 (coronavirus) cases, deaths, hospitalizations, tests • All countries • Updated daily by Our World in Data
@@ -351,7 +351,7 @@
 - [ntutselab/Database-System-Example-Project](https://github.com/ntutselab/Database-System-Example-Project)
 - [scott0127/pik_tool](https://github.com/scott0127/pik_tool)
 - [ExpTechTW/TREM-tauri](https://github.com/ExpTechTW/TREM-tauri) `Archived` — Taiwan Real-time Earthquake Monitoring（臺灣即時地震監測）
-- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 🔨 用 JSON 来生成结构化的 SQL 语句，基于 Vue3 + TypeScript + Vite + Ant Design + MonacoEditor 实现，项目简单（重逻辑轻页面）、适合练手~
+- [liyupi/sql-generator](https://github.com/liyupi/sql-generator) — 结构化复杂 SQL 生成器（SQL Generator）是由程序员鱼皮开源的纯前端在线工具，支持用 JSON 模板以类似函数调用与嵌套传参的方式编写结构化语句并一键生成完整的复杂 SQL，也可作为通用重复代码生成器使用。项目面向大数据离线分析、Hive 与 Spark 数仓开发及日常 MySQL 查询场景，内置静态参数替换、参数透传、括号嵌套子查询解析与可视化调用树分析功能，有效降低上千行重复 SQL 的维护成本。技术栈基于 Vue 3、TypeScript、Vite、An…
 
 ---
 
