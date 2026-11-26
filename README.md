@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-25 10:50:34 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-26 09:59:08 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 這是一個不需要資料庫的 GitHub Star 個人知識庫：Python 同步器負責抓取與產生靜態資料，網站則提供即時搜尋、聚焦 Topic、語言篩選、Table（預設）／Cards 雙模式、最愛 ⭐ 標註、動態分頁、數據分析 Dashboard、排序、本機研究筆記與 CSV 匯出。
 
@@ -57,16 +57,16 @@ pie title 程式語言分佈 Top 10
 
 | 專案名稱 | 主要語言 | Stars ⭐ | 描述摘要 |
 | :--- | :---: | :---: | :--- |
-| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `565,342` | Master programming by recreating your favorite technologies from scratch. |
-| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `477,259` | Reverse engineer anything with agents, from app behavior down to native binaries. |
-| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,585` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `395,166` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `372,704` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
-| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `336,953` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
-| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `256,601` | Linux kernel source tree |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `235,529` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
-| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `200,827` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
-| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `191,058` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
+| [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **Markdown** | `565,565` | Master programming by recreating your favorite technologies from scratch. |
+| [morluto/rea](https://github.com/morluto/rea) | **TypeScript** | `478,541` | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | **TypeScript** | `459,641` | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free. |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | **TypeScript** | `395,232` | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
+| [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | **TypeScript** | `372,786` | Interactive roadmaps, guides and other educational content to help developers grow in their careers. |
+| [vinta/awesome-python](https://github.com/vinta/awesome-python) | **Python** | `337,167` | The definitive list that answers "I want to do X in Python, which tool should I use?" |
+| [torvalds/linux](https://github.com/torvalds/linux) | **C** | `256,777` | Linux kernel source tree |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **Others** | `235,722` | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitf… |
+| [massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | **Batchfile** | `200,980` | Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with … |
+| [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **Python** | `191,278` | :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub. |
 
 ## 資料即時性與數據分析
 
@@ -337,7 +337,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## android
 
-- [zeroa234/cs-math-skill-game](https://github.com/zeroa234/cs-math-skill-game) — 计算机大学习！：把计算机专业和它要用的数学做成一次一小课的像素风学习游戏。先猜、再看、再做，亲手当调度器、当置换算法，FSRS 间隔复习，183 个技能的技能树，已有 12 个技能、383 课互动课。安卓 App、Windows 安装版和离线网页。A pixel-art learning game for CS and its math: bite-sized lessons, hands-on simulators, spaced repetition.
+- [zeroa234/cs-math-skill-game](https://github.com/zeroa234/cs-math-skill-game) — 计算机大学习！：把计算机专业和它要用的数学做成一次一小课的像素风学习游戏。先猜、再看、再做，亲手当调度器、当置换算法，FSRS 间隔复习，218 个技能的技能树，已有 65 个技能、1331 课互动课。安卓 App、Windows 安装版和离线网页。A pixel-art learning game for CS and its math: bite-sized lessons, hands-on simulators, spaced repetition.
 - [morluto/rea](https://github.com/morluto/rea) — Reverse engineer anything with agents, from app behavior down to native binaries.
 - [ExpTechTW/DPIP](https://github.com/ExpTechTW/DPIP) — Disaster Prevention Information Platform (防災資訊整合平台)
 - [NEO-TAT/tat_flutter](https://github.com/NEO-TAT/tat_flutter) — An App for Taipei Tech students. NTUT Life TAT, convenient, concise, fast, powerful, enrich your NTUT life!
@@ -346,7 +346,7 @@ python -m robot --outputdir artifacts/robot-reports tests
 
 ## computer-science
 
-- [zeroa234/cs-math-skill-game](https://github.com/zeroa234/cs-math-skill-game) — 计算机大学习！：把计算机专业和它要用的数学做成一次一小课的像素风学习游戏。先猜、再看、再做，亲手当调度器、当置换算法，FSRS 间隔复习，183 个技能的技能树，已有 12 个技能、383 课互动课。安卓 App、Windows 安装版和离线网页。A pixel-art learning game for CS and its math: bite-sized lessons, hands-on simulators, spaced repetition.
+- [zeroa234/cs-math-skill-game](https://github.com/zeroa234/cs-math-skill-game) — 计算机大学习！：把计算机专业和它要用的数学做成一次一小课的像素风学习游戏。先猜、再看、再做，亲手当调度器、当置换算法，FSRS 间隔复习，218 个技能的技能树，已有 65 个技能、1331 课互动课。安卓 App、Windows 安装版和离线网页。A pixel-art learning game for CS and its math: bite-sized lessons, hands-on simulators, spaced repetition.
 - [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) — Interactive roadmaps, guides and other educational content to help developers grow in their careers.
 - [ForrestKnight/open-source-cs](https://github.com/ForrestKnight/open-source-cs) — Video discussing this curriculum:
 - [goodjack/developer-roadmap-chinese](https://github.com/goodjack/developer-roadmap-chinese) — 2021 年成為 Web 開發人員的路線圖 台灣正體中文版
