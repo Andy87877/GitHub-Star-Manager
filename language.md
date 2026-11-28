@@ -1,6 +1,6 @@
 # Andy87877 的 GitHub Stars（依主要語言）
 
-> 收錄 **176** 個公開 Star；資料快照：`2026-11-27 09:59:09 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
+> 收錄 **176** 個公開 Star；資料快照：`2026-11-28 09:42:17 (UTC+8)`。來源：[Andy87877 的 GitHub Stars](https://github.com/Andy87877?tab=stars)。
 
 ⬅ **回到 Topic 聚焦總覽**：[README.md (依 Focus Topic 瀏覽)](README.md)
 
@@ -244,7 +244,7 @@
 
 ## Python
 
-- [zeroa234/cs-math-skill-game](https://github.com/zeroa234/cs-math-skill-game) — 计算机大学习！：把计算机专业和它要用的数学做成一次一小课的像素风学习游戏。先猜、再看、再做，亲手当调度器、当置换算法，FSRS 间隔复习，218 个技能的技能树，已有 65 个技能、1331 课互动课。安卓 App、Windows 安装版和离线网页。A pixel-art learning game for CS and its math: bite-sized lessons, hands-on simulators, spaced repetition.
+- [zeroa234/cs-math-skill-game](https://github.com/zeroa234/cs-math-skill-game) — 计算机大学习！：把计算机专业和它要用的数学做成一次一小课的像素风学习游戏。先猜、再看、再做，亲手当调度器、当置换算法，FSRS 间隔复习，218 个技能的技能树，已有 77 个技能、1630 课互动课。安卓 App、Windows 安装版和离线网页。A pixel-art learning game for CS and its math: bite-sized lessons, hands-on simulators, spaced repetition.
 - [rossant/awesome-math](https://github.com/rossant/awesome-math) — A curated list of awesome mathematics resources
 - [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) — Make games with your AI coding agent: 79 game-dev skills and a router for Godot, Unity, Unreal, Roblox, three.js, Phaser and 6 more engines. Checked on the real engines.
 - [Andy87877/GitHub-Star-Manager](https://github.com/Andy87877/GitHub-Star-Manager) — Andy's GitHub Star 倉庫
